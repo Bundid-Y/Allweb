@@ -1,0 +1,582 @@
+/* =========================================
+   Koch Style CSS
+   ========================================= */
+
+/* -----------------------------------------
+   1. การตั้งค่าทั่วไป (General Reset & Layout)
+   ----------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+/* -----------------------------------------
+   2. ส่วนสไลเดอร์ (Slider Section)
+   ----------------------------------------- */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    overflow: hidden; 
+}
+
+.slide-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-item {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    will-change: transform, opacity, left, top, width, height;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+/* ปุ่มควบคุมสไลด์ (Previous/Next) */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-btn.prev { left: 20px; }
+.nav-btn.next { right: 20px; }
+
+.slider-wrapper:hover .nav-btn { opacity: 1; }
+
+
+/* -----------------------------------------
+   3. ส่วนเนื้อหา / รายละเอียด (Content / Details Section)
+   ----------------------------------------- */
+.content-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* จัดกึ่งกลางหน้าจอ */
+    padding-bottom: 90px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+/* กล่องเนื้อหาฝั่งซ้าย (รูป + เลข) */
+.details-box {
+    width: 100%;
+    position: relative;
+}
+
+/* ตกแต่งพื้นหลังสีเหลือง/แดง */
+.details-box:after {
+    content: '';
+    background-color: #ff0000ff;
+    position: absolute;
+    width: 420px;
+    right: 0px;
+    top: 0px;
+    margin: 0 auto;
+    display: flex;
+    height: 600px;
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
+}
+
+/* Modifier สำหรับส่วน Services ที่ต้องการพื้นหลังกว้างกว่า */
+.details-box.details-box-services:after {
+    width: 100%; /* ขยายความกว้างเต็มพื้นที่ */
+    max-width: 1200px;
+    height: 110%; /* เพิ่มความสูงให้ครอบคลุม */
+    right: 0;
+    left: 0;
+    top: -5%; /* ขยับขึ้นเล็กน้อย */
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 95%); /* ปรับรูปร่างให้เหมาะกับแนวนอน */
+    transform: none; /* ยกเลิก translation ถ้ามี */
+}
+
+/* วงกลมตัวเลข */
+.details-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #325662;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px 0px;
+    float: right;
+    margin-right: 140px;
+    margin-top: 60px;
+}
+
+/* คอนเทนเนอร์รูปภาพ */
+.details-image {
+    width: 100%;
+    text-align: center;
+}
+
+/* เพิ่มเพื่อให้รูปไม่ล้น */
+.details-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* หัวข้อ (Title) */
+.details-title {
+    width: 100%;
+    font-size: 40px;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 40px;
+    position: relative;
+}
+
+.details-title:after {
+    display: none;
+}
+
+/* คำอธิบาย (Description) */
+.details-desc {
+    width: 100%;
+    font-size: 16px;
+    color: #1c1c1c;
+    margin: 0px; 
+    padding-top: 20px;
+    text-align: left;
+}
+
+/* ปุ่มกด (Button) */
+.btn-buy a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #325662;
+    padding: 8px 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-buy a:hover {
+    color: #ffffff;
+    background-color: #f7c17b;
+}
+
+/* -----------------------------------------
+   4. การ์ดบริการของเรา (Service Cards)
+   ----------------------------------------- */
+:root{
+  --background-dark: #ffffffff;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --text-light: rgba(255,255,255,0.75);
+  --text-lighter: rgba(255,255,255,0.9);
+  --width-container: 1200px;
+}
+
+/* Reset บางส่วน — ยกเว้น header/menubar เพื่อไม่ให้กระทบ navbar */
+.content-section *,
+.card-grid *,
+.hero-section * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+body{
+  height: 100%;
+}
+
+.hero-section{
+  align-items: center;
+  background: var(--background-dark);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+/* --- Container สำหรับจัดการแถว (Card Grid) --- */
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media(min-width: 600px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+/* --- ตัวการ์ด (Card) --- */
+.card{
+  list-style: none;
+  position: relative;
+  border-radius: 15px; 
+  overflow: hidden;
+  aspect-ratio: 3 / 4; 
+  background-color: #222;
+}
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+/* พื้นหลังรูปภาพในการ์ด */
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0); /* แก้ไข trsnsform เป็น transform */
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .card__background{
+  filter: brightness(0.5) saturate(0.5) contrast(1.2) blur(20px);
+}
+
+/* เนื้อหาข้อความในการ์ด */
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+  z-index: 2;
+}
+
+.card__category{
+  color: var(--text-light); /* หรือใช้ #f7c17b ตามที่แก้ */
+  font-size: 1rem; /* หรือ 0.75rem */
+  font-weight: 500;
+  margin-bottom: var(--spacing-m);
+  text-transform: uppercase;
+  /* เพิ่มเติมจากการแก้ไข */
+  color: #f7c17b; 
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__heading{
+  color: var(--text-lighter); /* หรือ #ffffff */
+  font-size: 2rem; /* หรือ 1.2rem */
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.2;
+  word-spacing: 100vw;
+  /* เพิ่มเติมจากการแก้ไข */
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 600;
+} 
+
+/* -----------------------------------------
+   5. Responsive ปรับตามขนาดหน้าจอ
+   ----------------------------------------- */
+
+/* แท็บเล็ต (แสดงแถวละ 2 ใบ) */
+@media (max-width: 991px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    /* ปรับส่วน details-box */
+    .details-box:after {
+        width: 100%;
+        clip-path: none;
+        height: 100%;
+        opacity: 0.8;
+    }
+}
+
+/* มือถือ (แสดงแถวละ 2 ใบ หรือ 1 ใบตามความเหมาะสม) */
+@media (max-width: 576px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .card__heading {
+        font-size: 0.9rem;
+    }
+    
+    .card__content {
+        padding: 12px;
+    }
+}
+
+/* มือถือเล็กมาก (แสดงแถวละ 1 ใบ) */
+@media (max-width: 400px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* -----------------------------------------
+   6. Infinite Logo Carousel (loop-images)
+   — CSS-only ระบบ loop สำหรับ logo ลูกค้า
+   ----------------------------------------- */
+
+/* คอนเทนเนอร์หลัก */
+.loop-images {
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* หัวข้อ */
+.loop-images__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1c1c1c;
+    margin-bottom: 40px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* แทร็กที่เลื่อนวนรอบ (carousel track) */
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: carouselLoop var(--time, 60s) linear infinite;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* หยุด animation เมื่อ hover — เพื่อให้ผู้ใช้ดูโลโก้ */
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+/* แต่ละ item ในลูป */
+.carousel-item {
+    flex-shrink: 0;
+    width: 220px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05) translateY(-3px);
+}
+
+/* รูปภาพ/โลโก้ */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+
+/* Animation: เลื่อนวน loop ไม่มีสะดุด */
+@keyframes carouselLoop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* เลื่อนครึ่งหนึ่ง — ต้องใช้ JS ช่วย duplicate items ให้ loop ไม่ขาด */
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* Responsive — ปรับขนาด carousel item สำหรับจอเล็ก */
+@media (max-width: 768px) {
+    .loop-images {
+        padding: 40px 0;
+    }
+
+    .loop-images__title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .carousel-item {
+        width: 160px;
+        height: 110px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        width: 130px;
+        height: 90px;
+    }
+
+    .loop-images__title {
+        font-size: 22px;
+    }
+}
+
+/* -----------------------------------------
+   7. Quotation Section (Tilted Cards) การ์ดสไลด์ logo ลูกค้า
+   ----------------------------------------- */
+section.loop-images-quotation {
+	position: relative;
+	height: 60vh;
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.login-track {
+	--left: -150rem;
+	min-width: calc(5rem * var(--total));
+	height: 15rem;
+}
+
+.login-track .login-item {
+	position: absolute;
+	width: 15rem;
+	height: 15rem;
+	left: 100%;
+	animation: scroll-left var(--time) linear infinite;
+	animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
+	will-change: left;
+	cursor: pointer;
+	
+	transform: perspective(1000px) rotateY(-30deg);
+	transition: transform 0.5s ease-in-out;
+	
+	overflow: visible;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.login-track .login-item:hover {
+	transform: perspective(1000px) rotateY(0deg) !important;
+	z-index: 10;
+}
+
+.login-track .login-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	pointer-events: none;
+}
+
+@keyframes scroll-left {
+	to {
+		left: var(--left);
+	}
+}
