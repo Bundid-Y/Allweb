@@ -288,5 +288,301 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
             });
         }
+
+        // ----------------------------------------------------
+        // GSAP Animations — สี่เหลี่ยมแดงตกแต่ง (Decorative Red Shapes)
+        // แต่ละ Section มีอนิเมชั่นไม่ซ้ำกัน
+        // ----------------------------------------------------
+
+        // === 8.1 PARTNERS SECTION: สี่เหลี่ยมเลื่อนลงจากบน ===
+        const partnersSec = document.querySelector('.section-partners');
+        if (partnersSec) {
+            gsap.fromTo(partnersSec,
+                { '--deco-y': '-100%' },
+                {
+                    '--deco-y': '0%',
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: '.section-partners',
+                        start: 'top 85%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse',
+                    },
+                }
+            );
+        }
+
+        // === 8.2 PRODUCTS SECTION: สี่เหลี่ยมเลื่อนลงจากบน ===
+        const productsSec = document.querySelector('.section-products');
+        if (productsSec) {
+            gsap.fromTo(productsSec,
+                { '--deco-y': '-100%' },
+                {
+                    '--deco-y': '0%',
+                    duration: 1.2,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: '.section-products',
+                        start: 'top 85%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse',
+                    },
+                }
+            );
+        }
+
+        // === 8.3 SLIDER SECTION: สี่เหลี่ยมเลื่อนลงจากบนแบบ Parallax ===
+        const sliderSec = document.querySelector('.section-slider');
+        if (sliderSec) {
+            // Layer สีแดง (มาเร็วหน่อย)
+            gsap.fromTo(sliderSec,
+                { '--deco-y': '-100%' },
+                {
+                    '--deco-y': '0%',
+                    duration: 1.2,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: '.section-slider',
+                        start: 'top 85%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse',
+                    },
+                }
+            );
+
+            // Layer สีน้ำเงิน (มาช้ากว่าเล็กน้อย สร้างมิติ)
+            gsap.fromTo(sliderSec,
+                { '--deco-y2': '-100%' },
+                {
+                    '--deco-y2': '0%',
+                    duration: 1.6, /* ช้ากว่าสีแดง */
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: '.section-slider',
+                        start: 'top 85%',
+                        end: 'bottom 20%',
+                        toggleActions: 'play none none reverse',
+                    },
+                }
+            );
+        }
     }
+});
+
+// ----------------------------------------------------
+// Scroll Logic (from development.php)
+// ----------------------------------------------------
+$(document).ready(function() {
+    // Only run if the relevant element exists on the page
+    if ($('.development-scroll-container').length === 0) return;
+
+    // Define images for each section matching the original code
+    const images = {
+        'dev-section1': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg',
+        'dev-section2': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/2fgvaqx-fxs-oskar-krawczyk.jpg',
+        'dev-section3': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg'
+    };
+
+    const $sections = $('.scroll-text-container section');
+    const $stickyImg = $('#sticky-dev-img');
+    let currentSection = '';
+
+    function onScroll() {
+        var scrollPosition = $(window).scrollTop() + $(window).height() / 2;
+
+        $sections.each(function() {
+            var $this = $(this);
+            var sectionTop = $this.offset().top;
+            var sectionBottom = sectionTop + $this.outerHeight();
+
+            // Check if scroll position is within this section
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                var id = $this.attr('id');
+                
+                // Add active class to text for highlighting effect
+                $sections.removeClass('active-text');
+                $this.addClass('active-text');
+
+                // If changed, animate the image src
+                if (currentSection !== id) {
+                    currentSection = id;
+                    
+                    // Fade out
+                    $stickyImg.addClass('fade-img');
+                    
+                    // After fade out, change src and fade in
+                    setTimeout(function() {
+                        $stickyImg.attr('src', images[id]);
+                        $stickyImg.removeClass('fade-img');
+                    }, 400); // 400ms matching css transition
+                }
+            }
+        });
+    }
+
+    $(window).on('scroll resize', onScroll);
+
+    // Trigger scroll once on load to establish initial state
+    setTimeout(onScroll, 100);
+});
+
+// ----------------------------------------------------
+// Expanding Cards Logic (from index.php)
+// ----------------------------------------------------
+(function() {
+    // Only run if the relevant element exists on the page
+    if (document.querySelector('.Block_Expanding_Cards') === null) return;
+
+    var	doc = document ,
+    elemList = Construct_SubElement_List( doc.body ) ,
+    len = elemList.length ,
+    win = window ,
+    i ,
+    _Blocks = [] ,
+    Card_Expander ;
+
+    for (  i = 0 ; i < len ; i++  ) {
+        var	currElem	= elemList[i] ;
+        if (  currElem.className && /^Block_Expanding_Cards$/.test( currElem.className )  ) {
+            Card_Expander	= new Card_Expander_Obj( currElem ) ;
+        }
+        if (  currElem.parentNode && /body/i.test( currElem.parentNode.tagName ) && ( /^Block/.test( currElem.className ) || /^Block/.test( currElem.id ) )  )
+            _Blocks.push( currElem ) ;
+    }
+
+    function	Card_Expander_Obj   (  ElemObjRef  )  {
+        var	ELEM		= ElemObjRef ,
+            ElemList	= Construct_SubElement_List( ELEM ) , num = ElemList.length , j , k ;
+
+        this.ElemObj		= ELEM ;
+        this._Cards		= [] ;
+        this.current_index	= 0 ;
+
+        for (  j = 0 ; j < num ; j++  ) {
+            var	CE = ElemList[j] ;
+            if ( /^US_City_sB/.test( CE.className ) ) {
+                var	subElemList	= Construct_SubElement_List( CE ), n2 = subElemList.length ,
+                    h1_EO , shade_EO , content_EO , BG_EO ;
+
+                for ( k = 0 ; k < n2 ; k++ ) {
+                    if ( /^card_h1/.test( subElemList[k].className ) )			h1_EO		= subElemList[k] ;
+                    else if ( /^card_shade/.test( subElemList[k].className ) )	shade_EO		= subElemList[k] ;
+                    else if ( /^card_content/.test( subElemList[k].className ) )	content_EO	= subElemList[k] ;
+                    else if ( /^card_BG/.test( subElemList[k].className ) )		BG_EO		= subElemList[k] ;
+                }
+
+                this._Cards.push( {"EO": CE, "h1_EO": h1_EO, "shade_EO": shade_EO, "content_EO": content_EO, "BG_EO": BG_EO} ) ;
+
+                CE.onclick = function() {
+                    if ( this.className.indexOf("_active") > -1 )	return ;
+                    Card_Expander._Toggle( parseInt( this.getAttribute("data-card-index") ) ) ;
+                } ;
+            }
+        }
+
+        this._Toggle = function ( new_card_index ) {
+            this._Cards[ this.current_index ].EO.className			= "US_City_sB" ;
+            this._Cards[ this.current_index ].h1_EO.className		= "card_h1" ;
+            this._Cards[ this.current_index ].shade_EO.className		= "card_shade" ;
+            this._Cards[ this.current_index ].content_EO.className	= "card_content" ;
+            this._Cards[ this.current_index ].BG_EO.className		= "card_BG" ;
+
+            this._Cards[ new_card_index ].EO.className			+= " _active" ;
+            this._Cards[ new_card_index ].h1_EO.className		+= " _active" ;
+            this._Cards[ new_card_index ].shade_EO.className	+= " _off" ;
+            this._Cards[ new_card_index ].content_EO.className	+= " _on" ;
+            this._Cards[ new_card_index ].BG_EO.className		+= " _active" ;
+
+            this.current_index	= new_card_index ;
+        } ;
+    }
+
+    function	Construct_SubElement_List ( ElemObjRef ) {
+        var	_ELEM		= ElemObjRef ,
+            tmpList		= _ELEM.getElementsByTagName("*") , tmpLen = tmpList.length , k ,
+            ELEM_LIST 	= [] ;
+        for (  k = 0 ; k < tmpLen ; k++  )		ELEM_LIST.push( tmpList[k] ) ;
+        return		ELEM_LIST ;
+    }
+})();
+
+// ----------------------------------------------------
+// Menubar Component Logic (from menubar.php)
+// ----------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    const navMenu = document.getElementById('navMenu');
+    const navToggle = document.getElementById('navToggle');
+    const navClose = document.getElementById('navClose');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const navLinks = document.querySelectorAll('.header .nav-list .nav-item > a.nav-link');
+
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 40) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        lastScroll = currentScroll;
+    }, { passive: true });
+
+    function openMenu() {
+        navMenu.classList.add('show-menu');
+        navToggle.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        navMenu.classList.remove('show-menu');
+        navToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            if (navMenu.classList.contains('show-menu')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+    }
+
+    if (navClose) {
+        navClose.addEventListener('click', () => {
+            closeMenu();
+        });
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 1024) {
+                closeMenu();
+            }
+        });
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            closeMenu();
+        }
+    });
+
+    dropdownItems.forEach(item => {
+        const link = item.querySelector('.nav-link');
+        if (link) {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth > 1024) return;
+                if (item.querySelector('.dropdown-menu')) {
+                    e.preventDefault();
+                    item.classList.toggle('active');
+                }
+            });
+        }
+    });
 });

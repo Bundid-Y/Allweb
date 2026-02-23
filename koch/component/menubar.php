@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="th">
 
 <head>
@@ -36,10 +36,10 @@
                     <li class="nav-item dropdown-item">
                         <div class="nav-link dropdown-toggle">บริการของเรา <span class="arrow">▼</span></div>
                         <ul class="dropdown-menu">
-                            <li><a href="../service/development.php" class="dropdown-link">Packaging Development</a></li>
-                            <li><a href="../service/supply_management.php" class="dropdown-link">Supply Management</a></li>
-                            <li><a href="../service/warehouse.php" class="dropdown-link">Warehouse & Operation</a></li>
-                            <li><a href="../service/transportation.php" class="dropdown-link">Transportation</a></li>
+                            <li><a href="../service/development.php" class="dropdown-link">บริการออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร</a></li>
+                            <li><a href="../service/supply_management.php" class="dropdown-link">การจัดการการจัดหาบรรจุภัณฑ์</a></li>
+                            <li><a href="../service/warehouse.php" class="dropdown-link">การจัดการคลังสินค้าและการดำเนินงาน</a></li>
+                            <li><a href="../service/transportation.php" class="dropdown-link">บริการขนส่งและระบบบริหารจัดการภายใน</a></li>
                         </ul>
                     </li>
                     <!-- Dropdown 2 -->
@@ -57,6 +57,19 @@
                     <li class="nav-item"><a href="../main/branches.php" class="nav-link">สาขา</a></li>
                     <li class="nav-item"><a href="../main/contact.php" class="nav-link">ติดต่อเรา</a></li>
                     <li class="nav-item"><a href="../main/quotation.php" class="nav-link">ขอใบเสนอราคา</a></li>
+                    <!-- Language Dropdown -->
+                    <li class="nav-item dropdown-item">
+                        <div class="nav-link dropdown-toggle">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:5px;"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            ไทย <span class="arrow">▼</span>
+                        </div>
+                        <ul class="dropdown-menu" style="min-width: 120px;">
+                            <li><a href="?lang=th" class="dropdown-link">ไทย</a></li>
+                            <li><a href="?lang=en" class="dropdown-link">English</a></li>
+                            <li><a href="?lang=zh" class="dropdown-link">中文</a></li>
+                            <li><a href="?lang=ja" class="dropdown-link">日本語</a></li>
+                        </ul>
+                    </li>
                     <!-- Login Button -->
                     <li class="nav-item login-item">
                         <a href="../main/login.php" class="btn-login">
@@ -78,6 +91,9 @@
             </div>
         </nav>
     </header>
+
+    </body>
+</html>
 
     <style>
         /* ===== CSS Variables & Reset ===== */
@@ -193,7 +209,7 @@
             display: flex;
             align-items: center;
             /* ใช้ gap เท่ากันทุกรายการ */
-            gap: 2px;
+            gap: 0px;
             height: 100%;
         }
 
@@ -216,6 +232,7 @@
         .header .nav-item:nth-child(7) { animation-delay: 0.35s; }
         .header .nav-item:nth-child(8) { animation-delay: 0.40s; }
         .header .nav-item:nth-child(9) { animation-delay: 0.45s; }
+        .header .nav-item:nth-child(10) { animation-delay: 0.50s; }
 
         @keyframes fadeSlideIn {
             from {
@@ -238,7 +255,7 @@
 
         /* ===== Nav Link — padding เท่ากันทุกเมนู ===== */
         .header .nav-link {
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             font-weight: 500;
             color: var(--text-color);
             transition: var(--transition);
@@ -248,7 +265,7 @@
             display: flex;
             align-items: center;
             /* ★ padding ซ้าย-ขวาเท่ากันทุกตัว = ระยะเท่ากัน */
-            padding: 0 8px;
+            padding: 0 6px;
             white-space: nowrap;
             letter-spacing: 0.01em;
         }
@@ -687,5 +704,3 @@
             });
         });
     </script>
-</body>
-</html>

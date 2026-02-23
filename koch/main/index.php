@@ -32,7 +32,7 @@
     <?php include '../component/menubar.php'; ?>
 
     <!-- SLIDER SECTION -->
-    <div class="main-container">
+    <div class="main-container section-slider">
         <div class="slider-wrapper" id="sliderWrapper">
             
             <div class="slide-track" id="slideTrack">
@@ -107,32 +107,32 @@
         <div>
             <div class="details-box details-box-services">
                 <div class="card-grid">
-                    <a class="card" href="#">
+                    <a class="card" href="../service/development.php">
                         <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
                         <div class="card__content">
-                            <p class="card__category">Category</p>
-                            <h3 class="card__heading">Heading 1</h3>
+                            <p class="card__category">Packaging Development</p>
+                            <h3 class="card__heading">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h3>
                         </div>
                     </a>
-                    <a class="card" href="#">
+                    <a class="card" href="../service/supply_management.php">
                         <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
                         <div class="card__content">
-                            <p class="card__category">Category</p>
-                            <h3 class="card__heading">Heading 2</h3>
+                            <p class="card__category">Packaging SupplyManagement System</p>
+                            <h3 class="card__heading">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ</h3>
                         </div>
                     </a>
-                    <a class="card" href="#">
+                    <a class="card" href="../service/warehouse.php">
                         <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
                         <div class="card__content">
-                            <p class="card__category">Category</p>
-                            <h3 class="card__heading">Heading 3</h3>
+                            <p class="card__category">Warehouse & Operation Management</p>
+                            <h3 class="card__heading">บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ</h3>
                         </div>
                     </a>
-                    <a class="card" href="#">
+                    <a class="card" href="../service/transportation.php">
                         <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
                         <div class="card__content">
-                            <p class="card__category">Category</p>
-                            <h3 class="card__heading">Heading 4</h3>
+                            <p class="card__category">Transportation Inhouse Fleet & System</p>
+                            <h3 class="card__heading">ระบบขนส่งอัจฉริยะ</h3>
                         </div>
                     </a>
                 </div>
@@ -143,7 +143,7 @@
     
 
     <!-- CONTENT / DETAILS SECTION — พันธมิตรที่ไว้วางใจเรา -->
-    <div class="content-section layout_padding">
+    <div class="content-section layout_padding section-partners">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
@@ -156,24 +156,24 @@
         <!-- logo ลูกค้าเลื่อน loop slides -->
         <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 300px; padding: 40px 0;">
             <div class="login-track" style="--time: 60s; --total: 12;">
-                <div class="login-item" style="--i: 1;"><img src="https://images.unsplash.com/photo-1758314896569-b3639ee707c4?q=80&w=715&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 2;"><img src="https://plus.unsplash.com/premium_photo-1671649240322-2124cd07eaae?q=80&w=627&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 3;"><img src="https://plus.unsplash.com/premium_photo-1673029925648-af80569efc46?q=80&w=687&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 4;"><img src="https://plus.unsplash.com/premium_photo-1666533099824-abd0ed813f2a?q=80&w=687&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 5;"><img src="https://plus.unsplash.com/premium_photo-1671105035554-7f8c2a587201?q=80&w=627&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 6;"><img src="https://plus.unsplash.com/premium_photo-1686750875748-d00684d36b1e?q=80&w=687&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 7;"><img src="https://plus.unsplash.com/premium_photo-1686844462591-393ceae12be0?q=80&w=764&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 8;"><img src="https://plus.unsplash.com/premium_photo-1686839181367-febb561faa53?q=80&w=687&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 9;"><img src="https://plus.unsplash.com/premium_photo-1671199850329-91cae34a6b6d?q=80&w=627&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 10;"><img src="https://plus.unsplash.com/premium_photo-1685655611311-9f801b43b9fa?q=80&w=627&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 11;"><img src="https://plus.unsplash.com/premium_photo-1675598468920-878ae1e46f14?q=80&w=764&auto=format&fit=crop" alt="image"></div>
-                <div class="login-item" style="--i: 12;"><img src="https://images.unsplash.com/photo-1718036094878-ecdce2b1be95?q=80&w=715&auto=format&fit=crop" alt="image"></div>
+                <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
+                <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Suzuki.png" alt="image"></div>
+                <div class="login-item" style="--i: 3;"><img src="../img/customer_logo/Changan.png" alt="image"></div>
+                <div class="login-item" style="--i: 4;"><img src="../img/customer_logo/Kn.webp" alt="image"></div>
+                <div class="login-item" style="--i: 5;"><img src="../img/customer_logo/Honda.png" alt="image"></div>
+                <div class="login-item" style="--i: 6;"><img src="../img/customer_logo/Alpla.png" alt="image"></div>
+                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/BROSE_Excellence.png" alt="image"></div>
+                <div class="login-item" style="--i: 8;"><img src="../img/customer_logo/nhk.webp" alt="image"></div>
+                <div class="login-item" style="--i: 9;"><img src="../img/customer_logo/siamgoshi.jpg" alt="image"></div>
+                <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/dn.png" alt="image"></div>
+                <div class="login-item" style="--i: 11;"><img src="../img/customer_logo/lat.png" alt="image"></div>
+                <div class="login-item" style="--i: 12;"><img src="../img/customer_logo/mitsuboshi.png" alt="image"></div>
             </div>
         </section>
     </div>
 
     <!-- CONTENT / DETAILS SECTION — สินค้าแนะนำ -->
-    <div class="content-section layout_padding">
+    <div class="content-section layout_padding section-products">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
@@ -186,20 +186,20 @@
         <div class="Block_Expanding_Cards">
             <div class="card_holder_sB">
                 <span class="US_City_sB _active" data-card-index="0">
-                    <h1 class="card_h1 _active">New York City</h1>
+                    <h1 class="card_h1 _active">RSC Box</h1>
                     <div class="card_shade _off"></div>
                     <div class="card_content _on">
                         <p class="card_dscrptn">
                             This photo taken by 
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/TaCk3NspYe0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Luca Bravo</a>.
+                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank">Luca Bravo</a>.
                         </p>
                     </div>
                     <div class="card_BG _active">
-                        <img class="Img_H100" src="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214538.jpg" sizes="40vw" srcset="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214538sm.jpg 240w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214538md.jpg 480w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214538.jpg 960w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214538xl.jpg 1600w" alt="New York City Times Square" />
+                        <img class="Img_H100" src="../img/products/box/rsc.png" alt="RSC Box" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="1">
-                    <h1 class="card_h1">Chicago</h1>
+                    <h1 class="card_h1">FTD Box</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -208,11 +208,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214449.jpg" sizes="40vw" srcset="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214449sm.jpg 240w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214449md.jpg 480w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214449.jpg 960w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214449xl.jpg 1600w" alt="New York City Times Square" />
+                        <img class="Img_H100" src="../img/products/box/ftd.png" alt="FTD Box" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="2">
-                    <h1 class="card_h1">Los Angeles</h1>
+                    <h1 class="card_h1">OSC Box</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -221,11 +221,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214502.jpg" sizes="40vw" srcset="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214502sm.jpg 240w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214502md.jpg 480w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214502.jpg 960w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214502xl.jpg 1600w" alt="New York City Times Square" />
+                        <img class="Img_H100" src="../img/products/box/osc.png" alt="OSC Box" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="3">
-                    <h1 class="card_h1">New Orleans</h1>
+                    <h1 class="card_h1">Die-Cut Box</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -234,11 +234,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214526.jpg" sizes="40vw" srcset="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214526sm.jpg 240w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214526md.jpg 480w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214526.jpg 960w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214526xl.jpg 1600w" alt="New York City Times Square" />
+                        <img class="Img_H100" src="../img/products/box/die-cut.png" alt="Die-Cut Box" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="4">
-                    <h1 class="card_h1">Miami</h1>
+                    <h1 class="card_h1">Cardboard Pallet</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -247,11 +247,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214514.jpg" sizes="40vw" srcset="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214514sm.jpg 240w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214514md.jpg 480w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214514.jpg 960w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214514xl.jpg 1600w" alt="New York City Times Square" />
+                        <img class="Img_H100" src="../img/products/box/pallet.png" alt="Cardboard Pallet" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="5">
-                    <h1 class="card_h1">San Francisco</h1>
+                    <h1 class="card_h1">Fitting Box Service</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -260,7 +260,7 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214549.jpg" sizes="40vw" srcset="https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214549sm.jpg 240w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214549md.jpg 480w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214549.jpg 960w, https://shawnryanfiles.files.wordpress.com/2022/11/2022-11-02t214549xl.jpg 1600w" alt="New York City Times Square" />
+                        <img class="Img_H100" src="../img/products/box/fit_ser.png" alt="Fitting Box Service" />
                     </div>
                 </span>
             </div>
