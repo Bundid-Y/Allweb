@@ -31,9 +31,6 @@
 
 ด้วยแนวคิดการพัฒนาอย่างต่อเนื่อง บริษัทมุ่งเน้นการปรับใช้ เทคโนโลยีอัตโนมัติและการบริหารจัดการข้อมูล เพื่อให้บริการลูกค้าได้อย่างแม่นยำ รวดเร็ว และมีมาตรฐานสูง พร้อมรองรับการเติบโตของธุรกิจทั้งในและต่างประเทศในอนาคต
                 </p>
-                <div class="details-action-group" style="margin-top:20px;">
-                    <button class="btn-buy" style="border:none; padding:10px 20px; background-color:#325662; color:#fff; border-radius:4px; font-weight:bold; cursor:pointer;" onclick="window.location.href='../main/contact.php'">ติดต่อเรา</button>
-                </div>
             </div>
         </div>
     </div>

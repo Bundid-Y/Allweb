@@ -415,8 +415,12 @@ $(document).ready(function() {
                     
                     // หลังจาก 400ms ให้เปลี่ยนรูปและเอาคลาส fade-img ออกเพื่อแสดงรูปใหม่
                     setTimeout(function() {
-                        if (images[id]) {
-                            $stickyImg.attr('src', images[id]);
+                        // ดึงรูปภาพจากแท็ก img ที่ซ่อนอยู่ใน HTML ก่อน (ถ้ามี)
+                        var dynamicImgUrl = $('#' + id).find('.section-dynamic-image').attr('src');
+                        var finalImgUrl = dynamicImgUrl ? dynamicImgUrl : images[id];
+                        
+                        if (finalImgUrl) {
+                            $stickyImg.attr('src', finalImgUrl);
                         }
                         $stickyImg.removeClass('fade-img');
                     }, 400); // 400ms ให้ตรงกับ transition ใน CSS

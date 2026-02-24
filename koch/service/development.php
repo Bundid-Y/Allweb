@@ -40,50 +40,62 @@
         </div>
     </div>
 
-    <!-- Scrolling Feature Section -->
-    <!-- ส่วนแสดงคุณสมบัติแบบเลื่อน (Scroll) โดยข้อความด้านซ้ายจะเลื่อนตามหน้าจอ ขณะที่รูปภาพด้านขวาจะถูกยึดติดไว้ (Sticky) -->
-    <div class="development-scroll-container">
-        <!-- Texts -->
-        <!-- คอนเทนเนอร์สำหรับข้อความที่จะเลื่อนตามการกวาดหน้าจอ -->
-        <div class="scroll-text-container">
-            <section id="dev-section1">
-                <div class="grid-text">
-                    <div>
-                        <h3>การออกแบบเชิงโครงสร้าง (Structural Design)</h3>
-                        <p>ดึงศักยภาพของวัสดุมาออกแบบให้มีความมั่นคงแข็งแรง รองรับน้ำหนักและกันกระแทกได้ดีเยี่ยม พร้อมทั้งประหยัดพื้นที่จัดเก็บและต้นทุนการขนส่ง (Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam error.)</p>
+    <!-- Features Section -->
+    <div class="content-section layout_padding">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            
+            <!-- Section 1 -->
+            <section id="dev-section1" style="margin-bottom: 40px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">In-house Engineering</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: #555;">เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ โดยทีมงานของเราไม่ได้ทำหน้าที่เพียงแค่การผลิตบรรจุภัณฑ์ทั่วไป แต่เป็นการออกแบบโซลูชันเชิงวิศวกรรมที่ปรับแต่งให้เหมาะสมกับความต้องการเฉพาะของแต่ละโครงการอย่างใกล้ชิด</p>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                        <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
+                        <div class="image-wrapper" style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
+                            <div style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;"></div>
+                            <img src="../img/other/service/development/inhouse.jpeg" alt="In-house Engineering Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="dev-section2">
-                <div class="grid-text">
-                    <div>
-                        <h3>นวัตกรรมวัสดุ (Material Innovation)</h3>
-                        <p>เราคัดสรรและใช้วัสดุที่ล้ำสมัย เป็นมิตรต่อสิ่งแวดล้อม และสอดคล้องกับมาตรฐานอุตสาหกรรมระดับโลก เพื่อให้บรรจุภัณฑ์ของคุณพรีเมียมและยั่งยืน (Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae cupiditate.)</p>
+
+            <!-- Section 2 -->
+            <section id="dev-section2" style="margin-bottom: 40px;">
+                <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">Digital System & Innovation</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: #555;">การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS System) ขึ้นด้วยทีมงานภายในของเราเอง เพื่อให้มั่นใจว่าระบบจะสามารถสอดคล้องกับข้อกำหนดและความต้องการที่หลากหลายของลูกค้าแต่ละรายได้อย่างไร้รอยต่อ</p>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                        <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
+                        <div class="image-wrapper" style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
+                            <div style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;"></div>
+                            <img src="../img/other/service/development/tms.jpeg" alt="Digital System & Innovation Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="dev-section3">
-                <div class="grid-text">
-                    <div>
-                        <h3>การทดสอบและประเมิน (Testing & Validation)</h3>
-                        <p>ผ่านกระบวนการทดสอบความแข็งแรง การตกกระแทก การสั่นสะเทือน หรือสภาพอากาศ เพื่อให้มั่นใจได้ว่าสินค้าจะถึงมือผู้รับอย่างปลอดภัย (Itaque omnis eum fuga iste expedita perspiciatis provident animi et soluta.)</p>
+
+            <!-- Section 3 -->
+            <section id="dev-section3" style="margin-bottom: 0px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">Advanced Tools</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: #555;">การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ SolidWorks 3D เพื่อสร้างสรรค์โครงสร้างบรรจุภัณฑ์ที่มีความแม่นยำและซับซ้อนสูง จากนั้นจึงนำระบบการตัดด้วยดิจิทัล (Digital-Cutting Optimization System) มาใช้ในกระบวนการเตรียมวัสดุเพื่อลดการสูญเสียและเพิ่มความรวดเร็วในการผลิต</p>
+                    </div>
+                    <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                        <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
+                        <div class="image-wrapper" style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
+                            <div style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;"></div>
+                            <img src="../img/other/service/development/tool.jpeg" alt="Advanced Tools Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
+                        </div>
                     </div>
                 </div>
             </section>
-        </div>
-        
-        <!-- Image Sticky Area -->
-        <!-- พื้นที่แสดงรูปภาพหลัก โดยใช้คุณสมบัติ CSS (Sticky) เพื่อให้รูปภาพไม่ขยับตามเวลาเลื่อนหน้าจอ -->
-        <div class="scroll-image-container">
-            <!-- Padded container ensures the red background is clearly visible behind the solid image -->
-            <!-- สร้างแบคกราวด์สีแดงด้านหลังและจัดตำแหน่งด้วย position -->
-            <div class="image-wrapper" style="position: relative; width: 100%; max-width: 500px; padding: 30px; box-sizing: border-box;">
-                <!-- Formal, right-aligned red angled background -->
-                <div style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;"></div>
-                
-                <!-- Main Sticky Image -->
-                <img id="sticky-dev-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg" alt="Development Service Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
-            </div>
+
         </div>
     </div>
 
