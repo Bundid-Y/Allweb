@@ -126,7 +126,7 @@
             right: calc((100vw - 100%) / -2); /* Extend to right edge */
             width: 140%; /* Make it wide enough */
             height: 120%;
-            background-color: #ff0000;
+            background-color: #e82433;
             clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
             z-index: -1;
             display: none; /* Use distinct styling below instead */
@@ -141,7 +141,7 @@
         }
         
         .red-block {
-            background-color: #ff0000;
+            background-color: #e82433;
             width: 140%; /* Significantly wider to extend left */
             height: 600px;
             position: relative;
@@ -231,7 +231,7 @@
                                     <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/BROSE_Excellence.png" alt="Brose"></div>
                                     <div class="login-item" style="--i: 8;"><img src="../img/customer_logo/nhk.webp" alt="NHK"></div>
                                     <div class="login-item" style="--i: 9;"><img src="../img/customer_logo/siamgoshi.jpg" alt="Siam Goshi"></div>
-                                    <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/dn.png" alt="DN"></div>
+                                    <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/dn2.png" alt="DN"></div>
                                     <div class="login-item" style="--i: 11;"><img src="../img/customer_logo/lat.png" alt="LAT"></div>
                                     <div class="login-item" style="--i: 12;"><img src="../img/customer_logo/mitsuboshi.png" alt="Mitsuboshi"></div>
                                     <!-- Duplicates -->
@@ -244,7 +244,7 @@
                                     <div class="login-item" style="--i: 19;"><img src="../img/customer_logo/BROSE_Excellence.png" alt="Brose"></div>
                                     <div class="login-item" style="--i: 20;"><img src="../img/customer_logo/nhk.webp" alt="NHK"></div>
                                     <div class="login-item" style="--i: 21;"><img src="../img/customer_logo/siamgoshi.jpg" alt="Siam Goshi"></div>
-                                    <div class="login-item" style="--i: 22;"><img src="../img/customer_logo/dn.png" alt="DN"></div>
+                                    <div class="login-item" style="--i: 22;"><img src="../img/customer_logo/dn2.png" alt="DN"></div>
                                     <div class="login-item" style="--i: 23;"><img src="../img/customer_logo/lat.png" alt="LAT"></div>
                                     <div class="login-item" style="--i: 24;"><img src="../img/customer_logo/mitsuboshi.png" alt="Mitsuboshi"></div>
                                 </div>
@@ -314,7 +314,7 @@
             <div class="partner-logo"><img src="../img/customer_logo/BROSE_Excellence.png" alt="Brose"></div>
             <div class="partner-logo"><img src="../img/customer_logo/nhk.webp" alt="NHK"></div>
             <div class="partner-logo"><img src="../img/customer_logo/siamgoshi.jpg" alt="Siam Goshi"></div>
-            <div class="partner-logo"><img src="../img/customer_logo/dn.png" alt="DN"></div>
+            <div class="partner-logo"><img src="../img/customer_logo/dn2.png" alt="DN"></div>
             <div class="partner-logo"><img src="../img/customer_logo/lat.png" alt="LAT"></div>
             <div class="partner-logo"><img src="../img/customer_logo/mitsuboshi.png" alt="Mitsuboshi"></div>
         </div>

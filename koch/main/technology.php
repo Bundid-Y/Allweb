@@ -205,7 +205,7 @@
 
 .tech_box_main:after{
     content: '';
-    background-color: #ff0000; /* Use KOCH red instead of yellow */
+    background-color: #e82433; /* Use KOCH red instead of yellow */
     position: absolute;
     width: 420px;
     right: 0px;
@@ -235,7 +235,7 @@
     position: absolute;
     width: 120px;
     height: 3px;
-    background-color: #ff0000; /* Underline red color matches brand */
+    background-color: #e82433; /* Underline red color matches brand */
     left: 0px;
     bottom: -10px; /* Attach string below text relative */
     top: initial;
@@ -271,7 +271,7 @@
 
 .tech_list li:before {
     content: '•'; /* Adding an automatic bullet */
-    color: #ff0000;
+    color: #e82433;
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -280,7 +280,7 @@
 }
 
 .tech_list li strong {
-    color: #D50032; /* Primary KOCH color */
+    color: #e82433; /* Primary KOCH color */
     font-weight: bold;
 }
 
@@ -299,7 +299,7 @@
 }
 .tech_box_main_3:after {
     content: '';
-    background-color: #ff0000;
+    background-color: #e82433;
     position: absolute;
     width: 420px;
     right: 0px;

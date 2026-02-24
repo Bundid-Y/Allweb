@@ -11,224 +11,234 @@
 <body>
     <?php include '../component/menubar.php'; ?>
     
-   <section class="loop-images" style="--bg: white;">
-	<div class="login-track" style="--time: 60s; --total: 12;">
-		<div class="login-item" style="--i: 1;">
-			<img src="https://images.unsplash.com/photo-1758314896569-b3639ee707c4?q=80&amp;w=715&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 2;">
-			<img src="https://plus.unsplash.com/premium_photo-1671649240322-2124cd07eaae?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 3;">
-			<img src="https://plus.unsplash.com/premium_photo-1673029925648-af80569efc46?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 4;">
-			<img src="https://plus.unsplash.com/premium_photo-1666533099824-abd0ed813f2a?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 5;">
-			<img src="https://plus.unsplash.com/premium_photo-1671105035554-7f8c2a587201?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 6;">
-			<img src="https://plus.unsplash.com/premium_photo-1686750875748-d00684d36b1e?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 7;">
-			<img src="https://plus.unsplash.com/premium_photo-1686844462591-393ceae12be0?q=80&amp;w=764&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 8;">
-			<img src="https://plus.unsplash.com/premium_photo-1686839181367-febb561faa53?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 9;">
-			<img src="https://plus.unsplash.com/premium_photo-1671199850329-91cae34a6b6d?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 10;">
-			<img src="https://plus.unsplash.com/premium_photo-1685655611311-9f801b43b9fa?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 11;">
-			<img src="https://plus.unsplash.com/premium_photo-1675598468920-878ae1e46f14?q=80&amp;w=764&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 12;">
-			<img src="https://images.unsplash.com/photo-1718036094878-ecdce2b1be95?q=80&amp;w=715&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-	</div>
-</section>
+    <main>
+        <section class="quotation-section layout_padding" style="padding-top: 60px; padding-bottom: 60px; background-color: #f9f9f9;">
+            <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+                <div class="quotation-card">
+                    <h2 class="form-title">ขอใบเสนอราคา</h2>
+                    <form action="#" method="POST" enctype="multipart/form-data" class="quotation-form">
+                        
+                        <div class="form-row row-3">
+                            <div class="form-group">
+                                <label>First Name (ชื่อ) <span class="required">*</span></label>
+                                <input type="text" name="first_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name (นามสกุล) <span class="required">*</span></label>
+                                <input type="text" name="last_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nick name (ชื่อเล่น) <span class="required">*</span></label>
+                                <input type="text" name="nick_name" required>
+                            </div>
+                        </div>
 
+                        <div class="form-row row-2">
+                            <div class="form-group">
+                                <label>Mobile Phone Number (เบอร์มือถือ) <span class="required">*</span></label>
+                                <input type="tel" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email <span class="required">*</span></label>
+                                <input type="email" name="email" required>
+                            </div>
+                        </div>
 
+                        <div class="form-row row-2">
+                            <div class="form-group">
+                                <label>Items inside your box (ประเภทสินค้าที่บรรจุ) <span class="required">*</span></label>
+                                <input type="text" name="product_type" placeholder="เช่น อาหาร, เสื้อผ้า, ผลไม้, เครื่องแก้ว" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Total Weight (น้ำหนักสินค้า) <span class="required">*</span></label>
+                                <input type="text" name="weight" placeholder="น้ำหนักรวมสินค้า (กก.) ที่บรรจุภายในกล่อง" required>
+                            </div>
+                        </div>
 
+                        <div class="form-row row-2">
+                            <div class="form-group">
+                                <label>Brand name (ชื่อแบรนด์) <span class="required">*</span></label>
+                                <input type="text" name="brand" placeholder="เช่น Friday, ไซรันรบย์, ImmoKing" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Packaging Type (ประเภทบรรจุภัณฑ์) <span class="required">*</span></label>
+                                <select name="packaging_type" required>
+                                    <option value="" disabled selected>เลือกประเภทบรรจุภัณฑ์</option>
+                                    <option value="Paper Box">กล่องกระดาษ (Paper Box)</option>
+                                    <option value="Wooden Packaging">บรรจุภัณฑ์ไม้ (Wooden Packaging)</option>
+                                    <option value="Plastic Packaging">บรรจุภัณฑ์พลาสติก (Plastic Packaging)</option>
+                                    <option value="Steel Packaging">บรรจุภัณฑ์เหล็ก (Steel Packaging)</option>
+                                </select>
+                            </div>
+                        </div>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+                        <div class="form-row row-2">
+                            <div class="form-group">
+                                <label>Box Size (ขนาดกล่องที่ต้องการ) <span class="required">*</span></label>
+                                <input type="text" name="box_size" placeholder="กว้าง x ยาว x สูง (ซม)" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Order quantity (จำนวนสั่งซื้อ) <span class="required">*</span></label>
+                                <input type="number" name="quantity" min="1" required>
+                            </div>
+                        </div>
 
-/* พื้นหลังเฉพาะหน้านี้ */
-body {
-	background-color: white;
-}
+                        <div class="form-row row-1">
+                            <div class="form-group file-group">
+                                <label>Reference (แนบไฟล์ตัวอย่างอ้างอิงที่ชอบ)</label>
+                                <div class="file-upload-wrapper">
+                                    <input type="file" name="reference_file" id="reference_file" class="file-input" accept="image/*, .pdf">
+                                    <span class="file-hint">Max. file size: 128 MB.</span>
+                                </div>
+                            </div>
+                        </div>
 
-/* เซ็คชั่นหลัก */
-section.loop-images {
-	position: relative;
-	height: 100svh;
-	width: 100%;
-	background-color: var(--bg);
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
+                        <div class="form-row row-1">
+                            <div class="form-group">
+                                <label>Other Comments (อื่นที่ต้องการแจ้งทีมงาน) <span class="required">*</span></label>
+                                <textarea name="comments" rows="5" required></textarea>
+                            </div>
+                        </div>
 
-/* แทร็คการ์ดเลื่อน */
-.login-track {
-	--left: -300rem;
-	min-width: calc(10rem * var(--total));
-	height: 30rem;
-	/* perspective: 1200px;  <-- เอาออก เพื่อไม่ให้ใช้ perspective รวม */
-}
-
-/* การ์ดแต่ละใบ — เอียงทั้งอัน (Perspective เฉพาะใบ) */
-.login-track .login-item {
-	position: absolute;
-	width: 30rem;
-	height: 30rem;
-	left: 100%;
-	animation: scroll-left var(--time) linear infinite;
-	animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
-	will-change: left;
-	cursor: pointer;
-	
-	/* ใช้ perspective ในตัว transformation เอง เพื่อให้ทุกใบเอียงเท่ากันเป๊ะ ไม่บิดเบี้ยวตามตำแหน่งจอ */
-	transform: perspective(1000px) rotateY(-30deg);
-	transition: transform 0.5s ease-in-out;
-	
-	overflow: visible;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-}
-
-/* เอาเม้าชี้ — การ์ดหันมาตรงๆ ทั้งใบ + อยู่ด้านบนสุด */
-.login-track .login-item:hover {
-	transform: perspective(1000px) rotateY(0deg) !important;
-	z-index: 10;
-}
-
-.login-track .login-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-	pointer-events: none;
-}
-
-/* แอนิเมชั่นเลื่อนซ้าย */
-@keyframes scroll-left {
-	to {
-		left: var(--left);
-	}
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-	gsap.registerPlugin(ScrollTrigger, SplitText);
-
-	const lenis = new Lenis();
-	lenis.on('scroll', ScrollTrigger.update);
-	gsap.ticker.add((time) => {
-		lenis.raf(time * 1000);
-	});
-	gsap.ticker.lagSmoothing(0);
-
-	gsap.set('.image-motion', {
-		transform: 'rotatex(90deg)',
-	});
-
-	gsap.to('.image-motion', {
-		transform: 'rotatex(0deg)',
-		scrollTrigger: {
-			trigger: '.section2',
-			start: 'top bottom',
-			end: 'bottom top',
-			scrub: true,
-			markers: false,
-		},
-	});
-
-	gsap.fromTo('.title', {
-		opacity: 0,
-		y: 50,
-	}, {
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.section3',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-
-	gsap.fromTo('.subtitle', {
-		opacity: 0,
-		y: 30,
-	}, {
-		opacity: 1,
-		y: 0,
-		duration: 0.8,
-		delay: 0.3,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.section3',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-
-	const text = new SplitText('.text', {
-		types: 'lines',
-		mask: 'lines',
-	});
-
-	gsap.fromTo(text.lines, {
-		opacity: 0,
-		y: 30,
-	}, {
-		opacity: 1,
-		y: 0,
-		stagger: 0.2,
-		duration: 0.8,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.text-content',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-
-	gsap.fromTo('.feature', {
-		opacity: 0,
-		y: 50,
-		scale: 0.9,
-	}, {
-		opacity: 1,
-		y: 0,
-		scale: 1,
-		stagger: 0.2,
-		duration: 0.8,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.features',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-});  
-  
-</script>  
-
+                        <div class="form-submit">
+                            <button type="submit" class="submit-btn">ส่งข้อมูลขอใบเสนอราคา</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <style>
+                .quotation-card {
+                    background: #ffffff;
+                    padding: 40px 50px;
+                    border-radius: 4px;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+                    border: 1px solid #ebebeb;
+                }
+                .form-title {
+                    text-align: center;
+                    font-family: 'Prompt', sans-serif;
+                    font-weight: 500;
+                    font-size: 28px;
+                    margin-bottom: 35px;
+                    color: #333;
+                }
+                .form-row {
+                    display: grid;
+                    gap: 20px;
+                    margin-bottom: 20px;
+                }
+                .row-3 { grid-template-columns: 1fr 1fr 1fr; }
+                .row-2 { grid-template-columns: 1fr 1fr; }
+                .row-1 { grid-template-columns: 1fr; }
+                
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .form-group label {
+                    font-family: 'Prompt', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #111;
+                    margin-bottom: 8px;
+                }
+                .form-group .required {
+                    color: #e82433; /* KOCH red */
+                    margin-left: 2px;
+                }
+                .form-group input[type="text"],
+                .form-group input[type="tel"],
+                .form-group input[type="email"],
+                .form-group input[type="number"],
+                .form-group select,
+                .form-group textarea {
+                    width: 100%;
+                    padding: 10px 15px;
+                    border: 1px solid #c2c2c2;
+                    border-radius: 0px;
+                    font-family: 'Prompt', sans-serif;
+                    font-size: 14px;
+                    color: #333;
+                    background-color: #fff;
+                    transition: all 0.2s ease;
+                    box-sizing: border-box;
+                }
+                .form-group input:focus,
+                .form-group select:focus,
+                .form-group textarea:focus {
+                    border-color: #e82433;
+                    outline: none;
+                }
+                .form-group input::placeholder,
+                .form-group textarea::placeholder {
+                    color: #999;
+                }
+                
+                .file-upload-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+                .file-input {
+                    font-family: 'Prompt', sans-serif;
+                    font-size: 13px;
+                    color: #333;
+                }
+                .file-input::file-selector-button {
+                    padding: 4px 10px;
+                    border: 1px solid #aaa;
+                    border-radius: 2px;
+                    background-color: #efefef;
+                    color: #000;
+                    font-family: 'Prompt', sans-serif;
+                    font-size: 12px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                }
+                .file-input::file-selector-button:hover {
+                    background-color: #dfdfdf;
+                }
+                .file-hint {
+                    font-size: 12px;
+                    color: #666;
+                    font-family: 'Prompt', sans-serif;
+                    margin-top: 2px;
+                }
+                
+                .form-submit {
+                    margin-top: 35px;
+                    text-align: center;
+                }
+                .submit-btn {
+                    background-color: #e82433;
+                    color: #fff;
+                    border: none;
+                    padding: 12px 45px;
+                    font-family: 'Prompt', sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+                .submit-btn:hover {
+                    background-color: #c81d2a;
+                }
+                
+                /* Responsive */
+                @media (max-width: 768px) {
+                    .quotation-card {
+                        padding: 30px 20px;
+                    }
+                    .row-3, .row-2 {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                    }
+                }
+            </style>
+        </section>
+    </main>
     <?php include '../component/footer.php'; ?>
 </body>
 </html>

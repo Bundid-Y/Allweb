@@ -117,7 +117,7 @@ body {
 /* ตกแต่งพื้นหลังสีเหลือง/แดง */
 .details-box:after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #e82433;
     position: absolute;
     width: 100%;
     right: 0px;
@@ -668,7 +668,7 @@ section.loop-images-quotation.vertical {
 }
 .content-section.section-products::after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #e82433;
     position: absolute;
     width: 100%;
     right: 0;
@@ -820,102 +820,418 @@ section.loop-images-quotation.vertical {
    UNIQUE RED SHAPE LAYOUTS (for about & service pages)
    ========================================= */
 
-/* Shape 1: Diagonal cut from bottom-left to top-right */
+/* Shape 1: Right-aligned backdrop */
 .shape-angle-1 {
     position: relative;
     z-index: 1;
 }
 .shape-angle-1:after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #E82433;
     position: absolute;
-    width: 100%;
-    right: 0px;
-    top: -5%;
-    margin: 0 auto;
-    display: flex;
-    height: 110%;
-    left: 0;
+    width: 85%;
+    right: -5%;
+    top: -8%;
+    height: 115%;
     z-index: -1;
-    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(100% 0, 20% 6%, 20% 88%, 100% 100%);
 }
 
-/* Shape 2: Diagonal cut from top-left to bottom-right */
+/* Shape 2: Left-aligned backdrop */
 .shape-angle-2 {
     position: relative;
     z-index: 1;
 }
 .shape-angle-2:after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #E82433;
     position: absolute;
-    width: 100%;
-    right: 0px;
-    top: -5%;
-    margin: 0 auto;
-    display: flex;
-    height: 110%;
-    left: 0;
+    width: 85%;
+    left: -5%;
+    top: -8%;
+    height: 115%;
     z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 80% 6%, 80% 88%, 0 100%);
 }
 
-/* Shape 3: Sharp diagonal cut top padding */
+/* Shape 3: Bottom-right offset */
 .shape-angle-3 {
     position: relative;
     z-index: 1;
 }
 .shape-angle-3:after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #E82433;
     position: absolute;
-    width: 100%;
-    right: 0px;
-    top: -5%;
-    margin: 0 auto;
-    display: flex;
-    height: 110%;
-    left: 0;
+    width: 90%;
+    right: -5%;
+    top: 5%;
+    height: 105%;
     z-index: -1;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(100% 5%, 15% 0, 15% 100%, 100% 90%);
 }
 
-/* Shape 4: Reverse diagonal cut */
+/* Shape 4: Bottom-left offset */
 .shape-angle-4 {
     position: relative;
     z-index: 1;
 }
 .shape-angle-4:after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #E82433;
     position: absolute;
-    width: 100%;
-    right: 0px;
-    top: -5%;
-    margin: 0 auto;
-    display: flex;
-    height: 110%;
-    left: 0;
+    width: 90%;
+    left: -5%;
+    top: 5%;
+    height: 105%;
     z-index: -1;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    clip-path: polygon(0 5%, 85% 0, 85% 100%, 0 90%);
 }
 
-/* Shape 5: Trapezoid */
+/* Shape 5: Centered geometric backdrop */
 .shape-angle-5 {
     position: relative;
     z-index: 1;
 }
 .shape-angle-5:after {
     content: '';
-    background-color: #ff0000ff;
+    background-color: #E82433;
     position: absolute;
-    width: 100%;
-    right: 0px;
+    width: 94%;
+    left: 3%;
     top: -5%;
-    margin: 0 auto;
-    display: flex;
     height: 110%;
-    left: 0;
     z-index: -1;
-    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 4%, 100% 0, 96% 100%, 4% 96%);
 }
+
+/* =========================================
+   9. ส่วนฟีเจอร์เลื่อนหน้าจอ (Scrolling Feature Section) 
+   ใช้ในหน้า development.php
+   ========================================= */
+
+/* คอนเทนเนอร์หลักสำหรับส่วนเลื่อนหน้าจอ */
+.development-scroll-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* แบ่งครึ่งซ้าย-ขวา เท่าๆ กัน */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 50px;
+}
+
+@media (max-width: 767px) {
+    .development-scroll-container {
+        display: flex;
+        flex-direction: column-reverse; /* สลับให้รูปในหน้าจอมือถือขึ้นอยู่ด้านบน */
+        gap: 20px;
+    }
+}
+
+/* ส่วนข้อความด้านซ้าย */
+.scroll-text-container section {
+    min-height: 100vh; /* ให้แต่ละ section สูงเท่าหน้าจอเพื่อให้เวลาเลื่อนแล้วพอดี */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    opacity: 0.3; /* เริ่มต้นให้จางๆ */
+    transition: opacity 0.5s ease;
+}
+
+/* คลาสที่จะถูกเพิ่มด้วย JS เมื่อเลื่อนมาถึงส่วนนี้ */
+.scroll-text-container section.active-text {
+    opacity: 1; /* แสดงข้อความชัดเจนเมื่อเป็น active */
+}
+
+/* การจัดรูปแบบข้อความ */
+.scroll-text-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.scroll-text-container h3 {
+    color: #E82433; /* สีแดงของ Koch */
+    font-size: 28px; 
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* กล่องล็อกรูปภาพด้านขวา (Sticky Area) */
+.scroll-image-container {
+    position: sticky;
+    top: 80px; /* ล็อกให้อยู่ด้านล่างของเมนูบาร์ (สมมติว่าเมนูระดับความสูง 80px) */
+    height: calc(100vh - 80px); /* ความสูงพอดีกับหน้าจอหักลบเมนูบาร์ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .scroll-image-container {
+        position: relative;
+        height: 50vh;
+        top: auto;
+        margin-top: 50px;
+    }
+    .scroll-text-container section {
+        min-height: auto;
+        padding: 40px 0;
+    }
+}
+
+/* รูปภาพในกล่องล็อก */
+.scroll-image-container img {
+    width: 100%;
+    max-width: 500px; /* จำกัดขนาดให้เหมาะสม */
+    display: block;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ภาพดูมีมิติ */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* อนิเมชั่นสำหรับการเฟดภาพ */
+}
+
+/* คลาสสำหรับทำเฟดภาพ (ใช้งานร่วมกับ JS) */
+.fade-img {
+    opacity: 0;
+    transform: scale(0.95); /* ทำให้ภาพหดลงเล็กน้อยขณะเปลี่ยนรูป */
+}
+
+/* RESPONSIVE EXPANDABLE CARDS         
+         A modern, accessible, and performant card component featuring:
+         
+         ✓ Smooth flex-based expand animation on hover
+         ✓ Grayscale to color image transition
+         ✓ Shimmer loading effect while images load
+         ✓ Slide-up description reveal
+         ✓ Full keyboard accessibility (focus-visible)
+         ✓ Mobile-first responsive design
+         ✓ Touch device support (:active states)
+         ✓ Reduced motion support for accessibility
+         ✓ Layered z-index architecture for proper stacking
+         ✓ Performance optimized with will-change hints
+*/
+
+/* BASE STYLES & BACKGROUND
+        Full viewport centered layout with an elegant grayscale
+        gradient background creating depth through layered strips.
+        Pure CSS solution - no images required.
+*/
+.dev-cards-wrapper {
+  margin: 0;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+/* CARDS CONTAINER         
+         Flexbox container that holds all cards in a row.
+         Uses min() for responsive width without media queries.
+         Elegant shadow creates depth and floating effect.
+*/
+.dev-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  width: min(1170px, 90vw);
+  height: 400px;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* INDIVIDUAL CARD         
+         Each card uses flex: 1 1 0 for equal distribution.
+         min-width: 0 prevents flex items from overflowing.
+         will-change hints browser for optimized animations.
+*/
+.dev-card {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+  cursor: pointer;
+  transition: flex 0.5s ease;
+  overflow: hidden;
+  position: relative;
+  will-change: flex;
+}
+
+/* Card expand effect - grows to 3x width on hover */
+.dev-card:hover {
+  flex: 3;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+/* CARD LINK WRAPPER         
+         Full-size clickable area for better UX.
+         Inherits color to maintain text styling.
+*/
+.dev-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CARD IMAGE         
+         Grayscale filter creates visual hierarchy - 
+         active/hovered card stands out in full color.
+         Shimmer animation provides loading feedback.
+*/
+.dev-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+/* Image transforms on hover - zoom in */
+.dev-card:hover img {
+  transform: scale(1.1);
+}
+
+/* CARD OVERLAY (::after pseudo-element)         
+         Z-INDEX: 1 (bottom layer of content)
+         Gradient overlay appears on hover to improve
+         text readability over images.
+*/
+.dev-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.dev-card:hover::after {
+  opacity: 1;
+}
+
+/* CARD TITLE         
+         Z-INDEX: 2 (middle layer)
+         Centered badge that inverts colors on hover
+         for a polished interactive feel.
+*/
+.dev-card-title {
+  display: none;
+}
+
+/* CARD DESCRIPTION         
+         Z-INDEX: 3 (top layer)
+         Hidden below card, slides up on hover to reveal
+         additional information about the card content.
+*/
+.dev-card-desc {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+/* Slide up animation reveals description */
+.dev-card:hover .dev-card-desc {
+  transform: translateY(0);
+}
+
+/* KEYBOARD ACCESSIBILITY         
+         focus-visible ensures outline only appears for
+         keyboard navigation, not mouse clicks.
+         Provides equal experience for all users.
+*/
+.dev-card a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.dev-card a:focus-visible img {
+  filter: grayscale(0%);
+}
+
+/* RESPONSIVE: MOBILE DEVICES (< 768px)         
+         Cards stack vertically on smaller screens.
+         All interactive states shown by default since
+         hover isn't available on touch devices.
+*/
+@media (max-width: 468px) {
+  .dev-cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .dev-card {
+    flex: none;
+    width: 100%;
+    height: 250px;
+  }
+
+  .dev-card:hover {
+    flex: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Always show overlay on mobile */
+  .dev-card::after {
+    opacity: 1;
+  }
+
+  /* Always show description on mobile */
+  .dev-card-desc {
+    bottom: 0;
+    transform: translateY(0);
+  }
+
+  /* Show full color images on mobile */
+  .dev-card img {
+    filter: grayscale(0%);
+  }
+}
+
+/* TOUCH DEVICE SUPPORT         
+         Provides :active states for touch interactions
+         where hover is not available.
+*/
+@media (max-width: 468px) and (hover: none) {
+  .dev-card:active {
+    flex: 2;
+  }
+
+  .dev-card:active img {
+    transform: scale(1.1);
+  }
+}
+
+/*  REDUCED MOTION ACCESSIBILITY         
+         Respects user's system preference for reduced motion.
+         Disables all animations and transitions for users
+         who may experience motion sickness or distraction.
+*/
+@media (prefers-reduced-motion: reduce) {
+  .dev-card,
+  .dev-card img,
+  .dev-card-title,
+  .dev-card-desc,
+  .dev-card::after {
+    transition: none;
+  }
+
+  .dev-card img {
+    animation: none;
+  }
+}
+

@@ -100,7 +100,7 @@
         :root {
             --header-height: 65px;
             --header-height-compact: 55px;
-            --primary-color: #D50032;
+            --primary-color: #e82433;
             --primary-dark: #a80028;
             --primary-glow: rgba(213, 0, 50, 0.15);
             --text-color: #2d3436;
@@ -380,7 +380,6 @@
             visibility: hidden;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid rgba(0, 0, 0, 0.05);
-            border-top: 3px solid var(--primary-color);
         }
 
         .header .dropdown-item:hover .dropdown-menu {

@@ -25,10 +25,11 @@
                 <h1 class="details-title">ข้อมูลบริษัท</h1>
                 <h2 style="font-size: 24px; color: #325662; margin-top: 10px;">ทำความรู้จักกับ KOCH Packaging</h2>
                 <p class="details-desc">
-                    KOCH Packaging and Packing Services Co.,Ltd คือผู้นำด้านบริการ Supply Chain และโซลูชันบรรจุภัณฑ์แบบครบวงจรสำหรับอุตสาหกรรมยานยนต์ในประเทศไทย
-                </p>
-                <p class="details-desc">
-                    ด้วยระบบและเทคโนโลยีที่ทันสมัย ผสานกับประสบการณ์อันยาวนาน เราพร้อมที่จะเติบโตเป็น <strong>"พันธมิตรเชิงกลยุทธ์"</strong> ที่แข็งแกร่งและไว้วางใจได้ของคุณ
+                  Koch Packaging and Packing Services Co., Ltd. เป็นบริษัทไทยที่ดำเนินธุรกิจด้าน การผลิตและให้บริการโซลูชันด้านบรรจุภัณฑ์ และซัพพลายเชนแบบครบวงจร ตั้งแต่การออกแบบ การจัดหาวัตถุดิบ การผลิต ไปจนถึงการบริหารคลังสินค้าและโลจิสติกส์อย่างมีประสิทธิภาพ
+
+เริ่มต้นจากการให้บริการด้าน ผลิตและจำหน่ายผลิตภัณฑ์บรรจุภัณฑ์จากกระดาษกระดาษลอนลูกฟูกและกระดาษแข็งลอนลูกฟูก ซึ่งเป็นหัวใจของการปกป้องสินค้าในการขนส่งและจัดเก็บ จากนั้นได้พัฒนาให้บริการครอบคลุมทั้ง Packaging Supply Management System (VMI), Warehouse & Operation Management, Transportation (In-house Fleet & System) และบริการด้านโลจิสติกส์อื่นๆ ที่เหมาะกับอุตสาหกรรมขนาดใหญ่ โดยเฉพาะอุตสาหกรรมยานยนต์และอิเล็กทรอนิกส์
+
+ด้วยแนวคิดการพัฒนาอย่างต่อเนื่อง บริษัทมุ่งเน้นการปรับใช้ เทคโนโลยีอัตโนมัติและการบริหารจัดการข้อมูล เพื่อให้บริการลูกค้าได้อย่างแม่นยำ รวดเร็ว และมีมาตรฐานสูง พร้อมรองรับการเติบโตของธุรกิจทั้งในและต่างประเทศในอนาคต
                 </p>
                 <div class="details-action-group" style="margin-top:20px;">
                     <button class="btn-buy" style="border:none; padding:10px 20px; background-color:#325662; color:#fff; border-radius:4px; font-weight:bold; cursor:pointer;" onclick="window.location.href='../main/contact.php'">ติดต่อเรา</button>

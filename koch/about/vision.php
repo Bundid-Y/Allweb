@@ -20,18 +20,15 @@
                 
                 <h2 style="font-size: 24px; color: #325662; margin-top: 20px;">วิสัยทัศน์ (Vision)</h2>
                 <p class="details-desc" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    มุ่งสู่การเป็นผู้นำด้านการให้บริการซัพพลายเชนและโซลูชันด้านบรรจุภัณฑ์ที่ทันสมัยและยั่งยืนสำหรับอุตสาหกรรมในประเทศไทยและระดับสากล
+                    โค้ช แพคเกจจิ้ง แอนด์ แพคกิ้ง เซอร์วิสเซส จำกัด มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน Supply Chain Services สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่ ชาญฉลาด (Smart) รวดเร็ว (Fast) และยั่งยืน (Sustainable) เพื่อสนับสนุนการเติบโตของลูกค้าในทุกมิติของซัพพลายเชน
+
+บริษัทมีเป้าหมายในการเชื่อมโยงงานด้าน การพัฒนาบรรจุภัณฑ์ ระบบบริหารจัดการบรรจุภัณฑ์ (VMI) การบริหารคลังสินค้า และการขนส่ง เข้าด้วยกันอย่างเป็นระบบ เพื่อเพิ่มประสิทธิภาพ ลดต้นทุน และลดความซ้ำซ้อนในกระบวนการดำเนินงานของลูกค้า
+
+KOCH ให้ความสำคัญกับการพัฒนา ระบบวิศวกรรมภายใน (In-house Engineering) และ ระบบดิจิทัล เพื่อยกระดับความแม่นยำ ความโปร่งใส และความสามารถในการควบคุมกระบวนการทำงานแบบเรียลไทม์ พร้อมทั้งมุ่งเน้นการเติบโตอย่างยั่งยืน ควบคู่ไปกับความรับผิดชอบต่อสิ่งแวดล้อมและสังคม
                 </p>
-                
-                <h2 style="font-size: 24px; color: #325662; margin-top: 30px;">พันธกิจ (Mission)</h2>
-                <ul class="details-desc" style="text-align: left; display: inline-block; margin-top: 10px; padding-left: 20px;">
-                    <li>นำเสนอบริการนวัตกรรมบรรจุภัณฑ์และระบบจัดการทรัพยากรที่มีประสิทธิภาพสูงสุด</li>
-                    <li>สร้างความพึงพอใจและคุณค่าร่วมให้กับลูกค้า คู่ค้า และพนักงาน (Smart, Fast, Sustainable)</li>
-                    <li>ให้ความสำคัญกับการเป็นมิตรต่อสิ่งแวดล้อมเพื่อสังคมที่ยั่งยืน</li>
-                </ul>
             </div>
             <!-- Bottom: Image with custom red shape -->
-            <div style="width: 100%; max-width: 800px; margin: 40px auto 0 auto;">
+            <div style="width: 100%; max-width: 500px; margin: 40px auto 0 auto;">
                 <div class="details-box shape-angle-3">
                     <img src="../img/other/index/about/box_about.png" alt="Vision and Mission" style="width:100%; position:relative; z-index:2;">
                 </div>

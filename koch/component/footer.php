@@ -58,7 +58,7 @@
    Footer Component Styles
    ========================================= */
 .footer-custom {
-    background-color: #D50032; /* Primary red matching site theme */
+    background-color: #e82433; /* Primary red matching site theme */
     color: #ffffff;
     font-family: inherit; /* Uses Inter/Prompt from body */
     padding-top: 70px;

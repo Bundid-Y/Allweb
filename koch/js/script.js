@@ -371,13 +371,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ----------------------------------------------------
-// Scroll Logic (from development.php)
+// ระบบฟีเจอร์เลื่อนหน้าจอ (Scrolling Feature Logic for development.php)
 // ----------------------------------------------------
 $(document).ready(function() {
-    // Only run if the relevant element exists on the page
+    // ทำงานเมื่อมีคลาส .development-scroll-container อยู่ในหน้าเท่านั้น
     if ($('.development-scroll-container').length === 0) return;
 
-    // Define images for each section matching the original code
+    // กำหนด URL ของรูปภาพให้ตรงกับ ID ของแต่ละส่วนข้อความ
     const images = {
         'dev-section1': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg',
         'dev-section2': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/2fgvaqx-fxs-oskar-krawczyk.jpg',
@@ -388,7 +388,9 @@ $(document).ready(function() {
     const $stickyImg = $('#sticky-dev-img');
     let currentSection = '';
 
+    // ฟังก์ชันทำงานเวลาเลื่อนหน้าจอ
     function onScroll() {
+        // หาจุดกึ่งกลางของหน้าจอเพื่อให้เปลี่ยนรูปเมื่ออ่านถึงตรงกลาง
         var scrollPosition = $(window).scrollTop() + $(window).height() / 2;
 
         $sections.each(function() {
@@ -396,34 +398,37 @@ $(document).ready(function() {
             var sectionTop = $this.offset().top;
             var sectionBottom = sectionTop + $this.outerHeight();
 
-            // Check if scroll position is within this section
+            // ตรวจสอบว่าเลื่อนมาจุดที่แสดงส่วนข้อความนี้หรือยัง
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 var id = $this.attr('id');
                 
-                // Add active class to text for highlighting effect
+                // เพิ่มคลาส active ให้แสดงข้อความให้ชัดเจนขึ้น
                 $sections.removeClass('active-text');
                 $this.addClass('active-text');
 
-                // If changed, animate the image src
+                // ถ้าเลื่อนเปลี่ยนส่วนข้อความ ให้แสดงอนิเมชั่นเปลี่ยนรูป
                 if (currentSection !== id) {
                     currentSection = id;
                     
-                    // Fade out
+                    // เฟดภาพออก (เพิ่ม class fade-img)
                     $stickyImg.addClass('fade-img');
                     
-                    // After fade out, change src and fade in
+                    // หลังจาก 400ms ให้เปลี่ยนรูปและเอาคลาส fade-img ออกเพื่อแสดงรูปใหม่
                     setTimeout(function() {
-                        $stickyImg.attr('src', images[id]);
+                        if (images[id]) {
+                            $stickyImg.attr('src', images[id]);
+                        }
                         $stickyImg.removeClass('fade-img');
-                    }, 400); // 400ms matching css transition
+                    }, 400); // 400ms ให้ตรงกับ transition ใน CSS
                 }
             }
         });
     }
 
+    // เรียกทำงานตอน scroll และ resize
     $(window).on('scroll resize', onScroll);
 
-    // Trigger scroll once on load to establish initial state
+    // ทำงานครั้งแรกเพื่อตั้งค่าเริ่มต้น
     setTimeout(onScroll, 100);
 });
 
@@ -586,3 +591,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// โค้ดที่ซ้ำซ้อนสำหรับ development.php บริเวณนี้ได้ถูกลบออกไปแล้ว

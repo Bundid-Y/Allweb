@@ -11,222 +11,524 @@
 <body>
     <?php include '../component/menubar.php'; ?>
     
-   <section class="loop-images" style="--bg: white;">
-	<div class="login-track" style="--time: 60s; --total: 12;">
-		<div class="login-item" style="--i: 1;">
-			<img src="https://images.unsplash.com/photo-1758314896569-b3639ee707c4?q=80&amp;w=715&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 2;">
-			<img src="https://plus.unsplash.com/premium_photo-1671649240322-2124cd07eaae?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 3;">
-			<img src="https://plus.unsplash.com/premium_photo-1673029925648-af80569efc46?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 4;">
-			<img src="https://plus.unsplash.com/premium_photo-1666533099824-abd0ed813f2a?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 5;">
-			<img src="https://plus.unsplash.com/premium_photo-1671105035554-7f8c2a587201?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 6;">
-			<img src="https://plus.unsplash.com/premium_photo-1686750875748-d00684d36b1e?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 7;">
-			<img src="https://plus.unsplash.com/premium_photo-1686844462591-393ceae12be0?q=80&amp;w=764&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 8;">
-			<img src="https://plus.unsplash.com/premium_photo-1686839181367-febb561faa53?q=80&amp;w=687&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 9;">
-			<img src="https://plus.unsplash.com/premium_photo-1671199850329-91cae34a6b6d?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 10;">
-			<img src="https://plus.unsplash.com/premium_photo-1685655611311-9f801b43b9fa?q=80&amp;w=627&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 11;">
-			<img src="https://plus.unsplash.com/premium_photo-1675598468920-878ae1e46f14?q=80&amp;w=764&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-		<div class="login-item" style="--i: 12;">
-			<img src="https://images.unsplash.com/photo-1718036094878-ecdce2b1be95?q=80&amp;w=715&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
-		</div>
-	</div>
-</section>
+   <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+    <div class="login-page-wrapper">
+        <div class="login-container">
+            <div class="forms-container">
+                <div class="signin-signup">
+                    <form action="#" class="sign-in-form login-form">
+                        <h2 class="login-title">เข้าสู่ระบบ</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="ชื่อผู้ใช้" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="รหัสผ่าน" />
+                        </div>
+                        <input type="submit" value="เข้าสู่ระบบ" class="login-btn solid" />
+                        <p class="social-text">หรือเข้าสู่ระบบด้วยแพลตฟอร์มโซเชียล</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-line"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </form>
+                    <form action="#" class="sign-up-form login-form">
+                        <h2 class="login-title">ลงทะเบียน</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="ชื่อผู้ใช้" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="อีเมล" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="รหัสผ่าน" />
+                        </div>
+                        <input type="submit" class="login-btn" value="ลงทะเบียน" />
+                        <p class="social-text">หรือลงทะเบียนด้วยแพลตฟอร์มโซเชียล</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-line"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>เพิ่งมาใหม่ใช่ไหม?</h3>
+                        <p>
+                            ค้นพบโลกแห่งความเป็นไปได้! เข้าร่วมกับเราและสำรวจชุมชนที่มีชีวิตชีวาที่ความคิดเติบโตและการเชื่อมต่อเจริญก้าวหน้า
+                        </p>
+                        <button class="login-btn transparent" id="sign-up-btn">
+                            ลงทะเบียน
+                        </button>
+                    </div>
+                    <img src="https://i.ibb.co/6HXL6q1/Privacy-policy-rafiki.png" class="image" alt="" />
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>หนึ่งในสมาชิกที่ทรงคุณค่าของเรา</h3>
+                        <p>
+                            ขอบคุณที่เป็นส่วนหนึ่งของชุมชนของเรา การปรากฏตัวของคุณช่วยเติมเต็มประสบการณ์ที่มีร่วมกันของเรา มาสานต่อการเดินทางนี้ไปด้วยกัน!
+                        </p>
+                        <button class="login-btn transparent" id="sign-in-btn">
+                            เข้าสู่ระบบ
+                        </button>
+                    </div>
+                    <img src="https://i.ibb.co/nP8H853/Mobile-login-rafiki.png" class="image" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* พื้นหลังเฉพาะหน้านี้ */
-body {
-	background-color: white;
+/* Login Page Specific Styles */
+.login-page-wrapper {
+    margin-top: 0; /* Removed margin to let background go to top */
+    padding-top: 80px; /* Space for menubar content */
+    width: 100%;
+    min-height: 100vh; /* Changed from calc(100vh - 80px) */
+    display: flex;
+    flex-direction: column;
 }
 
-/* เซ็คชั่นหลัก */
-section.loop-images {
-	position: relative;
-	height: 100svh;
-	width: 100%;
-	background-color: var(--bg);
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+.login-container {
+  position: relative;
+  width: 100%;
+  flex: 1; 
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 100vh; /* Changed from calc(100vh - 80px) */
 }
 
-/* แทร็คการ์ดเลื่อน */
-.login-track {
-	--left: -300rem;
-	min-width: calc(10rem * var(--total));
-	height: 30rem;
-	/* perspective: 1200px;  <-- เอาออก เพื่อไม่ให้ใช้ perspective รวม */
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-/* การ์ดแต่ละใบ — เอียงทั้งอัน (Perspective เฉพาะใบ) */
-.login-track .login-item {
-	position: absolute;
-	width: 30rem;
-	height: 30rem;
-	left: 100%;
-	animation: scroll-left var(--time) linear infinite;
-	animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
-	will-change: left;
-	cursor: pointer;
-	
-	/* ใช้ perspective ในตัว transformation เอง เพื่อให้ทุกใบเอียงเท่ากันเป๊ะ ไม่บิดเบี้ยวตามตำแหน่งจอ */
-	transform: perspective(1000px) rotateY(-30deg);
-	transition: transform 0.5s ease-in-out;
-	
-	overflow: visible;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
 }
 
-/* เอาเม้าชี้ — การ์ดหันมาตรงๆ ทั้งใบ + อยู่ด้านบนสุด */
-.login-track .login-item:hover {
-	transform: perspective(1000px) rotateY(0deg) !important;
-	z-index: 10;
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-.login-track .login-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-	pointer-events: none;
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
 }
 
-/* แอนิเมชั่นเลื่อนซ้าย */
-@keyframes scroll-left {
-	to {
-		left: var(--left);
-	}
+form.sign-in-form {
+  z-index: 2;
+}
+
+.login-title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #e82433; /* Koch Red */
+  border-color: #e82433;
+}
+
+.login-btn {
+  width: 150px;
+  background-color: #325662; /* Koch Dark Blue */
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #e82433; /* Koch Red on hover */
+}
+
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.login-container:before {
+  content: "";
+  position: absolute;
+  height: 3000px;
+  width: 3000px;
+  top: -50%;
+  right: 48%; /* Adjusts the angle/position of the straight line */
+  transform: translateY(-50%) rotate(15deg); /* Added rotation for the diagonal line */
+  background-image: linear-gradient(-45deg, #e82433 0%, #325662 100%);
+  transition: 1.8s ease-in-out;
+  border-radius: 0; /* Changed from 50% to 0 for a straight edge */
+  z-index: 6;
+}
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.login-btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.login-btn.transparent:hover {
+  background-color: #fff;
+  color: #325662;
+}
+
+.right-panel .image,
+.right-panel .content {
+  transform: translateX(800px);
+}
+
+/* ANIMATION */
+
+.login-container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.login-container.sign-up-mode .left-panel .image,
+.login-container.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.login-container.sign-up-mode .signin-signup {
+  left: 25%;
+}
+
+.login-container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.login-container.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.login-container.sign-up-mode .right-panel .image,
+.login-container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.login-container.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.login-container.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+@media (max-width: 870px) {
+  .login-container {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .signin-signup {
+    width: 100%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .signin-signup,
+  .login-container.sign-up-mode .signin-signup {
+    left: 50%;
+  }
+
+  .panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+
+  .right-panel {
+    grid-row: 3 / 4;
+  }
+
+  .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 200px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .panel .content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .login-btn.transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .login-container:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .login-container.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .login-container.sign-up-mode .left-panel .image,
+  .login-container.sign-up-mode .left-panel .content {
+    transform: translateY(-300px);
+  }
+
+  .login-container.sign-up-mode .right-panel .image,
+  .login-container.sign-up-mode .right-panel .content {
+    transform: translateY(0px);
+  }
+
+  .right-panel .image,
+  .right-panel .content {
+    transform: translateY(300px);
+  }
+
+  .login-container.sign-up-mode .signin-signup {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  .login-form {
+    padding: 0 1.5rem;
+  }
+
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .login-container {
+    padding: 1.5rem;
+  }
+
+  .login-container:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .login-container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-	gsap.registerPlugin(ScrollTrigger, SplitText);
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const login_container = document.querySelector(".login-container");
 
-	const lenis = new Lenis();
-	lenis.on('scroll', ScrollTrigger.update);
-	gsap.ticker.add((time) => {
-		lenis.raf(time * 1000);
-	});
-	gsap.ticker.lagSmoothing(0);
+    if(sign_up_btn && sign_in_btn && login_container) {
+        sign_up_btn.addEventListener("click", () => {
+            login_container.classList.add("sign-up-mode");
+        });
 
-	gsap.set('.image-motion', {
-		transform: 'rotatex(90deg)',
-	});
-
-	gsap.to('.image-motion', {
-		transform: 'rotatex(0deg)',
-		scrollTrigger: {
-			trigger: '.section2',
-			start: 'top bottom',
-			end: 'bottom top',
-			scrub: true,
-			markers: false,
-		},
-	});
-
-	gsap.fromTo('.title', {
-		opacity: 0,
-		y: 50,
-	}, {
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.section3',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-
-	gsap.fromTo('.subtitle', {
-		opacity: 0,
-		y: 30,
-	}, {
-		opacity: 1,
-		y: 0,
-		duration: 0.8,
-		delay: 0.3,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.section3',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-
-	const text = new SplitText('.text', {
-		types: 'lines',
-		mask: 'lines',
-	});
-
-	gsap.fromTo(text.lines, {
-		opacity: 0,
-		y: 30,
-	}, {
-		opacity: 1,
-		y: 0,
-		stagger: 0.2,
-		duration: 0.8,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.text-content',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-
-	gsap.fromTo('.feature', {
-		opacity: 0,
-		y: 50,
-		scale: 0.9,
-	}, {
-		opacity: 1,
-		y: 0,
-		scale: 1,
-		stagger: 0.2,
-		duration: 0.8,
-		ease: 'power3.out',
-		scrollTrigger: {
-			trigger: '.features',
-			start: 'top 80%',
-			end: 'bottom 20%',
-			toggleActions: 'play none none reverse',
-		},
-	});
-});  
-  
+        sign_in_btn.addEventListener("click", () => {
+            login_container.classList.remove("sign-up-mode");
+        });
+    }
+});
 </script>  
 
     <?php include '../component/footer.php'; ?>
