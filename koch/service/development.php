@@ -48,7 +48,7 @@
             <section id="dev-section1" style="margin-bottom: 40px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">In-house Engineering</h3>
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">งานวิศวกรรมภายใน</h3>
                         <p style="font-size: 16px; line-height: 1.6; color: #555;">เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ โดยทีมงานของเราไม่ได้ทำหน้าที่เพียงแค่การผลิตบรรจุภัณฑ์ทั่วไป แต่เป็นการออกแบบโซลูชันเชิงวิศวกรรมที่ปรับแต่งให้เหมาะสมกับความต้องการเฉพาะของแต่ละโครงการอย่างใกล้ชิด</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
@@ -66,7 +66,7 @@
                 <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">Digital System & Innovation</h3>
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">การพัฒนาระบบดิจิทัลและนวัตกรรม</h3>
                         <p style="font-size: 16px; line-height: 1.6; color: #555;">การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS System) ขึ้นด้วยทีมงานภายในของเราเอง เพื่อให้มั่นใจว่าระบบจะสามารถสอดคล้องกับข้อกำหนดและความต้องการที่หลากหลายของลูกค้าแต่ละรายได้อย่างไร้รอยต่อ</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
@@ -83,7 +83,7 @@
             <section id="dev-section3" style="margin-bottom: 0px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">Advanced Tools</h3>
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">เครื่องมือและเทคโนโลยีขั้นสูง</h3>
                         <p style="font-size: 16px; line-height: 1.6; color: #555;">การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ SolidWorks 3D เพื่อสร้างสรรค์โครงสร้างบรรจุภัณฑ์ที่มีความแม่นยำและซับซ้อนสูง จากนั้นจึงนำระบบการตัดด้วยดิจิทัล (Digital-Cutting Optimization System) มาใช้ในกระบวนการเตรียมวัสดุเพื่อลดการสูญเสียและเพิ่มความรวดเร็วในการผลิต</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
@@ -113,10 +113,10 @@
   <!-- Card 1: Cliff Coast -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1015/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1015/800/600" alt="Mountain landscape with river" loading="lazy" />
+      <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
       <div class="dev-card-title">Cliff Coast</div>
       <p class="dev-card-desc">
-        Rocky shoreline with blue water and a wide sky.
+        บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
       </p>
     </a>
   </div>
@@ -124,10 +124,10 @@
   <!-- Card 2: Forest Lights -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1022/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1022/800/600" alt="A vivid display of the aurora borealis." loading="lazy" />
+      <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis." loading="lazy" />
       <div class="dev-card-title">Forest Lights</div>
       <p class="dev-card-desc">
-        A vivid display of the aurora borealis.
+        นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
       </p>
     </a>
   </div>
@@ -135,10 +135,10 @@
   <!-- Card 3: Nature Walk -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1035/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1035/800/600" alt="Person walking in nature" loading="lazy" />
+      <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
       <div class="dev-card-title">Nature Walk</div>
       <p class="dev-card-desc">
-        Explore the beauty of nature through peaceful trails.
+        บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน
       </p>
     </a>
   </div>
@@ -146,10 +146,10 @@
   <!-- Card 4: Mountain View -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1045/800/600" alt="City skyline at night" loading="lazy" />
+      <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
       <div class="dev-card-title">Mountain View</div>
       <p class="dev-card-desc">
-        Clouds drifting over a peaceful mountain landscape.
+       รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
       </p>
     </a>
   </div>
@@ -157,10 +157,10 @@
   <!-- Card 5: Sunset -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1055/800/600" alt="Beautiful sunset over horizon" loading="lazy" />
+      <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon" loading="lazy" />
       <div class="dev-card-title">Golden Sunset</div>
       <p class="dev-card-desc">
-        Witness the golden hour as the sun sets on the horizon.
+       ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
       </p>
     </a>
   </div>

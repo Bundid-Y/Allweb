@@ -829,10 +829,10 @@ section.loop-images-quotation.vertical {
     content: '';
     background-color: #E82433;
     position: absolute;
-    width: 85%;
-    right: -5%;
-    top: -8%;
-    height: 115%;
+    width: 95%;
+    right: -10%;
+    top: -12%;
+    height: 125%;
     z-index: -1;
     clip-path: polygon(100% 0, 20% 6%, 20% 88%, 100% 100%);
 }
@@ -846,10 +846,10 @@ section.loop-images-quotation.vertical {
     content: '';
     background-color: #E82433;
     position: absolute;
-    width: 85%;
-    left: -5%;
-    top: -8%;
-    height: 115%;
+    width: 95%;
+    left: -10%;
+    top: -12%;
+    height: 125%;
     z-index: -1;
     clip-path: polygon(0 0, 80% 6%, 80% 88%, 0 100%);
 }

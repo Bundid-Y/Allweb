@@ -48,14 +48,14 @@
             <section id="dev-section1" style="margin-bottom: 40px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">In-house Engineering</h3>
-                        <p style="font-size: 16px; line-height: 1.6; color: #555;">เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ โดยทีมงานของเราไม่ได้ทำหน้าที่เพียงแค่การผลิตบรรจุภัณฑ์ทั่วไป แต่เป็นการออกแบบโซลูชันเชิงวิศวกรรมที่ปรับแต่งให้เหมาะสมกับความต้องการเฉพาะของแต่ละโครงการอย่างใกล้ชิด</p>
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">ติดตามสถานะบรรจุภัณฑ์</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: #555;">ติดตามการหมุนเวียนของบรรจุภัณฑ์แบบใช้ซ้ำได้อย่างเป็นระบบ ตั้งแต่การจ่ายออก การใช้งาน จนถึงการส่งคืน ช่วยลดการสูญหาย เพิ่มความโปร่งใส และควบคุมต้นทุนได้อย่างมีประสิทธิภาพ</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
                         <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
                         <div class="image-wrapper" style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
                             <div style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;"></div>
-                            <img src="../img/other/service/development/inhouse.jpeg" alt="In-house Engineering Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
+                            <img src="../img/other/service/supply/tracking.jpeg" alt="In-house Engineering Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
                         </div>
                     </div>
                 </div>
@@ -66,14 +66,14 @@
                 <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">Digital System & Innovation</h3>
-                        <p style="font-size: 16px; line-height: 1.6; color: #555;">การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS System) ขึ้นด้วยทีมงานภายในของเราเอง เพื่อให้มั่นใจว่าระบบจะสามารถสอดคล้องกับข้อกำหนดและความต้องการที่หลากหลายของลูกค้าแต่ละรายได้อย่างไร้รอยต่อ</p>
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: #555;">ควบคุมปริมาณบรรจุภัณฑ์คงคลังให้เหมาะสมกับปริมาณงานจริง ตรวจสอบสถานะคงเหลือแบบเรียลไทม์ ลดปัญหาขาดแคลนหรือสต็อกเกินความจำเป็น</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
                         <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
                         <div class="image-wrapper" style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
                             <div style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;"></div>
-                            <img src="../img/other/service/development/tms.jpeg" alt="Digital System & Innovation Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
+                            <img src="../img/other/service/supply/inventory.jpeg" alt="Digital System & Innovation Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
                         </div>
                     </div>
                 </div>
@@ -83,14 +83,14 @@
             <section id="dev-section3" style="margin-bottom: 0px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">Advanced Tools</h3>
-                        <p style="font-size: 16px; line-height: 1.6; color: #555;">การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ SolidWorks 3D เพื่อสร้างสรรค์โครงสร้างบรรจุภัณฑ์ที่มีความแม่นยำและซับซ้อนสูง จากนั้นจึงนำระบบการตัดด้วยดิจิทัล (Digital-Cutting Optimization System) มาใช้ในกระบวนการเตรียมวัสดุเพื่อลดการสูญเสียและเพิ่มความรวดเร็วในการผลิต</p>
+                        <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">วิเคราะห์ข้อมูลและวางแผนการใช้งาน</h3>
+                        <p style="font-size: 16px; line-height: 1.6; color: #555;">นำข้อมูลการใช้งานมาวิเคราะห์แนวโน้มและประสิทธิภาพ เพื่อวางแผนการจัดสรรบรรจุภัณฑ์ให้สอดคล้องกับปริมาณงาน ช่วยเพิ่มความแม่นยำในการตัดสินใจและลดต้นทุนในระยะยาว</p>
                     </div>
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
                         <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
                         <div class="image-wrapper" style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
                             <div style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;"></div>
-                            <img src="../img/other/service/development/tool.jpeg" alt="Advanced Tools Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
+                            <img src="../img/other/service/supply/data_analytics.jpeg" alt="Advanced Tools Image" style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
                         </div>
                     </div>
                 </div>
@@ -113,10 +113,10 @@
   <!-- Card 1: Cliff Coast -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1015/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1015/800/600" alt="Mountain landscape with river" loading="lazy" />
+      <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
       <div class="dev-card-title">Cliff Coast</div>
       <p class="dev-card-desc">
-        Rocky shoreline with blue water and a wide sky.
+        บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
       </p>
     </a>
   </div>
@@ -124,10 +124,10 @@
   <!-- Card 2: Forest Lights -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1022/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1022/800/600" alt="A vivid display of the aurora borealis." loading="lazy" />
+      <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis." loading="lazy" />
       <div class="dev-card-title">Forest Lights</div>
       <p class="dev-card-desc">
-        A vivid display of the aurora borealis.
+        นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
       </p>
     </a>
   </div>
@@ -135,10 +135,10 @@
   <!-- Card 3: Nature Walk -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1035/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1035/800/600" alt="Person walking in nature" loading="lazy" />
+      <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
       <div class="dev-card-title">Nature Walk</div>
       <p class="dev-card-desc">
-        Explore the beauty of nature through peaceful trails.
+        รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
       </p>
     </a>
   </div>
@@ -146,10 +146,10 @@
   <!-- Card 4: Mountain View -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1045/800/600" alt="City skyline at night" loading="lazy" />
+      <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
       <div class="dev-card-title">Mountain View</div>
       <p class="dev-card-desc">
-        Clouds drifting over a peaceful mountain landscape.
+        รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
       </p>
     </a>
   </div>
@@ -157,10 +157,10 @@
   <!-- Card 5: Sunset -->
   <div class="dev-card">
     <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer">
-      <img src="https://picsum.photos/id/1055/800/600" alt="Beautiful sunset over horizon" loading="lazy" />
+      <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon" loading="lazy" />
       <div class="dev-card-title">Golden Sunset</div>
       <p class="dev-card-desc">
-        Witness the golden hour as the sun sets on the horizon.
+        ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
       </p>
     </a>
   </div>
