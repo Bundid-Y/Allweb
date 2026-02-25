@@ -45,7 +45,7 @@
             width: 100%;
             height: 100%;
             z-index: 1;
-            border-radius: 8px;
+            border-radius: 0;
             display: flex;
         }
 
@@ -58,7 +58,7 @@
             height: 100%;
             background-color: #E82433;
             z-index: -1;
-            border-radius: 8px;
+            border-radius: 0;
             transform: rotate(-3deg);
             transform-origin: bottom left;
             opacity: 0.9;
@@ -71,7 +71,7 @@
             position: relative;
             z-index: 2;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-            border-radius: 8px;
+            border-radius: 0;
             border: 1px solid #f0f0f0;
             width: 100%;
             min-height: 480px;

@@ -536,26 +536,29 @@ section.loop-images-quotation {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	perspective: 1000px;
 }
 
 .login-track {
 	--left: -150rem;
 	min-width: calc(5rem * var(--total));
 	height: 10rem;
+	transform-style: preserve-3d;
 }
 
 .login-track .login-item {
 	position: absolute;
 	width: 10rem;
 	height: 10rem;
-	left: 100%;
+	left: 0;
+	translate: 100vw 0;
 	animation: scroll-left var(--time) linear infinite;
 	animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
-	will-change: left;
+	will-change: translate, rotate;
 	cursor: pointer;
 	
-	transform: perspective(1000px) rotateY(-30deg);
-	transition: transform 0.5s ease-in-out;
+	rotate: y -30deg;
+	transition: rotate 0.5s ease-in-out;
 	
 	overflow: hidden;
 	transform-style: preserve-3d;
@@ -565,7 +568,7 @@ section.loop-images-quotation {
 }
 
 .login-track .login-item:hover {
-	transform: perspective(1000px) rotateY(0deg) !important;
+	rotate: y 0deg !important;
 	z-index: 10;
 }
 
@@ -580,8 +583,11 @@ section.loop-images-quotation {
 }
 
 @keyframes scroll-left {
-	to {
-		left: var(--left);
+	0% {
+		translate: 100vw 0;
+	}
+	100% {
+		translate: var(--left) 0;
 	}
 }
 
@@ -593,29 +599,35 @@ section.loop-images-quotation.vertical {
 
 .login-track.vertical {
     --top: -150rem;
-    width: 100%; /* Full width of container to center items */
-    min-width: unset; /* Override horizontal min-width */
+    width: 100%;
+    min-width: unset;
     height: 100%;
     position: relative;
+    transform-style: preserve-3d;
 }
 
 .login-track.vertical .login-item {
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%) perspective(1000px) rotateX(-20deg); /* Center & Vertical Tilt */
-    top: 100%; /* Start below */
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    translate: 0 100vh;
+    rotate: x -20deg;
     animation: scroll-up var(--time) linear infinite;
-    /* Delay logic remains the same from inline styles or inherited */
     animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
+    will-change: translate;
 }
 
 .login-track.vertical .login-item:hover {
-    transform: translateX(-50%) perspective(1000px) rotateX(0deg) !important;
+    rotate: x 0deg !important;
     z-index: 10;
 }
 
 @keyframes scroll-up {
-	to {
-		top: var(--top);
+	0% {
+		translate: 0 100vh;
+	}
+	100% {
+		translate: 0 var(--top);
 	}
 }
 
@@ -640,16 +652,16 @@ section.loop-images-quotation.vertical {
     position: absolute;
     width: 100%;
     right: 0;
-    top: 0;
+    top: 40px;
     margin: 0 auto;
     display: flex;
-    height: 600px;
+    height: 420px;
     left: 0;
     z-index: -1;
-    /* กลับด้านจาก About Us: จากขวา ~60%, เอียง 10% */
-    clip-path: polygon(100% 0, 40% 10%, 40% 75%, 100% 100%);
+    /* ตัดให้พอดีกับส่วนของโลโก้ที่ลดขนาดลงแล้ว */
+    clip-path: polygon(100% 0, 35% 10%, 35% 90%, 100% 100%);
     transform: translateY(var(--deco-y));
-    transition: transform 0.1s;
+    will-change: transform;
 }
 
 /* ============================
@@ -681,7 +693,7 @@ section.loop-images-quotation.vertical {
     /* จากซ้าย ~65%, เอียงชันกว่า About Us */
     clip-path: polygon(0 0, 65% 5%, 65% 85%, 0% 100%);
     transform: translateY(var(--deco-y));
-    transition: transform 0.1s;
+    will-change: transform;
 }
 
 /* --- Responsive: ปรับ clip-path สำหรับจอเล็ก --- */
@@ -730,7 +742,7 @@ section.loop-images-quotation.vertical {
     /* รูปทรงเฉียงรับกับสีแดง แต่กว้างกว่าเล็กน้อย */
     clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
     transform: translateY(var(--deco-y2));
-    transition: transform 0.1s;
+    will-change: transform;
     opacity: 0.9;
 }
 
@@ -747,7 +759,7 @@ section.loop-images-quotation.vertical {
     /* ปรับมุมให้แหลมขึ้นเล็กน้อยเพื่อให้ดูโฉบเฉี่ยว */
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     transform: translateY(var(--deco-y));
-    transition: transform 0.1s;
+    will-change: transform;
     opacity: 0.8; 
 }
 

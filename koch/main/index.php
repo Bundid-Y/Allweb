@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koch Packaging and Packing Services Co.,Ltd</title>
-    <meta name="description" content="Smart, Fast, and Sustainable Solutions สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย - บริการบรรจุภัณฑ์และคลังสินค้าครบวงจร" />
+    <meta name="description"
+        content="Smart, Fast, and Sustainable Solutions สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย - บริการบรรจุภัณฑ์และคลังสินค้าครบวงจร" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
@@ -13,7 +14,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Libraries: GSAP & Lenis -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
@@ -34,7 +37,7 @@
     <!-- SLIDER SECTION -->
     <div class="main-container section-slider">
         <div class="slider-wrapper" id="sliderWrapper">
-            
+
             <div class="slide-track" id="slideTrack">
                 <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-1.jpeg" alt="Slide 1"></div>
                 <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-2.jpeg" alt="Slide 2"></div>
@@ -47,13 +50,13 @@
             <button class="nav-btn next" id="nextBtn">›</button>
         </div>
     </div>
-    
+
 
     <!-- CONTENT / DETAILS SECTION — เกี่ยวกับเรา -->
     <div class="content-section layout_padding">
         <!-- ใช้ Flexbox แทน Bootstrap row/col -->
         <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-            
+
             <!-- คอลัมน์ซ้าย: รูปภาพ -->
             <div style="flex: 1; min-width: 300px;">
                 <div class="details-box">
@@ -62,19 +65,21 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- คอลัมน์ขวา: เนื้อหา -->
             <div style="flex: 1; min-width: 300px;">
                 <h1 class="details-title">เกี่ยวกับเรา</h1>
-                
+
                 <!-- ย่อหน้าแรก: เน้นว่า KOCH คือใคร และเป้าหมายคืออะไร -->
                 <p class="details-desc">
-                    KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย มุ่งเน้นการสร้างระบบที่ <strong>"Smart, Fast, and Sustainable"</strong>
+                    KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย
+                    มุ่งเน้นการสร้างระบบที่ <strong>"Smart, Fast, and Sustainable"</strong>
                 </p>
 
                 <!-- ย่อหน้าที่สอง: เน้นบทบาท Partner และใช้ List เพื่อแจกแจงความเชี่ยวชาญ -->
                 <p class="details-desc">
-                    เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ <strong>"พันธมิตรเชิงกลยุทธ์"</strong> ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด ด้วยความเชี่ยวชาญเฉพาะด้าน:
+                    เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ <strong>"พันธมิตรเชิงกลยุทธ์"</strong>
+                    ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด ด้วยความเชี่ยวชาญเฉพาะด้าน:
                 </p>
 
                 <ul class="details-desc"> <!-- ใช้ class เดียวกับ p เพื่อให้ฟอนต์เท่ากัน -->
@@ -99,37 +104,48 @@
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
                     บริการของเรา
                 </h1>
+                <p class="details-desc" style="margin-top: -10px; margin-bottom: 20px;">
+                    บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
+                </p>
                 <div class="details-action-group"></div>
             </div>
         </div>
-        
+
         <!-- ส่วน Card Grid -->
         <div>
             <div class="details-box details-box-services">
                 <div class="card-grid">
                     <a class="card" href="../service/development.php">
-                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+                        <div class="card__background"
+                            style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)">
+                        </div>
                         <div class="card__content">
                             <p class="card__category">Packaging Development</p>
                             <h3 class="card__heading">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h3>
                         </div>
                     </a>
                     <a class="card" href="../service/supply_management.php">
-                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__background"
+                            style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+                        </div>
                         <div class="card__content">
                             <p class="card__category">Packaging SupplyManagement System</p>
                             <h3 class="card__heading">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ</h3>
                         </div>
                     </a>
                     <a class="card" href="../service/warehouse.php">
-                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__background"
+                            style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+                        </div>
                         <div class="card__content">
                             <p class="card__category">Warehouse & Operation Management</p>
                             <h3 class="card__heading">บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ</h3>
                         </div>
                     </a>
                     <a class="card" href="../service/transportation.php">
-                        <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)"></div>
+                        <div class="card__background"
+                            style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+                        </div>
                         <div class="card__content">
                             <p class="card__category">Transportation Inhouse Fleet & System</p>
                             <h3 class="card__heading">ระบบขนส่งอัจฉริยะ</h3>
@@ -140,21 +156,24 @@
         </div>
     </div>
 
-    
+
 
     <!-- CONTENT / DETAILS SECTION — พันธมิตรที่ไว้วางใจเรา -->
-    <div class="content-section layout_padding section-partners">
+    <div class="content-section section-partners" style="padding-top: 80px; padding-bottom: 80px;">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
+                <p class="details-desc" style="margin-top: -10px; margin-bottom: 20px;">
+                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึงคุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
+                </p>
             </div>
         </div>
 
         <!-- logo ลูกค้าเลื่อน loop slides -->
-        <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 300px; padding: 40px 0;">
+        <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 220px; padding: 20px 0;">
             <div class="login-track" style="--time: 60s; --total: 12;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
                 <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Suzuki.png" alt="image"></div>
@@ -162,12 +181,14 @@
                 <div class="login-item" style="--i: 4;"><img src="../img/customer_logo/Kn.webp" alt="image"></div>
                 <div class="login-item" style="--i: 5;"><img src="../img/customer_logo/Honda.png" alt="image"></div>
                 <div class="login-item" style="--i: 6;"><img src="../img/customer_logo/Alpla.png" alt="image"></div>
-                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/BROSE_Excellence.png" alt="image"></div>
+                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/BROSE_Excellence.png"
+                        alt="image"></div>
                 <div class="login-item" style="--i: 8;"><img src="../img/customer_logo/nhk.webp" alt="image"></div>
                 <div class="login-item" style="--i: 9;"><img src="../img/customer_logo/siamgoshi.jpg" alt="image"></div>
                 <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/dn.png" alt="image"></div>
                 <div class="login-item" style="--i: 11;"><img src="../img/customer_logo/lat.png" alt="image"></div>
-                <div class="login-item" style="--i: 12;"><img src="../img/customer_logo/mitsuboshi.png" alt="image"></div>
+                <div class="login-item" style="--i: 12;"><img src="../img/customer_logo/mitsuboshi.png" alt="image">
+                </div>
             </div>
         </section>
     </div>
@@ -180,6 +201,9 @@
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
                     สินค้าแนะนำ
                 </h1>
+                <p class="details-desc" style="margin-top: -10px; margin-bottom: 20px;">
+                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนาเพื่อรองรับทุกความต้องการของอุตสาหกรรม
+                </p>
             </div>
         </div>
 
@@ -190,8 +214,9 @@
                     <div class="card_shade _off"></div>
                     <div class="card_content _on">
                         <p class="card_dscrptn">
-                            This photo taken by 
-                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank">Luca Bravo</a>.
+                            This photo taken by
+                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank">Luca
+                                Bravo</a>.
                         </p>
                     </div>
                     <div class="card_BG _active">
@@ -203,8 +228,10 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by 
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Pedro Lastra</a>.
+                            This photo taken by
+                            <a class="card_photo_cred"
+                                href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                                target="_blank">Pedro Lastra</a>.
                         </p>
                     </div>
                     <div class="card_BG">
@@ -216,8 +243,10 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by 
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/cHRDevKFDBw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Venti Views</a>.
+                            This photo taken by
+                            <a class="card_photo_cred"
+                                href="https://unsplash.com/photos/cHRDevKFDBw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                                target="_blank">Venti Views</a>.
                         </p>
                     </div>
                     <div class="card_BG">
@@ -229,8 +258,10 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by 
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/tUoA7sCrRto?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">mana5280</a>.
+                            This photo taken by
+                            <a class="card_photo_cred"
+                                href="https://unsplash.com/photos/tUoA7sCrRto?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                                target="_blank">mana5280</a>.
                         </p>
                     </div>
                     <div class="card_BG">
@@ -242,8 +273,10 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by 
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/KDS5lCrj_ew?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Antonio Cuellar</a>.
+                            This photo taken by
+                            <a class="card_photo_cred"
+                                href="https://unsplash.com/photos/KDS5lCrj_ew?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                                target="_blank">Antonio Cuellar</a>.
                         </p>
                     </div>
                     <div class="card_BG">
@@ -255,8 +288,10 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by 
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/gZXx8lKAb7Y?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank">Maarten van den Heuvel</a>.
+                            This photo taken by
+                            <a class="card_photo_cred"
+                                href="https://unsplash.com/photos/gZXx8lKAb7Y?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                                target="_blank">Maarten van den Heuvel</a>.
                         </p>
                     </div>
                     <div class="card_BG">
@@ -269,398 +304,474 @@
 
 
     <style>
-    
-    	a {   color: rgb( 0 , 0 , 0 ); text-decoration: none;   }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
 
-	a:visited , a:active , a:focus {   border: none;   }
+        a:visited,
+        a:active,
+        a:focus {
+            border: none;
+        }
 
-	img {   border: none;   }
+        img {
+            border: none;
+        }
 
-	span {   display: inline-block;   }
+        span {
+            display: inline-block;
+        }
 
-	.Img_Dflt {   width: 100%;   }
+        .Img_Dflt {
+            width: 100%;
+        }
 
-	.Img_WH100 {   width: 100%; height: 100%;   }
+        .Img_WH100 {
+            width: 100%;
+            height: 100%;
+        }
 
-	.Img_H100 {   height: 100%;   }
+        .Img_H100 {
+            height: 100%;
+        }
 
-	.noDisplay , ._Off {   display: none;   }
+        .noDisplay,
+        ._Off {
+            display: none;
+        }
 
-	.SVG_Dflt {   position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;   }
-	html {   font-size: 100%;   }
+        .SVG_Dflt {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+        }
 
-
-	.Block_Expanding_Cards {
-
-		position: relative;
-		margin: 5vh auto;
-		width: 100%;
-		height: 50vh;
-		text-align: center;
-	}
-	.card_holder_sB {
-
-		position: relative;
-		margin: 0em auto;
-		width: 90%;
-		height: 100%;
-	}
-	.US_City_sB {
-
-		display: inline-block;
-		position: relative;
-		margin: 0em 0.5em;
-		width: 8%;
-		height: 100%;
-		vertical-align: middle;
-		border-radius: 1.5em;
-		overflow: hidden;
-		transition: width 0.25s ease;
-	}
-	.US_City_sB._active {
-
-		width: 40%;
-	}
-	.US_City_sB:hover {
-
-		cursor: pointer;
-	}
-	.card_h1 {
-		color: #ffffff;
-		position: absolute;
-		bottom: 5%;
-		left: 25%;
-		font-size: 2em;
-		margin: 0em;
-		padding: 0em;
-		font-weight: normal;
-		writing-mode: vertical-rl;
-		transform: rotate(180deg);
-	}
-	.card_h1._active {
-
-		position: relative;
-		bottom: 0%;
-		left: 0%;
-		font-size: 4em;
-		writing-mode: horizontal-tb;
-		transform: rotate(0deg);
-		margin: 2em auto 0em auto;
-		text-shadow: 1px 1px 0.0625em black;
-	}
-	.card_content {
-
-		position: relative;
-		margin: 5em auto 0em auto;
-		width: 80%;
-		display: none;
-	}
-	.card_content._on { display: block; text-shadow: 1px 1px 0px black; }
-
-	.card_dscrptn {
-		color: #ffffff;
-		font-size: 2em;
-		margin: 0em;
-		padding: 0em;
-	}
-	.card_photo_cred {
-
-		color: rgb( 0 , 234 , 0 );
-	}
-	.card_shade {
-
-		position: absolute;
-		top: 0%;
-		left: 0%;
-		width: 100%;
-		height: 100%;
-		background-color: rgb( 0 , 0 , 0 );
-		opacity: 0.5;
-	}
-	.card_shade._off {	display: none;	}
-
-	.card_shade:hover { opacity: 0; }
-
-	.card_BG {
-
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0%;
-		left: 0%;
-		z-index: -1;
-		transition: left 1.5s ease;
-	}
-	.card_BG._active {
-
-		left: -35%;
-	}
-
-	@media ( max-width : 400px ) {
+        html {
+            font-size: 100%;
+        }
 
 
-		body {  font-size: 60%;  }
+        .Block_Expanding_Cards {
 
-		.card_h1._active {	margin: 0.125em auto 0em auto;	}
+            position: relative;
+            margin: 5vh auto;
+            width: 100%;
+            height: 50vh;
+            text-align: center;
+        }
 
-	}
-	@media ( min-width : 401px ) and ( max-width : 600px ) {
+        .card_holder_sB {
+
+            position: relative;
+            margin: 0em auto;
+            width: 90%;
+            height: 100%;
+        }
+
+        .US_City_sB {
+
+            display: inline-block;
+            position: relative;
+            margin: 0em 0.5em;
+            width: 8%;
+            height: 100%;
+            vertical-align: middle;
+            border-radius: 1.5em;
+            overflow: hidden;
+            transition: width 0.25s ease;
+        }
+
+        .US_City_sB._active {
+
+            width: 40%;
+        }
+
+        .US_City_sB:hover {
+
+            cursor: pointer;
+        }
+
+        .card_h1 {
+            color: #ffffff;
+            position: absolute;
+            bottom: 5%;
+            left: 25%;
+            font-size: 2em;
+            margin: 0em;
+            padding: 0em;
+            font-weight: normal;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        .card_h1._active {
+
+            position: relative;
+            bottom: 0%;
+            left: 0%;
+            font-size: 4em;
+            writing-mode: horizontal-tb;
+            transform: rotate(0deg);
+            margin: 2em auto 0em auto;
+            text-shadow: 1px 1px 0.0625em black;
+        }
+
+        .card_content {
+
+            position: relative;
+            margin: 5em auto 0em auto;
+            width: 80%;
+            display: none;
+        }
+
+        .card_content._on {
+            display: block;
+            text-shadow: 1px 1px 0px black;
+        }
+
+        .card_dscrptn {
+            color: #ffffff;
+            font-size: 2em;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        .card_photo_cred {
+
+            color: rgb(0, 234, 0);
+        }
+
+        .card_shade {
+
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.5;
+        }
+
+        .card_shade._off {
+            display: none;
+        }
+
+        .card_shade:hover {
+            opacity: 0;
+        }
+
+        .card_BG {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            transition: left 1.5s ease;
+        }
+
+        .card_BG._active {
+
+            left: -35%;
+        }
+
+        @media (max-width : 400px) {
+
+
+            body {
+                font-size: 60%;
+            }
+
+            .card_h1._active {
+                margin: 0.125em auto 0em auto;
+            }
+
+        }
+
+        @media (min-width : 401px) and (max-width : 600px) {
 
 
 
-		body {  font-size: 70%;  }
+            body {
+                font-size: 70%;
+            }
 
-		.card_h1._active {	margin: 0.125em auto 0em auto;	}
+            .card_h1._active {
+                margin: 0.125em auto 0em auto;
+            }
 
-	}
-	@media ( min-width : 601px ) and ( max-width : 800px ) {
+        }
 
-
-		body {  font-size: 80%;  }
-
-		.card_h1._active {	margin: 0.25em auto 0em auto;	}
-
-	}
-	@media ( min-width : 801px ) and ( max-width : 1000px ) {
+        @media (min-width : 601px) and (max-width : 800px) {
 
 
-		body {  font-size: 90%;  }
+            body {
+                font-size: 80%;
+            }
 
-		.card_h1._active {	margin: 1em auto 0em auto;	}
+            .card_h1._active {
+                margin: 0.25em auto 0em auto;
+            }
 
-	}
-	@media ( min-width : 1001px ) and ( max-width : 1200px ) {
+        }
 
-
-		body {  font-size: 100%;  }
-
-	}
-	@media ( min-width : 1201px ) and ( max-width : 1400px ) {
-
-
-		body {  font-size: 100%;  }
-
-	}
-	@media ( min-width : 1401px ) {
+        @media (min-width : 801px) and (max-width : 1000px) {
 
 
-		body {  font-size: 125%;  }
+            body {
+                font-size: 90%;
+            }
 
-	}
+            .card_h1._active {
+                margin: 1em auto 0em auto;
+            }
 
+        }
+
+        @media (min-width : 1001px) and (max-width : 1200px) {
+
+
+            body {
+                font-size: 100%;
+            }
+
+        }
+
+        @media (min-width : 1201px) and (max-width : 1400px) {
+
+
+            body {
+                font-size: 100%;
+            }
+
+        }
+
+        @media (min-width : 1401px) {
+
+
+            body {
+                font-size: 125%;
+            }
+
+        }
     </style>
 
 
     <script>
 
-    (function() {
+        (function () {
 
-		var	doc = document ,
+            var doc = document,
 
-		elemList = Construct_SubElement_List( doc.body ) ,
+                elemList = Construct_SubElement_List(doc.body),
 
-		len = elemList.length ,
+                len = elemList.length,
 
-		win = window ,
+                win = window,
 
-		i ,
+                i,
 
-		_Blocks = [] ,
+                _Blocks = [],
 
-		Card_Expander ;
+                Card_Expander;
 
-	for (  i = 0 ; i < len ; i++  ) {
+            for (i = 0; i < len; i++) {
 
-		var	currElem	= elemList[i] ;
+                var currElem = elemList[i];
 
-		if (  currElem.className && /^Block_Expanding_Cards$/.test( currElem.className )  ) {
-      
-		  Card_Expander	= new Card_Expander_Obj( currElem ) ;
-		}
+                if (currElem.className && /^Block_Expanding_Cards$/.test(currElem.className)) {
 
+                    Card_Expander = new Card_Expander_Obj(currElem);
+                }
 
-		if (  currElem.parentNode && /body/i.test( currElem.parentNode.tagName ) && ( /^Block/.test( currElem.className ) || /^Block/.test( currElem.id ) )  )
 
-			_Blocks.push( currElem ) ;
-	}
+                if (currElem.parentNode && /body/i.test(currElem.parentNode.tagName) && (/^Block/.test(currElem.className) || /^Block/.test(currElem.id)))
 
+                    _Blocks.push(currElem);
+            }
 
-	function	Card_Expander_Obj   (  ElemObjRef  )  {
 
-		var	ELEM		= ElemObjRef ,
+            function Card_Expander_Obj(ElemObjRef) {
 
-			ElemList	= Construct_SubElement_List( ELEM ) , num = ElemList.length , j , k ;
+                var ELEM = ElemObjRef,
 
+                    ElemList = Construct_SubElement_List(ELEM), num = ElemList.length, j, k;
 
-//	##########	--	PROPERTIES
 
-		this.ElemObj		= ELEM ;
-		this._Cards		= [] ;
+                //	##########	--	PROPERTIES
 
-		this.current_index	= 0 ;
+                this.ElemObj = ELEM;
+                this._Cards = [];
 
-		for (  j = 0 ; j < num ; j++  ) {
+                this.current_index = 0;
 
-			var	CE = ElemList[j] ;
+                for (j = 0; j < num; j++) {
 
-			if ( /^US_City_sB/.test( CE.className ) ) {
+                    var CE = ElemList[j];
 
-				var	subElemList	= Construct_SubElement_List( CE ), n2 = subElemList.length ,
-					h1_EO ,
-					shade_EO ,
-					content_EO ,
-					BG_EO ;
+                    if (/^US_City_sB/.test(CE.className)) {
 
-				for ( k = 0 ; k < n2 ; k++ ) {
+                        var subElemList = Construct_SubElement_List(CE), n2 = subElemList.length,
+                            h1_EO,
+                            shade_EO,
+                            content_EO,
+                            BG_EO;
 
-					if ( /^card_h1/.test( subElemList[k].className ) )			h1_EO		= subElemList[k] ;
+                        for (k = 0; k < n2; k++) {
 
-					else if ( /^card_shade/.test( subElemList[k].className ) )	shade_EO		= subElemList[k] ;
+                            if (/^card_h1/.test(subElemList[k].className)) h1_EO = subElemList[k];
 
-					else if ( /^card_content/.test( subElemList[k].className ) )	content_EO	= subElemList[k] ;
+                            else if (/^card_shade/.test(subElemList[k].className)) shade_EO = subElemList[k];
 
-					else if ( /^card_BG/.test( subElemList[k].className ) )		BG_EO		= subElemList[k] ;
-				}
+                            else if (/^card_content/.test(subElemList[k].className)) content_EO = subElemList[k];
 
-				this._Cards.push( {"EO": CE, "h1_EO": h1_EO, "shade_EO": shade_EO, "content_EO": content_EO, "BG_EO": BG_EO} ) ;
+                            else if (/^card_BG/.test(subElemList[k].className)) BG_EO = subElemList[k];
+                        }
 
-				CE.onclick = function() {
+                        this._Cards.push({ "EO": CE, "h1_EO": h1_EO, "shade_EO": shade_EO, "content_EO": content_EO, "BG_EO": BG_EO });
 
-					if ( this.className.indexOf("_active") > -1 )	return ;
+                        CE.onclick = function () {
 
-					Card_Expander._Toggle( parseInt( this.getAttribute("data-card-index") ) ) ;
-				} ;
-			}
-		}
+                            if (this.className.indexOf("_active") > -1) return;
 
+                            Card_Expander._Toggle(parseInt(this.getAttribute("data-card-index")));
+                        };
+                    }
+                }
 
-//	##########	--	METHODS
 
+                //	##########	--	METHODS
 
 
-		this._Toggle = function ( new_card_index ) {
 
-			this._Cards[ this.current_index ].EO.className			= "US_City_sB" ;
-			this._Cards[ this.current_index ].h1_EO.className		= "card_h1" ;
-			this._Cards[ this.current_index ].shade_EO.className		= "card_shade" ;
-			this._Cards[ this.current_index ].content_EO.className	= "card_content" ;
-			this._Cards[ this.current_index ].BG_EO.className		= "card_BG" ;
+                this._Toggle = function (new_card_index) {
 
-			this._Cards[ new_card_index ].EO.className			+= " _active" ;
-			this._Cards[ new_card_index ].h1_EO.className		+= " _active" ;
-			this._Cards[ new_card_index ].shade_EO.className	+= " _off" ;
-			this._Cards[ new_card_index ].content_EO.className	+= " _on" ;
-			this._Cards[ new_card_index ].BG_EO.className		+= " _active" ;
+                    this._Cards[this.current_index].EO.className = "US_City_sB";
+                    this._Cards[this.current_index].h1_EO.className = "card_h1";
+                    this._Cards[this.current_index].shade_EO.className = "card_shade";
+                    this._Cards[this.current_index].content_EO.className = "card_content";
+                    this._Cards[this.current_index].BG_EO.className = "card_BG";
 
-			this.current_index	= new_card_index ;
-		} ;
-	}
-	function	Construct_Element_Object (   elem  ,  propertyArr  ,  methodArr  ,  childArr  ,  innerHTML_CharStr  )  {
+                    this._Cards[new_card_index].EO.className += " _active";
+                    this._Cards[new_card_index].h1_EO.className += " _active";
+                    this._Cards[new_card_index].shade_EO.className += " _off";
+                    this._Cards[new_card_index].content_EO.className += " _on";
+                    this._Cards[new_card_index].BG_EO.className += " _active";
 
-		var	Elem_Obj	= elem ,
+                    this.current_index = new_card_index;
+                };
+            }
+            function Construct_Element_Object(elem, propertyArr, methodArr, childArr, innerHTML_CharStr) {
 
-			Properties	= propertyArr ,
+                var Elem_Obj = elem,
 
-			Methods		= methodArr ,
+                    Properties = propertyArr,
 
-			Children	= childArr ,
+                    Methods = methodArr,
 
-			inner_html	= innerHTML_CharStr ,
+                    Children = childArr,
 
-			len , i ;
+                    inner_html = innerHTML_CharStr,
 
+                    len, i;
 
-			len = Properties.length ;
 
-			for (  i = 0 ; i < len ; i++  )		Elem_Obj[ Properties[i][0] ] = Properties[i][1] ;
+                len = Properties.length;
 
+                for (i = 0; i < len; i++)		Elem_Obj[Properties[i][0]] = Properties[i][1];
 
-			len = Methods.length ;
 
-			for (  i = 0 ; i < len ; i++  )		Elem_Obj[ Methods[i][0] ] = Methods[i][1] ;
+                len = Methods.length;
 
+                for (i = 0; i < len; i++)		Elem_Obj[Methods[i][0]] = Methods[i][1];
 
-			len = Children.length;
 
-			for (  i = 0 ; i < len ; i++  )		Elem_Obj.appendChild( Children[i] ) ;
+                len = Children.length;
 
+                for (i = 0; i < len; i++)		Elem_Obj.appendChild(Children[i]);
 
-			len = inner_html.length ;
 
-			if (  len > 0  )			Elem_Obj.innerHTML = inner_html ;
+                len = inner_html.length;
 
+                if (len > 0) Elem_Obj.innerHTML = inner_html;
 
-			return		Elem_Obj ;
 
-	}
-	function	Construct_SubElement_List ( ElemObjRef ) {
+                return Elem_Obj;
 
-		var	_ELEM		= ElemObjRef ,
+            }
+            function Construct_SubElement_List(ElemObjRef) {
 
-			tmpList		= _ELEM.getElementsByTagName("*") , tmpLen = tmpList.length , k ,
+                var _ELEM = ElemObjRef,
 
-   			ELEM_LIST 	= [] ;
+                    tmpList = _ELEM.getElementsByTagName("*"), tmpLen = tmpList.length, k,
 
+                    ELEM_LIST = [];
 
-		for (  k = 0 ; k < tmpLen ; k++  )		ELEM_LIST.push( tmpList[k] ) ;
 
+                for (k = 0; k < tmpLen; k++)		ELEM_LIST.push(tmpList[k]);
 
-		return		ELEM_LIST ;
-	}
-	function	Construct_Filtered_SubElement_List ( refArr ) {
 
-		var	_ELEM		= refArr[0] ,
+                return ELEM_LIST;
+            }
+            function Construct_Filtered_SubElement_List(refArr) {
 
-			tagName		= ( typeof refArr[1] !== "undefined" )? refArr[1] : "*" ,
+                var _ELEM = refArr[0],
 
-			tmpList		= _ELEM.getElementsByTagName( tagName ) , tmpLen = tmpList.length , k ,
+                    tagName = (typeof refArr[1] !== "undefined") ? refArr[1] : "*",
 
-   			ELEM_LIST 	= [] ;
+                    tmpList = _ELEM.getElementsByTagName(tagName), tmpLen = tmpList.length, k,
 
+                    ELEM_LIST = [];
 
-		for (  k = 0 ; k < tmpLen ; k++  )		ELEM_LIST.push( tmpList[k] ) ;
 
+                for (k = 0; k < tmpLen; k++)		ELEM_LIST.push(tmpList[k]);
 
-		return		ELEM_LIST ;
-	}
-	function	xhrObj ( ) {
 
-		var	xmlhttp	=	( window.XMLHttpRequest ) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP") ;
+                return ELEM_LIST;
+            }
+            function xhrObj() {
 
-		return	xmlhttp ;
+                var xmlhttp = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
 
-	}
-	function	Add_CSS_Rule ( styleSheetRef , selectorStr , ruleStr ) {
+                return xmlhttp;
 
-		if ( typeof styleSheetRef.insertRule === "function" )	styleSheetRef.insertRule( selectorStr + '{' + ruleStr + '}' , styleSheetRef.cssRules.length ) ;
+            }
+            function Add_CSS_Rule(styleSheetRef, selectorStr, ruleStr) {
 
-		else if ( typeof styleSheetRef.addRule === "function" )	styleSheetRef.addRule( selectorStr , ruleStr , styleSheetRef.rules.length ) ;
-	}
+                if (typeof styleSheetRef.insertRule === "function") styleSheetRef.insertRule(selectorStr + '{' + ruleStr + '}', styleSheetRef.cssRules.length);
 
-	function	Build_CSS_JSON  ( json_input ) {
+                else if (typeof styleSheetRef.addRule === "function") styleSheetRef.addRule(selectorStr, ruleStr, styleSheetRef.rules.length);
+            }
 
-		this.CSS_JSON[ json_input.key ] = this.CSS_JSON[ this.CSS_JSON.length ] = json_input.json ;
-	}
-	function	Add_CSS_Rules  ( ) {
+            function Build_CSS_JSON(json_input) {
 
-		var	len = this.CSS_JSON.length , j ;
+                this.CSS_JSON[json_input.key] = this.CSS_JSON[this.CSS_JSON.length] = json_input.json;
+            }
+            function Add_CSS_Rules() {
 
-		for ( j = 0 ; j < len ; j++ )
+                var len = this.CSS_JSON.length, j;
 
-			Add_CSS_Rule ( doc.styleSheets[0] , this.CSS_JSON[j].selector , this.CSS_JSON[j].rule ) ;
-	}
-	function	Validate_Email  ( emailStr )  {
+                for (j = 0; j < len; j++)
 
-		var	re = /\S+@\S+\.\S+/ ;
+                    Add_CSS_Rule(doc.styleSheets[0], this.CSS_JSON[j].selector, this.CSS_JSON[j].rule);
+            }
+            function Validate_Email(emailStr) {
 
-		return	re.test( emailStr ) ;
-	}
+                var re = /\S+@\S+\.\S+/;
 
-})() ;
+                return re.test(emailStr);
+            }
+
+        })();
 
     </script>
 
 
     <?php include '../component/footer.php'; ?>
 </body>
+
 </html>

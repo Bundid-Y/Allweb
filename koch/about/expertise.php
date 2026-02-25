@@ -27,7 +27,7 @@
             width: 100%;
             height: 100%;
             z-index: 1;
-            border-radius: 8px;
+            border-radius: 0;
             display: flex;
         }
 
@@ -41,7 +41,7 @@
             height: 100%;
             background-color: #E82433;
             z-index: -1;
-            border-radius: 8px;
+            border-radius: 0;
             transform: rotate(2deg);
             transform-origin: bottom right;
             opacity: 0.9;
@@ -51,7 +51,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 0;
             position: relative;
             z-index: 2;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -70,7 +70,7 @@
             gap: 15px;
             background: #fdfdfd;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 0;
             border-left: 4px solid #E82433;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
         }

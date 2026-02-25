@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
+
 <body>
     <?php include '../component/menubar.php'; ?>
-    
+
     <main>
         <!-- PRODUCT CATEGORY MENU SECTION -->
-        <section class="product-category-section layout_padding" style="padding-top: 60px; padding-bottom: 60px;">
+        <section class="product-category-section layout_padding" style="padding-top: 130px; padding-bottom: 90px;">
             <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 <!-- Heading -->
-                <h2 style="text-align: center; font-family: 'Prompt', sans-serif; font-weight: 500; font-size: 28px; margin-bottom: 40px; color: #333;">
+                <h2
+                    style="width: 100%; float: left; font-size: 40px; color: #111111; text-align: center; font-weight: bold; font-family: 'Prompt', sans-serif; margin-top: 0px; margin-bottom: 15px;">
                     ประเภทสินค้า
                 </h2>
-                
+                <p
+                    style="width: 100%; float: left; font-size: 16px; color: #242424; text-align: center; font-family: 'Prompt', sans-serif; margin-top: 0px; margin-bottom: 40px;">
+                    ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ ไม้ พลาสติก และเหล็ก
+                </p>
+
                 <!-- Menu Bar -->
-                <div class="category-menu-container">
+                <div class="category-menu-container" style="width: 100%; float: left; margin-bottom: 40px;">
                     <ul class="category-menu">
                         <li><a href="#all" class="active" onclick="filterCategory('all', event)">ทั้งหมด</a></li>
                         <li><a href="#mail" onclick="filterCategory('mail', event)">กล่องกระดาษ</a></li>
@@ -50,7 +57,7 @@
                         <img src="../img/products/Steel/steel_rack.png" alt="Steel Rack">
                         <div class="product-overlay"><span class="product-title">Steel Rack</span></div>
                     </div>
-                    
+
                     <div class="product-grid-item" data-category="mail">
                         <img src="../img/products/box/die-cut.png" alt="Die-Cut Box">
                         <div class="product-overlay"><span class="product-title">Die-Cut Box</span></div>
@@ -67,7 +74,7 @@
                         <img src="../img/products/Steel/steel_rack2.png" alt="Steel Rack 2">
                         <div class="product-overlay"><span class="product-title">Steel Rack 2</span></div>
                     </div>
-                    
+
                     <!-- Rest of items -->
                     <div class="product-grid-item" data-category="mail">
                         <img src="../img/products/box/ftd.png" alt="FTD Box">
@@ -85,7 +92,7 @@
                         <img src="../img/products/box/fit_ser.png" alt="Fitting Box Service">
                         <div class="product-overlay"><span class="product-title">Fitting Box Service</span></div>
                     </div>
-                    
+
                     <div class="product-grid-item" data-category="corrugated">
                         <img src="../img/products/Wooden/wooden_case.png" alt="Wooden Case">
                         <div class="product-overlay"><span class="product-title">Wooden Case</span></div>
@@ -119,13 +126,14 @@
                     <button class="load-more-btn">L O A D &nbsp;&nbsp; M O R E</button>
                 </div>
             </div>
-            
+
             <style>
                 .category-menu-container {
                     display: flex;
                     justify-content: center;
                     margin-bottom: 40px;
                 }
+
                 .category-menu {
                     display: flex;
                     list-style: none;
@@ -134,11 +142,15 @@
                     flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
+                    width: 100%;
+                    float: left;
                 }
+
                 .category-menu li {
                     position: relative;
                     padding: 0 25px;
                 }
+
                 .category-menu li:not(:last-child)::after {
                     content: "";
                     position: absolute;
@@ -149,6 +161,7 @@
                     height: 20px;
                     background-color: #d1d1d1;
                 }
+
                 .category-menu a {
                     text-decoration: none;
                     color: #555;
@@ -157,18 +170,22 @@
                     font-weight: 500;
                     transition: all 0.3s ease;
                 }
+
                 .category-menu a:hover,
                 .category-menu a.active {
-                    color: #e82433; /* KOCH Theme Red */
+                    color: #e82433;
+                    /* KOCH Theme Red */
                 }
-                
+
                 .product-grid {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     gap: 15px;
                     margin-bottom: 20px;
+                    width: 100%;
+                    float: left;
                 }
-                
+
                 .product-grid-item {
                     width: 100%;
                     aspect-ratio: 1 / 1;
@@ -180,16 +197,16 @@
                     opacity: 0;
                     position: relative;
                     animation: fadeIn 0.4s ease forwards;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
                 }
-                
+
                 .product-grid-item img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     transition: transform 0.4s ease;
                 }
-                
+
                 .product-grid-item:hover img {
                     transform: scale(1.05);
                 }
@@ -199,7 +216,7 @@
                     bottom: 0;
                     left: 0;
                     width: 100%;
-                    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
                     padding: 30px 15px 12px;
                     box-sizing: border-box;
                     pointer-events: none;
@@ -207,7 +224,7 @@
                     opacity: 0;
                     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
                 }
-                
+
                 .product-grid-item:hover .product-overlay {
                     transform: translateY(0);
                     opacity: 1;
@@ -220,7 +237,7 @@
                     font-weight: 500;
                     display: block;
                     text-align: center;
-                    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
                     letter-spacing: 0.5px;
                 }
 
@@ -228,7 +245,7 @@
                     text-align: center;
                     margin-top: 40px;
                 }
-                
+
                 .load-more-btn {
                     background: transparent;
                     border: 1px solid #333;
@@ -240,45 +257,57 @@
                     cursor: pointer;
                     transition: all 0.3s ease;
                 }
-                
+
                 .load-more-btn:hover {
                     background: #333;
                     color: #fff;
                 }
 
                 @keyframes fadeIn {
-                    from { opacity: 0; transform: scale(0.95); }
-                    to { opacity: 1; transform: scale(1); }
+                    from {
+                        opacity: 0;
+                        transform: scale(0.95);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
                 }
-                
+
                 /* Responsive */
                 @media (max-width: 1024px) {
                     .product-grid {
                         grid-template-columns: repeat(3, 1fr);
                     }
                 }
+
                 @media (max-width: 768px) {
                     .category-menu li {
                         padding: 10px 15px;
                     }
+
                     .product-grid {
                         grid-template-columns: repeat(2, 1fr);
                     }
                 }
+
                 @media (max-width: 480px) {
                     .category-menu {
                         flex-direction: column;
                         gap: 10px;
                     }
+
                     .category-menu li:not(:last-child)::after {
                         display: none;
                     }
+
                     .product-grid {
                         grid-template-columns: 1fr;
                     }
                 }
             </style>
-            
+
             <script>
                 let currentLimit = 8;
                 let currentCategory = 'all';
@@ -292,7 +321,7 @@
                         });
                         event.target.classList.add('active');
                     }
-                    
+
                     currentCategory = category;
                     currentLimit = 8; // Reset limit when filter changes
                     updateGrid(false);
@@ -309,9 +338,9 @@
                             item.style.animation = 'none'; // reset animation
                             item.offsetHeight; // trigger reflow
                         }
-                        
+
                         const isMatch = (currentCategory === 'all' || item.getAttribute('data-category') === currentCategory);
-                        
+
                         if (isMatch) {
                             totalMatch++;
                             if (visibleCount < currentLimit) {
@@ -341,11 +370,11 @@
                         }
                     }
                 }
-                
+
                 // Initialize default view
                 document.addEventListener('DOMContentLoaded', () => {
                     filterCategory('all', null);
-                    
+
                     const loadMoreBtn = document.querySelector('.load-more-btn');
                     if (loadMoreBtn) {
                         loadMoreBtn.addEventListener('click', () => {
@@ -360,4 +389,5 @@
 
     <?php include '../component/footer.php'; ?>
 </body>
+
 </html>
