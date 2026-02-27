@@ -37,7 +37,7 @@
 
 /* --- Branches Layout --- */
 .layout_padding {
-    padding-bottom: 90px;
+    padding-bottom: 45px;
     padding-top: 130px; /* Prevent overlap with menubar */
 }
 
@@ -69,14 +69,17 @@
 .branch_block_1 {
     width: 100%;
     float: left;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .branch_img_container {
     width: 100%;
-    float: left;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
 }
 
 .branch_image {
@@ -87,20 +90,23 @@
 }
 
 .branch_image img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* added shadow to elevate the image */
 }
 
 .branch_img_container:after {
     content: '';
     background-color: #e82433; /* KOCH red */
     position: absolute;
-    width: 420px;
+    width: 100%;
     right: 0px;
-    top: -30px; /* Slight offset up */
+    top: 0px;
     margin: 0 auto;
     display: flex;
-    height: 120%; /* Cover behind image more evenly */
+    height: 600px;
     left: 0;
     z-index: -1;
     clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
@@ -175,14 +181,17 @@
 .branch_block_2 {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
-    padding-top: 60px;
+    padding-bottom: 45px;
+    padding-top: 30px;
 }
 
 .branch_img_container_right {
     width: 100%;
-    float: left;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
 }
 
 
@@ -191,15 +200,15 @@
     content: '';
     background-color: #e82433;
     position: absolute;
-    width: 420px;
-    right: 0px;
-    top: -30px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
     margin: 0 auto;
     display: flex;
-    height: 120%;
-    left: 0;
+    height: 600px;
+    right: 0;
     z-index: -1;
-    clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%); /* Mirrored shape */
+    clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%);
 }
 
 /* --- Responsive Layout Adjustments --- */
@@ -207,7 +216,11 @@
     .branch_img_container:after, 
     .branch_img_container_right:after {
         width: 100%;
-        max-width: 420px; /* Limit width */
+        height: 100%;
+    }
+    .branch_img_container, 
+    .branch_img_container_right {
+        min-height: 400px;
     }
 }
 
@@ -217,13 +230,23 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    .branch_img_container, 
+    .branch_img_container_right {
+        min-height: 300px;
+    }
     .branch_img_container:after, 
     .branch_img_container_right:after {
         width: 100%;
-        clip-path: none; /* Make square on mobile */
         height: 100%;
         top: 0;
-        border-radius: 12px;
+        left: 0;
+        transform: none;
+    }
+    .branch_img_container_right:after {
+        clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%);
+    }
+    .branch_img_container:after {
+        clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
     }
     .col-md-6 { 
         margin-bottom: 40px; 

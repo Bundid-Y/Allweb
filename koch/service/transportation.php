@@ -34,7 +34,7 @@
           บริการขนส่งที่รวดเร็ว ตรงต่อเวลา และปลอดภัย ด้วยกองรถขนส่งภายในบริษัท (Inhouse Fleet)
           พร้อมระบบติดตามสถานะแบบเรียลไทม์
         </p>
-        <ul class="details-desc" style="margin-top: 15px; padding-left: 20px;">
+        <ul class="details-desc" style="margin-top: 15px; padding-left: 20px; text-align: left;">
           <li>ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ</li>
           <li>ควบคุมคุณภาพและความปลอดภัยตลอดเส้นทาง</li>
           <li>รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน</li>

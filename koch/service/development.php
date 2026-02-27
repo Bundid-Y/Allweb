@@ -59,7 +59,8 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">งานวิศวกรรมภายใน</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ
+            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+              เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ
               โดยทีมงานของเราไม่ได้ทำหน้าที่เพียงแค่การผลิตบรรจุภัณฑ์ทั่วไป
               แต่เป็นการออกแบบโซลูชันเชิงวิศวกรรมที่ปรับแต่งให้เหมาะสมกับความต้องการเฉพาะของแต่ละโครงการอย่างใกล้ชิด</p>
           </div>
@@ -83,7 +84,8 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">การพัฒนาระบบดิจิทัลและนวัตกรรม</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS
+            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+              การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS
               System) ขึ้นด้วยทีมงานภายในของเราเอง
               เพื่อให้มั่นใจว่าระบบจะสามารถสอดคล้องกับข้อกำหนดและความต้องการที่หลากหลายของลูกค้าแต่ละรายได้อย่างไร้รอยต่อ
             </p>
@@ -107,7 +109,8 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">เครื่องมือและเทคโนโลยีขั้นสูง</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ
+            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+              การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ
               SolidWorks 3D เพื่อสร้างสรรค์โครงสร้างบรรจุภัณฑ์ที่มีความแม่นยำและซับซ้อนสูง
               จากนั้นจึงนำระบบการตัดด้วยดิจิทัล (Digital-Cutting Optimization System)
               มาใช้ในกระบวนการเตรียมวัสดุเพื่อลดการสูญเสียและเพิ่มความรวดเร็วในการผลิต</p>

@@ -648,7 +648,7 @@ section.loop-images-quotation.vertical {
 }
 .content-section.section-partners::after {
     content: '';
-    background-color: rgb(255, 0, 0);
+    background-color: #e82433;
     position: absolute;
     width: 100%;
     right: 0;
@@ -749,7 +749,7 @@ section.loop-images-quotation.vertical {
 /* Layer 2: Red (อยู่ทับสีน้ำเงิน) */
 .section-slider::after {
     content: '';
-    background-color: rgb(255, 0, 0); 
+    background-color: #e82433; 
     position: absolute;
     width: 55%;
     height: 85%; /* ลดความสูงจาก 120% */

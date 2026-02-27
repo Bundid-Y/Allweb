@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>Color Extractor</title></head>
+<body>
+    <canvas id="c"></canvas>
+    <div id="output"></div>
+    <script>
+        const img = new Image();
+        img.onload = function() {
+            const canvas = document.getElementById('c');
+            const ctx = canvas.getContext('2d');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+            const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+            const colors = {};
+            for(let i=0; i<data.length; i+=4) {
+                const r = data[i];
+                const g = data[i+1];
+                const b = data[i+2];
+                if(r > 150 && g < 100 && b < 100) {
+                    const hex = '#' + [r,g,b].map(x => x.toString(16).padStart(2, '0')).join('');
+                    if(!colors[hex]) colors[hex] = 0;
+                    colors[hex]++;
+                }
+            }
+            let maxHex = '';
+            let maxCount = 0;
+            for(const hex in colors) {
+                if(colors[hex] > maxCount) {
+                    maxCount = colors[hex];
+                    maxHex = hex;
+                }
+            }
+            document.getElementById('output').textContent = maxHex;
+            
+            // Send back to the server using fetch
+            fetch('/save_color.php?color=' + encodeURIComponent(maxHex));
+        }
+        img.src = 'img/other/index/about/box_about.png';
+    </script>
+</body>
+</html>

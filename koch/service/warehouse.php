@@ -36,7 +36,7 @@
           ดูแลคลังสินค้าครบวงจรตั้งแต่การรับเข้า จัดเก็บ สุ่มตรวจ และกระจายสินค้า ด้วยมาตรฐานระดับสากล
           เพื่อให้กระบวนการผลิตของคุณไม่สะดุด
         </p>
-        <ul class="details-desc" style="margin-top: 15px; padding-left: 20px;">
+        <ul class="details-desc" style="margin-top: 15px; padding-left: 20px; text-align: left;">
           <li>ระบบจัดเก็บสินค้าอย่างเป็นหมวดหมู่และเข้าถึงง่าย (Smart Storage)</li>
           <li>การทำงานที่รวดเร็ว ถูกต้อง และแม่นยำ (Fast Operation)</li>
           <li>บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน (Professional Staff)</li>
@@ -59,7 +59,8 @@
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">
               ระบบจัดเก็บสินค้าเป็นหมวดหมู่และเข้าถึงง่าย</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">ออกแบบพื้นที่จัดเก็บอย่างเป็นระบบ
+            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+              ออกแบบพื้นที่จัดเก็บอย่างเป็นระบบ
               แบ่งหมวดหมู่ชัดเจนตามประเภทสินค้าและความถี่ในการใช้งาน ช่วยให้ค้นหาและเบิกจ่ายได้รวดเร็ว ลดความผิดพลาด
               และเพิ่มประสิทธิภาพในการบริหารพื้นที่คลังสินค้าอย่างคุ้มค่าสูงสุด</p>
           </div>
@@ -83,7 +84,8 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">การทำงานที่รวดเร็ว ถูกต้อง และแม่นยำ</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">ดำเนินงานภายใต้มาตรฐานขั้นตอนที่ชัดเจน
+            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+              ดำเนินงานภายใต้มาตรฐานขั้นตอนที่ชัดเจน
               พร้อมระบบสนับสนุนที่ช่วยลดความซ้ำซ้อนและข้อผิดพลาด เพิ่มความรวดเร็วในการปฏิบัติงาน
               ควบคุมคุณภาพได้อย่างต่อเนื่อง และตอบสนองความต้องการลูกค้าได้อย่างตรงเวลา</p>
           </div>

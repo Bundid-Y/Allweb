@@ -19,11 +19,11 @@
             <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 <!-- Heading -->
                 <h2
-                    style="width: 100%; float: left; font-size: 40px; color: #111111; text-align: center; font-weight: bold; font-family: 'Prompt', sans-serif; margin-top: 0px; margin-bottom: 15px;">
+                    style="width: 100%; float: left; font-size: 40px; color: #111111; text-align: center; font-weight: bold; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 15px;">
                     ประเภทสินค้า
                 </h2>
                 <p
-                    style="width: 100%; float: left; font-size: 16px; color: #242424; text-align: center; font-family: 'Prompt', sans-serif; margin-top: 0px; margin-bottom: 40px;">
+                    style="width: 100%; float: left; font-size: 16px; color: #242424; text-align: center; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 40px;">
                     ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ ไม้ พลาสติก และเหล็ก
                 </p>
 
@@ -165,7 +165,7 @@
                 .category-menu a {
                     text-decoration: none;
                     color: #555;
-                    font-family: 'Prompt', sans-serif;
+                    font-family: 'Sarabun', sans-serif;
                     font-size: 18px;
                     font-weight: 500;
                     transition: all 0.3s ease;
@@ -232,7 +232,7 @@
 
                 .product-title {
                     color: #fff;
-                    font-family: 'Prompt', sans-serif;
+                    font-family: 'Sarabun', sans-serif;
                     font-size: 16px;
                     font-weight: 500;
                     display: block;
@@ -251,7 +251,7 @@
                     border: 1px solid #333;
                     color: #333;
                     padding: 12px 40px;
-                    font-family: 'Prompt', sans-serif;
+                    font-family: 'Sarabun', sans-serif;
                     font-size: 14px;
                     font-weight: 600;
                     cursor: pointer;

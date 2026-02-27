@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="branch_img_container">
-                            <div class="branch_image"><img src="../img/other/index/about/box_about.png" alt="สาขาบ้านบึง"></div>
+                            <div class="branch_image"><img src="../img/other/branches/banbueng.png" alt="สาขาบ้านบึง"></div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="branch_img_container_right">
-                            <div class="branch_image"><img src="../img/other/index/about/box_about.png" alt="สาขาบ่อวิน"></div>
+                            <div class="branch_image"><img src="../img/other/branches/bowin.png" alt="สาขาบ่อวิน"></div>
                         </div>
                     </div>
                 </div>

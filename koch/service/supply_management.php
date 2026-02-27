@@ -23,8 +23,8 @@
           <div
             style="position: absolute; top: -5%; right: -5%; width: 95%; height: 110%; background-color: #E82433; clip-path: polygon(15% 0, 100% 5%, 100% 95%, 15% 100%); z-index: 1;">
           </div>
-          <img src="../img/other/service/supply/supply_ management.jpeg" alt="Supply Management"
-            style="display: block; width: 100%; height: 480px; object-fit: cover; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+          <img src="../img/other/service/supply/supply_management.jpeg" alt="Supply Management"
+            style="display: block; width: 100%; height: 480px; object-fit: cover; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
         </div>
       </div>
       <!-- Left: Details -->
@@ -35,7 +35,7 @@
           ยกระดับการจัดการบรรจุภัณฑ์ด้วยระบบ (Packaging Supply Management System) ที่ครอบคลุม ติดตามได้อย่างแม่นยำ
           และลดต้นทุนแอบแฝงในกระบวนการผลิต
         </p>
-        <ul class="details-desc" style="margin-top: 15px; padding-left: 20px;">
+        <ul class="details-desc" style="margin-top: 15px; padding-left: 20px; text-align: left;">
           <li>ติดตามสถานะบรรจุภัณฑ์หมุนเวียน (Returnable Packaging Tracking)</li>
           <li>บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์ (Inventory Management)</li>
           <li>วิเคราะห์ข้อมูลและวางแผนการใช้งาน (Data Analytics & Planning)</li>
@@ -104,7 +104,8 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">วิเคราะห์ข้อมูลและวางแผนการใช้งาน</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">นำข้อมูลการใช้งานมาวิเคราะห์แนวโน้มและประสิทธิภาพ
+            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+              นำข้อมูลการใช้งานมาวิเคราะห์แนวโน้มและประสิทธิภาพ
               เพื่อวางแผนการจัดสรรบรรจุภัณฑ์ให้สอดคล้องกับปริมาณงาน ช่วยเพิ่มความแม่นยำในการตัดสินใจและลดต้นทุนในระยะยาว
             </p>
           </div>

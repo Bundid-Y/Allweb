@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Libraries: GSAP & Lenis -->
@@ -104,8 +104,8 @@
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
                     บริการของเรา
                 </h1>
-                <p class="details-desc" style="margin-top: -10px; margin-bottom: 20px;">
-                    บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;">
+                    บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร<br>ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
                 </p>
                 <div class="details-action-group"></div>
             </div>
@@ -117,7 +117,7 @@
                 <div class="card-grid">
                     <a class="card" href="../service/development.php">
                         <div class="card__background"
-                            style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)">
+                            style="background-image: url(../img/other/service/development/development.jpeg)">
                         </div>
                         <div class="card__content">
                             <p class="card__category">Packaging Development</p>
@@ -126,7 +126,7 @@
                     </a>
                     <a class="card" href="../service/supply_management.php">
                         <div class="card__background"
-                            style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+                            style="background-image: url(../img/other/service/supply/supply_management.jpeg)">
                         </div>
                         <div class="card__content">
                             <p class="card__category">Packaging SupplyManagement System</p>
@@ -135,7 +135,7 @@
                     </a>
                     <a class="card" href="../service/warehouse.php">
                         <div class="card__background"
-                            style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+                            style="background-image: url(../img/other/service/warehouse/warehouse.jpeg)">
                         </div>
                         <div class="card__content">
                             <p class="card__category">Warehouse & Operation Management</p>
@@ -144,7 +144,7 @@
                     </a>
                     <a class="card" href="../service/transportation.php">
                         <div class="card__background"
-                            style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
+                            style="background-image: url(../img/other/service/transportation/Transportation.png)">
                         </div>
                         <div class="card__content">
                             <p class="card__category">Transportation Inhouse Fleet & System</p>
@@ -166,8 +166,8 @@
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: -10px; margin-bottom: 20px;">
-                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึงคุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;">
+                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง<br>คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
             </div>
         </div>
@@ -198,11 +198,11 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;">
                     สินค้าแนะนำ
                 </h1>
-                <p class="details-desc" style="margin-top: -10px; margin-bottom: 20px;">
-                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนาเพื่อรองรับทุกความต้องการของอุตสาหกรรม
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;">
+                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนา<br>เพื่อรองรับทุกความต้องการของอุตสาหกรรม
                 </p>
             </div>
         </div>
