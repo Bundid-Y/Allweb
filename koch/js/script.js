@@ -373,9 +373,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // ----------------------------------------------------
 // ระบบฟีเจอร์เลื่อนหน้าจอ (Scrolling Feature Logic for development.php)
 // ----------------------------------------------------
-$(document).ready(function() {
-    // ทำงานเมื่อมีคลาส .development-scroll-container อยู่ในหน้าเท่านั้น
-    if ($('.development-scroll-container').length === 0) return;
+if (typeof $ !== 'undefined') {
+    $(document).ready(function() {
+        // ทำงานเมื่อมีคลาส .development-scroll-container อยู่ในหน้าเท่านั้น
+        if ($('.development-scroll-container').length === 0) return;
 
     // กำหนด URL ของรูปภาพให้ตรงกับ ID ของแต่ละส่วนข้อความ
     const images = {
@@ -435,11 +436,12 @@ $(document).ready(function() {
     // ทำงานครั้งแรกเพื่อตั้งค่าเริ่มต้น
     setTimeout(onScroll, 100);
 });
+}
 
 // ----------------------------------------------------
 // Expanding Cards Logic (from index.php)
 // ----------------------------------------------------
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
     // Only run if the relevant element exists on the page
     if (document.querySelector('.Block_Expanding_Cards') === null) return;
 
@@ -514,7 +516,7 @@ $(document).ready(function() {
         for (  k = 0 ; k < tmpLen ; k++  )		ELEM_LIST.push( tmpList[k] ) ;
         return		ELEM_LIST ;
     }
-})();
+});
 
 // ----------------------------------------------------
 // Menubar Component Logic (from menubar.php)
@@ -596,4 +598,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// โค้ดที่ซ้ำซ้อนสำหรับ development.php บริเวณนี้ได้ถูกลบออกไปแล้ว
+

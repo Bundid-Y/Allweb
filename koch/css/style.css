@@ -1318,3 +1318,618 @@ section.loop-images-quotation.vertical {
   }
 }
 
+/* =========================================
+   9. Hero & Branches Section (จากไฟล์ branches.css)
+   ========================================= */
+/* --- Basic Grid System --- */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+@media (min-width: 576px) { .container { max-width: 540px; } }
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 992px) { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center; /* Center vertically */
+}
+
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* --- Branches Layout --- */
+.layout_padding {
+    padding-bottom: 45px;
+    padding-top: 130px; /* Prevent overlap with menubar */
+}
+
+.branches_section {
+    width: 100%;
+    float: left;
+}
+
+.branches_title {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #111111;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.branches_desc {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #242424;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+/* Branch 1: Ban Bueng (Image Left, Text Right) */
+.branch_block_1 {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.branch_img_container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.branch_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.branch_image img {
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* added shadow to elevate the image */
+}
+
+.branch_img_container:after {
+    content: '';
+    background-color: #e82433; /* KOCH red */
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: 0px;
+    margin: 0 auto;
+    display: flex;
+    height: 600px;
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
+}
+
+/* Branch Detail Text */
+.branch_subtitle {
+    width: 100%;
+    float: left;
+    font-size: 32px;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 0px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.branch_subtitle:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #e82433; /* Underline red color matches brand */
+    left: 0px;
+    bottom: -12px;
+}
+
+.branch_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #444;
+    margin: 0px; 
+    padding-top: 15px;   
+    line-height: 1.6;
+}
+
+.branch_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+.branch_list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    padding-left: 20px;
+    position: relative;
+}
+
+.branch_list li:before {
+    content: '•'; /* Automatic bullet */
+    color: #e82433;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.branch_list li strong {
+    color: #e82433; /* Primary KOCH color */
+    font-weight: bold; /* Bold labels */
+}
+
+/* Branch 2: Bowin (Text Left, Image Right) */
+.branch_block_2 {
+    width: 100%;
+    float: left;
+    padding-bottom: 45px;
+    padding-top: 30px;
+}
+
+.branch_img_container_right {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+
+
+.branch_img_container_right:after {
+    content: '';
+    background-color: #e82433;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    margin: 0 auto;
+    display: flex;
+    height: 600px;
+    right: 0;
+    z-index: -1;
+    clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%);
+}
+
+/* --- Responsive Layout Adjustments --- */
+@media (max-width: 991px) {
+    .branch_img_container:after, 
+    .branch_img_container_right:after {
+        width: 100%;
+        height: 100%;
+    }
+    .branch_img_container, 
+    .branch_img_container_right {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .branch_subtitle { text-align: center; }
+    .branch_subtitle:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .branch_img_container, 
+    .branch_img_container_right {
+        min-height: 300px;
+    }
+    .branch_img_container:after, 
+    .branch_img_container_right:after {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        clip-path: none !important;
+        transform: none;
+    }
+    .col-md-6 { 
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px; 
+    }
+    .branch_list li {
+       text-align: left; /* Keep bullets left aligned on mobile */
+    }
+    
+    /* Order adjustment for responsive flow (Image always first on mobile) */
+    .mobile-reverse-row {
+        flex-direction: column-reverse; /* Reverses column order */
+    }
+}
+/* =========================================
+   10. Contact Section (จากหน้า contact.php)
+   ========================================= */
+.map-bg-shape {
+    position: absolute;
+    top: -70px;
+    right: -40px;
+    bottom: -70px;
+    left: 50%;
+    background-color: #e82433;
+    z-index: -1;
+    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 calc(100% - 30px));
+}
+
+@media (max-width: 767px) {
+    .contact-list {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    .contact-item {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .contact-icon {
+        margin-right: 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .tech_subtitle {
+        font-size: 32px !important;
+    }
+
+    .map-bg-shape {
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        height: 100% !important;
+        clip-path: none !important;
+        /* Make the background solidly wrap the map on mobile */
+    }
+
+    .tech_box_main {
+        margin-top: 20px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact-list {
+        flex-wrap: nowrap !important;
+        gap: 20px !important;
+        justify-content: center !important;
+    }
+
+    .contact-item {
+        min-width: 0 !important;
+        max-width: none !important;
+        flex: 0 1 auto !important;
+    }
+
+    .contact-text-group h4 {
+        font-size: 16px !important;
+    }
+
+    .contact-text-group p {
+        font-size: 13px !important;
+        white-space: normal !important;
+        word-break: break-word;
+    }
+
+    .contact-icon {
+        width: 45px !important;
+        height: 45px !important;
+        margin-right: 10px !important;
+    }
+
+    .contact-icon svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+/* =========================================
+   11. Index Content Section - สินค้าแนะนำ (จากหน้า index.php)
+   ========================================= */
+a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:visited,
+        a:active,
+        a:focus {
+            border: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .Img_Dflt {
+            width: 100%;
+        }
+
+        .Img_WH100 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Img_H100 {
+            height: 100%;
+        }
+
+        .noDisplay,
+        ._Off {
+            display: none;
+        }
+
+        .SVG_Dflt {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+        }
+
+        html {
+            font-size: 100%;
+        }
+
+
+        .Block_Expanding_Cards {
+
+            position: relative;
+            margin: 40px auto;
+            width: 100%;
+            height: 40vh;
+            max-height: 400px;
+            min-height: 350px;
+            text-align: center;
+        }
+
+        .card_holder_sB {
+
+            position: relative;
+            margin: 0em auto;
+            width: 90%;
+            height: 100%;
+        }
+
+        .US_City_sB {
+
+            display: inline-block;
+            position: relative;
+            margin: 0em 0.5em;
+            width: 8%;
+            height: 100%;
+            vertical-align: middle;
+            border-radius: 1.5em;
+            overflow: hidden;
+            transition: width 0.25s ease;
+        }
+
+        .US_City_sB._active {
+
+            width: 40%;
+        }
+
+        .US_City_sB:hover {
+
+            cursor: pointer;
+        }
+
+        .card_h1 {
+            color: #ffffff;
+            position: absolute;
+            bottom: 5%;
+            left: 25%;
+            font-size: 2em;
+            margin: 0em;
+            padding: 0em;
+            font-weight: normal;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        .card_h1._active {
+
+            position: relative;
+            bottom: 0%;
+            left: 0%;
+            font-size: 4em;
+            writing-mode: horizontal-tb;
+            transform: rotate(0deg);
+            margin: 2em auto 0em auto;
+            text-shadow: 1px 1px 0.0625em black;
+        }
+
+        .card_content {
+
+            position: relative;
+            margin: 5em auto 0em auto;
+            width: 80%;
+            display: none;
+        }
+
+        .card_content._on {
+            display: block;
+            text-shadow: 1px 1px 0px black;
+        }
+
+        .card_dscrptn {
+            color: #ffffff;
+            font-size: 2em;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        .card_photo_cred {
+
+            color: rgb(0, 234, 0);
+        }
+
+        .card_shade {
+
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.5;
+        }
+
+        .card_shade._off {
+            display: none;
+        }
+
+        .card_shade:hover {
+            opacity: 0;
+        }
+
+        .card_BG {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            transition: left 1.5s ease;
+        }
+
+        .card_BG._active {
+
+            left: -35%;
+        }
+
+        /* MOBILE & TABLET (Vertical Stack) */
+        @media (max-width : 991px) {
+            body {
+                font-size: 85%;
+            }
+
+            .Block_Expanding_Cards {
+                height: auto;
+                max-height: none;
+                min-height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+
+            .card_holder_sB {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .US_City_sB {
+                display: block;
+                width: 100% !important;
+                height: 70px !important;
+                margin: 0 !important;
+                border-radius: 1em;
+            }
+
+            .US_City_sB._active {
+                height: 300px !important;
+            }
+
+            .card_h1 {
+                writing-mode: horizontal-tb;
+                transform: none;
+                bottom: auto;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                font-size: 1.5em;
+                position: absolute;
+            }
+
+            .card_h1._active {
+                margin: 0;
+                top: 20px;
+                left: 20px;
+                transform: none;
+                font-size: 2em;
+            }
+
+            .card_content {
+                margin: 5em auto 0em 20px;
+                width: 90%;
+            }
+        }
+
+        @media (min-width : 1001px) and (max-width : 1200px) {
+
+
+            body {
+                font-size: 100%;
+            }
+
+        }
+
+        @media (min-width : 1201px) and (max-width : 1400px) {
+
+
+            body {
+                font-size: 100%;
+            }
+
+        }
+
+        @media (min-width : 1401px) {
+
+
+            body {
+                font-size: 125%;
+            }
+
+        }

@@ -6,7 +6,6 @@
     <title>Koch Packaging - Branches</title>
     <!-- Custom CSS & JS -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/branches.css">
     <script src="../js/script.js" defer></script>
 </head>
 <body>
