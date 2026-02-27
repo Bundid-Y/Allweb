@@ -145,7 +145,7 @@
     <div class="dev-cards">
       <!-- Card 1: Cliff Coast -->
       <div class="dev-card">
-        <a href="https://picsum.photos/id/1015/800/600" target="_blank" rel="noopener noreferrer">
+        <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
           <div class="dev-card-title">Cliff Coast</div>
           <p class="dev-card-desc">
@@ -156,7 +156,7 @@
 
       <!-- Card 2: Forest Lights -->
       <div class="dev-card">
-        <a href="https://picsum.photos/id/1022/800/600" target="_blank" rel="noopener noreferrer">
+        <a href="../img/other/service/development/tool2.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
             loading="lazy" />
           <div class="dev-card-title">Forest Lights</div>
@@ -168,7 +168,7 @@
 
       <!-- Card 3: Nature Walk -->
       <div class="dev-card">
-        <a href="https://picsum.photos/id/1035/800/600" target="_blank" rel="noopener noreferrer">
+        <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
           <div class="dev-card-title">Nature Walk</div>
           <p class="dev-card-desc">
@@ -179,7 +179,7 @@
 
       <!-- Card 4: Mountain View -->
       <div class="dev-card">
-        <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer">
+        <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
           <div class="dev-card-title">Mountain View</div>
           <p class="dev-card-desc">
@@ -190,7 +190,7 @@
 
       <!-- Card 5: Sunset -->
       <div class="dev-card">
-        <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer">
+        <a href="../img/other/service/transportation/transport.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
             loading="lazy" />
           <div class="dev-card-title">Golden Sunset</div>
