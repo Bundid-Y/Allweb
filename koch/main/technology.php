@@ -403,19 +403,18 @@
             height: 100%;
             top: 0;
             left: 0;
+            clip-path: none !important;
             transform: none;
         }
 
-        .tech_box_main_3:after {
-            clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%);
-        }
-
-        .tech_box_main:after {
-            clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
-        }
-
         .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
             margin-bottom: 30px;
+        }
+
+        .tech_section_3 .row {
+            flex-direction: column-reverse;
         }
     }
 

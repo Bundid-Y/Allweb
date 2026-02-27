@@ -260,8 +260,31 @@
    ========================================= */
     @media screen and (max-width: 1024px) {
         .footer-container {
-            grid-template-columns: 1fr 1fr;
-            gap: 40px 30px;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            text-align: center;
+        }
+
+        .footer-col {
+            align-items: center;
+        }
+
+        .footer-brand .footer-desc {
+            text-align: center;
+        }
+
+        .footer-contact li {
+            justify-content: center;
+            text-align: left;
+        }
+
+        .footer-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .hour-row {
+            align-items: center;
         }
     }
 

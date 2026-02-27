@@ -94,10 +94,25 @@
             font-size: 0.95rem;
             line-height: 1.5;
         }
+
+        @media screen and (max-width: 1024px) {
+            .expertise-row {
+                flex-direction: column !important;
+            }
+            .expertise-image-wrap::before {
+                width: 100%;
+                right: -10px;
+                bottom: -10px;
+                transform: rotate(1deg);
+            }
+            .expertise-image-wrap {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 
     <div class="content-section layout_padding" style="margin-top: 100px; flex: 1;">
-        <div class="flex-row"
+        <div class="expertise-row"
             style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; flex-direction: row-reverse;">
             <!-- Right: Image with custom red shape -->
             <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">

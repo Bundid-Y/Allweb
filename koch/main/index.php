@@ -214,9 +214,7 @@
                     <div class="card_shade _off"></div>
                     <div class="card_content _on">
                         <p class="card_dscrptn">
-                            This photo taken by
-                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank">Luca
-                                Bravo</a>.
+                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG _active">
@@ -228,10 +226,9 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by
                             <a class="card_photo_cred"
                                 href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank">Pedro Lastra</a>.
+                                target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG">
@@ -243,10 +240,9 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by
                             <a class="card_photo_cred"
                                 href="https://unsplash.com/photos/cHRDevKFDBw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank">Venti Views</a>.
+                                target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG">
@@ -258,10 +254,9 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by
                             <a class="card_photo_cred"
                                 href="https://unsplash.com/photos/tUoA7sCrRto?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank">mana5280</a>.
+                                target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG">
@@ -273,10 +268,9 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by
                             <a class="card_photo_cred"
                                 href="https://unsplash.com/photos/KDS5lCrj_ew?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank">Antonio Cuellar</a>.
+                                target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG">
@@ -288,10 +282,9 @@
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
-                            This photo taken by
                             <a class="card_photo_cred"
                                 href="https://unsplash.com/photos/gZXx8lKAb7Y?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank">Maarten van den Heuvel</a>.
+                                target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG">
@@ -357,9 +350,11 @@
         .Block_Expanding_Cards {
 
             position: relative;
-            margin: 5vh auto;
+            margin: 40px auto;
             width: 100%;
-            height: 50vh;
+            height: 40vh;
+            max-height: 400px;
+            min-height: 350px;
             text-align: center;
         }
 
@@ -479,57 +474,63 @@
             left: -35%;
         }
 
-        @media (max-width : 400px) {
-
-
+        /* MOBILE & TABLET (Vertical Stack) */
+        @media (max-width : 991px) {
             body {
-                font-size: 60%;
+                font-size: 85%;
+            }
+
+            .Block_Expanding_Cards {
+                height: auto;
+                max-height: none;
+                min-height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+
+            .card_holder_sB {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .US_City_sB {
+                display: block;
+                width: 100% !important;
+                height: 70px !important;
+                margin: 0 !important;
+                border-radius: 1em;
+            }
+
+            .US_City_sB._active {
+                height: 300px !important;
+            }
+
+            .card_h1 {
+                writing-mode: horizontal-tb;
+                transform: none;
+                bottom: auto;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+                font-size: 1.5em;
+                position: absolute;
             }
 
             .card_h1._active {
-                margin: 0.125em auto 0em auto;
+                margin: 0;
+                top: 20px;
+                left: 20px;
+                transform: none;
+                font-size: 2em;
             }
 
-        }
-
-        @media (min-width : 401px) and (max-width : 600px) {
-
-
-
-            body {
-                font-size: 70%;
+            .card_content {
+                margin: 5em auto 0em 20px;
+                width: 90%;
             }
-
-            .card_h1._active {
-                margin: 0.125em auto 0em auto;
-            }
-
-        }
-
-        @media (min-width : 601px) and (max-width : 800px) {
-
-
-            body {
-                font-size: 80%;
-            }
-
-            .card_h1._active {
-                margin: 0.25em auto 0em auto;
-            }
-
-        }
-
-        @media (min-width : 801px) and (max-width : 1000px) {
-
-
-            body {
-                font-size: 90%;
-            }
-
-            .card_h1._active {
-                margin: 1em auto 0em auto;
-            }
-
         }
 
         @media (min-width : 1001px) and (max-width : 1200px) {

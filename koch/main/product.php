@@ -276,13 +276,13 @@
                 }
 
                 /* Responsive */
-                @media (max-width: 1024px) {
+                @media (max-width: 991px) {
                     .product-grid {
                         grid-template-columns: repeat(3, 1fr);
                     }
                 }
 
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     .category-menu li {
                         padding: 10px 15px;
                     }
@@ -292,7 +292,7 @@
                     }
                 }
 
-                @media (max-width: 480px) {
+                @media (max-width: 575px) {
                     .category-menu {
                         flex-direction: column;
                         gap: 10px;
@@ -303,7 +303,7 @@
                     }
 
                     .product-grid {
-                        grid-template-columns: 1fr;
+                        grid-template-columns: repeat(2, 1fr);
                     }
                 }
             </style>

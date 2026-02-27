@@ -90,11 +90,14 @@
                             <div class="form-group">
                                 <label>Box Size (ขนาดกล่องที่ต้องการ) <span class="required">*</span></label>
                                 <div style="display: flex; gap: 8px; align-items: center;">
-                                    <input type="number" step="0.01" name="box_width" placeholder="กว้าง" required style="min-width: 0;">
+                                    <input type="number" step="0.01" name="box_width" placeholder="กว้าง" required
+                                        style="min-width: 0;">
                                     <span style="color: #666; font-size: 14px;">x</span>
-                                    <input type="number" step="0.01" name="box_length" placeholder="ยาว" required style="min-width: 0;">
+                                    <input type="number" step="0.01" name="box_length" placeholder="ยาว" required
+                                        style="min-width: 0;">
                                     <span style="color: #666; font-size: 14px;">x</span>
-                                    <input type="number" step="0.01" name="box_height" placeholder="สูง" required style="min-width: 0;">
+                                    <input type="number" step="0.01" name="box_height" placeholder="สูง" required
+                                        style="min-width: 0;">
                                     <select name="box_unit" required style="min-width: 70px; padding: 10px 8px;">
                                         <option value="cm">ซม.</option>
                                         <option value="mm">มม.</option>
@@ -276,15 +279,32 @@
                 }
 
                 /* Responsive */
-                @media (max-width: 768px) {
+                @media (max-width: 991px) {
                     .quotation-card {
                         padding: 30px 20px;
                     }
 
-                    .row-3,
+                    .row-3 {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                    }
+                }
+
+                @media (max-width: 767px) {
                     .row-2 {
                         grid-template-columns: 1fr;
                         gap: 15px;
+                    }
+
+                    /* Ensure inputs with flex layout for Box Size wrap and don't overflow */
+                    .form-group>div[style*="display: flex"] {
+                        flex-wrap: wrap;
+                    }
+
+                    .form-group>div[style*="display: flex"]>input[type="number"] {
+                        flex: 1;
+                        /* allow inputs to grow */
+                        min-width: 80px !important;
                     }
                 }
             </style>

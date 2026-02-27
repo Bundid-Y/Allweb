@@ -142,6 +142,20 @@ body {
     transform: none; /* ยกเลิก translation ถ้ามี */
 }
 
+/* Responsive Overrides */
+@media (max-width: 991px) {
+    .details-box:after,
+    .details-box.details-box-services:after {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        clip-path: none !important;
+        transform: none;
+        opacity: 0.9;
+    }
+}
+
 /* วงกลมตัวเลข */
 .details-badge {
     width: 50px;
@@ -587,7 +601,54 @@ section.loop-images-quotation {
 		translate: 100vw 0;
 	}
 	100% {
-		translate: var(--left) 0;
+		translate: calc(-100% - 100vw) 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.login-track {
+		--left: -100rem;
+		height: 8rem;
+        min-width: 100%;
+	}
+	.login-track .login-item {
+		width: 8rem;
+		height: 8rem;
+	}
+}
+
+@media (max-width: 768px) {
+    section.loop-images-quotation {
+        width: 100%;
+        max-width: 100vw;
+        padding: 0;
+    }
+	.login-track {
+		--left: -80rem;
+		height: 6rem;
+        width: 100%;
+        min-width: 100vw;
+	}
+	.login-track .login-item {
+		width: 6rem;
+		height: 6rem;
+	}
+}
+
+@media (max-width: 480px) {
+    section.loop-images-quotation {
+        width: 100%;
+        max-width: 100vw;
+    }
+	.login-track {
+		--left: -60rem;
+		height: 5rem;
+        width: 100%;
+        min-width: 100vw;
+	}
+	.login-track .login-item {
+		width: 5rem;
+		height: 5rem;
 	}
 }
 
@@ -699,20 +760,13 @@ section.loop-images-quotation.vertical {
 /* --- Responsive: ปรับ clip-path สำหรับจอเล็ก --- */
 @media (max-width: 991px) {
     .content-section.section-partners::after {
-        height: 100%;
+        display: none !important; /* Hide on mobile so black text is readable */
     }
     .content-section.section-products::after {
-        height: 100%;
-    }
-}
-@media (max-width: 480px) {
-    .content-section.section-partners::after {
-        clip-path: polygon(100% 0, 15% 5%, 15% 90%, 100% 100%);
-        height: 100%;
-    }
-    .content-section.section-products::after {
-        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
-        height: 100%;
+        height: calc(100% + 50px);
+        width: 100%;
+        left: 0;
+        clip-path: none !important; /* Make solid red background for white text */
     }
 }
 
@@ -915,6 +969,23 @@ section.loop-images-quotation.vertical {
     height: 110%;
     z-index: -1;
     clip-path: polygon(0 4%, 100% 0, 96% 100%, 4% 96%);
+}
+
+/* Responsive Overrides for Shape Angles */
+@media (max-width: 991px) {
+    .shape-angle-1:after,
+    .shape-angle-2:after,
+    .shape-angle-3:after,
+    .shape-angle-4:after,
+    .shape-angle-5:after {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        clip-path: none !important;
+        transform: none;
+    }
 }
 
 /* =========================================
