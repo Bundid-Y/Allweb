@@ -2646,3 +2646,186 @@ a {
         padding: 5px;
     }
 }
+
+/* =========================================
+   Product Page Specific Styles (Moved from product.php)
+   ========================================= */
+
+.category-menu-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.category-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+}
+
+.category-menu li {
+    position: relative;
+    padding: 0 25px;
+}
+
+.category-menu li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #d1d1d1;
+}
+
+.category-menu a {
+    text-decoration: none;
+    color: #555;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.category-menu a:hover,
+.category-menu a.active {
+    color: #e82433;
+    /* KOCH Theme Red */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+
+.product-grid-item {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: relative;
+    animation: fadeIn 0.4s ease forwards;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    padding: 30px 15px 12px;
+    box-sizing: border-box;
+    pointer-events: none;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-grid-item:hover .product-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-title {
+    color: #fff;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+}
+
+.load-more-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.load-more-btn {
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+    padding: 12px 40px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .category-menu li {
+        padding: 10px 15px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .category-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category-menu li:not(:last-child)::after {
+        display: none;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

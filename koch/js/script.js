@@ -619,3 +619,82 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     });
+
+// =========================================
+// Product Page Specific Script (Moved from product.php)
+// =========================================
+
+let currentLimit = 8;
+let currentCategory = 'all';
+
+function filterCategory(category, event) {
+    if (event) {
+        event.preventDefault();
+        // Update active class on menu
+        document.querySelectorAll('.category-menu a').forEach(link => {
+            link.classList.remove('active');
+        });
+        event.target.classList.add('active');
+    }
+
+    currentCategory = category;
+    currentLimit = 8; // Reset limit when filter changes
+    updateGrid(false);
+}
+
+function updateGrid(isLoadMore = false) {
+    const items = document.querySelectorAll('.product-grid-item');
+    let delay = 0;
+    let visibleCount = 0;
+    let totalMatch = 0;
+
+    items.forEach(item => {
+        if (!isLoadMore) {
+            item.style.animation = 'none'; // reset animation
+            item.offsetHeight; // trigger reflow
+        }
+
+        const isMatch = (currentCategory === 'all' || item.getAttribute('data-category') === currentCategory);
+
+        if (isMatch) {
+            totalMatch++;
+            if (visibleCount < currentLimit) {
+                if (!isLoadMore || item.style.display !== 'flex') {
+                    item.style.display = 'flex';
+                    item.style.animation = `fadeIn 0.4s ease ${delay}s forwards`;
+                    delay += 0.05; // stagger effect
+                }
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+                item.style.animation = 'none';
+            }
+        } else {
+            item.style.display = 'none';
+            item.style.animation = 'none';
+        }
+    });
+
+    // Update Load More button visibility
+    const loadMoreContainer = document.querySelector('.load-more-container');
+    if (loadMoreContainer) {
+        if (totalMatch > currentLimit) {
+            loadMoreContainer.style.display = 'block'; // Or 'text-align: center' parent handles it
+        } else {
+            loadMoreContainer.style.display = 'none';
+        }
+    }
+}
+
+// Initialize default view
+document.addEventListener('DOMContentLoaded', () => {
+    filterCategory('all', null);
+
+    const loadMoreBtn = document.querySelector('.load-more-btn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            currentLimit += 8;
+            updateGrid(true);
+        });
+    }
+});
