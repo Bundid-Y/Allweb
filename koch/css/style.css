@@ -2353,3 +2353,296 @@ a {
         left: 50%;
       }
     }
+
+/* =========================================
+   Partners Page Specific Styles
+   ========================================= */
+
+/* --- Basic Grid System --- */
+.partners-page-wrapper .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .partners-page-wrapper .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .partners-page-wrapper .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .partners-page-wrapper .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .partners-page-wrapper .container {
+        max-width: 1140px;
+    }
+}
+
+.partners-page-wrapper .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+}
+
+.partners-page-wrapper .col-md-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .partners-page-wrapper .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* --- Cycle Section Styles --- */
+.partners-page-wrapper .cycle_section_3 {
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+    padding-top: 130px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Text Styles */
+.partners-page-wrapper .cycles_text {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.partners-page-wrapper .cycles_text:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #d1d1d1;
+    left: 240px;
+    top: 50%;
+    display: none;
+}
+
+.partners-page-wrapper .lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #1c1c1c;
+    margin: 0px;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Tech List */
+.partners-page-wrapper .tech_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.partners-page-wrapper .tech_list li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #1c1c1c;
+    line-height: 1.6;
+}
+
+.partners-page-wrapper .tech_list li strong {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* Right Side - Red Shape & Logos */
+.partners-page-wrapper .box_main_3 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Red Background Shape - Absolute to screen right */
+.partners-page-wrapper .red-shape-bg {
+    position: absolute;
+    top: -50px;
+    right: calc((100vw - 100%) / -2);
+    width: 140%;
+    height: 120%;
+    background-color: #e82433;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    display: none;
+}
+
+/* Specific styling for the Red Shape Container */
+.partners-page-wrapper .right-graphic-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.partners-page-wrapper .red-block {
+    background-color: #e82433;
+    width: 140%;
+    height: 600px;
+    position: relative;
+    right: 0;
+    clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .partners-page-wrapper .red-block {
+        width: 100%;
+        right: 0;
+        clip-path: none;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .partners-page-wrapper .cycles_text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners-page-wrapper .cycles_text {
+        text-align: center;
+    }
+
+    .partners-page-wrapper .lorem_text {
+        text-align: left;
+    }
+
+    .partners-page-wrapper .tech_list {
+        text-align: left;
+    }
+
+    .partners-page-wrapper .right-graphic-container {
+        justify-content: center;
+    }
+
+    .partners-page-wrapper .red-block {
+        width: 100%;
+        right: 0;
+        clip-path: none;
+        margin-top: 40px;
+        padding-left: 0;
+    }
+
+    .partners-page-wrapper .cycle_section_3 {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .partners-page-wrapper .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Spacing for Loop Items - Scoped to track to avoid conflict with Navbar Login */
+.partners-page-wrapper .login-track .login-item {
+    margin-bottom: 40px;
+}
+
+.partners-page-wrapper .login-track .login-item img {
+    padding: 15px;
+    background: white;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- New Section: Thanks Partners --- */
+
+.partners-page-wrapper .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.partners-page-wrapper .partner-logo {
+    width: 100%;
+    max-width: 180px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.partners-page-wrapper .partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.partners-page-wrapper .partner-logo:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .partners-page-wrapper .partner-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 991px) {
+    .partners-page-wrapper .partner-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-page-wrapper .partner-grid {
+        gap: 15px;
+    }
+
+    .partners-page-wrapper .partner-logo {
+        max-width: 140px;
+        height: 80px;
+    }
+
+    .partners-page-wrapper .partner-logo img {
+        padding: 5px;
+    }
+}
