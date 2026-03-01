@@ -599,3 +599,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+// =========================================
+// Login Page Specific Styles & Script
+// =========================================
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const sign_in_btn = document.querySelector("#sign-in-btn");
+      const sign_up_btn = document.querySelector("#sign-up-btn");
+      const login_container = document.querySelector(".login-container");
+
+      if (sign_up_btn && sign_in_btn && login_container) {
+        sign_up_btn.addEventListener("click", () => {
+          login_container.classList.add("sign-up-mode");
+        });
+
+        sign_in_btn.addEventListener("click", () => {
+          login_container.classList.remove("sign-up-mode");
+        });
+      }
+    });
