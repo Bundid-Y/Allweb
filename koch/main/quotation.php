@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koch Packaging - Login</title>
+    <title>Koch Packaging - Quotation</title>
     <!-- Custom CSS & JS -->
+    <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Quotation Page (quotation.php)" -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<!-- page-quotation: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+
+<body class="page-quotation">
     <?php include '../component/menubar.php'; ?>
 
     <main>
@@ -136,178 +139,6 @@
                 </div>
             </div>
 
-            <style>
-                .quotation-card {
-                    background: #ffffff;
-                    padding: 40px 50px;
-                    border-radius: 4px;
-                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-                    border: 1px solid #ebebeb;
-                }
-
-                .form-title {
-                    text-align: center;
-                    font-family: 'Sarabun', sans-serif;
-                    font-weight: 500;
-                    font-size: 28px;
-                    margin-bottom: 35px;
-                    color: #333;
-                }
-
-                .form-row {
-                    display: grid;
-                    gap: 20px;
-                    margin-bottom: 20px;
-                }
-
-                .row-3 {
-                    grid-template-columns: 1fr 1fr 1fr;
-                }
-
-                .row-2 {
-                    grid-template-columns: 1fr 1fr;
-                }
-
-                .row-1 {
-                    grid-template-columns: 1fr;
-                }
-
-                .form-group {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .form-group label {
-                    font-family: 'Sarabun', sans-serif;
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #111;
-                    margin-bottom: 8px;
-                }
-
-                .form-group .required {
-                    color: #e82433;
-                    /* KOCH red */
-                    margin-left: 2px;
-                }
-
-                .form-group input[type="text"],
-                .form-group input[type="tel"],
-                .form-group input[type="email"],
-                .form-group input[type="number"],
-                .form-group select,
-                .form-group textarea {
-                    width: 100%;
-                    padding: 10px 15px;
-                    border: 1px solid #c2c2c2;
-                    border-radius: 0px;
-                    font-family: 'Sarabun', sans-serif;
-                    font-size: 14px;
-                    color: #333;
-                    background-color: #fff;
-                    transition: all 0.2s ease;
-                    box-sizing: border-box;
-                }
-
-                .form-group input:focus,
-                .form-group select:focus,
-                .form-group textarea:focus {
-                    border-color: #e82433;
-                    outline: none;
-                }
-
-                .form-group input::placeholder,
-                .form-group textarea::placeholder {
-                    color: #999;
-                }
-
-                .file-upload-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                }
-
-                .file-input {
-                    font-family: 'Sarabun', sans-serif;
-                    font-size: 13px;
-                    color: #333;
-                }
-
-                .file-input::file-selector-button {
-                    padding: 4px 10px;
-                    border: 1px solid #aaa;
-                    border-radius: 2px;
-                    background-color: #efefef;
-                    color: #000;
-                    font-family: 'Sarabun', sans-serif;
-                    font-size: 12px;
-                    cursor: pointer;
-                    margin-right: 10px;
-                }
-
-                .file-input::file-selector-button:hover {
-                    background-color: #dfdfdf;
-                }
-
-                .file-hint {
-                    font-size: 12px;
-                    color: #666;
-                    font-family: 'Sarabun', sans-serif;
-                    margin-top: 2px;
-                }
-
-                .form-submit {
-                    margin-top: 35px;
-                    text-align: center;
-                }
-
-                .submit-btn {
-                    background-color: #e82433;
-                    color: #fff;
-                    border: none;
-                    padding: 12px 45px;
-                    font-family: 'Sarabun', sans-serif;
-                    font-weight: 500;
-                    font-size: 16px;
-                    border-radius: 2px;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease;
-                }
-
-                .submit-btn:hover {
-                    background-color: #c51d2a;
-                }
-
-                /* Responsive */
-                @media (max-width: 991px) {
-                    .quotation-card {
-                        padding: 30px 20px;
-                    }
-
-                    .row-3 {
-                        grid-template-columns: 1fr;
-                        gap: 15px;
-                    }
-                }
-
-                @media (max-width: 767px) {
-                    .row-2 {
-                        grid-template-columns: 1fr;
-                        gap: 15px;
-                    }
-
-                    /* Ensure inputs with flex layout for Box Size wrap and don't overflow */
-                    .form-group>div[style*="display: flex"] {
-                        flex-wrap: wrap;
-                    }
-
-                    .form-group>div[style*="display: flex"]>input[type="number"] {
-                        flex: 1;
-                        /* allow inputs to grow */
-                        min-width: 80px !important;
-                    }
-                }
-            </style>
         </section>
     </main>
     <?php include '../component/footer.php'; ?>

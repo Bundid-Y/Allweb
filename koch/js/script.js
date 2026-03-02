@@ -620,3 +620,106 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// =========================================
+// Menubar / Header Component (component/menubar.php)
+// =========================================
+// ใช้ readyState-safe pattern เพื่อป้องกันปัญหา DOMContentLoaded
+// ไม่ trigger เมื่อ script โหลดด้วย defer (DOM โหลดเสร็จไปแล้ว)
+function initMenubar() {
+    const header = document.getElementById('header');
+    const navMenu = document.getElementById('navMenu');
+    const navToggle = document.getElementById('navToggle');
+    const navClose = document.getElementById('navClose');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const navLinks = document.querySelectorAll('.header .nav-list .nav-item > a.nav-link');
+
+    // ถ้า element ไม่มีในหน้านี้ ให้หยุด (เช่น หน้าที่ไม่มี menubar)
+    if (!header || !navMenu || !navToggle) return;
+
+    /* ===== Scroll Effect: Header compact เมื่อ scroll ลง ===== */
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 40) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        lastScroll = currentScroll;
+    }, { passive: true });
+
+    /* ===== ฟังก์ชันเปิดเมนู ===== */
+    function openMenu() {
+        navMenu.classList.add('show-menu');
+        navToggle.classList.add('active');
+        document.body.style.overflow = 'hidden'; /* ล็อค scroll เวลาเปิดเมนู */
+    }
+
+    /* ===== ฟังก์ชันปิดเมนู ===== */
+    function closeMenu() {
+        navMenu.classList.remove('show-menu');
+        navToggle.classList.remove('active');
+        document.body.style.overflow = ''; /* คืน scroll */
+    }
+
+    /* ===== Hamburger Toggle — เปิด/ปิดเมนู ===== */
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            if (navMenu.classList.contains('show-menu')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+    }
+
+    /* ===== ปุ่ม ✕ ปิดเมนู ===== */
+    if (navClose) {
+        navClose.addEventListener('click', () => {
+            closeMenu();
+        });
+    }
+
+    /* ===== คลิกลิงก์เมนูแล้วปิดเมนูอัตโนมัติ (มือถือ) ===== */
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 1024) {
+                closeMenu();
+            }
+        });
+    });
+
+    /* ===== Resize: ปิดเมนูอัตโนมัติเมื่อกลับเป็น Desktop ===== */
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1024) {
+            closeMenu();
+        }
+    });
+
+    /* ===== Mobile Dropdown Toggle ===== */
+    dropdownItems.forEach(item => {
+        const link = item.querySelector('.nav-link');
+        if (link) {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth > 1024) return;
+                e.preventDefault();
+                item.classList.toggle('active');
+                if (item.classList.contains('active')) {
+                    link.style.color = 'var(--primary-color)';
+                } else {
+                    link.style.color = 'var(--text-color)';
+                }
+            });
+        }
+    });
+}
+
+// ตรวจ readyState: ถ้า DOM พร้อมแล้วให้รัน init ทันที
+// ถ้าไม่ก็รอ DOMContentLoaded (ป้องกันปัญหา defer + DOMContentLoaded ไม่ fire)
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMenubar);
+} else {
+    initMenubar();
+}

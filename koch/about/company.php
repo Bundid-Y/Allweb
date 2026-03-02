@@ -6,104 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koch Packaging</title>
     <!-- Custom CSS & JS -->
+    <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Company Page (about/company.php)" -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<!-- page-company: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+<body class="page-company">
     <?php include '../component/menubar.php'; ?>
 
     <!-- Main Content -->
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Styling for Company Text */
-        .company-text-container {
-            text-align: left;
-        }
-
-        .company-text-container p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #444;
-            margin-bottom: 20px;
-            text-indent: 40px;
-        }
-
-        .company-text-container strong {
-            color: #325662;
-            font-weight: 700;
-        }
-
-        /* Custom Styling for Company Image Shape */
-        .company-image-wrap {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            border-radius: 0;
-            display: flex;
-        }
-
-        .company-image-wrap::before {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            width: 100%;
-            height: 100%;
-            background-color: #E82433;
-            z-index: -1;
-            border-radius: 0;
-            transform: rotate(-3deg);
-            transform-origin: bottom left;
-            opacity: 0.9;
-            box-shadow: 0 10px 20px rgba(232, 36, 51, 0.2);
-        }
-
-        .company-image-inner {
-            background-color: #ffffff;
-            padding: 30px;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-            border-radius: 0;
-            border: 1px solid #f0f0f0;
-            width: 100%;
-            min-height: 480px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .company-image-inner img {
-            width: 100%;
-            max-width: 480px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .company-text-container p {
-                font-size: 1rem;
-                text-indent: 20px;
-            }
-
-            .company-image-wrap::before {
-                bottom: -15px;
-                left: -15px;
-            }
-
-            .company-image-inner {
-                padding: 30px;
-            }
-        }
-    </style>
 
     <div class="content-section layout_padding" style="margin-top: 100px; flex: 1;">
         <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">

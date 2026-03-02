@@ -6,110 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koch Packaging - Expertise</title>
     <!-- Custom CSS & JS -->
+    <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Expertise Page (about/expertise.php)" -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<!-- page-expertise: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+<body class="page-expertise">
     <?php include '../component/menubar.php'; ?>
 
     <!-- Main Content -->
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Custom Styling for Expertise Focus */
-        .expertise-image-wrap {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            border-radius: 0;
-            display: flex;
-        }
-
-        .expertise-image-wrap::before {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            /* Adjusting angle and placement to appear like an offset backing layer */
-            right: -15px;
-            width: 60%;
-            height: 100%;
-            background-color: #E82433;
-            z-index: -1;
-            border-radius: 0;
-            transform: rotate(2deg);
-            transform-origin: bottom right;
-            opacity: 0.9;
-        }
-
-        .expertise-image-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 0;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .expertise-text-list {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .expertise-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            background: #fdfdfd;
-            padding: 15px;
-            border-radius: 0;
-            border-left: 4px solid #E82433;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-        }
-
-        .expertise-number {
-            color: #E82433;
-            font-weight: 800;
-            font-size: 1.5rem;
-            line-height: 1;
-        }
-
-        .expertise-title {
-            font-size: 1.1rem;
-            color: #325662;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .expertise-desc {
-            color: #555;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        @media screen and (max-width: 1024px) {
-            .expertise-row {
-                flex-direction: column !important;
-            }
-            .expertise-image-wrap::before {
-                width: 100%;
-                right: -10px;
-                bottom: -10px;
-                transform: rotate(1deg);
-            }
-            .expertise-image-wrap {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
 
     <div class="content-section layout_padding" style="margin-top: 100px; flex: 1;">
         <div class="expertise-row"

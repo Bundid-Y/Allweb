@@ -6,90 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koch Packaging - Vision</title>
     <!-- Custom CSS & JS -->
+    <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Vision Page (about/vision.php)" -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<!-- page-vision: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+<body class="page-vision">
     <?php include '../component/menubar.php'; ?>
 
     <!-- Main Content -->
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Styling for Vision Text */
-        .vision-text-container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .vision-text-container p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #444;
-            margin-bottom: 20px;
-            text-indent: 40px;
-        }
-
-        .vision-text-container strong {
-            color: #325662;
-        }
-
-        /* Custom Styling for Vision Image Shape */
-        .vision-image-wrap {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            border-radius: 0;
-            display: flex;
-        }
-
-        .vision-image-wrap::before {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: -20px;
-            width: 100%;
-            height: 100%;
-            background-color: #E82433;
-            z-index: -1;
-            border-radius: 0;
-            transform: rotate(-3deg);
-            transform-origin: bottom left;
-            opacity: 0.9;
-            box-shadow: 0 10px 20px rgba(232, 36, 51, 0.2);
-        }
-
-        .vision-image-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 0;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-            display: block;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .vision-text-container p {
-                font-size: 1rem;
-                text-indent: 20px;
-            }
-
-            .vision-image-wrap::before {
-                bottom: -15px;
-                left: -15px;
-            }
-        }
-    </style>
 
     <div class="content-section layout_padding" style="margin-top: 100px; flex: 1;">
         <div class="flex-row"
