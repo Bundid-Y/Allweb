@@ -115,7 +115,7 @@
                     <div class="tech_box_main" style="position: relative;">
                         <div class="tech_image"
                             style="box-shadow: 0 15px 40px rgba(0,0,0,0.15); height: 500px; background: #fff; display: flex; align-items: stretch; border-radius: 0;">
-                            <iframe src="https://www.google.com/maps?q=13.161099,101.157816&hl=th&z=15&output=embed"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124291.35992560715!2d101.06124759726562!3d13.218724100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102d30061100aa1%3A0xfcf1e516c1c8beac!2sKOCH%20Packaging%20and%20packing%20services%20co.%2Cltd!5e0!3m2!1sth!2sth!4v1772423982751!5m2!1sth!2sth"
                                 frameborder="0" style="border:0; width: 100%; height: 100%; display: block;"
                                 allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>

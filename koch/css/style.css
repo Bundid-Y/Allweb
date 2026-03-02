@@ -3856,12 +3856,12 @@ body.page-vision {
 
 
 /* =========================================
-   Menubar / Header Component (component/menubar.php)
-   Scoped ด้วย .header selector เพื่อป้องกันไม่ให้กระทบส่วนอื่น
+   Menubar Component (component/menubar.php)
+   Scoped ด้วย .header เป็น component-level scope
    menubar เป็น shared component ที่ใช้ร่วมกันทุกหน้า
    ========================================= */
 
-/* ===== CSS Variables & Reset (สำหรับ menubar) ===== */
+/* ===== CSS Variables & Reset ===== */
 :root {
     --header-height: 65px;
     --header-height-compact: 55px;
@@ -3878,6 +3878,7 @@ body.page-vision {
     --radius: 12px;
 }
 
+/* --- Global Reset (body, ul, a จากไฟล์ menubar.php เดิม) --- */
 body {
     font-family: 'Inter', 'Sarabun', sans-serif;
     margin: 0;
@@ -3930,6 +3931,7 @@ a {
     height: 32px;
 }
 
+/* --- Nav container --- */
 .nav {
     height: var(--header-height);
     display: flex;

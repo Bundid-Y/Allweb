@@ -623,20 +623,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // =========================================
-// Menubar / Header Component (component/menubar.php)
+// Menubar Component (component/menubar.php)
 // =========================================
-// ใช้ readyState-safe pattern เพื่อป้องกันปัญหา DOMContentLoaded
-// ไม่ trigger เมื่อ script โหลดด้วย defer (DOM โหลดเสร็จไปแล้ว)
-function initMenubar() {
+document.addEventListener('DOMContentLoaded', () => {
+    // Guard: ทำงานเฉพาะหน้าที่มี menubar เท่านั้น
+    if (!document.getElementById('header')) return;
+
     const header = document.getElementById('header');
     const navMenu = document.getElementById('navMenu');
     const navToggle = document.getElementById('navToggle');
     const navClose = document.getElementById('navClose');
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     const navLinks = document.querySelectorAll('.header .nav-list .nav-item > a.nav-link');
-
-    // ถ้า element ไม่มีในหน้านี้ ให้หยุด (เช่น หน้าที่ไม่มี menubar)
-    if (!header || !navMenu || !navToggle) return;
 
     /* ===== Scroll Effect: Header compact เมื่อ scroll ลง ===== */
     let lastScroll = 0;
@@ -714,12 +712,4 @@ function initMenubar() {
             });
         }
     });
-}
-
-// ตรวจ readyState: ถ้า DOM พร้อมแล้วให้รัน init ทันที
-// ถ้าไม่ก็รอ DOMContentLoaded (ป้องกันปัญหา defer + DOMContentLoaded ไม่ fire)
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMenubar);
-} else {
-    initMenubar();
-}
+});
