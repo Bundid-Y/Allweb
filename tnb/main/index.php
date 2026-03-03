@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Sarabun:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Libraries: GSAP & Lenis -->
@@ -34,22 +34,26 @@
 
     <?php include '../component/menubar.php'; ?>
 
-    <!-- SLIDER SECTION -->
-    <div class="main-container section-slider">
-        <div class="slider-wrapper" id="sliderWrapper">
-
-            <div class="slide-track" id="slideTrack">
-                <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-1.jpeg" alt="Slide 1"></div>
-                <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-2.jpeg" alt="Slide 2"></div>
-                <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-3.jpeg" alt="Slide 3"></div>
-                <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-4.jpeg" alt="Slide 4"></div>
-                <div class="slide-item"><img src="../img/other/index/cardslides/cardslides-5.jpeg" alt="Slide 5"></div>
+    <!-- SLIDER SECTION (Tap House Tilt Panel) -->
+    <section class="tnb-home-slider">
+        <div class="tnb-panel-container">
+            <div class="tnb-panel" id="tnbTiltPanel">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content" id="tnbTiltContent">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Tap House</h1>
+                            <p class="tnb-panel__addr"><span></span>60 Ranelagh Village, Dublin</p>
+                        </div>
+                        <div class="tnb-panel__line"></div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col" id="tnbTiltImg">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg" alt="Tap House"
+                        class="tnb-panel__img" />
+                </div>
             </div>
-
-            <button class="nav-btn prev" id="prevBtn">‹</button>
-            <button class="nav-btn next" id="nextBtn">›</button>
         </div>
-    </div>
+    </section>
 
 
     <!-- CONTENT / DETAILS SECTION — เกี่ยวกับเรา -->

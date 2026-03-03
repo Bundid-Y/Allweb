@@ -3,165 +3,52 @@ console.log('Koch script loaded');
 
 document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
-    // ตัวแปรสำหรับจัดการ Slider
+    // Tap House Tilt Panel Animation (Codepen replacement)
     // ----------------------------------------------------
-    const slides = document.querySelectorAll('.slide-item');
-    const sliderWrapper = document.getElementById('sliderWrapper');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
+    const tnbSliderWrap = document.querySelector('.tnb-home-slider');
+    const tnbPanelContent = document.getElementById('tnbTiltContent');
+    const tnbPanelImg = document.getElementById('tnbTiltImg');
     
-    let current = 0;
-    let autoSlideInterval;
-    const totalSlides = slides.length;
+    if (tnbSliderWrap && tnbPanelContent && tnbPanelImg && typeof gsap !== 'undefined') {
+        gsap.set([tnbPanelContent, tnbPanelImg], { transformStyle: "preserve-3d" });
 
-    // ----------------------------------------------------
-    // ฟังก์ชันคำนวณขนาด (Responsive)
-    // ----------------------------------------------------
-    function getDimensions() {
-        const w = window.innerWidth;
-        if (w >= 1200) {
-            return { centerW: 900, centerH: 600, sideW: 500, sideH: 450, overlapPct: 0.15 };
-        } else if (w >= 992) {
-            return { centerW: 700, centerH: 500, sideW: 400, sideH: 380, overlapPct: 0.12 };
-        } else if (w >= 600) {
-            return { centerW: 450, centerH: 350, sideW: 280, sideH: 260, overlapPct: 0.10 };
-        } else {
-            return { centerW: 280, centerH: 220, sideW: 160, sideH: 140, overlapPct: 0.08 };
+        function tilt(cx, cy) {
+            const rect = tnbSliderWrap.getBoundingClientRect();
+            // Calculate relative X and Y inside the container
+            const x = cx - rect.left;
+            const y = cy - rect.top;
+            
+            // Calculate a percentage (-50 to 50) * 2 = (-100 to 100)
+            const sxPos = ((x / rect.width) * 100 - 50) * 2;
+            const syPos = ((y / rect.height) * 100 - 50) * 2;
+            
+            gsap.to(tnbPanelContent, {
+                duration: 2,
+                rotationY: -0.03 * sxPos,
+                rotationX: 0.03 * syPos,
+                transformPerspective: 500,
+                transformOrigin: "center center -400",
+                ease: "expo.out"
+            });
+            gsap.to(tnbPanelImg, {
+                duration: 2,
+                rotationY: -0.03 * sxPos,
+                rotationX: 0.03 * syPos,
+                transformPerspective: 500,
+                transformOrigin: "center center -200",
+                ease: "expo.out"
+            });
         }
-    }
 
-    // ----------------------------------------------------
-    // ฟังก์ชันอัปเดตการแสดงผล Slider
-    // ----------------------------------------------------
-    function updateSlider() {
-        const dim = getDimensions();
-        
-        // ปรับความสูงของ Container หลักให้พอดีกับภาพตรงกลาง
-        if(sliderWrapper) {
-             sliderWrapper.style.height = (dim.centerH + 40) + "px"; // +40 เผื่อเงา
-        }
-
-        const offset = (dim.centerW / 2) + (dim.sideW / 2) - (dim.sideW * dim.overlapPct);
-
-        slides.forEach((slide, index) => {
-            // Reset click event
-            slide.onclick = null;
-
-            // คำนวณ Index สำหรับ Loop
-            const prevIndex = (current - 1 + totalSlides) % totalSlides;
-            const nextIndex = (current + 1) % totalSlides;
-
-            if (index === current) {
-                // ภาพตรงกลาง (Active)
-                setStyle(slide, {
-                    width: dim.centerW,
-                    height: dim.centerH,
-                    zIndex: 10,
-                    opacity: 1,
-                    left: '50%',
-                    transform: 'translate(-50%, -50%) scale(1)',
-                    pointerEvents: 'none' // ไม่ให้กดตัวเองซ้ำ
-                });
-            } else if (index === prevIndex) {
-                // ภาพซ้าย
-                setStyle(slide, {
-                    width: dim.sideW,
-                    height: dim.sideH,
-                    zIndex: 5,
-                    opacity: 0.8,
-                    left: `calc(50% - ${offset}px)`,
-                    transform: 'translate(-50%, -50%) scale(1)',
-                    pointerEvents: 'auto'
-                });
-                slide.onclick = () => { moveSlide(-1); };
-            } else if (index === nextIndex) {
-                // ภาพขวา
-                setStyle(slide, {
-                    width: dim.sideW,
-                    height: dim.sideH,
-                    zIndex: 5,
-                    opacity: 0.8,
-                    left: `calc(50% + ${offset}px)`,
-                    transform: 'translate(-50%, -50%) scale(1)',
-                    pointerEvents: 'auto'
-                });
-                slide.onclick = () => { moveSlide(1); };
-            } else {
-                // ภาพที่ซ่อนอยู่
-                setStyle(slide, {
-                    width: dim.sideW,
-                    height: dim.sideH,
-                    zIndex: 0,
-                    opacity: 0,
-                    left: '50%',
-                    transform: 'translate(-50%, -50%) scale(0.5)',
-                    pointerEvents: 'none'
-                });
-            }
+        tnbSliderWrap.addEventListener('mousemove', (e) => {
+            tilt(e.clientX, e.clientY);
         });
-    }
 
-    // ฟังก์ชันช่วยกำหนด Style
-    function setStyle(element, styles) {
-        element.style.width = styles.width + "px";
-        element.style.height = styles.height + "px";
-        element.style.zIndex = styles.zIndex;
-        element.style.opacity = styles.opacity;
-        element.style.left = styles.left;
-        element.style.top = "50%"; // Center Vertically
-        element.style.transform = styles.transform;
-        element.style.pointerEvents = styles.pointerEvents;
-    }
-
-    // ----------------------------------------------------
-    // ฟังก์ชันเลื่อนภาพ
-    // ----------------------------------------------------
-    function moveSlide(direction) {
-        current = (current + direction + totalSlides) % totalSlides;
-        updateSlider();
-        resetAutoSlide();
-    }
-
-    // ----------------------------------------------------
-    // ระบบเลื่อนอัตโนมัติ (Auto Slide)
-    // ----------------------------------------------------
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-            moveSlide(1);
-        }, 5000);
-    }
-
-    function stopAutoSlide() {
-        clearInterval(autoSlideInterval);
-    }
-
-    function resetAutoSlide() {
-        stopAutoSlide();
-        startAutoSlide();
-    }
-
-    // ----------------------------------------------------
-    // Event Listeners
-    // ----------------------------------------------------
-    if(prevBtn) prevBtn.addEventListener('click', () => moveSlide(-1));
-    if(nextBtn) nextBtn.addEventListener('click', () => moveSlide(1));
-
-    if(sliderWrapper) {
-        sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
-        sliderWrapper.addEventListener('mouseleave', startAutoSlide);
-    }
-    
-    // จัดการเมื่อเปลี่ยนขนาดหน้าจอ (Resize)
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(updateSlider, 100);
-    });
-
-    // เริ่มต้นทำงาน
-    if(slides.length > 0) {
-        updateSlider();
-        startAutoSlide();
+        tnbSliderWrap.addEventListener('mouseleave', () => {
+            const rect = tnbSliderWrap.getBoundingClientRect();
+            // Reset to center
+            tilt(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        });
     }
 
     // ----------------------------------------------------
@@ -332,41 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         }
 
-        // === 8.3 SLIDER SECTION: สี่เหลี่ยมเลื่อนลงจากบนแบบ Parallax ===
-        const sliderSec = document.querySelector('.section-slider');
-        if (sliderSec) {
-            // Layer สีแดง (มาเร็วหน่อย)
-            gsap.fromTo(sliderSec,
-                { '--deco-y': '-100%' },
-                {
-                    '--deco-y': '0%',
-                    duration: 1.2,
-                    ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: '.section-slider',
-                        start: 'top 85%',
-                        end: 'bottom 20%',
-                        toggleActions: 'play none none reverse',
-                    },
-                }
-            );
-
-            // Layer สีน้ำเงิน (มาช้ากว่าเล็กน้อย สร้างมิติ)
-            gsap.fromTo(sliderSec,
-                { '--deco-y2': '-100%' },
-                {
-                    '--deco-y2': '0%',
-                    duration: 1.6, /* ช้ากว่าสีแดง */
-                    ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: '.section-slider',
-                        start: 'top 85%',
-                        end: 'bottom 20%',
-                        toggleActions: 'play none none reverse',
-                    },
-                }
-            );
-        }
+        // Removed legacy 8.3 SLIDER SECTION GSAP logic
     }
 });
 
