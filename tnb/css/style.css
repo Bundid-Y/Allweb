@@ -191,22 +191,9 @@ body {
     clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
 }
 
-/* Modifier สำหรับส่วน Services ที่ต้องการพื้นหลังกว้างกว่า */
-.details-box.details-box-services:after {
-    width: 100%; /* ขยายความกว้างเต็มพื้นที่ */
-    max-width: 1200px;
-    height: 110%; /* เพิ่มความสูงให้ครอบคลุม */
-    right: 0;
-    left: 0;
-    top: -5%; /* ขยับขึ้นเล็กน้อย */
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 95%); /* ปรับรูปร่างให้เหมาะกับแนวนอน */
-    transform: none; /* ยกเลิก translation ถ้ามี */
-}
-
 /* Responsive Overrides */
 @media (max-width: 991px) {
-    .details-box:after,
-    .details-box.details-box-services:after {
+    .details-box:after {
         width: 100%;
         height: 100%;
         top: 0;
@@ -289,190 +276,211 @@ body {
 }
 
 /* -----------------------------------------
-   4. การ์ดบริการของเรา (Service Cards)
+   4. ส่วนบริการของเรา — News Card Style (Codepen PROMVy)
+   — ใช้เฉพาะในหน้า index.php เท่านั้น
+   — Selectors ทั้งหมดถูก scope ภายใต้ .tnb-services-section
+   — Layout: 3 คอลัมน์ × 2 แถว (3×2 Grid)
    ----------------------------------------- */
-:root{
-  --background-dark: #ffffffff;
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --text-light: rgba(255,255,255,0.75);
-  --text-lighter: rgba(255,255,255,0.9);
-  --width-container: 1200px;
+
+/* Heading wrapper */
+.tnb-services-section .tnb-services-section__heading {
+    margin-bottom: 16px;
 }
 
-/* Reset บางส่วน — ยกเว้น header/menubar เพื่อไม่ให้กระทบ navbar */
-.content-section *,
-.card-grid *,
-.hero-section * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* คอนเทนเนอร์หลัก — CSS Grid 3 คอลัมน์ (Desktop) */
+.tnb-services-section .tnb-news-content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-
-.hero-section{
-  align-items: center;
-  background: var(--background-dark);
-  display: flex;
-  min-height: 100%;
-  justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
+/* การ์ดแต่ละใบ */
+.tnb-services-section .tnb-news-card {
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+    cursor: pointer;
 }
 
-/* --- Container สำหรับจัดการแถว (Card Grid) --- */
-.card-grid{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+/* Gradient overlay เพื่อให้ข้อความอ่านง่าย */
+.tnb-services-section .tnb-news-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.75) 100%);
+    z-index: 0;
 }
 
-@media(min-width: 600px){
-  .card-grid{
-    grid-template-columns: repeat(2, 1fr); 
-  }
+/* ลิงก์ทับการ์ดทั้งใบ — z-index สูงสุดเพื่อให้คลิกได้ */
+.tnb-services-section .tnb-news-card__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
 }
 
-@media(min-width: 960px){
-  .card-grid{
-    grid-template-columns: repeat(4, 1fr); 
-  }
+/* รูปภาพพื้นหลังการ์ด */
+.tnb-services-section .tnb-news-card__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 3s ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    z-index: -1;
 }
 
-/* --- ตัวการ์ด (Card) --- */
-.card{
-  list-style: none;
-  position: relative;
-  border-radius: 15px; 
-  overflow: hidden;
-  aspect-ratio: 3 / 4; 
-  background-color: #222;
+/* กล่องข้อความด้านล่างการ์ด */
+.tnb-services-section .tnb-news-card__text-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    transition: background-color 1.5s ease;
 }
 
-.card:before{
-  content: '';
-  display: block;
-  padding-bottom: 150%;
-  width: 100%;
+/* ชื่อบริการ */
+.tnb-services-section .tnb-news-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem 0;
+    color: #ffffff;
+    transition: color 1s ease;
+    line-height: 1.3;
 }
 
-/* พื้นหลังรูปภาพในการ์ด */
-.card__background{
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0); /* แก้ไข trsnsform เป็น transform */
-  transition: 
-    filter 200ms linear,
-    transform 200ms linear;
+/* คำอธิบายสั้น (ประเภทบริการ) */
+.tnb-services-section .tnb-news-card__post-date {
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+    color: #f7c17b;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-.card:hover .card__background{
-  transform: scale(1.05) translateZ(0);
+/* รายละเอียดที่ซ่อน — จะแสดงเมื่อ hover */
+.tnb-services-section .tnb-news-card__details-wrapper {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease, opacity 1s ease;
 }
 
-.card-grid:hover > .card:not(:hover) .card__background{
-  filter: brightness(0.5) saturate(0.5) contrast(1.2) blur(20px);
+/* ข้อความ excerpt */
+.tnb-services-section .tnb-news-card__excerpt {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+    color: #eeeeee;
 }
 
-/* เนื้อหาข้อความในการ์ด */
-.card__content{
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
-  z-index: 2;
+/* ปุ่ม อ่านเพิ่มเติม */
+.tnb-services-section .tnb-news-card__read-more {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    color: #cccccc;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    margin-top: 0.8rem;
+    border: 1px solid #444;
+    font-size: 0.8rem;
+    font-family: 'Sarabun', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    z-index: 5;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.card__category{
-  color: var(--text-light); /* หรือใช้ #f7c17b ตามที่แก้ */
-  font-size: 1rem; /* หรือ 0.75rem */
-  font-weight: 500;
-  margin-bottom: var(--spacing-m);
-  text-transform: uppercase;
-  /* เพิ่มเติมจากการแก้ไข */
-  color: #f7c17b; 
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin-bottom: 8px;
+.tnb-services-section .tnb-news-card__read-more:hover {
+    background: black;
+    color: #f7c17b;
 }
-
-.card__heading{
-  color: var(--text-lighter); /* หรือ #ffffff */
-  font-size: 2rem; /* หรือ 1.2rem */
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-  line-height: 1.2;
-  word-spacing: 100vw;
-  /* เพิ่มเติมจากการแก้ไข */
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin: 0;
-  line-height: 1.3;
-  font-weight: 600;
-} 
 
 /* -----------------------------------------
-   5. Responsive ปรับตามขนาดหน้าจอ
+   4.1 Hover Effects — ทำงานทุกขนาดหน้าจอ
    ----------------------------------------- */
 
-/* แท็บเล็ต (แสดงแถวละ 2 ใบ) */
-@media (max-width: 991px) {
-    .card-grid {
+/* แสดงรายละเอียดเมื่อ hover */
+.tnb-services-section .tnb-news-card:hover .tnb-news-card__details-wrapper {
+    max-height: 20rem;
+    opacity: 1;
+}
+
+/* พื้นหลังข้อความเข้มขึ้นเมื่อ hover */
+.tnb-services-section .tnb-news-card:hover .tnb-news-card__text-wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ชื่อเปลี่ยนสีเมื่อ hover */
+.tnb-services-section .tnb-news-card:hover .tnb-news-card__title {
+    color: yellow;
+}
+
+/* รูปภาพซูมเมื่อ hover */
+.tnb-services-section .tnb-news-card:hover .tnb-news-card__image {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+/* -----------------------------------------
+   4.2 Responsive — Tablet (max 900px) → 2 คอลัมน์
+   ----------------------------------------- */
+@media (max-width: 900px) {
+    .tnb-services-section .tnb-news-content-wrapper {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-gap: 0.4rem;
     }
-    
-    /* ปรับส่วน details-box */
-    .details-box:after {
-        width: 100%;
-        clip-path: none;
-        height: 100%;
-        opacity: 0.8;
+
+    .tnb-services-section .tnb-news-card {
+        height: 16rem;
     }
 }
 
-/* มือถือ (แสดงแถวละ 2 ใบ หรือ 1 ใบตามความเหมาะสม) */
-@media (max-width: 576px) {
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 10px;
-    }
-    
-    .card__heading {
-        font-size: 0.9rem;
-    }
-    
-    .card__content {
-        padding: 12px;
-    }
-}
-
-/* มือถือเล็กมาก (แสดงแถวละ 1 ใบ) */
-@media (max-width: 400px) {
-    .card-grid {
+/* -----------------------------------------
+   4.3 Responsive — Mobile (max 600px) → 1 คอลัมน์
+   ----------------------------------------- */
+@media (max-width: 600px) {
+    .tnb-services-section .tnb-news-content-wrapper {
         grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    .tnb-services-section .tnb-news-card {
+        height: 14rem;
+    }
+
+    .tnb-services-section .tnb-news-card__title {
+        font-size: 1rem;
+    }
+
+    /* แสดง details เสมอบน mobile (ไม่ต้อง hover) */
+    .tnb-services-section .tnb-news-card .tnb-news-card__details-wrapper {
+        max-height: none;
+        opacity: 1;
     }
 }
 
@@ -481,6 +489,7 @@ body {
    6. Infinite Logo Carousel (loop-images)
    — CSS-only ระบบ loop สำหรับ logo ลูกค้า
    ----------------------------------------- */
+
 
 /* คอนเทนเนอร์หลัก */
 .loop-images {

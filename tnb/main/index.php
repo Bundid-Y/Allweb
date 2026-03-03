@@ -100,63 +100,118 @@
     </div>
 
 
-    <!-- CONTENT / DETAILS SECTION — บริการของเรา -->
-    <div class="content-section layout_padding">
+    <!-- CONTENT / DETAILS SECTION — บริการของเรา (News Card Style) -->
+    <div class="tnb-services-section content-section layout_padding">
         <!-- ส่วนหัวข้อ (Heading) -->
-        <div style="margin-bottom: 24px;">
-            <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
-                    บริการของเรา
-                </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;">
-                    บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร<br>ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
-                </p>
-                <div class="details-action-group"></div>
-            </div>
+        <div class="tnb-services-section__heading">
+            <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
+                บริการของเรา
+            </h1>
+            <p class="details-desc" style="margin-top: 5px; margin-bottom: 28px; line-height: 1.8;">
+                บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร<br>ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
+            </p>
         </div>
 
-        <!-- ส่วน Card Grid -->
-        <div>
-            <div class="details-box details-box-services">
-                <div class="card-grid">
-                    <a class="card" href="../service/development.php">
-                        <div class="card__background"
-                            style="background-image: url(../img/other/service/development/development.jpeg)">
-                        </div>
-                        <div class="card__content">
-                            <p class="card__category">Packaging Development</p>
-                            <h3 class="card__heading">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h3>
-                        </div>
-                    </a>
-                    <a class="card" href="../service/supply_management.php">
-                        <div class="card__background"
-                            style="background-image: url(../img/other/service/supply/supply_management.jpeg)">
-                        </div>
-                        <div class="card__content">
-                            <p class="card__category">Packaging SupplyManagement System</p>
-                            <h3 class="card__heading">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ</h3>
-                        </div>
-                    </a>
-                    <a class="card" href="../service/warehouse.php">
-                        <div class="card__background"
-                            style="background-image: url(../img/other/service/warehouse/warehouse.jpeg)">
-                        </div>
-                        <div class="card__content">
-                            <p class="card__category">Warehouse & Operation Management</p>
-                            <h3 class="card__heading">บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ</h3>
-                        </div>
-                    </a>
-                    <a class="card" href="../service/transportation.php">
-                        <div class="card__background"
-                            style="background-image: url(../img/other/service/transportation/Transportation.png)">
-                        </div>
-                        <div class="card__content">
-                            <p class="card__category">Transportation Inhouse Fleet & System</p>
-                            <h3 class="card__heading">ระบบขนส่งอัจฉริยะ</h3>
-                        </div>
-                    </a>
+        <!-- ส่วน News Card Grid — 6 บริการหลัก (3×2 Grid) -->
+        <div class="tnb-news-content-wrapper">
+
+            <!-- การ์ด 1: Packaging Development -->
+            <div class="tnb-news-card">
+                <a href="../service/development.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/development/development.jpeg" alt="Packaging Development"
+                    class="tnb-news-card__image">
+                <div class="tnb-news-card__text-wrapper">
+                    <h2 class="tnb-news-card__title">Packaging Development</h2>
+                    <div class="tnb-news-card__post-date">นวัตกรรมการออกแบบบรรจุภัณฑ์</div>
+                    <div class="tnb-news-card__details-wrapper">
+                        <p class="tnb-news-card__excerpt">ออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร
+                            ด้วยทีมวิศวกรภายในองค์กรที่มีประสบการณ์&hellip;</p>
+                        <a href="../service/development.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- การ์ด 2: Supply Management -->
+            <div class="tnb-news-card">
+                <a href="../service/supply_management.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/supply/supply_management.jpeg" alt="Supply Management"
+                    class="tnb-news-card__image">
+                <div class="tnb-news-card__text-wrapper">
+                    <h2 class="tnb-news-card__title">Supply Management System</h2>
+                    <div class="tnb-news-card__post-date">ระบบบริหารจัดการบรรจุภัณฑ์</div>
+                    <div class="tnb-news-card__details-wrapper">
+                        <p class="tnb-news-card__excerpt">ระบบ VMI อัจฉริยะเพื่อบริหารจัดการสต็อคและ Supply Chain
+                            ให้มีประสิทธิภาพสูงสุด&hellip;</p>
+                        <a href="../service/supply_management.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม
+                            &rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- การ์ด 3: Warehouse & Operation -->
+            <div class="tnb-news-card">
+                <a href="../service/warehouse.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/warehouse/warehouse.jpeg" alt="Warehouse Management"
+                    class="tnb-news-card__image">
+                <div class="tnb-news-card__text-wrapper">
+                    <h2 class="tnb-news-card__title">Warehouse &amp; Operation</h2>
+                    <div class="tnb-news-card__post-date">บริหารคลังสินค้าและงานปฏิบัติการ</div>
+                    <div class="tnb-news-card__details-wrapper">
+                        <p class="tnb-news-card__excerpt">บริหารจัดการคลังสินค้าและงานปฏิบัติการอย่างมืออาชีพ
+                            ด้วยระบบที่ครบวงจร&hellip;</p>
+                        <a href="../service/warehouse.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- การ์ด 4: Transportation -->
+            <div class="tnb-news-card">
+                <a href="../service/transportation.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/transportation/Transportation.png" alt="Transportation"
+                    class="tnb-news-card__image">
+                <div class="tnb-news-card__text-wrapper">
+                    <h2 class="tnb-news-card__title">Transportation Fleet</h2>
+                    <div class="tnb-news-card__post-date">ระบบขนส่งอัจฉริยะ</div>
+                    <div class="tnb-news-card__details-wrapper">
+                        <p class="tnb-news-card__excerpt">ระบบขนส่ง Inhouse Fleet ที่ทันสมัย
+                            ครอบคลุมทุกเส้นทางด้วยระบบติดตามแบบ Real-time&hellip;</p>
+                        <a href="../service/transportation.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม
+                            &rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- การ์ด 5: Domestic Logistics -->
+            <div class="tnb-news-card">
+                <a href="../service/domestic.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/domestic/truck1.png" alt="Domestic Logistics"
+                    class="tnb-news-card__image">
+                <div class="tnb-news-card__text-wrapper">
+                    <h2 class="tnb-news-card__title">Domestic Logistics</h2>
+                    <div class="tnb-news-card__post-date">โลจิสติกส์ภายในประเทศ</div>
+                    <div class="tnb-news-card__details-wrapper">
+                        <p class="tnb-news-card__excerpt">บริการขนส่งภายในประเทศครบวงจร พร้อมระบบติดตามสินค้า Real-time
+                            และทีมงานมืออาชีพ&hellip;</p>
+                        <a href="../service/domestic.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- การ์ด 6: Container Service -->
+            <div class="tnb-news-card">
+                <a href="../service/container.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/container/Container.png" alt="Container Service"
+                    class="tnb-news-card__image">
+                <div class="tnb-news-card__text-wrapper">
+                    <h2 class="tnb-news-card__title">Container Service</h2>
+                    <div class="tnb-news-card__post-date">บริการคอนเทนเนอร์</div>
+                    <div class="tnb-news-card__details-wrapper">
+                        <p class="tnb-news-card__excerpt">รับ-ส่งตู้คอนเทนเนอร์ครบวงจร พร้อมผู้ชำนาญด้านท่าเรือและสตว์
+                            Container Yard&hellip;</p>
+                        <a href="../service/container.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
