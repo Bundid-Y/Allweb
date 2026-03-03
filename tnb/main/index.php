@@ -9,7 +9,7 @@
         content="Smart, Fast, and Sustainable Solutions สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย - บริการบรรจุภัณฑ์และคลังสินค้าครบวงจร" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -117,7 +117,7 @@ body {
 /* ตกแต่งพื้นหลังสีเหลือง/แดง */
 .details-box:after {
     content: '';
-    background-color: #e82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 100%;
     right: 0px;
@@ -700,7 +700,7 @@ section.loop-images-quotation.vertical {
 }
 .content-section.section-partners::after {
     content: '';
-    background-color: #e82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 100%;
     right: 0;
@@ -732,7 +732,7 @@ section.loop-images-quotation.vertical {
 }
 .content-section.section-products::after {
     content: '';
-    background-color: #e82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 100%;
     right: 0;
@@ -794,7 +794,7 @@ section.loop-images-quotation.vertical {
 /* Layer 2: Red (อยู่ทับสีน้ำเงิน) */
 .section-slider::after {
     content: '';
-    background-color: #e82433; 
+    background-color: #ED2A2A; 
     position: absolute;
     width: 55%;
     height: 85%; /* ลดความสูงจาก 120% */
@@ -884,7 +884,7 @@ section.loop-images-quotation.vertical {
 }
 .shape-angle-1:after {
     content: '';
-    background-color: #E82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 95%;
     right: -10%;
@@ -901,7 +901,7 @@ section.loop-images-quotation.vertical {
 }
 .shape-angle-2:after {
     content: '';
-    background-color: #E82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 95%;
     left: -10%;
@@ -918,7 +918,7 @@ section.loop-images-quotation.vertical {
 }
 .shape-angle-3:after {
     content: '';
-    background-color: #E82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 90%;
     right: -5%;
@@ -935,7 +935,7 @@ section.loop-images-quotation.vertical {
 }
 .shape-angle-4:after {
     content: '';
-    background-color: #E82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 90%;
     left: -5%;
@@ -952,7 +952,7 @@ section.loop-images-quotation.vertical {
 }
 .shape-angle-5:after {
     content: '';
-    background-color: #E82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 94%;
     left: 3%;
@@ -1026,7 +1026,7 @@ section.loop-images-quotation.vertical {
 }
 
 .scroll-text-container h3 {
-    color: #E82433; /* สีแดงของ Koch */
+    color: #ED2A2A; /* สีแดงของ Koch */
     font-size: 28px; 
     margin-bottom: 15px;
     font-weight: bold;
@@ -1412,7 +1412,7 @@ section.loop-images-quotation.vertical {
 
 .branch_img_container:after {
     content: '';
-    background-color: #e82433; /* KOCH red */
+    background-color: #ED2A2A; /* KOCH red */
     position: absolute;
     width: 100%;
     right: 0px;
@@ -1443,7 +1443,7 @@ section.loop-images-quotation.vertical {
     position: absolute;
     width: 80px;
     height: 3px;
-    background-color: #e82433; /* Underline red color matches brand */
+    background-color: #ED2A2A; /* Underline red color matches brand */
     left: 0px;
     bottom: -12px;
 }
@@ -1477,7 +1477,7 @@ section.loop-images-quotation.vertical {
 
 .branch_list li:before {
     content: '•'; /* Automatic bullet */
-    color: #e82433;
+    color: #ED2A2A;
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -1486,7 +1486,7 @@ section.loop-images-quotation.vertical {
 }
 
 .branch_list li strong {
-    color: #e82433; /* Primary KOCH color */
+    color: #ED2A2A; /* Primary KOCH color */
     font-weight: bold; /* Bold labels */
 }
 
@@ -1511,7 +1511,7 @@ section.loop-images-quotation.vertical {
 
 .branch_img_container_right:after {
     content: '';
-    background-color: #e82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 100%;
     left: 0px;
@@ -1579,7 +1579,7 @@ section.loop-images-quotation.vertical {
     right: -40px;
     bottom: -70px;
     left: 50%;
-    background-color: #e82433;
+    background-color: #ED2A2A;
     z-index: -1;
     clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 calc(100% - 30px));
 }
@@ -2059,8 +2059,8 @@ a {
     }
 
     .login-page-wrapper .social-icon:hover {
-      color: #e82433;
-      border-color: #e82433;
+      color: #ED2A2A;
+      border-color: #ED2A2A;
     }
 
     .login-page-wrapper .login-btn {
@@ -2081,7 +2081,7 @@ a {
     }
 
     .login-page-wrapper .login-btn:hover {
-      background-color: #e82433;
+      background-color: #ED2A2A;
     }
 
     .login-page-wrapper .panels-container {
@@ -2102,7 +2102,7 @@ a {
       top: -50%;
       right: 48%;
       transform: translateY(-50%) rotate(15deg);
-      background-image: linear-gradient(-45deg, #e82433 0%, #325662 100%);
+      background-image: linear-gradient(-45deg, #ED2A2A 0%, #325662 100%);
       transition: 1.8s ease-in-out;
       border-radius: 0;
       z-index: 6;
@@ -2497,7 +2497,7 @@ a {
     right: calc((100vw - 100%) / -2);
     width: 140%;
     height: 120%;
-    background-color: #e82433;
+    background-color: #ED2A2A;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
     z-index: -1;
     display: none;
@@ -2512,7 +2512,7 @@ a {
 }
 
 .partners-page-wrapper .red-block {
-    background-color: #e82433;
+    background-color: #ED2A2A;
     width: 140%;
     height: 600px;
     position: relative;
@@ -2695,7 +2695,7 @@ a {
 
 .category-menu a:hover,
 .category-menu a.active {
-    color: #e82433;
+    color: #ED2A2A;
     /* KOCH Theme Red */
 }
 
@@ -2890,7 +2890,7 @@ a {
 
 /* --- Required Mark (ดาวแดงบังคับกรอก) --- */
 .page-quotation .form-group .required {
-    color: #e82433; /* KOCH red */
+    color: #ED2A2A; /* KOCH red */
     margin-left: 2px;
 }
 
@@ -2917,7 +2917,7 @@ a {
 .page-quotation .form-group input:focus,
 .page-quotation .form-group select:focus,
 .page-quotation .form-group textarea:focus {
-    border-color: #e82433;
+    border-color: #ED2A2A;
     outline: none;
 }
 
@@ -2971,7 +2971,7 @@ a {
 }
 
 .page-quotation .submit-btn {
-    background-color: #e82433;
+    background-color: #ED2A2A;
     color: #fff;
     border: none;
     padding: 12px 45px;
@@ -3147,7 +3147,7 @@ a {
 /* --- Tech Box Main ::after (พื้นหลังสีแดงเฉียงซ้าย) --- */
 .page-technology .tech_box_main:after {
     content: '';
-    background-color: #e82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 100%;
     right: 0px;
@@ -3179,7 +3179,7 @@ a {
     position: absolute;
     width: 120px;
     height: 3px;
-    background-color: #e82433; /* Underline red color matches brand */
+    background-color: #ED2A2A; /* Underline red color matches brand */
     left: 0px;
     bottom: -10px; /* Attach string below text relative */
     top: initial;
@@ -3217,7 +3217,7 @@ a {
 
 .page-technology .tech_list li:before {
     content: '•'; /* Adding an automatic bullet */
-    color: #e82433;
+    color: #ED2A2A;
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -3226,7 +3226,7 @@ a {
 }
 
 .page-technology .tech_list li strong {
-    color: #e82433; /* Primary KOCH color */
+    color: #ED2A2A; /* Primary KOCH color */
     font-weight: bold;
 }
 
@@ -3251,7 +3251,7 @@ a {
 /* --- Tech Box Main 3 ::after (พื้นหลังสีแดงเฉียงขวา) --- */
 .page-technology .tech_box_main_3:after {
     content: '';
-    background-color: #e82433;
+    background-color: #ED2A2A;
     position: absolute;
     width: 100%;
     left: 0px;
@@ -3360,7 +3360,7 @@ body.page-company {
     left: -20px;
     width: 100%;
     height: 100%;
-    background-color: #E82433;
+    background-color: #ED2A2A;
     z-index: -1;
     border-radius: 0;
     transform: rotate(-3deg);
@@ -3441,7 +3441,7 @@ body.page-expertise {
     right: -15px;
     width: 60%;
     height: 100%;
-    background-color: #E82433;
+    background-color: #ED2A2A;
     z-index: -1;
     border-radius: 0;
     transform: rotate(2deg);
@@ -3475,13 +3475,13 @@ body.page-expertise {
     background: #fdfdfd;
     padding: 15px;
     border-radius: 0;
-    border-left: 4px solid #E82433;
+    border-left: 4px solid #ED2A2A;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
 /* --- Expertise Number (หมายเลข 01-04) --- */
 .page-expertise .expertise-number {
-    color: #E82433;
+    color: #ED2A2A;
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 1;
@@ -3571,7 +3571,7 @@ body.page-vision {
     left: -20px;
     width: 100%;
     height: 100%;
-    background-color: #E82433;
+    background-color: #ED2A2A;
     z-index: -1;
     border-radius: 0;
     transform: rotate(-3deg);
@@ -3613,7 +3613,7 @@ body.page-vision {
 
 /* --- Footer Custom (โครงสร้างหลัก footer) --- */
 .footer-custom {
-    background-color: #e82433; /* Primary red matching site theme */
+    background-color: #ED2A2A; /* Primary red matching site theme */
     color: #ffffff;
     font-family: inherit; /* Uses Inter/Sarabun from body */
     padding-top: 70px;
@@ -3865,7 +3865,7 @@ body.page-vision {
 :root {
     --header-height: 65px;
     --header-height-compact: 55px;
-    --primary-color: #e82433;
+    --primary-color: #ED2A2A;
     --primary-dark: #c51d2a;
     --primary-glow: rgba(232, 36, 51, 0.15);
     --text-color: #2d3436;
@@ -4052,7 +4052,7 @@ a {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(90deg, var(--primary-color), #e82433);
+    background: linear-gradient(90deg, var(--primary-color), #ED2A2A);
     transition: width 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
     border-radius: 3px 3px 0 0;
 }
@@ -4071,7 +4071,7 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #e82433 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #ED2A2A 100%);
     color: #ffffff !important;
     padding: 10px 28px;
     border-radius: 8px;

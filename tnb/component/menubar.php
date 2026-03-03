@@ -9,7 +9,7 @@
         content="Smart, Fast, and Sustainable Solutions สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย - บริการบรรจุภัณฑ์และคลังสินค้าครบวงจร" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp">
 
     <!-- Google Fonts: Inter (EN) + Sarabun (TH) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +29,8 @@
         <nav class="nav">
             <!-- Logo -->
             <a href="../main/index.php" class="logo">
-                <img src="../img/company_logo/logo 2.png" alt="KOCH" onerror="this.style.display='none'">
-                <span class="logo-text">KOCH</span>
+                <img src="../img/company_logo/tnb_logo.webp" alt="TNB" onerror="this.style.display='none'">
+                <span class="logo-text">TNB</span>
             </a>
 
             <!-- Navigation Menu -->

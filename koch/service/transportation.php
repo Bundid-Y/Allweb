@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="th">
 
 <head>
@@ -20,7 +20,7 @@
       <div style="flex: 1; min-width: 300px;">
         <div class="image-wrapper" style="position: relative; width: 100%; padding: 20px; box-sizing: border-box;">
           <div
-            style="position: absolute; top: -5%; left: -5%; width: 95%; height: 110%; background-color: #E82433; clip-path: polygon(0 5%, 85% 0, 85% 100%, 0 95%); z-index: 1;">
+            style="position: absolute; top: -5%; left: -5%; width: 95%; height: 110%; background-color: #ED2A2A; clip-path: polygon(0 5%, 85% 0, 85% 100%, 0 95%); z-index: 1;">
           </div>
           <img src="../img/other/service/transportation/Transportation.png" alt="Transportation System"
             style="display: block; width: 100%; height: 480px; object-fit: cover; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2); transform: scaleX(-1);">
@@ -66,7 +66,7 @@
             <div class="image-wrapper"
               style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
               <div
-                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
+                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
               <img src="../img/other/service/transportation/industrial_route.jpeg" alt="In-house Engineering Image"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
@@ -91,7 +91,7 @@
             <div class="image-wrapper"
               style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
               <div
-                style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
+                style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
               </div>
               <img src="../img/other/service/transportation/cameracontrol.jpeg" alt="Digital System & Innovation Image"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
@@ -116,7 +116,7 @@
             <div class="image-wrapper"
               style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
               <div
-                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #E82433; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
+                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
               <img src="../img/other/service/transportation/transport_parts.jpeg" alt="Advanced Tools Image"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">

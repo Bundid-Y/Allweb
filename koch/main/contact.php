@@ -29,7 +29,7 @@
                         style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 25px; position: relative; display: inline-block;">
                         ติดต่อเรา
                         <span
-                            style="position: absolute; width: 80%; height: 4px; background-color: #e82433; left: 10%; bottom: -10px;"></span>
+                            style="position: absolute; width: 80%; height: 4px; background-color: #ED2A2A; left: 10%; bottom: -10px;"></span>
                     </h1>
 
                     <p class="tech_text"
