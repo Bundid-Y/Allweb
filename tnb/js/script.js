@@ -3,52 +3,84 @@ console.log('Koch script loaded');
 
 document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
-    // Tap House Tilt Panel Animation (Codepen replacement)
+    // TNB Home Slider — 6-Slide Carousel (Prev/Next/Dots/Autoplay/Keyboard)
+    // Guard: ทำงานเฉพาะหน้าที่มี #tnbHomeSlider เท่านั้น
     // ----------------------------------------------------
-    const tnbSliderWrap = document.querySelector('.tnb-home-slider');
-    const tnbPanelContent = document.getElementById('tnbTiltContent');
-    const tnbPanelImg = document.getElementById('tnbTiltImg');
-    
-    if (tnbSliderWrap && tnbPanelContent && tnbPanelImg && typeof gsap !== 'undefined') {
-        gsap.set([tnbPanelContent, tnbPanelImg], { transformStyle: "preserve-3d" });
+    const tnbSliderSection = document.getElementById('tnbHomeSlider');
+    if (tnbSliderSection) {
+        const slides    = Array.from(tnbSliderSection.querySelectorAll('.tnb-slide'));
+        const dots      = Array.from(tnbSliderSection.querySelectorAll('.tnb-dot'));
+        const btnPrev   = document.getElementById('tnbSliderPrev');
+        const btnNext   = document.getElementById('tnbSliderNext');
+        const TOTAL     = slides.length;
+        let current     = 0;
+        let autoTimer   = null;
+        const AUTO_MS   = 5000; // autoplay interval
 
-        function tilt(cx, cy) {
-            const rect = tnbSliderWrap.getBoundingClientRect();
-            // Calculate relative X and Y inside the container
-            const x = cx - rect.left;
-            const y = cy - rect.top;
-            
-            // Calculate a percentage (-50 to 50) * 2 = (-100 to 100)
-            const sxPos = ((x / rect.width) * 100 - 50) * 2;
-            const syPos = ((y / rect.height) * 100 - 50) * 2;
-            
-            gsap.to(tnbPanelContent, {
-                duration: 2,
-                rotationY: -0.03 * sxPos,
-                rotationX: 0.03 * syPos,
-                transformPerspective: 500,
-                transformOrigin: "center center -400",
-                ease: "expo.out"
-            });
-            gsap.to(tnbPanelImg, {
-                duration: 2,
-                rotationY: -0.03 * sxPos,
-                rotationX: 0.03 * syPos,
-                transformPerspective: 500,
-                transformOrigin: "center center -200",
-                ease: "expo.out"
+        /** แสดง slide ตาม index, อัปเดต dots */
+        function goTo(index) {
+            // wrap around
+            index = ((index % TOTAL) + TOTAL) % TOTAL;
+
+            // ถอด active ออกจาก slide และ dot ปัจจุบัน
+            slides[current].classList.remove('tnb-slide--active');
+            dots[current].classList.remove('tnb-dot--active');
+
+            // ตั้งค่า current ใหม่
+            current = index;
+            slides[current].classList.add('tnb-slide--active');
+            dots[current].classList.add('tnb-dot--active');
+        }
+
+        /** เริ่ม autoplay */
+        function startAuto() {
+            stopAuto();
+            autoTimer = setInterval(() => goTo(current + 1), AUTO_MS);
+        }
+
+        /** หยุด autoplay */
+        function stopAuto() {
+            if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+        }
+
+        // Prev button
+        if (btnPrev) {
+            btnPrev.addEventListener('click', () => {
+                goTo(current - 1);
+                startAuto(); // reset timer เมื่อคลิก
             });
         }
 
-        tnbSliderWrap.addEventListener('mousemove', (e) => {
-            tilt(e.clientX, e.clientY);
+        // Next button
+        if (btnNext) {
+            btnNext.addEventListener('click', () => {
+                goTo(current + 1);
+                startAuto();
+            });
+        }
+
+        // Dots click
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const idx = parseInt(dot.getAttribute('data-index'), 10);
+                goTo(idx);
+                startAuto();
+            });
         });
 
-        tnbSliderWrap.addEventListener('mouseleave', () => {
-            const rect = tnbSliderWrap.getBoundingClientRect();
-            // Reset to center
-            tilt(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        // Keyboard: ← →
+        document.addEventListener('keydown', (e) => {
+            if (!tnbSliderSection) return;
+            if (e.key === 'ArrowLeft')  { goTo(current - 1); startAuto(); }
+            if (e.key === 'ArrowRight') { goTo(current + 1); startAuto(); }
         });
+
+        // หยุด autoplay เมื่อ hover (UX)
+        tnbSliderSection.addEventListener('mouseenter', stopAuto);
+        tnbSliderSection.addEventListener('mouseleave', startAuto);
+
+        // เริ่ม autoplay
+        startAuto();
     }
 
     // ----------------------------------------------------

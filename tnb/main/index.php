@@ -34,24 +34,121 @@
 
     <?php include '../component/menubar.php'; ?>
 
-    <!-- SLIDER SECTION (Tap House Tilt Panel) -->
-    <section class="tnb-home-slider">
+    <!-- SLIDER SECTION (Tap House Tilt Panel) — 6 Slides with Prev/Next -->
+    <section class="tnb-home-slider" id="tnbHomeSlider">
+
+        <!-- Prev / Next Navigation Buttons -->
+        <button class="tnb-slider-nav tnb-slider-nav--prev" id="tnbSliderPrev"
+            aria-label="Previous slide">&#8249;</button>
+        <button class="tnb-slider-nav tnb-slider-nav--next" id="tnbSliderNext" aria-label="Next slide">&#8250;</button>
+
+        <!-- Slides Track -->
         <div class="tnb-panel-container">
-            <div class="tnb-panel" id="tnbTiltPanel">
+            <!-- Slide 1: Domestic Logistics -->
+            <div class="tnb-panel tnb-slide tnb-slide--active" data-index="0">
                 <div class="tnb-panel__content-col">
-                    <div class="tnb-panel__content" id="tnbTiltContent">
+                    <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Domestic</h1>
-                            <p class="tnb-panel__addr"><span></span>60 Ranelagh Village, Dublin</p>
+                            <p class="tnb-panel__addr"><span></span>โลจิสติกส์ในประเทศ</p>
                         </div>
-                        <div class="tnb-panel__line"></div>
                     </div>
                 </div>
-                <div class="tnb-panel__img-col" id="tnbTiltImg">
-                    <img src="../img/other/index/cardslides/show1.png" alt="Tap House"
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/index/cardslides/show1.png" alt="Domestic Logistics"
                         class="tnb-panel__img" />
                 </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="tnb-panel tnb-slide" data-index="1">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Packaging</h1>
+                            <p class="tnb-panel__addr"><span></span>นวัตกรรมบรรจุภัณฑ์</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/index/cardslides/show2.png" alt="Packaging Development"
+                        class="tnb-panel__img" />
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="tnb-panel tnb-slide" data-index="2">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Supply</h1>
+                            <p class="tnb-panel__addr"><span></span>ระบบบริหารจัดการ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/index/cardslides/show3.jpeg" alt="Supply Management"
+                        class="tnb-panel__img" />
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="tnb-panel tnb-slide" data-index="3">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Warehouse</h1>
+                            <p class="tnb-panel__addr"><span></span>บริหารคลังสินค้า</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/index/cardslides/show4.png" alt="Warehouse Operation"
+                        class="tnb-panel__img" />
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="tnb-panel tnb-slide" data-index="4">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Transport</h1>
+                            <p class="tnb-panel__addr"><span></span>ขนส่งอัจฉริยะ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/index/cardslides/show5.jpeg" alt="Transportation Fleet"
+                        class="tnb-panel__img" />
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="tnb-panel tnb-slide" data-index="5">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Container</h1>
+                            <p class="tnb-panel__addr"><span></span>บริการคอนเทนเนอร์</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/service/container/Container.png" alt="Container Service"
+                        class="tnb-panel__img" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Dots Indicator -->
+        <div class="tnb-slider-dots" id="tnbSliderDots" aria-label="Slide indicators">
+            <button class="tnb-dot tnb-dot--active" data-index="0" aria-label="Slide 1"></button>
+            <button class="tnb-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="tnb-dot" data-index="2" aria-label="Slide 3"></button>
+            <button class="tnb-dot" data-index="3" aria-label="Slide 4"></button>
+            <button class="tnb-dot" data-index="4" aria-label="Slide 5"></button>
+            <button class="tnb-dot" data-index="5" aria-label="Slide 6"></button>
         </div>
     </section>
 
