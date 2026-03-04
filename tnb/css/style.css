@@ -19,11 +19,11 @@ body {
    ----------------------------------------- */
 .tnb-home-slider {
     width: 100%;
-    height: 100vh;
+    height: auto;
     min-height: 500px;
     margin-top: 80px; /* Offset for navbar */
-    background-color: #292929;
-    color: white;
+    background-color: #ffffff;
+    color: #ffffff;
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -33,6 +33,23 @@ body {
     font-feature-settings: "kern" 1, "liga" 1, "frac" 1, "lnum" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    /* overflow: hidden ถูกลบออก เพื่อให้ ::before ยื่นขึ้นเหนือ menubar ได้ */
+}
+
+/* สี่เหลี่ยมสีน้ำเงิน (โลโก้บริษัท) — ฝั่งซ้าย ครึ่งหน้า ยื่นขึ้นเหนือ menubar */
+.tnb-home-slider::before {
+    content: '';
+    position: absolute;
+    top: -80px;              /* ยื่นขึ้นเหนือ section ให้ชนขอบบนจอ (offset เท่า navbar) */
+    left: 0;
+    width: 50%;              /* ยาวถึงกึ่งกลาง section */
+    height: calc(100% + 80px); /* ชดเชย top:-80px ให้ครอบคลุมตลอดความสูง */
+    background: linear-gradient(160deg, #0a2260 0%, #0D2D6B 55%, #1a4896 100%);
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); /* ขอบขวาเฉียงให้มีมิติ */
+    z-index: 0;
+    pointer-events: none;
+    box-shadow: 8px 0 32px rgba(13, 45, 107, 0.3);
 }
 
 .tnb-home-slider *,
@@ -44,13 +61,13 @@ body {
 .tnb-home-slider h1.tnb-panel__title {
     font-family: "Playfair Display", serif;
     font-size: 96px;
-    color: white;
+    color: #ffffff;
     margin: 0;
 }
 
 .tnb-home-slider .tnb-panel__addr {
     font-family: "Lato", sans-serif;
-    color: white;
+    color: #ffffff;
     position: relative;
     display: flex;
     margin: 16px 0 0;
@@ -60,8 +77,10 @@ body {
 /* Base Panel */
 .tnb-home-slider .tnb-panel-container {
     width: 100%;
-    max-width: 1200px;
-    height: 466px;
+    max-width: 1400px;
+    height: 620px;
+    position: relative;
+    z-index: 1; /* อยู่เหนือ ::before rectangle */
 }
 
 .tnb-home-slider .tnb-panel {
@@ -101,14 +120,11 @@ body {
     margin: 9px 14px 0 0;
     height: 1px;
     width: 30px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .tnb-home-slider .tnb-panel__line {
-    width: 64%;
-    height: 3px;
-    margin: 24px 0 0 36%;
-    background-color: #fff;
+    display: none;
 }
 
 .tnb-home-slider .tnb-panel__img {
@@ -145,12 +161,19 @@ body {
     }
     .tnb-home-slider .tnb-panel__text {
         text-align: left;
-        background: rgba(0,0,0,0.5);
+        background: rgba(13, 45, 107, 0.85);
         padding: 20px;
     }
     .tnb-home-slider .tnb-panel__line {
         margin: 24px 0 0 0;
         width: 100%;
+    }
+    /* Mobile: สี่เหลี่ยมเต็มความกว้างไม่ใช้ clip-path เพราะ img ทับอยู่แล้ว */
+    .tnb-home-slider::before {
+        width: 100%;
+        clip-path: none;
+        opacity: 0.6;
+        box-shadow: none;
     }
 }
 
@@ -167,15 +190,22 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
+    position: relative;
+    min-height: 760px; /* รองรับ .details-box::after clip-path 600px + padding ไม่ให้ถูกตัด */
+    overflow: hidden;  /* กัน .details-box::after ล้นออกนอก section */
 }
 
 /* กล่องเนื้อหาฝั่งซ้าย (รูป + เลข) */
 .details-box {
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; /* สูงพอรองรับ ::after height:600px เหมือน .tech_box_main */
 }
 
-/* ตกแต่งพื้นหลังสีเหลือง/แดง */
+/* ตกแต่งพื้นหลังสีต้า — ใช้ค่าเดียวกับ .page-technology .tech_box_main:after */
 .details-box:after {
     content: '';
     background-color: #0D2D6B;
@@ -193,12 +223,15 @@ body {
 
 /* Responsive Overrides */
 @media (max-width: 991px) {
+    .details-box {
+        min-height: auto;
+    }
     .details-box:after {
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        clip-path: none !important;
+        clip-path: none;
         transform: none;
         opacity: 0.9;
     }

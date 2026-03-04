@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Koch Packaging and Packing Services Co.,Ltd</title>
-    <meta name="description"
-        content="Smart, Fast, and Sustainable Solutions สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย - บริการบรรจุภัณฑ์และคลังสินค้าครบวงจร" />
+    <title>TNB Logistics | บริการขนส่งและโลจิสติกส์ครบวงจร
+    </title>
+    <meta name="description" content="บริการขนส่งและโลจิสติกส์ครบวงจร" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
@@ -41,14 +41,14 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content" id="tnbTiltContent">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Tap House</h1>
+                            <h1 class="tnb-panel__title">Domestic</h1>
                             <p class="tnb-panel__addr"><span></span>60 Ranelagh Village, Dublin</p>
                         </div>
                         <div class="tnb-panel__line"></div>
                     </div>
                 </div>
                 <div class="tnb-panel__img-col" id="tnbTiltImg">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/taphouse.jpg" alt="Tap House"
+                    <img src="../img/other/index/cardslides/show1.png" alt="Tap House"
                         class="tnb-panel__img" />
                 </div>
             </div>
