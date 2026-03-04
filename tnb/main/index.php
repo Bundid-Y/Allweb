@@ -139,6 +139,22 @@
                         class="tnb-panel__img" />
                 </div>
             </div>
+
+            <!-- Slide 7 -->
+            <div class="tnb-panel tnb-slide" data-index="6">
+                <div class="tnb-panel__content-col">
+                    <div class="tnb-panel__content">
+                        <div class="tnb-panel__text">
+                            <h1 class="tnb-panel__title">Shuttle</h1>
+                            <p class="tnb-panel__addr"><span></span>บริการ Shuttle Truck</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tnb-panel__img-col">
+                    <img src="../img/other/service/shuttle/shuttletruck.png" alt="Shuttle Truck Service"
+                        class="tnb-panel__img" />
+                </div>
+            </div>
         </div>
 
         <!-- Dots Indicator -->
@@ -149,6 +165,7 @@
             <button class="tnb-dot" data-index="3" aria-label="Slide 4"></button>
             <button class="tnb-dot" data-index="4" aria-label="Slide 5"></button>
             <button class="tnb-dot" data-index="5" aria-label="Slide 6"></button>
+            <button class="tnb-dot" data-index="6" aria-label="Slide 7"></button>
         </div>
     </section>
 

@@ -64,7 +64,10 @@
                     <li class="nav-item"><a href="../main/technology.php" class="nav-link">เทคโนโลยี</a></li>
                     <li class="nav-item"><a href="../main/branches.php" class="nav-link">สาขา</a></li>
                     <li class="nav-item"><a href="../main/contact.php" class="nav-link">ติดต่อเรา</a></li>
+                    <!--
                     <li class="nav-item"><a href="../main/quotation.php" class="nav-link">ขอใบเสนอราคา</a></li>
+                    -->
+                    
                     <!-- Language Dropdown -->
                     <li class="nav-item dropdown-item">
                         <div class="nav-link dropdown-toggle">
