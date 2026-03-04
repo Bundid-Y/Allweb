@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const TOTAL     = slides.length;
         let current     = 0;
         let autoTimer   = null;
-        const AUTO_MS   = 5000; // autoplay interval
+        const AUTO_MS   = 8000; // autoplay interval — 8 วินาที
 
         /** แสดง slide ตาม index, อัปเดต dots */
         function goTo(index) {

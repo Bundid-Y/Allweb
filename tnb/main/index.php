@@ -162,7 +162,7 @@
             <div style="flex: 1; min-width: 300px;">
                 <div class="details-box">
                     <div class="details-image">
-                        <img src="../img/other/index/about/box_about.png" alt="Detail Image">
+                        <img src="../img/other/index/about/homepage.webp" alt="Detail Image">
                     </div>
                 </div>
             </div>
