@@ -50,7 +50,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Domestic</h1>
-                            <p class="tnb-panel__addr"><span></span>โลจิสติกส์ในประเทศ</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s0">โลจิสติกส์ในประเทศ</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Packaging</h1>
-                            <p class="tnb-panel__addr"><span></span>นวัตกรรมบรรจุภัณฑ์</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s1">นวัตกรรมบรรจุภัณฑ์</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +84,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Supply</h1>
-                            <p class="tnb-panel__addr"><span></span>ระบบบริหารจัดการ</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s2">ระบบบริหารจัดการ</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +101,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Warehouse</h1>
-                            <p class="tnb-panel__addr"><span></span>บริหารคลังสินค้า</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s3">บริหารคลังสินค้า</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +118,7 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Transport</h1>
-                            <p class="tnb-panel__addr"><span></span>ขนส่งอัจฉริยะ</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s4">ขนส่งอัจฉริยะ</span></p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +134,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Container</h1>
-                            <p class="tnb-panel__addr"><span></span>บริการคอนเทนเนอร์</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s5">บริการคอนเทนเนอร์</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +151,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Shuttle</h1>
-                            <p class="tnb-panel__addr"><span></span>บริการ Shuttle Truck</p>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s6">บริการ Shuttle
+                                    Truck</span></p>
                         </div>
                     </div>
                 </div>
@@ -186,24 +192,27 @@
 
             <!-- คอลัมน์ขวา: เนื้อหา -->
             <div style="flex: 1; min-width: 300px;">
-                <h1 class="details-title">เกี่ยวกับเรา</h1>
+                <h1 class="details-title" data-i18n="index.about_title">เกี่ยวกับเรา</h1>
 
-                <!-- ย่อหน้าแรก: เน้นว่า KOCH คือใคร และเป้าหมายคืออะไร -->
+                <!-- ย่อหน้าแรก: เน้นว่า TNB คือใคร และเป้าหมายคืออะไร -->
                 <p class="details-desc">
-                    KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย
-                    มุ่งเน้นการสร้างระบบที่ <strong>"Smart, Fast, and Sustainable"</strong>
+                    <span data-i18n="index.about_p1">KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร
+                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย มุ่งเน้นการสร้างระบบที่</span>
+                    <strong data-i18n="index.about_p1_strong">"Smart, Fast, and Sustainable"</strong>
                 </p>
 
                 <!-- ย่อหน้าที่สอง: เน้นบทบาท Partner และใช้ List เพื่อแจกแจงความเชี่ยวชาญ -->
                 <p class="details-desc">
-                    เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ <strong>"พันธมิตรเชิงกลยุทธ์"</strong>
-                    ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด ด้วยความเชี่ยวชาญเฉพาะด้าน:
+                    <span data-i18n="index.about_p2">เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ</span> <strong
+                        data-i18n="index.about_p2_strong">"พันธมิตรเชิงกลยุทธ์"</strong>
+                    <span data-i18n="index.about_p2_cont">ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด
+                        ด้วยความเชี่ยวชาญเฉพาะด้าน:</span>
                 </p>
 
                 <ul class="details-desc"> <!-- ใช้ class เดียวกับ p เพื่อให้ฟอนต์เท่ากัน -->
-                    <li>ระบบ VMI (Vendor Managed Inventory)</li>
-                    <li>การออกแบบวิศวกรรมภายในองค์กร (In-house Engineering)</li>
-                    <li>การปรับวิธีกรรมระบบอัตโนมัติที่ล้ำสมัย</li>
+                    <li data-i18n="index.about_li1">ระบบ VMI (Vendor Managed Inventory)</li>
+                    <li data-i18n="index.about_li2">การออกแบบวิศวกรรมภายในองค์กร (In-house Engineering)</li>
+                    <li data-i18n="index.about_li3">การปรับวิธีกรรมระบบอัตโนมัติที่ล้ำสมัย</li>
                 </ul>
 
                 <div class="details-action-group">
@@ -218,11 +227,13 @@
     <div class="tnb-services-section content-section layout_padding">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div class="tnb-services-section__heading">
-            <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
+            <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+                data-i18n="index.services_title">
                 บริการของเรา
             </h1>
-            <p class="details-desc" style="margin-top: 5px; margin-bottom: 28px; line-height: 1.8;">
-                บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร<br>ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
+            <p class="details-desc" style="margin-top: 5px; margin-bottom: 28px; line-height: 1.8;"
+                data-i18n="index.services_sub">
+                บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
             </p>
         </div>
 
@@ -236,11 +247,12 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Packaging Development</h2>
-                    <div class="tnb-news-card__post-date">นวัตกรรมการออกแบบบรรจุภัณฑ์</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc1_sub">นวัตกรรมการออกแบบบรรจุภัณฑ์</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt">ออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร
-                            ด้วยทีมวิศวกรภายในองค์กรที่มีประสบการณ์&hellip;</p>
-                        <a href="../service/development.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">ออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร
+                            ด้วยทีมวิศวกรภายในองค์กรที่มีประสบการณ์…</p>
+                        <a href="../service/development.php" class="tnb-news-card__read-more"
+                            data-i18n="index.svc1_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
             </div>
@@ -252,12 +264,12 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Supply Management System</h2>
-                    <div class="tnb-news-card__post-date">ระบบบริหารจัดการบรรจุภัณฑ์</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">ระบบบริหารจัดการบรรจุภัณฑ์</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt">ระบบ VMI อัจฉริยะเพื่อบริหารจัดการสต็อคและ Supply Chain
-                            ให้มีประสิทธิภาพสูงสุด&hellip;</p>
-                        <a href="../service/supply_management.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม
-                            &rsaquo;</a>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">ระบบ VMI
+                            อัจฉริยะเพื่อบริหารจัดการสต็อคและ Supply Chain ให้มีประสิทธิภาพสูงสุด…</p>
+                        <a href="../service/supply_management.php" class="tnb-news-card__read-more"
+                            data-i18n="index.svc2_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
             </div>
@@ -269,11 +281,13 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Warehouse &amp; Operation</h2>
-                    <div class="tnb-news-card__post-date">บริหารคลังสินค้าและงานปฏิบัติการ</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc3_sub">บริหารคลังสินค้าและงานปฏิบัติการ
+                    </div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt">บริหารจัดการคลังสินค้าและงานปฏิบัติการอย่างมืออาชีพ
-                            ด้วยระบบที่ครบวงจร&hellip;</p>
-                        <a href="../service/warehouse.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc3_excerpt">
+                            บริหารจัดการคลังสินค้าและงานปฏิบัติการอย่างมืออาชีพ ด้วยระบบที่ครบวงจร…</p>
+                        <a href="../service/warehouse.php" class="tnb-news-card__read-more"
+                            data-i18n="index.svc3_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
             </div>
@@ -285,12 +299,12 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Transportation Fleet</h2>
-                    <div class="tnb-news-card__post-date">ระบบขนส่งอัจฉริยะ</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc4_sub">ระบบขนส่งอัจฉริยะ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt">ระบบขนส่ง Inhouse Fleet ที่ทันสมัย
-                            ครอบคลุมทุกเส้นทางด้วยระบบติดตามแบบ Real-time&hellip;</p>
-                        <a href="../service/transportation.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม
-                            &rsaquo;</a>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">ระบบขนส่ง Inhouse Fleet
+                            ที่ทันสมัย ครอบคลุมทุกเส้นทางด้วยระบบติดตามแบบ Real-time…</p>
+                        <a href="../service/transportation.php" class="tnb-news-card__read-more"
+                            data-i18n="index.svc4_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
             </div>
@@ -301,11 +315,12 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Domestic Logistics</h2>
-                    <div class="tnb-news-card__post-date">โลจิสติกส์ภายในประเทศ</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc5_sub">โลจิสติกส์ภายในประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt">บริการขนส่งภายในประเทศครบวงจร พร้อมระบบติดตามสินค้า Real-time
-                            และทีมงานมืออาชีพ&hellip;</p>
-                        <a href="../service/domestic.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">บริการขนส่งภายในประเทศครบวงจร
+                            พร้อมระบบติดตามสินค้า Real-time และทีมงานมืออาชีพ…</p>
+                        <a href="../service/domestic.php" class="tnb-news-card__read-more"
+                            data-i18n="index.svc5_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
             </div>
@@ -317,11 +332,12 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Container Service</h2>
-                    <div class="tnb-news-card__post-date">บริการคอนเทนเนอร์</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc6_sub">บริการคอนเทนเนอร์</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt">รับ-ส่งตู้คอนเทนเนอร์ครบวงจร พร้อมผู้ชำนาญด้านท่าเรือและสตว์
-                            Container Yard&hellip;</p>
-                        <a href="../service/container.php" class="tnb-news-card__read-more">อ่านเพิ่มเติม &rsaquo;</a>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">รับ-ส่งตู้คอนเทนเนอร์ครบวงจร
+                            พร้อมผู้ชำนาญด้านท่าเรือและ Container Yard…</p>
+                        <a href="../service/container.php" class="tnb-news-card__read-more"
+                            data-i18n="index.svc6_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
             </div>
@@ -336,11 +352,13 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+                    data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;">
-                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง<br>คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;"
+                    data-i18n="index.partners_sub">
+                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
             </div>
         </div>
@@ -371,11 +389,13 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;"
+                    data-i18n="index.products_title">
                     สินค้าแนะนำ
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;">
-                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนา<br>เพื่อรองรับทุกความต้องการของอุตสาหกรรม
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;"
+                    data-i18n="index.products_sub">
+                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนา เพื่อรองรับทุกความต้องการของอุตสาหกรรม
                 </p>
             </div>
         </div>

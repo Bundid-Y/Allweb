@@ -18,23 +18,28 @@
         <section class="product-category-section layout_padding" style="padding-top: 130px; padding-bottom: 90px;">
             <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 <!-- Heading -->
-                <h2
-                    style="width: 100%; float: left; font-size: 40px; color: #111111; text-align: center; font-weight: bold; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 15px;">
+                <h2 style="width: 100%; float: left; font-size: 40px; color: #111111; text-align: center; font-weight: bold; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 15px;"
+                    data-i18n="product.title">
                     ประเภทสินค้า
                 </h2>
-                <p
-                    style="width: 100%; float: left; font-size: 16px; color: #242424; text-align: center; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 40px;">
+                <p style="width: 100%; float: left; font-size: 16px; color: #242424; text-align: center; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 40px;"
+                    data-i18n="product.desc">
                     ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ ไม้ พลาสติก และเหล็ก
                 </p>
 
                 <!-- Menu Bar -->
                 <div class="category-menu-container" style="width: 100%; float: left; margin-bottom: 40px;">
                     <ul class="category-menu">
-                        <li><a href="#all" class="active" onclick="filterCategory('all', event)">ทั้งหมด</a></li>
-                        <li><a href="#mail" onclick="filterCategory('mail', event)">กล่องกระดาษ</a></li>
-                        <li><a href="#corrugated" onclick="filterCategory('corrugated', event)">บรรจุภัณฑ์ไม้</a></li>
-                        <li><a href="#diecut" onclick="filterCategory('diecut', event)">บรรจุภัณฑ์พลาสติก</a></li>
-                        <li><a href="#accessory" onclick="filterCategory('accessory', event)">บรรจุภัณฑ์เหล็ก</a></li>
+                        <li><a href="#all" class="active" onclick="filterCategory('all', event)"
+                                data-i18n="product.catAll">ทั้งหมด</a></li>
+                        <li><a href="#mail" onclick="filterCategory('mail', event)"
+                                data-i18n="product.catPaper">กล่องกระดาษ</a></li>
+                        <li><a href="#corrugated" onclick="filterCategory('corrugated', event)"
+                                data-i18n="product.catWooden">บรรจุภัณฑ์ไม้</a></li>
+                        <li><a href="#diecut" onclick="filterCategory('diecut', event)"
+                                data-i18n="product.catPlastic">บรรจุภัณฑ์พลาสติก</a></li>
+                        <li><a href="#accessory" onclick="filterCategory('accessory', event)"
+                                data-i18n="product.catSteel">บรรจุภัณฑ์เหล็ก</a></li>
                     </ul>
                 </div>
 
@@ -123,7 +128,8 @@
 
                 <!-- Load More Button -->
                 <div class="load-more-container">
-                    <button class="load-more-btn">L O A D &nbsp;&nbsp; M O R E</button>
+                    <button class="load-more-btn" data-i18n="product.loadMore" data-i18n-html="true">L O A D
+                        &nbsp;&nbsp; M O R E</button>
                 </div>
             </div>
 

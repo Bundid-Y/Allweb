@@ -4384,3 +4384,79 @@ a {
         display: none !important;
     }
 }
+
+/* ============================================================
+   LANGUAGE SWITCHER STYLES (i18n System)
+   Scoped with .koch-lang-* prefix — no leakage to other sites
+   ============================================================ */
+
+/* Language button reset (inside dropdown, styled as links) */
+.koch-lang-btn,
+.koch-lang-menu .dropdown-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    color: var(--text-color, #333);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, color 0.2s;
+    font-family: var(--koch-font-primary, 'Sarabun', 'Inter', sans-serif);
+}
+
+.koch-lang-btn:hover,
+.koch-lang-menu .dropdown-link:hover {
+    background: var(--primary-light, #f0f4ff);
+    color: var(--primary-color, #ED2A2A);
+}
+
+/* Active language button highlight */
+.koch-lang-btn--active {
+    color: var(--primary-color, #ED2A2A) !important;
+    font-weight: 600;
+}
+
+/* Country flag emoji spacing */
+.koch-lang-flag {
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+/* CJK Font support applied via CSS variable on <html> */
+html {
+    font-family: var(--koch-font-primary, 'Sarabun', 'Inter', sans-serif);
+}
+
+/* Prevent text overflow when language changes menu items */
+.nav-link span[data-i18n],
+.dropdown-link[data-i18n] {
+    display: inline;
+    white-space: normal;
+    word-break: keep-all;
+}
+
+/* Responsive: ensure language menu works on mobile */
+@media (max-width: 1024px) {
+    .koch-lang-switcher .dropdown-menu {
+        min-width: 120px !important;
+    }
+    .koch-lang-btn {
+        padding: 10px 16px;
+        font-size: 1rem;
+    }
+}
+
+/* Ensure nav items don't overflow when English text is longer */
+.nav-list .nav-item .nav-link {
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+    .nav-list .nav-item .nav-link {
+        white-space: normal;
+    }
+}

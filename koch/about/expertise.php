@@ -12,6 +12,7 @@
 </head>
 
 <!-- page-expertise: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+
 <body class="page-expertise">
     <?php include '../component/menubar.php'; ?>
 
@@ -28,31 +29,35 @@
             </div>
             <!-- Left: Details -->
             <div style="flex: 1; min-width: 300px; padding-bottom: 20px;">
-                <h1 class="details-title">ความเชี่ยวชาญของเรา</h1>
-                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;">ความเชี่ยวชาญเฉพาะด้าน
+                <h1 class="details-title" data-i18n="expertise.title">ความเชี่ยวชาญของเรา</h1>
+                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;"
+                    data-i18n="expertise.subtitle">ความเชี่ยวชาญเฉพาะด้าน
                     (Our Expertise)</h2>
 
                 <p class="details-desc" style="margin-bottom: 20px;">
-                    <strong>"ยกระดับการจัดการซัพพลายเชนสู่อนาคต ด้วยความเชี่ยวชาญระดับมืออาชีพ"</strong><br><br>
-                    KOCH มุ่งมั่นสร้างสรรค์ระบบ Supply Chain ที่ "ฉลาด รวดเร็ว และยั่งยืน" สำหรับอุตสาหกรรมยานยนต์ในไทย
-                    เราพร้อมเป็นพันธมิตรเชิงกลยุทธ์ที่ช่วยคุณบริหารจัดการโลจิสติกส์และระบบ VMI อย่างเต็มรูปแบบ
-                    ด้วยโซลูชันด้านวิศวกรรมและเทคโนโลยีดิจิทัลที่ล้ำสมัยที่สุด
+                    <strong data-i18n="expertise.desc_strong">"ยกระดับการจัดการซัพพลายเชนสู่อนาคต
+                        ด้วยความเชี่ยวชาญระดับมืออาชีพ"</strong><br><br>
+                    <span data-i18n="expertise.desc_p">KOCH มุ่งมั่นสร้างสรรค์ระบบ Supply Chain ที่ "ฉลาด รวดเร็ว
+                        และยั่งยืน" สำหรับอุตสาหกรรมยานยนต์ในไทย
+                        เราพร้อมเป็นพันธมิตรเชิงกลยุทธ์ที่ช่วยคุณบริหารจัดการโลจิสติกส์และระบบ VMI อย่างเต็มรูปแบบ
+                        ด้วยโซลูชันด้านวิศวกรรมและเทคโนโลยีดิจิทัลที่ล้ำสมัยที่สุด</span>
                 </p>
 
                 <div class="expertise-text-list">
                     <div class="expertise-item">
                         <div class="expertise-number">01</div>
                         <div>
-                            <div class="expertise-title">Packaging Development</div>
-                            <div class="expertise-desc">เชี่ยวชาญในการออกแบบและพัฒนาบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์
+                            <div class="expertise-title" data-i18n="expertise.item1_title">Packaging Development</div>
+                            <div class="expertise-desc" data-i18n="expertise.item1_desc">
+                                เชี่ยวชาญในการออกแบบและพัฒนาบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์
                                 ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ เหล็ก ไม้ และพลาสติก</div>
                         </div>
                     </div>
                     <div class="expertise-item">
                         <div class="expertise-number">02</div>
                         <div>
-                            <div class="expertise-title">Smart VMI System</div>
-                            <div class="expertise-desc">พัฒนาระบบ VMI
+                            <div class="expertise-title" data-i18n="expertise.item2_title">Smart VMI System</div>
+                            <div class="expertise-desc" data-i18n="expertise.item2_desc">พัฒนาระบบ VMI
                                 เพื่อช่วยลูกค้าบริหารสต็อกบรรจุภัณฑ์ได้อย่างมีประสิทธิภาพ เชื่อมโยงข้อมูลการผลิต
                                 การสั่งซื้อ และการจัดส่งแบบอัตโนมัติ ช่วยลดต้นทุน ลดปริมาณสต็อกคงค้าง</div>
                         </div>
@@ -60,8 +65,9 @@
                     <div class="expertise-item">
                         <div class="expertise-number">03</div>
                         <div>
-                            <div class="expertise-title">Professional Warehouse</div>
-                            <div class="expertise-desc">ให้บริการบริหารคลังสินค้าในพื้นที่บ้านบึงและบ่อวิน
+                            <div class="expertise-title" data-i18n="expertise.item3_title">Professional Warehouse</div>
+                            <div class="expertise-desc" data-i18n="expertise.item3_desc">
+                                ให้บริการบริหารคลังสินค้าในพื้นที่บ้านบึงและบ่อวิน
                                 รองรับทั้งงานบรรจุภัณฑ์และงานคลังสินค้าอุตสาหกรรม สามารถจัดเก็บ ควบคุม
                                 และกระจายสินค้าได้อย่างเป็นระบบ</div>
                         </div>
@@ -69,8 +75,9 @@
                     <div class="expertise-item">
                         <div class="expertise-number">04</div>
                         <div>
-                            <div class="expertise-title">Real-time Logistics</div>
-                            <div class="expertise-desc">ให้บริการขนส่งด้วยรถของบริษัทเอง พร้อมระบบบริหารจัดการการขนส่ง
+                            <div class="expertise-title" data-i18n="expertise.item4_title">Real-time Logistics</div>
+                            <div class="expertise-desc" data-i18n="expertise.item4_desc">
+                                ให้บริการขนส่งด้วยรถของบริษัทเอง พร้อมระบบบริหารจัดการการขนส่ง
                                 (TMS) ที่พัฒนาภายใน สามารถติดตามสถานะการขนส่งแบบ Real-time</div>
                         </div>
                     </div>

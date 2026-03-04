@@ -29,17 +29,18 @@
       </div>
       <!-- Left: Details -->
       <div style="flex: 1; min-width: 300px;">
-        <h1 class="details-title">Supply Management</h1>
-        <h2 style="font-size: 24px; color: #325662; margin-top: 10px;">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ</h2>
-        <p class="details-desc">
+        <h1 class="details-title" data-i18n="service.sup_title">Supply Management</h1>
+        <h2 style="font-size: 24px; color: #325662; margin-top: 10px;" data-i18n="service.sup_subtitle">
+          ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ</h2>
+        <p class="details-desc" data-i18n="service.sup_desc">
           ยกระดับการจัดการบรรจุภัณฑ์ด้วยระบบ (Packaging Supply Management System) ที่ครอบคลุม ติดตามได้อย่างแม่นยำ
           และลดต้นทุนแอบแฝงในกระบวนการผลิต
         </p>
         <ul class="details-desc" style="margin-top: 15px; padding-left: 20px; text-align: left;">
-          <li>ติดตามสถานะบรรจุภัณฑ์หมุนเวียน (Returnable Packaging Tracking)</li>
-          <li>บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์ (Inventory Management)</li>
-          <li>วิเคราะห์ข้อมูลและวางแผนการใช้งาน (Data Analytics & Planning)</li>
-          <li>ลดความสูญเสียและบรรจุภัณฑ์สูญหายอย่างมีประสิทธิภาพ</li>
+          <li data-i18n="service.sup_li1">ติดตามสถานะบรรจุภัณฑ์หมุนเวียน (Returnable Packaging Tracking)</li>
+          <li data-i18n="service.sup_li2">บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์ (Inventory Management)</li>
+          <li data-i18n="service.sup_li3">วิเคราะห์ข้อมูลและวางแผนการใช้งาน (Data Analytics & Planning)</li>
+          <li data-i18n="service.sup_li4">ลดความสูญเสียและบรรจุภัณฑ์สูญหายอย่างมีประสิทธิภาพ</li>
         </ul>
       </div>
     </div>
@@ -56,8 +57,9 @@
       <section id="dev-section1" style="margin-bottom: 40px;">
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">ติดตามสถานะบรรจุภัณฑ์</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.sup_sec1_title">
+              ติดตามสถานะบรรจุภัณฑ์</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.sup_sec1_desc">
               ติดตามการหมุนเวียนของบรรจุภัณฑ์แบบใช้ซ้ำได้อย่างเป็นระบบ ตั้งแต่การจ่ายออก การใช้งาน จนถึงการส่งคืน
               ช่วยลดการสูญหาย เพิ่มความโปร่งใส และควบคุมต้นทุนได้อย่างมีประสิทธิภาพ</p>
           </div>
@@ -80,8 +82,9 @@
         <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.sup_sec2_title">
+              บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.sup_sec2_desc">
               ควบคุมปริมาณบรรจุภัณฑ์คงคลังให้เหมาะสมกับปริมาณงานจริง ตรวจสอบสถานะคงเหลือแบบเรียลไทม์
               ลดปัญหาขาดแคลนหรือสต็อกเกินความจำเป็น</p>
           </div>
@@ -103,8 +106,9 @@
       <section id="dev-section3" style="margin-bottom: 0px;">
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">วิเคราะห์ข้อมูลและวางแผนการใช้งาน</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.sup_sec3_title">
+              วิเคราะห์ข้อมูลและวางแผนการใช้งาน</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.sup_sec3_desc">
               นำข้อมูลการใช้งานมาวิเคราะห์แนวโน้มและประสิทธิภาพ
               เพื่อวางแผนการจัดสรรบรรจุภัณฑ์ให้สอดคล้องกับปริมาณงาน ช่วยเพิ่มความแม่นยำในการตัดสินใจและลดต้นทุนในระยะยาว
             </p>
@@ -142,7 +146,7 @@
         <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
           <div class="dev-card-title">Cliff Coast</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_inventory">
             บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
           </p>
         </a>
@@ -154,7 +158,7 @@
           <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
             loading="lazy" />
           <div class="dev-card-title">Forest Lights</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_dev">
             นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
           </p>
         </a>
@@ -165,7 +169,7 @@
         <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
           <div class="dev-card-title">Nature Walk</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_sensitive">
             รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
           </p>
         </a>
@@ -176,7 +180,7 @@
         <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
           <div class="dev-card-title">Mountain View</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_sensitive">
             รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
           </p>
         </a>
@@ -188,7 +192,7 @@
           <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
             loading="lazy" />
           <div class="dev-card-title">Golden Sunset</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_route">
             ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
           </p>
         </a>

@@ -11,15 +11,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
 
-    <!-- Google Fonts: Inter (EN) + Sarabun (TH) -->
+    <!-- Google Fonts: Inter (EN) + Sarabun (TH) + Noto Sans SC (ZH) + Noto Sans JP (JP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
         rel="stylesheet">
 
     <!-- Custom CSS & JS -->
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/i18n.js" defer></script>
     <script src="../js/script.js" defer></script>
 </head>
 
@@ -36,63 +37,91 @@
             <!-- Navigation Menu -->
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-list">
-                    <!-- Dropdown 1 -->
+                    <!-- Dropdown 1: Services -->
                     <li class="nav-item dropdown-item">
-                        <div class="nav-link dropdown-toggle">บริการของเรา <span class="arrow">▼</span></div>
+                        <div class="nav-link dropdown-toggle"><span data-i18n="nav.services">บริการของเรา</span> <span
+                                class="arrow">▼</span></div>
                         <ul class="dropdown-menu">
-                            <li><a href="../service/development.php"
-                                    class="dropdown-link">บริการออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร</a></li>
-                            <li><a href="../service/supply_management.php"
-                                    class="dropdown-link">การจัดการการจัดหาบรรจุภัณฑ์</a></li>
-                            <li><a href="../service/warehouse.php"
-                                    class="dropdown-link">การจัดการคลังสินค้าและการดำเนินงาน</a></li>
-                            <li><a href="../service/transportation.php"
-                                    class="dropdown-link">บริการขนส่งและระบบบริหารจัดการภายใน</a></li>
+                            <li><a href="../service/development.php" class="dropdown-link"
+                                    data-i18n="nav_services.development">บริการออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร</a></li>
+                            <li><a href="../service/supply_management.php" class="dropdown-link"
+                                    data-i18n="nav_services.supply">การจัดการการจัดหาบรรจุภัณฑ์</a></li>
+                            <li><a href="../service/warehouse.php" class="dropdown-link"
+                                    data-i18n="nav_services.warehouse">การจัดการคลังสินค้าและการดำเนินงาน</a></li>
+                            <li><a href="../service/transportation.php" class="dropdown-link"
+                                    data-i18n="nav_services.transportation">บริการขนส่งและระบบบริหารจัดการภายใน</a></li>
                         </ul>
                     </li>
-                    <!-- Dropdown 2 -->
+                    <!-- Dropdown 2: About -->
                     <li class="nav-item dropdown-item">
-                        <div class="nav-link dropdown-toggle">เกี่ยวกับเรา <span class="arrow">▼</span></div>
+                        <div class="nav-link dropdown-toggle"><span data-i18n="nav.about">เกี่ยวกับเรา</span> <span
+                                class="arrow">▼</span></div>
                         <ul class="dropdown-menu">
-                            <li><a href="../about/company.php" class="dropdown-link">บริษัท Koch</a></li>
-                            <li><a href="../about/expertise.php" class="dropdown-link">ความเชี่ยวชาญ</a></li>
-                            <li><a href="../about/vision.php" class="dropdown-link">วิสัยทัศน์</a></li>
+                            <li><a href="../about/company.php" class="dropdown-link"
+                                    data-i18n="nav_about.company">บริษัท Koch</a></li>
+                            <li><a href="../about/expertise.php" class="dropdown-link"
+                                    data-i18n="nav_about.expertise">ความเชี่ยวชาญ</a></li>
+                            <li><a href="../about/vision.php" class="dropdown-link"
+                                    data-i18n="nav_about.vision">วิสัยทัศน์</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="../main/partners.php" class="nav-link">พันธมิตร</a></li>
-                    <li class="nav-item"><a href="../main/product.php" class="nav-link">สินค้า</a></li>
-                    <li class="nav-item"><a href="../main/technology.php" class="nav-link">เทคโนโลยี</a></li>
-                    <li class="nav-item"><a href="../main/branches.php" class="nav-link">สาขา</a></li>
-                    <li class="nav-item"><a href="../main/contact.php" class="nav-link">ติดต่อเรา</a></li>
-                    <!--
-                    <li class="nav-item"><a href="../main/quotation.php" class="nav-link">ขอใบเสนอราคา</a></li>
-                    -->
-                    
-                    <!-- Language Dropdown -->
-                    <li class="nav-item dropdown-item">
-                        <div class="nav-link dropdown-toggle">
+                    <li class="nav-item"><a href="../main/partners.php" class="nav-link"
+                            data-i18n="nav.partners">พันธมิตร</a></li>
+                    <li class="nav-item"><a href="../main/product.php" class="nav-link"
+                            data-i18n="nav.product">สินค้า</a></li>
+                    <li class="nav-item"><a href="../main/technology.php" class="nav-link"
+                            data-i18n="nav.technology">เทคโนโลยี</a></li>
+                    <li class="nav-item"><a href="../main/branches.php" class="nav-link"
+                            data-i18n="nav.branches">สาขา</a></li>
+                    <li class="nav-item"><a href="../main/contact.php" class="nav-link"
+                            data-i18n="nav.contact">ติดต่อเรา</a></li>
+
+                    <!-- Language Switcher -->
+                    <li class="nav-item dropdown-item koch-lang-switcher">
+                        <div class="nav-link dropdown-toggle" id="kochLangToggle" aria-label="Select language">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                style="margin-right:5px;">
+                                style="margin-right:5px; vertical-align:middle;">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <line x1="2" y1="12" x2="22" y2="12"></line>
                                 <path
                                     d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
                                 </path>
                             </svg>
-                            ไทย <span class="arrow">▼</span>
+                            <span id="kochLangLabel">ไทย</span> <span class="arrow">▼</span>
                         </div>
-                        <ul class="dropdown-menu" style="min-width: 120px;">
-                            <li><a href="?lang=th" class="dropdown-link">ไทย</a></li>
-                            <li><a href="?lang=en" class="dropdown-link">English</a></li>
-                            <li><a href="?lang=zh" class="dropdown-link">中文</a></li>
-                            <li><a href="?lang=ja" class="dropdown-link">日本語</a></li>
+                        <ul class="dropdown-menu koch-lang-menu" style="min-width: 130px;">
+                            <li>
+                                <button class="dropdown-link koch-lang-btn koch-lang-btn--active"
+                                    data-koch-lang-btn="th" onclick="window.kochLang && window.kochLang.setLang('th')">
+                                    <span class="koch-lang-flag">🇹🇭</span> ไทย
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-link koch-lang-btn" data-koch-lang-btn="en"
+                                    onclick="window.kochLang && window.kochLang.setLang('en')">
+                                    <span class="koch-lang-flag">🇬🇧</span> English
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-link koch-lang-btn" data-koch-lang-btn="zh"
+                                    onclick="window.kochLang && window.kochLang.setLang('zh')">
+                                    <span class="koch-lang-flag">🇨🇳</span> 中文
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-link koch-lang-btn" data-koch-lang-btn="jp"
+                                    onclick="window.kochLang && window.kochLang.setLang('jp')">
+                                    <span class="koch-lang-flag">🇯🇵</span> 日本語
+                                </button>
+                            </li>
                         </ul>
                     </li>
+
                     <!-- Login Button -->
                     <li class="nav-item login-item">
                         <a href="../main/login.php" class="btn-login">
-                            Login
+                            <span data-i18n="nav.login">Login</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
                                 style="margin-left:8px;">
@@ -123,3 +152,4 @@
 
 <!-- CSS ของ menubar อยู่ใน: css/style.css หัวข้อ "Menubar Component (component/menubar.php)" -->
 <!-- JS ของ menubar อยู่ใน: js/script.js หัวข้อ "Menubar Component (component/menubar.php)" -->
+<!-- i18n system: js/i18n.js | Language files: lang/th.json, en.json, zh.json, jp.json -->

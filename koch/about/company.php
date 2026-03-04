@@ -12,6 +12,7 @@
 </head>
 
 <!-- page-company: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+
 <body class="page-company">
     <?php include '../component/menubar.php'; ?>
 
@@ -29,35 +30,38 @@
             </div>
             <!-- Right: Details -->
             <div style="flex: 1; min-width: 300px; padding-bottom: 20px;">
-                <h1 class="details-title">ข้อมูลบริษัท</h1>
-                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;">ทำความรู้จักกับ
+                <h1 class="details-title" data-i18n="company.title">ข้อมูลบริษัท</h1>
+                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;"
+                    data-i18n="company.subtitle">ทำความรู้จักกับ
                     KOCH
                     Packaging</h2>
 
                 <div class="company-text-container" style="margin-top: 20px;">
                     <p class="details-desc">
-                        <strong>Koch Packaging and Packing Services Co., Ltd.</strong>
-                        เป็นบริษัทไทยที่ดำเนินธุรกิจด้าน
-                        การผลิตและให้บริการโซลูชันด้านบรรจุภัณฑ์ และซัพพลายเชนแบบครบวงจร ตั้งแต่การออกแบบ
-                        การจัดหาวัตถุดิบ
-                        การผลิต ไปจนถึงการบริหารคลังสินค้าและโลจิสติกส์อย่างมีประสิทธิภาพ
+                        <strong data-i18n="company.p1_strong">Koch Packaging and Packing Services Co., Ltd.</strong>
+                        <span data-i18n="company.p1">เป็นบริษัทไทยที่ดำเนินธุรกิจด้าน
+                            การผลิตและให้บริการโซลูชันด้านบรรจุภัณฑ์ และซัพพลายเชนแบบครบวงจร ตั้งแต่การออกแบบ
+                            การจัดหาวัตถุดิบ
+                            การผลิต ไปจนถึงการบริหารคลังสินค้าและโลจิสติกส์อย่างมีประสิทธิภาพ</span>
                     </p>
                     <p class="details-desc">
-                        เริ่มต้นจากการให้บริการด้าน
-                        ผลิตและจำหน่ายผลิตภัณฑ์บรรจุภัณฑ์จากกระดาษกระดาษลอนลูกฟูกและกระดาษแข็งลอนลูกฟูก
-                        ซึ่งเป็นหัวใจของการปกป้องสินค้าในการขนส่งและจัดเก็บ จากนั้นได้พัฒนาให้บริการครอบคลุมทั้ง
-                        <strong>Packaging
+                        <span data-i18n="company.p2_1">เริ่มต้นจากการให้บริการด้าน
+                            ผลิตและจำหน่ายผลิตภัณฑ์บรรจุภัณฑ์จากกระดาษกระดาษลอนลูกฟูกและกระดาษแข็งลอนลูกฟูก
+                            ซึ่งเป็นหัวใจของการปกป้องสินค้าในการขนส่งและจัดเก็บ
+                            จากนั้นได้พัฒนาให้บริการครอบคลุมทั้ง</span>
+                        <strong data-i18n="company.p2_strong">Packaging
                             Supply Management System (VMI), Warehouse & Operation Management, Transportation
                             (In-house
                             Fleet &
-                            System)</strong> และบริการด้านโลจิสติกส์อื่นๆ ที่เหมาะกับอุตสาหกรรมขนาดใหญ่
-                        โดยเฉพาะอุตสาหกรรมยานยนต์และอิเล็กทรอนิกส์
+                            System)</strong> <span data-i18n="company.p2_2">และบริการด้านโลจิสติกส์อื่นๆ
+                            ที่เหมาะกับอุตสาหกรรมขนาดใหญ่
+                            โดยเฉพาะอุตสาหกรรมยานยนต์และอิเล็กทรอนิกส์</span>
                     </p>
                     <p class="details-desc">
-                        ด้วยแนวคิดการพัฒนาอย่างต่อเนื่อง บริษัทมุ่งเน้นการปรับใช้
-                        <strong>เทคโนโลยีอัตโนมัติและการบริหารจัดการข้อมูล</strong>
-                        เพื่อให้บริการลูกค้าได้อย่างแม่นยำ รวดเร็ว และมีมาตรฐานสูง
-                        พร้อมรองรับการเติบโตของธุรกิจทั้งในและต่างประเทศในอนาคต
+                        <span data-i18n="company.p3_1">ด้วยแนวคิดการพัฒนาอย่างต่อเนื่อง บริษัทมุ่งเน้นการปรับใช้</span>
+                        <strong data-i18n="company.p3_strong">เทคโนโลยีอัตโนมัติและการบริหารจัดการข้อมูล</strong>
+                        <span data-i18n="company.p3_2">เพื่อให้บริการลูกค้าได้อย่างแม่นยำ รวดเร็ว และมีมาตรฐานสูง
+                            พร้อมรองรับการเติบโตของธุรกิจทั้งในและต่างประเทศในอนาคต</span>
                     </p>
                 </div>
             </div>

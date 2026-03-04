@@ -26,7 +26,8 @@
                     style="width: 100%; max-width: 900px; padding: 0 15px; box-sizing: border-box; text-align: center; margin-bottom: 60px;">
 
                     <h1 class="tech_subtitle"
-                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 25px; position: relative; display: inline-block;">
+                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 25px; position: relative; display: inline-block;"
+                        data-i18n="contact.title">
                         ติดต่อเรา
                         <span
                             style="position: absolute; width: 80%; height: 4px; background-color: #ED2A2A; left: 10%; bottom: -10px;"></span>
@@ -53,10 +54,12 @@
                                 </svg>
                             </div>
                             <div class="contact-text-group">
-                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;">
+                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;"
+                                    data-i18n="contact.address_label">
                                     ที่อยู่สำนักงาน</h4>
-                                <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.5;">742/5 หมู่ที่ 1
-                                    ตำบลหนองไผ่แก้ว<br>อำเภอบ้านบึง จ.ชลบุรี 20220</p>
+                                <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.5;"
+                                    data-i18n="contact.address">742/5 หมู่ที่ 1 ตำบลหนองไผ่แก้ว อำเภอบ้านบึง จ.ชลบุรี
+                                    20220</p>
                             </div>
                         </div>
 
@@ -74,7 +77,8 @@
                                 </svg>
                             </div>
                             <div class="contact-text-group">
-                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;">
+                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;"
+                                    data-i18n="contact.phone_label">
                                     ติดต่อฝ่ายขาย</h4>
                                 <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.5;">
                                     089-8335550<br>090-9542354</p>
@@ -96,7 +100,8 @@
                                 </svg>
                             </div>
                             <div class="contact-text-group">
-                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;">อีเมล
+                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;"
+                                    data-i18n="contact.email_label">อีเมล
                                 </h4>
                                 <p
                                     style="margin: 0; color: #444; font-size: 15px; line-height: 1.5; white-space: nowrap;">
@@ -115,7 +120,8 @@
                     <div class="tech_box_main" style="position: relative;">
                         <div class="tech_image"
                             style="box-shadow: 0 15px 40px rgba(0,0,0,0.15); height: 500px; background: #fff; display: flex; align-items: stretch; border-radius: 0;">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124291.35992560715!2d101.06124759726562!3d13.218724100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102d30061100aa1%3A0xfcf1e516c1c8beac!2sKOCH%20Packaging%20and%20packing%20services%20co.%2Cltd!5e0!3m2!1sth!2sth!4v1772423982751!5m2!1sth!2sth"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124291.35992560715!2d101.06124759726562!3d13.218724100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102d30061100aa1%3A0xfcf1e516c1c8beac!2sKOCH%20Packaging%20and%20packing%20services%20co.%2Cltd!5e0!3m2!1sth!2sth!4v1772423982751!5m2!1sth!2sth"
                                 frameborder="0" style="border:0; width: 100%; height: 100%; display: block;"
                                 allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>

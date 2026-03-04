@@ -28,17 +28,18 @@
       </div>
       <!-- Right: Details -->
       <div style="flex: 1; min-width: 300px;">
-        <h1 class="details-title">Transportation Inhouse Fleet</h1>
-        <h2 style="font-size: 24px; color: #325662; margin-top: 10px;">ระบบขนส่งอัจฉริยะแบบครบวงจร</h2>
-        <p class="details-desc">
+        <h1 class="details-title" data-i18n="service.trans_title">Transportation Inhouse Fleet</h1>
+        <h2 style="font-size: 24px; color: #325662; margin-top: 10px;" data-i18n="service.trans_subtitle">
+          ระบบขนส่งอัจฉริยะแบบครบวงจร</h2>
+        <p class="details-desc" data-i18n="service.trans_desc">
           บริการขนส่งที่รวดเร็ว ตรงต่อเวลา และปลอดภัย ด้วยกองรถขนส่งภายในบริษัท (Inhouse Fleet)
           พร้อมระบบติดตามสถานะแบบเรียลไทม์
         </p>
         <ul class="details-desc" style="margin-top: 15px; padding-left: 20px; text-align: left;">
-          <li>ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ</li>
-          <li>ควบคุมคุณภาพและความปลอดภัยตลอดเส้นทาง</li>
-          <li>รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน</li>
-          <li>ทำงานสอดคล้องกับระบบบริหารจัดการคลังสินค้า</li>
+          <li data-i18n="service.trans_li1">ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ</li>
+          <li data-i18n="service.trans_li2">ควบคุมคุณภาพและความปลอดภัยตลอดเส้นทาง</li>
+          <li data-i18n="service.trans_li3">รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน</li>
+          <li data-i18n="service.trans_li4">ทำงานสอดคล้องกับระบบบริหารจัดการคลังสินค้า</li>
         </ul>
       </div>
     </div>
@@ -55,8 +56,9 @@
       <section id="dev-section1" style="margin-bottom: 40px;">
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.trans_sec1_title">
+              ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.trans_sec1_desc">
               ให้บริการขนส่งครอบคลุมทุกภูมิภาคและนิคมอุตสาหกรรมสำคัญทั่วประเทศ
               วางแผนเส้นทางอย่างมีประสิทธิภาพเพื่อให้การจัดส่งเป็นไปตามกำหนดเวลา
               รองรับทั้งงานขนส่งประจำและงานเร่งด่วนได้อย่างยืดหยุ่น</p>
@@ -80,8 +82,9 @@
         <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">ควบคุมคุณภาพและความปลอดภัยตลอดเส้นทาง</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.trans_sec2_title">
+              ควบคุมคุณภาพและความปลอดภัยตลอดเส้นทาง</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.trans_sec2_desc">
               ดำเนินงานภายใต้มาตรฐานด้านความปลอดภัยและคุณภาพในทุกขั้นตอน ตั้งแต่การรับสินค้า การจัดเก็บ
               ไปจนถึงการจัดส่งปลายทาง พร้อมระบบติดตามและตรวจสอบสถานะแบบต่อเนื่อง
               เพื่อลดความเสี่ยงและสร้างความมั่นใจสูงสุด</p>
@@ -104,9 +107,9 @@
       <section id="dev-section3" style="margin-bottom: 0px;">
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.trans_sec3_title">
               รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.trans_sec3_desc">
               มีความพร้อมในการดูแลและขนส่งชิ้นส่วนที่ต้องการความระมัดระวังเป็นพิเศษ
               ด้วยอุปกรณ์เฉพาะทางและขั้นตอนการจัดการที่ได้มาตรฐาน ป้องกันความเสียหายระหว่างการขนส่ง
               และรักษาคุณภาพของสินค้าให้ครบถ้วนสมบูรณ์จนถึงปลายทาง</p>
@@ -144,7 +147,7 @@
         <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
           <div class="dev-card-title">Cliff Coast</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_inventory">
             บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
           </p>
         </a>
@@ -156,7 +159,7 @@
           <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
             loading="lazy" />
           <div class="dev-card-title">Forest Lights</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_dev">
             นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
           </p>
         </a>
@@ -167,7 +170,7 @@
         <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
           <div class="dev-card-title">Nature Walk</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_sensitive">
             รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
           </p>
         </a>
@@ -178,7 +181,7 @@
         <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
           <div class="dev-card-title">Mountain View</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_sensitive">
             รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
           </p>
         </a>
@@ -190,7 +193,7 @@
           <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
             loading="lazy" />
           <div class="dev-card-title">Golden Sunset</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_route">
             ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
           </p>
         </a>

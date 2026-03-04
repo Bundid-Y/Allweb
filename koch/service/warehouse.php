@@ -29,18 +29,19 @@
       </div>
       <!-- Left: Details -->
       <div style="flex: 1; min-width: 300px;">
-        <h1 class="details-title">Warehouse & Operation</h1>
-        <h2 style="font-size: 24px; color: #325662; margin-top: 10px;">บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ
+        <h1 class="details-title" data-i18n="service.wh_title">Warehouse & Operation</h1>
+        <h2 style="font-size: 24px; color: #325662; margin-top: 10px;" data-i18n="service.wh_subtitle">
+          บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ
         </h2>
-        <p class="details-desc">
+        <p class="details-desc" data-i18n="service.wh_desc">
           ดูแลคลังสินค้าครบวงจรตั้งแต่การรับเข้า จัดเก็บ สุ่มตรวจ และกระจายสินค้า ด้วยมาตรฐานระดับสากล
           เพื่อให้กระบวนการผลิตของคุณไม่สะดุด
         </p>
         <ul class="details-desc" style="margin-top: 15px; padding-left: 20px; text-align: left;">
-          <li>ระบบจัดเก็บสินค้าอย่างเป็นหมวดหมู่และเข้าถึงง่าย (Smart Storage)</li>
-          <li>การทำงานที่รวดเร็ว ถูกต้อง และแม่นยำ (Fast Operation)</li>
-          <li>บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน (Professional Staff)</li>
-          <li>บูรณาการข้อมูลร่วมกับระบบซัพพลายเชนของคุณ</li>
+          <li data-i18n="service.wh_li1">ระบบจัดเก็บสินค้าอย่างเป็นหมวดหมู่และเข้าถึงง่าย (Smart Storage)</li>
+          <li data-i18n="service.wh_li2">การทำงานที่รวดเร็ว ถูกต้อง และแม่นยำ (Fast Operation)</li>
+          <li data-i18n="service.wh_li3">บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน (Professional Staff)</li>
+          <li data-i18n="service.wh_li4">บูรณาการข้อมูลร่วมกับระบบซัพพลายเชนของคุณ</li>
         </ul>
       </div>
     </div>
@@ -57,9 +58,9 @@
       <section id="dev-section1" style="margin-bottom: 40px;">
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.wh_sec1_title">
               ระบบจัดเก็บสินค้าเป็นหมวดหมู่และเข้าถึงง่าย</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.wh_sec1_desc">
               ออกแบบพื้นที่จัดเก็บอย่างเป็นระบบ
               แบ่งหมวดหมู่ชัดเจนตามประเภทสินค้าและความถี่ในการใช้งาน ช่วยให้ค้นหาและเบิกจ่ายได้รวดเร็ว ลดความผิดพลาด
               และเพิ่มประสิทธิภาพในการบริหารพื้นที่คลังสินค้าอย่างคุ้มค่าสูงสุด</p>
@@ -83,8 +84,9 @@
         <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">การทำงานที่รวดเร็ว ถูกต้อง และแม่นยำ</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.wh_sec2_title">
+              การทำงานที่รวดเร็ว ถูกต้อง และแม่นยำ</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.wh_sec2_desc">
               ดำเนินงานภายใต้มาตรฐานขั้นตอนที่ชัดเจน
               พร้อมระบบสนับสนุนที่ช่วยลดความซ้ำซ้อนและข้อผิดพลาด เพิ่มความรวดเร็วในการปฏิบัติงาน
               ควบคุมคุณภาพได้อย่างต่อเนื่อง และตอบสนองความต้องการลูกค้าได้อย่างตรงเวลา</p>
@@ -107,8 +109,9 @@
       <section id="dev-section3" style="margin-bottom: 0px;">
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
-            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;">บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน</h3>
-            <p style="font-size: 16px; line-height: 1.6; color: #555;">
+            <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.wh_sec3_title">
+              บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.wh_sec3_desc">
               ทีมงานผ่านการอบรมและมีประสบการณ์ตรงในสายงานโลจิสติกส์และคลังสินค้า เข้าใจขั้นตอนการทำงานอย่างละเอียด
               สามารถวิเคราะห์ปัญหาและแก้ไขสถานการณ์ได้อย่างมืออาชีพ
               เพื่อให้การดำเนินงานเป็นไปอย่างราบรื่นและมีประสิทธิภาพสูงสุด</p>
@@ -146,7 +149,7 @@
         <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
           <div class="dev-card-title">Cliff Coast</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_inventory">
             บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
           </p>
         </a>
@@ -158,7 +161,7 @@
           <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
             loading="lazy" />
           <div class="dev-card-title">Forest Lights</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_dev">
             นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
           </p>
         </a>
@@ -169,7 +172,7 @@
         <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
           <div class="dev-card-title">Nature Walk</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_sensitive">
             รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
           </p>
         </a>
@@ -180,7 +183,7 @@
         <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
           <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
           <div class="dev-card-title">Mountain View</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_sensitive">
             รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
           </p>
         </a>
@@ -192,7 +195,7 @@
           <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
             loading="lazy" />
           <div class="dev-card-title">Golden Sunset</div>
-          <p class="dev-card-desc">
+          <p class="dev-card-desc" data-i18n="service.card_route">
             ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
           </p>
         </a>

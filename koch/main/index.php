@@ -68,24 +68,27 @@
 
             <!-- คอลัมน์ขวา: เนื้อหา -->
             <div style="flex: 1; min-width: 300px;">
-                <h1 class="details-title">เกี่ยวกับเรา</h1>
+                <h1 class="details-title" data-i18n="index.about_title">เกี่ยวกับเรา</h1>
 
-                <!-- ย่อหน้าแรก: เน้นว่า KOCH คือใคร และเป้าหมายคืออะไร -->
+                <!-- ย่อหน้าแรก -->
                 <p class="details-desc">
-                    KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย
-                    มุ่งเน้นการสร้างระบบที่ <strong>"Smart, Fast, and Sustainable"</strong>
+                    <span data-i18n="index.about_p1">KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร
+                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย มุ่งเน้นการสร้างระบบที่</span>
+                    <strong data-i18n="index.about_p1_strong">"Smart, Fast, and Sustainable"</strong>
                 </p>
 
-                <!-- ย่อหน้าที่สอง: เน้นบทบาท Partner และใช้ List เพื่อแจกแจงความเชี่ยวชาญ -->
+                <!-- ย่อหน้าที่สอง -->
                 <p class="details-desc">
-                    เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ <strong>"พันธมิตรเชิงกลยุทธ์"</strong>
-                    ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด ด้วยความเชี่ยวชาญเฉพาะด้าน:
+                    <span data-i18n="index.about_p2">เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ</span> <strong
+                        data-i18n="index.about_p2_strong">"พันธมิตรเชิงกลยุทธ์"</strong>
+                    <span data-i18n="index.about_p2_cont">ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด
+                        ด้วยความเชี่ยวชาญเฉพาะด้าน:</span>
                 </p>
 
                 <ul class="details-desc"> <!-- ใช้ class เดียวกับ p เพื่อให้ฟอนต์เท่ากัน -->
-                    <li>ระบบ VMI (Vendor Managed Inventory)</li>
-                    <li>การออกแบบวิศวกรรมภายในองค์กร (In-house Engineering)</li>
-                    <li>การปรับวิธีกรรมระบบอัตโนมัติที่ล้ำสมัย</li>
+                    <li data-i18n="index.about_li1">ระบบ VMI (Vendor Managed Inventory)</li>
+                    <li data-i18n="index.about_li2">การออกแบบวิศวกรรมภายในองค์กร (In-house Engineering)</li>
+                    <li data-i18n="index.about_li3">การปรับวิธีกรรมระบบอัตโนมัติที่ล้ำสมัย</li>
                 </ul>
 
                 <div class="details-action-group">
@@ -101,11 +104,13 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+                    data-i18n="index.services_title">
                     บริการของเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;">
-                    บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร<br>ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;"
+                    data-i18n="index.services_sub">
+                    บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
                 </p>
                 <div class="details-action-group"></div>
             </div>
@@ -121,7 +126,8 @@
                         </div>
                         <div class="card__content">
                             <p class="card__category">Packaging Development</p>
-                            <h3 class="card__heading">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h3>
+                            <h3 class="card__heading" data-i18n="index.svc1_heading">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
+                            </h3>
                         </div>
                     </a>
                     <a class="card" href="../service/supply_management.php">
@@ -130,7 +136,8 @@
                         </div>
                         <div class="card__content">
                             <p class="card__category">Packaging SupplyManagement System</p>
-                            <h3 class="card__heading">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ</h3>
+                            <h3 class="card__heading" data-i18n="index.svc2_heading">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ
+                            </h3>
                         </div>
                     </a>
                     <a class="card" href="../service/warehouse.php">
@@ -139,7 +146,8 @@
                         </div>
                         <div class="card__content">
                             <p class="card__category">Warehouse & Operation Management</p>
-                            <h3 class="card__heading">บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ</h3>
+                            <h3 class="card__heading" data-i18n="index.svc3_heading">
+                                บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ</h3>
                         </div>
                     </a>
                     <a class="card" href="../service/transportation.php">
@@ -148,7 +156,7 @@
                         </div>
                         <div class="card__content">
                             <p class="card__category">Transportation Inhouse Fleet & System</p>
-                            <h3 class="card__heading">ระบบขนส่งอัจฉริยะ</h3>
+                            <h3 class="card__heading" data-i18n="index.svc4_heading">ระบบขนส่งอัจฉริยะ</h3>
                         </div>
                     </a>
                 </div>
@@ -163,11 +171,13 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+                    data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;">
-                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง<br>คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;"
+                    data-i18n="index.partners_sub">
+                    ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
             </div>
         </div>
@@ -198,11 +208,13 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;"
+                    data-i18n="index.products_title">
                     สินค้าแนะนำ
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;">
-                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนา<br>เพื่อรองรับทุกความต้องการของอุตสาหกรรม
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;"
+                    data-i18n="index.products_sub">
+                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนา เพื่อรองรับทุกความต้องการของอุตสาหกรรม
                 </p>
             </div>
         </div>
