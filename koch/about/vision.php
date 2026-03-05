@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="th">
+<ht lang="th">
 
 <head>
     <meta charset="UTF-8">
@@ -29,28 +29,25 @@
                     data-i18n="vision.subtitle">วิสัยทัศน์ (Vision)
                 </h2>
 
-                <div class="vision-text-container" style="margin-top: 30px;">
-                    <p class="details-desc">
+                <div class="vision-text-container"
+                    style="margin-top: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <p class="details-desc vision-desc">
                         <strong data-i18n="vision.p1_1">โค้ช แพคเกจจิ้ง แอนด์ แพคกิ้ง เซอร์วิสเซส จำกัด</strong> <span
-                            data-i18n="vision.p1_2">มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน
-                            Supply Chain Services สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่</span> <strong
-                            data-i18n="vision.p1_strong">ชาญฉลาด (Smart)
-                            รวดเร็ว (Fast) และยั่งยืน (Sustainable)</strong>
+                            data-i18n="vision.p1_2">มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน Supply Chain Services
+                            สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่</span> <span
+                            data-i18n="vision.p1_strong">ชาญฉลาด (Smart) รวดเร็ว (Fast) และยั่งยืน (Sustainable)</span>
                         <span data-i18n="vision.p1_3">เพื่อสนับสนุนการเติบโตของลูกค้าในทุกมิติของซัพพลายเชน</span>
                     </p>
-                    <p class="details-desc">
+                    <p class="details-desc vision-desc">
                         <span data-i18n="vision.p2_1">บริษัทมีเป้าหมายในการเชื่อมโยงงานด้าน</span> <strong
-                            data-i18n="vision.p2_strong">การพัฒนาบรรจุภัณฑ์ ระบบบริหารจัดการบรรจุภัณฑ์
-                            (VMI) การบริหารคลังสินค้า และการขนส่ง</strong> <span
-                            data-i18n="vision.p2_2">เข้าด้วยกันอย่างเป็นระบบ
-                            เพื่อเพิ่มประสิทธิภาพ ลดต้นทุน และลดความซ้ำซ้อนในกระบวนการดำเนินงานของลูกค้า</span>
+                            data-i18n="vision.p2_strong">การพัฒนาบรรจุภัณฑ์ ระบบบริหารจัดการบรรจุภัณฑ์ (VMI)
+                            การบริหารคลังสินค้า และการขนส่ง</strong> <span
+                            data-i18n="vision.p2_2">เข้าด้วยกันอย่างเป็นระบบ เพื่อเพิ่มประสิทธิภาพ ลดต้นทุน
+                            และลดความซ้ำซ้อนในกระบวนการดำเนินงานของลูกค้า</span>
                     </p>
-                    <p class="details-desc">
-                        <strong>KOCH</strong> <span data-i18n="vision.p3_1">ให้ความสำคัญกับการพัฒนา</span> <strong
-                            data-i18n="vision.p3_strong1">ระบบวิศวกรรมภายใน (In-house
-                            Engineering)</strong> <span data-i18n="vision.p3_2">และ</span> <strong
-                            data-i18n="vision.p3_strong2">ระบบดิจิทัล</strong> <span
-                            data-i18n="vision.p3_3">เพื่อยกระดับความแม่นยำ ความโปร่งใส
+                    <p class="details-desc vision-desc">
+                        <strong>KOCH</strong> <span data-i18n="vision.p3_1">ให้ความสำคัญกับการพัฒนา ระบบวิศวกรรมภายใน (In-house Engineering)และระบบดิจิทัล</span> 
+                        <span data-i18n="vision.p3_3">เพื่อยกระดับความแม่นยำ ความโปร่งใส
                             และความสามารถในการควบคุมกระบวนการทำงานแบบเรียลไทม์ พร้อมทั้งมุ่งเน้นการเติบโตอย่างยั่งยืน
                             ควบคู่ไปกับความรับผิดชอบต่อสิ่งแวดล้อมและสังคม</span>
                     </p>
@@ -69,4 +66,4 @@
     <?php include '../component/footer.php'; ?>
 </body>
 
-</html>
+</ht    ml>

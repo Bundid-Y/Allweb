@@ -4509,3 +4509,35 @@ html {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
 }
+
+/* =========================================
+   Vision Page Specific Styles
+   ========================================= */
+.page-vision .vision-text-container {
+    padding: 0 20px;
+}
+
+.page-vision .vision-desc {
+    text-align: center !important;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #111111;
+}
+
+/* Ensure non-Thai languages have regular word spacing 
+   since we removed the whitespace between HTML tags */
+html:not([lang="th"]) .page-vision .vision-desc span,
+html:not([lang="th"]) .page-vision .vision-desc strong {
+    margin-right: 0.25em;
+    display: inline-block;
+}
+
+/* Responsive adjustment for Vision text */
+@media (max-width: 768px) {
+    .page-vision .vision-desc {
+        text-align: left !important;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
