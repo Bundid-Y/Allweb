@@ -128,6 +128,7 @@
                             <p class="card__category">Packaging Development</p>
                             <h3 class="card__heading" data-i18n="index.svc1_heading">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
                             </h3>
+                            <span class="card__button" data-i18n="index.svc_btn_readmore">อ่านเพิ่มเติม</span>
                         </div>
                     </a>
                     <a class="card" href="../service/supply_management.php">
@@ -138,6 +139,7 @@
                             <p class="card__category">Packaging SupplyManagement System</p>
                             <h3 class="card__heading" data-i18n="index.svc2_heading">ระบบบริหารจัดการบรรจุภัณฑ์อัจฉริยะ
                             </h3>
+                            <span class="card__button" data-i18n="index.svc_btn_readmore">อ่านเพิ่มเติม</span>
                         </div>
                     </a>
                     <a class="card" href="../service/warehouse.php">
@@ -148,6 +150,7 @@
                             <p class="card__category">Warehouse & Operation Management</p>
                             <h3 class="card__heading" data-i18n="index.svc3_heading">
                                 บริหารจัดการคลังสินค้าและงานปฏิบัติการมืออาชีพ</h3>
+                            <span class="card__button" data-i18n="index.svc_btn_readmore">อ่านเพิ่มเติม</span>
                         </div>
                     </a>
                     <a class="card" href="../service/transportation.php">
@@ -157,6 +160,7 @@
                         <div class="card__content">
                             <p class="card__category">Transportation Inhouse Fleet & System</p>
                             <h3 class="card__heading" data-i18n="index.svc4_heading">ระบบขนส่งอัจฉริยะ</h3>
+                            <span class="card__button" data-i18n="index.svc_btn_readmore">อ่านเพิ่มเติม</span>
                         </div>
                     </a>
                 </div>

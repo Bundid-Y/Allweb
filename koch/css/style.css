@@ -4460,3 +4460,47 @@ html {
         white-space: normal;
     }
 }
+
+/* =========================================
+   Custom Button for Services Cards
+   ========================================= */
+.card-grid .card .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%; /* Ensure it spans the card */
+}
+
+.card-grid .card .card__button {
+    margin-top: auto; /* Pushes button to bottom */
+    align-self: flex-start; /* Aligns to left */
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #ffffff;
+    z-index: 2;
+    position: relative;
+    /* Optional: add some top margin if content is long */
+    margin-top: 20px; 
+}
+
+/* Responsive adjustment for extra safety */
+@supports (display: flex) {
+    .card-grid .card .card__button {
+        margin-top: auto; 
+    }
+}
+
+.card-grid .card:hover .card__button {
+    background-color: #ffffff;
+    color: var(--primary-color, #ED2A2A);
+    border-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
