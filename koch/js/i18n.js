@@ -93,6 +93,13 @@
             const text = _resolve(key, data) ?? _resolve(key, fallbackData) ?? null;
             if (text !== null) el.setAttribute('title', text);
         });
+
+        // data-i18n-value → input value attribute (for submit buttons)
+        document.querySelectorAll('[data-i18n-value]').forEach(el => {
+            const key = el.getAttribute('data-i18n-value');
+            const text = _resolve(key, data) ?? _resolve(key, fallbackData) ?? null;
+            if (text !== null) el.value = text;
+        });
     }
 
     // ── Update <html lang=""> and language label ─────────────────────────────
