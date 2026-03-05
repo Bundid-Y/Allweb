@@ -128,8 +128,7 @@
 
                 <!-- Load More Button -->
                 <div class="load-more-container">
-                    <button class="load-more-btn" data-i18n="product.loadMore" data-i18n-html="true">L O A D
-                        &nbsp;&nbsp; M O R E</button>
+                    <button class="load-more-btn" data-i18n="product.loadMore" data-i18n-html="true">L O A D M O R E</button>
                 </div>
             </div>
 
