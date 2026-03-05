@@ -34,9 +34,11 @@
       </div>
       <!-- Right: Details -->
       <div style="flex: 1; min-width: 300px;">
-        <h1 class="details-title" style="font-size: 36px; font-weight: bold; color: #ED2A2A; margin-bottom: 10px;">
+        <h1 class="details-title" style="font-size: 36px; font-weight: bold; color: #ED2A2A; margin-bottom: 10px;"
+          data-i18n="service.dev_title">
           Packaging Development</h1>
-        <h2 style="font-size: 24px; color: #325662; margin-top: 0px;">นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h2>
+        <h2 style="font-size: 24px; color: #325662; margin-top: 0px;" data-i18n="service.dev_subtitle">
+          นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h2>
         <div style="width: 50px; height: 4px; background-color: #ED2A2A; margin: 20px 0;"></div>
         <p class="details-desc" style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.dev_desc">
           ให้บริการพัฒนาและออกแบบบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์แบบครบวงจร ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ
