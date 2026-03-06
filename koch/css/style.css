@@ -541,14 +541,15 @@ section.loop-images-quotation {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	perspective: 1000px;
+	/* perspective removed — 3D context causes heavy GPU repaints and stutter */
+	contain: layout style;
 }
 
 .login-track {
 	--left: -150rem;
 	min-width: calc(5rem * var(--total));
 	height: 10rem;
-	transform-style: preserve-3d;
+	/* transform-style: preserve-3d removed — 2D is smoother */
 }
 
 .login-track .login-item {
@@ -556,25 +557,22 @@ section.loop-images-quotation {
 	width: 10rem;
 	height: 10rem;
 	left: 0;
-	translate: 100vw 0;
+	transform: translateX(100vw);
 	animation: scroll-left var(--time) linear infinite;
 	animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
-	will-change: translate, rotate;
+	will-change: transform;
 	cursor: pointer;
-	
-	rotate: y -30deg;
-	transition: rotate 0.5s ease-in-out;
-	
+	transition: box-shadow 0.3s ease, filter 0.3s ease;
 	overflow: hidden;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
 	border-radius: 0;
 	background: #ffffff;
+	contain: layout style;
 }
 
 .login-track .login-item:hover {
-	rotate: y 0deg !important;
 	z-index: 10;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	filter: brightness(1.05);
 }
 
 .login-track .login-item img {
@@ -589,10 +587,10 @@ section.loop-images-quotation {
 
 @keyframes scroll-left {
 	0% {
-		translate: 100vw 0;
+		transform: translateX(100vw);
 	}
 	100% {
-		translate: calc(-100% - 100vw) 0;
+		transform: translateX(calc(-100% - 100vw));
 	}
 }
 
@@ -697,6 +695,7 @@ section.loop-images-quotation.vertical {
     position: relative;
     overflow: hidden;
     --deco-y: -100%; /* เริ่มต้นซ่อนอยู่ด้านบน, GSAP จะ animate เป็น 0 */
+    contain: layout style;
 }
 .content-section.section-partners::after {
     content: '';
