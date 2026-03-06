@@ -627,6 +627,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // =========================================
+// Company Page Overflow Fix (JS fallback)
+// Scoped: body.page-company + tablet/mobile only
+// =========================================
+(function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!document.body.classList.contains('page-company')) return;
+        function lockHorizontalScroll() {
+            if (window.innerWidth <= 1024) {
+                document.documentElement.style.overflowX = 'hidden';
+                document.body.style.overflowX = 'hidden';
+            } else {
+                document.documentElement.style.overflowX = '';
+                document.body.style.overflowX = '';
+            }
+        }
+        lockHorizontalScroll();
+        window.addEventListener('resize', lockHorizontalScroll);
+    });
+})();
+
+// =========================================
 // Menubar Component (component/menubar.php)
 // สรุปขอบเขต (Scope) ของ JS เพื่อป้องกันการโหลดซ้อนและแก้ปัญหา Click Events
 // =========================================
