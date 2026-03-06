@@ -1,4 +1,8 @@
 // Koch Script JS
+if (window.kochScriptInitialized) {
+    console.log('Koch script already matched; skipping double init.');
+} else {
+window.kochScriptInitialized = true;
 console.log('Koch script loaded');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -624,92 +628,128 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // =========================================
 // Menubar Component (component/menubar.php)
+// สรุปขอบเขต (Scope) ของ JS เพื่อป้องกันการโหลดซ้อนและแก้ปัญหา Click Events
 // =========================================
-document.addEventListener('DOMContentLoaded', () => {
-    // Guard: ทำงานเฉพาะหน้าที่มี menubar เท่านั้น
-    if (!document.getElementById('header')) return;
+(function initMenubarScoped() {
+    document.addEventListener('DOMContentLoaded', () => {
+        // Guard: ทำงานเฉพาะหน้าที่มี menubar เท่านั้น
+        const header = document.getElementById('header');
+        if (!header) return;
+        if (window.menubarInitialized) return;
+        window.menubarInitialized = true;
 
-    const header = document.getElementById('header');
-    const navMenu = document.getElementById('navMenu');
-    const navToggle = document.getElementById('navToggle');
-    const navClose = document.getElementById('navClose');
-    const dropdownItems = document.querySelectorAll('.dropdown-item');
-    const navLinks = document.querySelectorAll('.header .nav-list .nav-item > a.nav-link');
+        const navMenu = document.getElementById('navMenu');
+        const navToggle = document.getElementById('navToggle');
+        const navClose = document.getElementById('navClose');
+        // Scope strictly inside #header
+        const dropdownItems = header.querySelectorAll('.dropdown-item');
+        const navLinks = header.querySelectorAll('.nav-list .nav-item > a.nav-link');
 
-    /* ===== Scroll Effect: Header compact เมื่อ scroll ลง ===== */
-    let lastScroll = 0;
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll > 40) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-        lastScroll = currentScroll;
-    }, { passive: true });
-
-    /* ===== ฟังก์ชันเปิดเมนู ===== */
-    function openMenu() {
-        navMenu.classList.add('show-menu');
-        navToggle.classList.add('active');
-        document.body.style.overflow = 'hidden'; /* ล็อค scroll เวลาเปิดเมนู */
-    }
-
-    /* ===== ฟังก์ชันปิดเมนู ===== */
-    function closeMenu() {
-        navMenu.classList.remove('show-menu');
-        navToggle.classList.remove('active');
-        document.body.style.overflow = ''; /* คืน scroll */
-    }
-
-    /* ===== Hamburger Toggle — เปิด/ปิดเมนู ===== */
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            if (navMenu.classList.contains('show-menu')) {
-                closeMenu();
+        /* ===== Scroll Effect: Header compact เมื่อ scroll ลง ===== */
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 40) {
+                header.classList.add('scrolled');
             } else {
-                openMenu();
+                header.classList.remove('scrolled');
             }
-        });
-    }
+            lastScroll = currentScroll;
+        }, { passive: true });
 
-    /* ===== ปุ่ม ✕ ปิดเมนู ===== */
-    if (navClose) {
-        navClose.addEventListener('click', () => {
-            closeMenu();
-        });
-    }
-
-    /* ===== คลิกลิงก์เมนูแล้วปิดเมนูอัตโนมัติ (มือถือ) ===== */
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 1024) {
-                closeMenu();
-            }
-        });
-    });
-
-    /* ===== Resize: ปิดเมนูอัตโนมัติเมื่อกลับเป็น Desktop ===== */
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 1024) {
-            closeMenu();
+        /* ===== ฟังก์ชันเปิดเมนู ===== */
+        function openMenu() {
+            if(navMenu) navMenu.classList.add('show-menu');
+            if(navToggle) navToggle.classList.add('active');
+            document.body.style.overflow = 'hidden'; /* ล็อค scroll เวลาเปิดเมนู */
         }
-    });
 
-    /* ===== Mobile Dropdown Toggle ===== */
-    dropdownItems.forEach(item => {
-        const link = item.querySelector('.nav-link');
-        if (link) {
-            link.addEventListener('click', (e) => {
-                if (window.innerWidth > 1024) return;
-                e.preventDefault();
-                item.classList.toggle('active');
-                if (item.classList.contains('active')) {
-                    link.style.color = 'var(--primary-color)';
+        /* ===== ฟังก์ชันปิดเมนู ===== */
+        function closeMenu() {
+            if(navMenu) navMenu.classList.remove('show-menu');
+            if(navToggle) navToggle.classList.remove('active');
+            document.body.style.overflow = ''; /* คืน scroll */
+        }
+
+        /* ===== Hamburger Toggle — เปิด/ปิดเมนู ===== */
+        if (navToggle) {
+            navToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (navMenu.classList.contains('show-menu')) {
+                    closeMenu();
                 } else {
-                    link.style.color = 'var(--text-color)';
+                    openMenu();
                 }
             });
         }
+
+        /* ===== ปุ่ม ✕ ปิดเมนู ===== */
+        if (navClose) {
+            navClose.addEventListener('click', (e) => {
+                e.stopPropagation();
+                closeMenu();
+            });
+        }
+
+        /* ===== คลิกลิงก์เมนูแล้วปิดเมนูอัตโนมัติ (มือถือ) ===== */
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 1024) {
+                    closeMenu();
+                }
+            });
+        });
+
+        /* ===== Resize: ปิดเมนูอัตโนมัติเมื่อกลับเป็น Desktop ===== */
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1024) {
+                closeMenu();
+            }
+        });
+
+        /* ===== Mobile Dropdown Toggle (iPad Pro + Touch Fix) ===== */
+        // ใช้ matchMedia แทน innerWidth เดิม เพราะ iPad Pro 12.9" อาจ report width ผิดเพี้ยน
+        function isMobileView() {
+            return window.matchMedia('(max-width: 1024px)').matches;
+        }
+
+        dropdownItems.forEach(item => {
+            const toggleElement = item.querySelector('.dropdown-toggle');
+            if (!toggleElement) return;
+
+            // ฟังก์ชันเปิด/ปิด dropdown — ใช้ร่วมกันระหว่าง click และ touchend
+            function handleDropdownToggle(e) {
+                if (!isMobileView()) return;
+                e.preventDefault();
+                e.stopPropagation(); // จำกัดขอบเขต (Scope) ไม่ให้ event ไหลออก
+
+                const isActive = item.classList.contains('active');
+
+                // Accordion: ปิด dropdown อื่นๆ ทั้งหมดก่อน (ป้องกันซ้อนกัน)
+                dropdownItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        const otherToggle = otherItem.querySelector('.dropdown-toggle');
+                        if (otherToggle) otherToggle.style.color = '';
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active', !isActive);
+                toggleElement.style.color = !isActive ? 'var(--primary-color)' : '';
+            }
+
+            // Bind click (desktop/mouse) และ touchend (iPad Safari) แยกกัน
+            toggleElement.addEventListener('click', handleDropdownToggle);
+
+            // iPad Safari Fix: touchend เพิ่มเพื่อป้องกัน click ไม่ทำงานบน iOS
+            toggleElement.addEventListener('touchend', function(e) {
+                // ป้องกัน click ยิงซ้ำหลัง touchend
+                e.preventDefault();
+                handleDropdownToggle(e);
+            }, { passive: false });
+        });
+
     });
-});
+})();
+} // end of window.kochScriptInitialized check
