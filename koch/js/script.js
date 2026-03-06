@@ -771,6 +771,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }, { passive: false });
         });
 
+        // ===== IntersectionObserver for Service Animations =====
+        const animationObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('anim-visible');
+                    // Stop observing once animated so it only happens once
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, {
+            threshold: 0.1, // Trigger when 10% of element is visible
+            rootMargin: "0px 0px -50px 0px"
+        });
+
+        const animatedElements = document.querySelectorAll('.anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-zoom-in, .anim-red-block');
+        animatedElements.forEach(el => animationObserver.observe(el));
+
     });
 })();
 } // end of window.kochScriptInitialized check

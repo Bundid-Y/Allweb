@@ -4645,3 +4645,54 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
         line-height: 1.6;
     }
 }
+
+/* =========================================
+   Service Page Animations (IntersectionObserver)
+   ========================================= */
+.anim-fade-up {
+    opacity: 0;
+    transform: perspective(1200px) translateY(50px) rotateX(-15deg);
+    transition: opacity 1.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+.anim-fade-left {
+    opacity: 0;
+    transform: perspective(1200px) translateX(-50px) rotateY(-10deg);
+    transition: opacity 1.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+.anim-fade-right {
+    opacity: 0;
+    transform: perspective(1200px) translateX(50px) rotateY(10deg);
+    transition: opacity 1.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+.anim-zoom-in {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+    transition: opacity 2s cubic-bezier(0.2, 0.8, 0.2, 1), transform 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+/* Red background rectangle animation (similar to section-products on index.php) */
+.anim-red-block {
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+.anim-red-block.anim-visible {
+    transform: scaleY(1) !important;
+}
+
+.anim-visible {
+    opacity: 1 !important;
+    transform: perspective(1200px) translate(0, 0) scale(1) rotateX(0deg) rotateY(0deg) !important;
+}
+
+/* Staggered delays */
+.anim-delay-100 { transition-delay: 100ms; }
+.anim-delay-200 { transition-delay: 200ms; }
+.anim-delay-300 { transition-delay: 300ms; }
+.anim-delay-400 { transition-delay: 400ms; }
+.anim-delay-500 { transition-delay: 500ms; }
