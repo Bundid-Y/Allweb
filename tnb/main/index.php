@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="tnb-panel__img-col">
-                    <img src="../img/other/index/cardslides/show1.png" alt="Domestic Logistics"
+                    <img src="../img/other/index/cardslides/tnb.webp" alt="tnb Logistics"
                         class="tnb-panel__img" />
                 </div>
             </div>
