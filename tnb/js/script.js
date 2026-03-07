@@ -598,3 +598,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* START: CodePen TruckLoader Component */
+document.addEventListener("DOMContentLoaded", function() {
+    const truckComponent = document.querySelector('.TruckLoader');
+    if (truckComponent) {
+        console.log("TruckLoader component initialized correctly.");
+        // Component logic would go here if interactions are added in future
+    }
+});
+/* END: CodePen TruckLoader Component */

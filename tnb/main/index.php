@@ -223,6 +223,16 @@
     </div>
 
 
+    <!-- START: CodePen TruckLoader Component -->
+    <div class="codepen-truck-wrapper">
+        <div class="TruckLoader">
+            <div class="TruckLoader-cab"></div>
+            <div class="TruckLoader-smoke"></div>
+        </div>
+    </div>
+    <!-- END: CodePen TruckLoader Component -->
+
+
     <!-- CONTENT / DETAILS SECTION — บริการของเรา (News Card Style) -->
     <div class="tnb-services-section content-section layout_padding">
         <!-- ส่วนหัวข้อ (Heading) -->
