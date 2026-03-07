@@ -49,7 +49,7 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Domestic</h1>
+                            <h1 class="tnb-panel__title">TNB logistics</h1>
                             <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s0">โลจิสติกส์ในประเทศ</span>
                             </p>
                         </div>
@@ -252,16 +252,16 @@
 
             <!-- การ์ด 1: Packaging Development -->
             <div class="tnb-news-card">
-                <a href="../service/development.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/development/development.jpeg" alt="Packaging Development"
+                <a href="../service/domestic.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/domestic/truck1.png" alt="Domestic Transportation"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
-                    <h2 class="tnb-news-card__title">Packaging Development</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc1_sub">นวัตกรรมการออกแบบบรรจุภัณฑ์</div>
+                    <h2 class="tnb-news-card__title">Domestic Transportation</h2>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc1_sub">โลจิสติกส์ภายในประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">ออกแบบและพัฒนาบรรจุภัณฑ์ครบวงจร
-                            ด้วยทีมวิศวกรภายในองค์กรที่มีประสบการณ์…</p>
-                        <a href="../service/development.php" class="tnb-news-card__read-more"
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">บริการขนส่งภายในประเทศครบวงจร
+                            พร้อมระบบติดตามสินค้า Real-time และทีมงานมืออาชีพ…</p>
+                        <a href="../service/domestic.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc1_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
@@ -276,8 +276,8 @@
                     <h2 class="tnb-news-card__title">Supply Management System</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">ระบบบริหารจัดการบรรจุภัณฑ์</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">ระบบ VMI
-                            อัจฉริยะเพื่อบริหารจัดการสต็อคและ Supply Chain ให้มีประสิทธิภาพสูงสุด…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">บริการขนส่งภายในประเทศครบวงจร
+                            พร้อมระบบติดตามสินค้า Real-time และทีมงานมืออาชีพ…</p>
                         <a href="../service/supply_management.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc2_more">อ่านเพิ่มเติม ›</a>
                     </div>
