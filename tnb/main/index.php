@@ -358,7 +358,7 @@
 
 
     <!-- CONTENT / DETAILS SECTION — พันธมิตรที่ไว้วางใจเรา -->
-    <div class="content-section section-partners" style="padding-top: 80px; padding-bottom: 80px;">
+    <div class="content-section section-partners" style="padding-top: 80px; padding-bottom: 0px;">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
@@ -374,7 +374,8 @@
         </div>
 
         <!-- logo ลูกค้าเลื่อน loop slides -->
-        <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 220px; padding: 20px 0;">
+        <section class="loop-images-quotation"
+            style="--bg: white; height: auto; min-height: 220px; padding-top: 20px; padding-bottom: 0px;">
             <div class="login-track" style="--time: 60s; --total: 12;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
                 <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Suzuki.png" alt="image"></div>
@@ -393,6 +394,15 @@
             </div>
         </section>
     </div>
+
+    <!-- START: CodePen LTR TruckLoader Component -->
+    <div class="codepen-truck-wrapper-partner">
+        <div class="TruckLoader">
+            <div class="TruckLoader-cab"></div>
+            <div class="TruckLoader-smoke"></div>
+        </div>
+    </div>
+    <!-- END: CodePen LTR TruckLoader Component -->
 
     <!-- CONTENT / DETAILS SECTION — สินค้าแนะนำ -->
     <div class="content-section layout_padding section-products">

@@ -608,3 +608,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 /* END: CodePen TruckLoader Component */
+
+/* START: CodePen LTR TruckLoader Component */
+document.addEventListener("DOMContentLoaded", function() {
+    const truckComponentLtr = document.querySelector('.codepen-truck-wrapper-partner .TruckLoader');
+    if (truckComponentLtr) {
+        console.log("LTR TruckLoader component initialized correctly.");
+    }
+});
+/* END: CodePen LTR TruckLoader Component */
