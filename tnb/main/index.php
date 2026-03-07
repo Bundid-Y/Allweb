@@ -358,15 +358,15 @@
 
 
     <!-- CONTENT / DETAILS SECTION — พันธมิตรที่ไว้วางใจเรา -->
-    <div class="content-section section-partners" style="padding-top: 80px; padding-bottom: 0px;">
+    <div class="content-section section-partners" style="padding-top: 40px; padding-bottom: 0px;">
         <!-- ส่วนหัวข้อ (Heading) -->
-        <div style="margin-bottom: 24px;">
+        <div style="margin-bottom: 16px;">
             <div style="text-align: left;">
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
                     data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;"
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 12px; line-height: 1.8;"
                     data-i18n="index.partners_sub">
                     ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
@@ -375,7 +375,7 @@
 
         <!-- logo ลูกค้าเลื่อน loop slides -->
         <section class="loop-images-quotation"
-            style="--bg: white; height: auto; min-height: 220px; padding-top: 20px; padding-bottom: 0px;">
+            style="--bg: white; height: auto; min-height: 140px; padding-top: 10px; padding-bottom: 0px;">
             <div class="login-track" style="--time: 60s; --total: 12;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
                 <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Suzuki.png" alt="image"></div>
