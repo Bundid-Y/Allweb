@@ -191,15 +191,22 @@
 
             <!-- คอลัมน์ขวา: เนื้อหา -->
             <div style="flex: 1; min-width: 300px;">
-                <h1 class="details-title" data-i18n="index.about_title">เกี่ยวกับเรา</h1>
+                <h1 class="details-title" style="padding-top: 0; margin-bottom: 5px;" data-i18n="index.about_title">
+                    เกี่ยวกับเรา</h1>
 
-                <p class="details-desc">
-                    <span data-i18n="index.about_p1">TNB Logistics เป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งครบวงจร ให้บริการขนส่งสินค้าภายในประเทศ การขนส่งตู้คอนเทนเนอร์ และงานชัตเทิลระหว่างคลังสินค้า (WH to WH) บริษัทมีสำนักงานและสาขาในพื้นที่ยุทธศาสตร์สำคัญ เช่น บางแสน แหลมฉบัง บางกะดี และลาดกระบัง เพื่อรองรับความต้องการของลูกค้าในภาคอุตสาหกรรมอย่างมีประสิทธิภาพ</span>
+                <p class="details-desc" style="padding-top: 10px; font-size: 15px; line-height: 1.7;">
+                    <span data-i18n="index.about_p1">TNB Logistics เป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งครบวงจร
+                        ให้บริการขนส่งสินค้าภายในประเทศ การขนส่งตู้คอนเทนเนอร์ และงานชัตเทิลระหว่างคลังสินค้า (WH to WH)
+                        บริษัทมีสำนักงานและสาขาในพื้นที่ยุทธศาสตร์สำคัญ เช่น บางแสน แหลมฉบัง บางกะดี และลาดกระบัง
+                        เพื่อรองรับความต้องการของลูกค้าในภาคอุตสาหกรรมอย่างมีประสิทธิภาพ</span>
                 </p>
 
                 <!-- ย่อหน้าที่สอง -->
-                <p class="details-desc">
-                    <span data-i18n="index.about_p2">TNB มุ่งเน้นมาตรฐานการบริการ ความปลอดภัย และความตรงต่อเวลาในทุกกระบวนการขนส่ง พร้อมนำเทคโนโลยีระบบบริหารจัดการการขนส่งมาใช้เพื่อเพิ่มความโปร่งใสและประสิทธิภาพในการทำงาน บริษัทพร้อมเป็นพันธมิตรด้านโลจิสติกส์ที่ลูกค้าไว้วางใจและเติบโตไปพร้อมกันอย่างยั่งยืน</span>
+                <p class="details-desc" style="padding-top: 10px; font-size: 15px; line-height: 1.7;">
+                    <span data-i18n="index.about_p2">TNB มุ่งเน้นมาตรฐานการบริการ ความปลอดภัย
+                        และความตรงต่อเวลาในทุกกระบวนการขนส่ง
+                        พร้อมนำเทคโนโลยีระบบบริหารจัดการการขนส่งมาใช้เพื่อเพิ่มความโปร่งใสและประสิทธิภาพในการทำงาน
+                        บริษัทพร้อมเป็นพันธมิตรด้านโลจิสติกส์ที่ลูกค้าไว้วางใจและเติบโตไปพร้อมกันอย่างยั่งยืน</span>
                 </p>
 
                 <div class="details-action-group">
@@ -246,7 +253,8 @@
                     <h2 class="tnb-news-card__title">Domestic Transportation</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc1_sub">บริการขนส่งสินค้าในประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">บริการขนส่งสินค้าในประเทศที่รวดเร็วและปลอดภัย ตอบโจทย์ทุกการจัดส่งทั่วไทย</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">
+                            บริการขนส่งสินค้าในประเทศที่รวดเร็วและปลอดภัย ตอบโจทย์ทุกการจัดส่งทั่วไทย</p>
                         <a href="../service/domestic.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc1_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -260,9 +268,11 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Shuttle Truck Service</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">บริการรถรับ–ส่งระหว่างคลังสินค้า</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">บริการรถรับ–ส่งระหว่างคลังสินค้า
+                    </div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">บริการรถรับ-ส่งสินค้าระหว่างคลัง (WH to WH) เพื่อการบริหารจัดการที่ไร้รอยต่อ</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">
+                            บริการรถรับ-ส่งสินค้าระหว่างคลัง (WH to WH) เพื่อการบริหารจัดการที่ไร้รอยต่อ</p>
                         <a href="../service/supply_management.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc2_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -276,9 +286,11 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Import & Export Container Transportation</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc3_sub">บริการขนส่งตู้คอนเทนเนอร์นำเข้า–ส่งออก</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc3_sub">
+                        บริการขนส่งตู้คอนเทนเนอร์นำเข้า–ส่งออก</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc3_excerpt">บริการรถหัวลากและขนส่งตู้คอนเทนเนอร์นำเข้า-ส่งออกอย่างมืออาชีพ</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc3_excerpt">
+                            บริการรถหัวลากและขนส่งตู้คอนเทนเนอร์นำเข้า-ส่งออกอย่างมืออาชีพ</p>
                         <a href="../service/warehouse.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc3_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -292,9 +304,11 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Container Arrangement & Container Yard</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc4_sub">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc4_sub">
+                        บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">บริหารจัดการตู้คอนเทนเนอร์และพื้นที่ลานตู้สินค้าอย่างเป็นระบบ</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">
+                            บริหารจัดการตู้คอนเทนเนอร์และพื้นที่ลานตู้สินค้าอย่างเป็นระบบ</p>
                         <a href="../service/transportation.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc4_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -309,7 +323,8 @@
                     <h2 class="tnb-news-card__title">Nationwide Distribution</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc5_sub">บริการกระจายสินค้าทั่วประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">บริการกระจายสินค้าครอบคลุมทุกพื้นที่ทั่วประเทศ ส่งตรงถึงปลายทางอย่างแม่นยำ</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">
+                            บริการกระจายสินค้าครอบคลุมทุกพื้นที่ทั่วประเทศ ส่งตรงถึงปลายทางอย่างแม่นยำ</p>
                         <a href="../service/domestic.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc5_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -323,9 +338,11 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Truck Parking & Fleet Support</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc6_sub">บริการที่จอดรถบรรทุกและบริหารพื้นที่จอด</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc6_sub">
+                        บริการที่จอดรถบรรทุกและบริหารพื้นที่จอด</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">ให้บริการพื้นที่จุดจอดรถบรรทุกที่ปลอดภัย พร้อมสิ่งอำนวยความสะดวกครบครัน</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">
+                            ให้บริการพื้นที่จุดจอดรถบรรทุกที่ปลอดภัย พร้อมสิ่งอำนวยความสะดวกครบครัน</p>
                         <a href="../service/container.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc6_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -403,7 +420,9 @@
                     <div class="card_shade _off"></div>
                     <div class="card_content _on">
                         <p class="card_dscrptn">
-                            <a class="card_photo_cred" href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank"></a>
+                            <a class="card_photo_cred"
+                                href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                                target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG _active">
@@ -435,7 +454,8 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png" alt="6 wheel_trailer" />
+                        <img class="Img_H100" src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png"
+                            alt="6 wheel_trailer" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="3">
@@ -449,7 +469,8 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png" alt="10wheeltrailer" />
+                        <img class="Img_H100" src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png"
+                            alt="10wheeltrailer" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="4">
