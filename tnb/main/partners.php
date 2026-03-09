@@ -152,11 +152,9 @@
 
                         <div class="partner-grid">
                                 <div class="partner-logo"><img src="../img/customer_logo/Mazda.png" alt="Mazda"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Alliance.png" alt="Alliance">
-                                </div>
+                                <div class="partner-logo"><img src="../img/customer_logo/Alliance.png" alt="Alliance"></div>
                                 <div class="partner-logo"><img src="../img/customer_logo/TTV.png" alt="TTV"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/toshiba.png" alt="toshiba">
-                                </div>
+                                <div class="partner-logo"><img src="../img/customer_logo/toshiba.png" alt="toshiba"></div>
                                 <div class="partner-logo"><img src="../img/customer_logo/tic.png" alt="tic"></div>
                                 <div class="partner-logo"><img src="../img/customer_logo/GR.png" alt="GR"></div>
                                 <div class="partner-logo"><img src="../img/customer_logo/CPPC.png" alt="CPPC"></div>
