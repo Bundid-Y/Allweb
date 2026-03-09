@@ -21,7 +21,8 @@
   <!-- ส่วนหัวของหน้า (Hero Section) แสดงภาพรวมและคำอธิบายเบื้องต้นของการพัฒนาบรรจุภัณฑ์ -->
   <!-- ใช้ Flexbox ในการจัดวางให้ภาพอยู่ซ้ายและข้อความอยู่ขวา -->
   <div class="content-section layout_padding" style="margin-top: 150px; margin-bottom: 50px;">
-    <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; flex-direction: row-reverse;">
+    <div class="flex-row"
+      style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; flex-direction: row-reverse;">
       <!-- Left: Image with custom red shape -->
       <div style="flex: 1.2; min-width: 300px; display: flex; justify-content: center;">
         <div class="image-wrapper" style="position: relative; width: 100%; padding: 20px; box-sizing: border-box;">
@@ -40,7 +41,8 @@
         <h2 style="font-size: 24px; color: #325662; margin-top: 0px;" data-i18n="service.container_subtitle">
           นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h2>
         <div style="width: 50px; height: 4px; background-color: #0D2D6B; margin: 20px 0;"></div>
-        <p class="details-desc" style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.container_desc">
+        <p class="details-desc" style="font-size: 16px; line-height: 1.6; color: #555;"
+          data-i18n="service.container_desc">
           ให้บริการพัฒนาและออกแบบบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์แบบครบวงจร ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ
           เหล็ก ไม้ และพลาสติก โดยมุ่งเน้นการออกแบบที่แข็งแรง ปลอดภัย และเหมาะสมกับการขนส่งและการจัดเก็บ
 
