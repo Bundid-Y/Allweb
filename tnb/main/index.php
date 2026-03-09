@@ -50,7 +50,7 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">TNB logistics</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s0">โลจิสติกส์ในประเทศ</span>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s0">บริการขนส่งและโลจิสติกส์ครบวงจร</span>
                             </p>
                         </div>
                     </div>
@@ -65,8 +65,8 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Packaging</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s1">นวัตกรรมบรรจุภัณฑ์</span>
+                            <h1 class="tnb-panel__title">Domestic Transportation</h1>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s1">บริการขนส่งสินค้าในประเทศ</span>
                             </p>
                         </div>
                     </div>
@@ -82,8 +82,8 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Supply</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s2">ระบบบริหารจัดการ</span>
+                            <h1 class="tnb-panel__title">Shuttle Truck Service</h1>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s2">บริการรถรับ–ส่งระหว่างคลังสินค้า</span>
                             </p>
                         </div>
                     </div>
@@ -99,8 +99,8 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Warehouse</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s3">บริหารคลังสินค้า</span>
+                            <h1 class="tnb-panel__title">Import & Export Container</h1>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s3">บริการขนส่งตู้คอนเทนเนอร์นำเข้า–ส่งออก</span>
                             </p>
                         </div>
                     </div>
@@ -116,8 +116,8 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Transport</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s4">ขนส่งอัจฉริยะ</span></p>
+                            <h1 class="tnb-panel__title">Container Arrangement</h1>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s4">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</span></p>
                         </div>
                     </div>
                 </div>
@@ -132,8 +132,8 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Container</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s5">บริการคอนเทนเนอร์</span>
+                            <h1 class="tnb-panel__title">Nationwide Distribution</h1>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s5">บริการกระจายสินค้าทั่วประเทศ</span>
                             </p>
                         </div>
                     </div>
@@ -149,9 +149,8 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">Shuttle</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s6">บริการ Shuttle
-                                    Truck</span></p>
+                            <h1 class="tnb-panel__title">Truck Parking</h1>
+                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s6">บริการที่จอดรถบรรทุกและบริหารพื้นที่จอด</span></p>
                         </div>
                     </div>
                 </div>
