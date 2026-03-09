@@ -56,8 +56,7 @@
                     </div>
                 </div>
                 <div class="tnb-panel__img-col">
-                    <img src="../img/other/index/cardslides/tnb.webp" alt="tnb Logistics"
-                        class="tnb-panel__img" />
+                    <img src="../img/other/index/cardslides/tnb.webp" alt="tnb Logistics" class="tnb-panel__img" />
                 </div>
             </div>
 
@@ -376,19 +375,17 @@
         <!-- logo ลูกค้าเลื่อน loop slides -->
         <section class="loop-images-quotation"
             style="--bg: white; height: auto; min-height: 140px; padding-top: 10px; padding-bottom: 0px;">
-            <div class="login-track" style="--time: 60s; --total: 12;">
+            <div class="login-track" style="--time: 60s; --total: 10;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
                 <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Alliance.png" alt="image"></div>
                 <div class="login-item" style="--i: 3;"><img src="../img/customer_logo/TTV.png" alt="image"></div>
                 <div class="login-item" style="--i: 4;"><img src="../img/customer_logo/toshiba.png" alt="image"></div>
                 <div class="login-item" style="--i: 5;"><img src="../img/customer_logo/tic.png" alt="image"></div>
                 <div class="login-item" style="--i: 6;"><img src="../img/customer_logo/GR.png" alt="image"></div>
-                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/CPPC.png"
-                        alt="image"></div>
+                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/CPPC.png" alt="image"></div>
                 <div class="login-item" style="--i: 8;"><img src="../img/customer_logo/Thr.png" alt="image"></div>
-                <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/dn.png" alt="image"></div>
-                <div class="login-item" style="--i: 11;"><img src="../img/customer_logo/lat.png" alt="image"></div>
-                </div>
+                <div class="login-item" style="--i: 9;"><img src="../img/customer_logo/dn.png" alt="image"></div>
+                <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/lat.png" alt="image"></div>
             </div>
         </section>
     </div>
@@ -421,19 +418,19 @@
         <div class="Block_Expanding_Cards">
             <div class="card_holder_sB">
                 <span class="US_City_sB _active" data-card-index="0">
-                    <h1 class="card_h1 _active">RSC Box</h1>
+                    <h1 class="card_h1 _active">Picup<br>Jumbo</h1>
                     <div class="card_shade _off"></div>
                     <div class="card_content _on">
                         <p class="card_dscrptn">
-                            <a class="card_photo_cred" href="../img/alltruck/picipjumbo/picup1.png" target="_blank"></a>
+                            <a class="card_photo_cred" href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG _active">
-                        <img class="Img_H100" src="../img/products/box/rsc.png" alt="RSC Box" />
+                        <img class="Img_H100" src="../img/alltruck/picipjumbo/picup1.png" alt="picupJumbo" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="1">
-                    <h1 class="card_h1">FTD Box</h1>
+                    <h1 class="card_h1">6 Wheel</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -443,11 +440,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/ftd.png" alt="FTD Box" />
+                        <img class="Img_H100" src="../img/alltruck/6 wheel/6wheel1.png" alt="6 wheel" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="2">
-                    <h1 class="card_h1">OSC Box</h1>
+                    <h1 class="card_h1">6 Wheel<br>Trailer</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -457,11 +454,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/osc.png" alt="OSC Box" />
+                        <img class="Img_H100" src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png" alt="6 wheel_trailer" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="3">
-                    <h1 class="card_h1">Die-Cut Box</h1>
+                    <h1 class="card_h1">10 Wheel<br>Trailer</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -471,11 +468,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/die-cut.png" alt="Die-Cut Box" />
+                        <img class="Img_H100" src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png" alt="10wheeltrailer" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="4">
-                    <h1 class="card_h1">Cardboard Pallet</h1>
+                    <h1 class="card_h1">Trailer</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -485,11 +482,11 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/pallet.png" alt="Cardboard Pallet" />
+                        <img class="Img_H100" src="../img/alltruck/trailer/trailer3.png" alt="trailer" />
                     </div>
                 </span>
                 <span class="US_City_sB" data-card-index="5">
-                    <h1 class="card_h1">Fitting Box Service</h1>
+                    <h1 class="card_h1">All Truck</h1>
                     <div class="card_shade"></div>
                     <div class="card_content">
                         <p class="card_dscrptn">
@@ -499,7 +496,7 @@
                         </p>
                     </div>
                     <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/fit_ser.png" alt="Fitting Box Service" />
+                        <img class="Img_H100" src="../img/truckshow/alltruck.png" alt="alltruck" />
                     </div>
                 </span>
             </div>
