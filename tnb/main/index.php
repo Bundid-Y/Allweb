@@ -193,26 +193,14 @@
             <div style="flex: 1; min-width: 300px;">
                 <h1 class="details-title" data-i18n="index.about_title">เกี่ยวกับเรา</h1>
 
-                <!-- ย่อหน้าแรก: เน้นว่า TNB คือใคร และเป้าหมายคืออะไร -->
                 <p class="details-desc">
-                    <span data-i18n="index.about_p1">KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร
-                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย มุ่งเน้นการสร้างระบบที่</span>
-                    <strong data-i18n="index.about_p1_strong">"Smart, Fast, and Sustainable"</strong>
+                    <span data-i18n="index.about_p1">TNB Logistics เป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งครบวงจร ให้บริการขนส่งสินค้าภายในประเทศ การขนส่งตู้คอนเทนเนอร์ และงานชัตเทิลระหว่างคลังสินค้า (WH to WH) บริษัทมีสำนักงานและสาขาในพื้นที่ยุทธศาสตร์สำคัญ เช่น บางแสน แหลมฉบัง บางกะดี และลาดกระบัง เพื่อรองรับความต้องการของลูกค้าในภาคอุตสาหกรรมอย่างมีประสิทธิภาพ</span>
                 </p>
 
-                <!-- ย่อหน้าที่สอง: เน้นบทบาท Partner และใช้ List เพื่อแจกแจงความเชี่ยวชาญ -->
+                <!-- ย่อหน้าที่สอง -->
                 <p class="details-desc">
-                    <span data-i18n="index.about_p2">เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ</span> <strong
-                        data-i18n="index.about_p2_strong">"พันธมิตรเชิงกลยุทธ์"</strong>
-                    <span data-i18n="index.about_p2_cont">ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด
-                        ด้วยความเชี่ยวชาญเฉพาะด้าน:</span>
+                    <span data-i18n="index.about_p2">TNB มุ่งเน้นมาตรฐานการบริการ ความปลอดภัย และความตรงต่อเวลาในทุกกระบวนการขนส่ง พร้อมนำเทคโนโลยีระบบบริหารจัดการการขนส่งมาใช้เพื่อเพิ่มความโปร่งใสและประสิทธิภาพในการทำงาน บริษัทพร้อมเป็นพันธมิตรด้านโลจิสติกส์ที่ลูกค้าไว้วางใจและเติบโตไปพร้อมกันอย่างยั่งยืน</span>
                 </p>
-
-                <ul class="details-desc"> <!-- ใช้ class เดียวกับ p เพื่อให้ฟอนต์เท่ากัน -->
-                    <li data-i18n="index.about_li1">ระบบ VMI (Vendor Managed Inventory)</li>
-                    <li data-i18n="index.about_li2">การออกแบบวิศวกรรมภายในองค์กร (In-house Engineering)</li>
-                    <li data-i18n="index.about_li3">การปรับวิธีกรรมระบบอัตโนมัติที่ล้ำสมัย</li>
-                </ul>
 
                 <div class="details-action-group">
                 </div>
@@ -256,10 +244,9 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Domestic Transportation</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc1_sub">โลจิสติกส์ภายในประเทศ</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc1_sub">บริการขนส่งสินค้าในประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">บริการขนส่งภายในประเทศครบวงจร
-                            พร้อมระบบติดตามสินค้า Real-time และทีมงานมืออาชีพ…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc1_excerpt">บริการขนส่งสินค้าในประเทศที่รวดเร็วและปลอดภัย ตอบโจทย์ทุกการจัดส่งทั่วไทย</p>
                         <a href="../service/domestic.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc1_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -273,10 +260,9 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Shuttle Truck Service</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">ระบบบริหารจัดการบรรจุภัณฑ์</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">บริการรถรับ–ส่งระหว่างคลังสินค้า</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">บริการขนส่งภายในประเทศครบวงจร
-                            พร้อมระบบติดตามสินค้า Real-time และทีมงานมืออาชีพ…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">บริการรถรับ-ส่งสินค้าระหว่างคลัง (WH to WH) เพื่อการบริหารจัดการที่ไร้รอยต่อ</p>
                         <a href="../service/supply_management.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc2_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -290,11 +276,9 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Import & Export Container Transportation</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc3_sub">บริหารคลังสินค้าและงานปฏิบัติการ
-                    </div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc3_sub">บริการขนส่งตู้คอนเทนเนอร์นำเข้า–ส่งออก</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc3_excerpt">
-                            บริหารจัดการคลังสินค้าและงานปฏิบัติการอย่างมืออาชีพ ด้วยระบบที่ครบวงจร…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc3_excerpt">บริการรถหัวลากและขนส่งตู้คอนเทนเนอร์นำเข้า-ส่งออกอย่างมืออาชีพ</p>
                         <a href="../service/warehouse.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc3_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -308,10 +292,9 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Container Arrangement & Container Yard</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc4_sub">ระบบขนส่งอัจฉริยะ</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc4_sub">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">ระบบขนส่ง Inhouse Fleet
-                            ที่ทันสมัย ครอบคลุมทุกเส้นทางด้วยระบบติดตามแบบ Real-time…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">บริหารจัดการตู้คอนเทนเนอร์และพื้นที่ลานตู้สินค้าอย่างเป็นระบบ</p>
                         <a href="../service/transportation.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc4_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -324,10 +307,9 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Nationwide Distribution</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc5_sub">โลจิสติกส์ภายในประเทศ</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc5_sub">บริการกระจายสินค้าทั่วประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">บริการขนส่งภายในประเทศครบวงจร
-                            พร้อมระบบติดตามสินค้า Real-time และทีมงานมืออาชีพ…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">บริการกระจายสินค้าครอบคลุมทุกพื้นที่ทั่วประเทศ ส่งตรงถึงปลายทางอย่างแม่นยำ</p>
                         <a href="../service/domestic.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc5_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -341,10 +323,9 @@
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Truck Parking & Fleet Support</h2>
-                    <div class="tnb-news-card__post-date" data-i18n="index.svc6_sub">บริการคอนเทนเนอร์</div>
+                    <div class="tnb-news-card__post-date" data-i18n="index.svc6_sub">บริการที่จอดรถบรรทุกและบริหารพื้นที่จอด</div>
                     <div class="tnb-news-card__details-wrapper">
-                        <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">รับ-ส่งตู้คอนเทนเนอร์ครบวงจร
-                            พร้อมผู้ชำนาญด้านท่าเรือและ Container Yard…</p>
+                        <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">ให้บริการพื้นที่จุดจอดรถบรรทุกที่ปลอดภัย พร้อมสิ่งอำนวยความสะดวกครบครัน</p>
                         <a href="../service/container.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc6_more">อ่านเพิ่มเติม ›</a>
                     </div>
@@ -399,18 +380,18 @@
     </div>
     <!-- END: CodePen LTR TruckLoader Component -->
 
-    <!-- CONTENT / DETAILS SECTION — สินค้าแนะนำ -->
+    <!-- CONTENT / DETAILS SECTION — ประเภทรถ -->
     <div class="content-section layout_padding section-products">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;"
                     data-i18n="index.products_title">
-                    สินค้าแนะนำ
+                    ประเภทรถ
                 </h1>
                 <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;"
                     data-i18n="index.products_sub">
-                    ผลิตภัณฑ์บรรจุภัณฑ์คุณภาพสูง ออกแบบและพัฒนา เพื่อรองรับทุกความต้องการของอุตสาหกรรม
+                    บริการรถบรรทุกหลากหลายประเภท เพื่อรองรับทุกความต้องการด้านการขนส่งและโลจิสติกส์ของคุณ
                 </p>
             </div>
         </div>
