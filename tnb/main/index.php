@@ -253,7 +253,7 @@
             <!-- การ์ด 1: Packaging Development -->
             <div class="tnb-news-card">
                 <a href="../service/domestic.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/domestic/truck1.png" alt="Domestic Transportation"
+                <img src="../img/other/service/domestic/Inboundlogistics.png" alt="Domestic Transportation"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
                     <h2 class="tnb-news-card__title">Domestic Transportation</h2>
@@ -269,11 +269,11 @@
 
             <!-- การ์ด 2: Supply Management -->
             <div class="tnb-news-card">
-                <a href="../service/supply_management.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/supply/supply_management.jpeg" alt="Supply Management"
+                <a href="../service/shuttle.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/shuttle/shuttletruck.png" alt="Supply Management"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
-                    <h2 class="tnb-news-card__title">Supply Management System</h2>
+                    <h2 class="tnb-news-card__title">Shuttle Truck Service</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc2_sub">ระบบบริหารจัดการบรรจุภัณฑ์</div>
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">บริการขนส่งภายในประเทศครบวงจร
@@ -286,11 +286,11 @@
 
             <!-- การ์ด 3: Warehouse & Operation -->
             <div class="tnb-news-card">
-                <a href="../service/warehouse.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/warehouse/warehouse.jpeg" alt="Warehouse Management"
+                <a href="../service/import-export.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/import-export/import-export.png" alt="Warehouse Management"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
-                    <h2 class="tnb-news-card__title">Warehouse &amp; Operation</h2>
+                    <h2 class="tnb-news-card__title">Import & Export Container Transportation</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc3_sub">บริหารคลังสินค้าและงานปฏิบัติการ
                     </div>
                     <div class="tnb-news-card__details-wrapper">
@@ -304,11 +304,11 @@
 
             <!-- การ์ด 4: Transportation -->
             <div class="tnb-news-card">
-                <a href="../service/transportation.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/transportation/Transportation.png" alt="Transportation"
+                <a href="../service/container.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/container/containerreceiving.png" alt="Transportation"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
-                    <h2 class="tnb-news-card__title">Transportation Fleet</h2>
+                    <h2 class="tnb-news-card__title">Container Arrangement & Container Yard</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc4_sub">ระบบขนส่งอัจฉริยะ</div>
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">ระบบขนส่ง Inhouse Fleet
@@ -320,11 +320,11 @@
             </div>
             <!-- การ์ด 5: Domestic Logistics -->
             <div class="tnb-news-card">
-                <a href="../service/domestic.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/domestic/truck1.png" alt="Domestic Logistics"
+                <a href="../service/nationwide.php" class="tnb-news-card__card-link"></a>
+                <img src="../img/other/service/nationwide/lastmiledelivery.png" alt="Domestic Logistics"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
-                    <h2 class="tnb-news-card__title">Domestic Logistics</h2>
+                    <h2 class="tnb-news-card__title">Nationwide Distribution</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc5_sub">โลจิสติกส์ภายในประเทศ</div>
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">บริการขนส่งภายในประเทศครบวงจร
@@ -338,10 +338,10 @@
             <!-- การ์ด 6: Container Service -->
             <div class="tnb-news-card">
                 <a href="../service/container.php" class="tnb-news-card__card-link"></a>
-                <img src="../img/other/service/container/Container.png" alt="Container Service"
+                <img src="../img/other/service/parking/fleetmanagement.png" alt="Container Service"
                     class="tnb-news-card__image">
                 <div class="tnb-news-card__text-wrapper">
-                    <h2 class="tnb-news-card__title">Container Service</h2>
+                    <h2 class="tnb-news-card__title">Truck Parking & Fleet Support</h2>
                     <div class="tnb-news-card__post-date" data-i18n="index.svc6_sub">บริการคอนเทนเนอร์</div>
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">รับ-ส่งตู้คอนเทนเนอร์ครบวงจร
@@ -378,18 +378,16 @@
             style="--bg: white; height: auto; min-height: 140px; padding-top: 10px; padding-bottom: 0px;">
             <div class="login-track" style="--time: 60s; --total: 12;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
-                <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Suzuki.png" alt="image"></div>
-                <div class="login-item" style="--i: 3;"><img src="../img/customer_logo/Changan.png" alt="image"></div>
-                <div class="login-item" style="--i: 4;"><img src="../img/customer_logo/Kn.webp" alt="image"></div>
-                <div class="login-item" style="--i: 5;"><img src="../img/customer_logo/Honda.png" alt="image"></div>
-                <div class="login-item" style="--i: 6;"><img src="../img/customer_logo/Alpla.png" alt="image"></div>
-                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/BROSE_Excellence.png"
+                <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Alliance.png" alt="image"></div>
+                <div class="login-item" style="--i: 3;"><img src="../img/customer_logo/TTV.png" alt="image"></div>
+                <div class="login-item" style="--i: 4;"><img src="../img/customer_logo/toshiba.png" alt="image"></div>
+                <div class="login-item" style="--i: 5;"><img src="../img/customer_logo/tic.png" alt="image"></div>
+                <div class="login-item" style="--i: 6;"><img src="../img/customer_logo/GR.png" alt="image"></div>
+                <div class="login-item" style="--i: 7;"><img src="../img/customer_logo/CPPC.png"
                         alt="image"></div>
-                <div class="login-item" style="--i: 8;"><img src="../img/customer_logo/nhk.webp" alt="image"></div>
-                <div class="login-item" style="--i: 9;"><img src="../img/customer_logo/siamgoshi.jpg" alt="image"></div>
+                <div class="login-item" style="--i: 8;"><img src="../img/customer_logo/Thr.png" alt="image"></div>
                 <div class="login-item" style="--i: 10;"><img src="../img/customer_logo/dn.png" alt="image"></div>
                 <div class="login-item" style="--i: 11;"><img src="../img/customer_logo/lat.png" alt="image"></div>
-                <div class="login-item" style="--i: 12;"><img src="../img/customer_logo/mitsuboshi.png" alt="image">
                 </div>
             </div>
         </section>
@@ -427,7 +425,7 @@
                     <div class="card_shade _off"></div>
                     <div class="card_content _on">
                         <p class="card_dscrptn">
-                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank"></a>
+                            <a class="card_photo_cred" href="../img/alltruck/picipjumbo/picup1.png" target="_blank"></a>
                         </p>
                     </div>
                     <div class="card_BG _active">
