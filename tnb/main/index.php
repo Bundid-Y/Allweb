@@ -26,8 +26,8 @@
          Assuming the provided scripts will handle its absence gracefully or it will be added if available. -->
 
     <!-- Custom CSS & JS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
+    <script src="../js/script.js?v=<?php echo time(); ?>" defer></script>
 </head>
 
 <body>
