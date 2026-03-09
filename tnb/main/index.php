@@ -50,7 +50,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">TNB logistics</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s0">บริการขนส่งและโลจิสติกส์ครบวงจร</span>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s0">บริการขนส่งและโลจิสติกส์ครบวงจร</span>
                             </p>
                         </div>
                     </div>
@@ -66,7 +67,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Domestic Transportation</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s1">บริการขนส่งสินค้าในประเทศ</span>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s1">บริการขนส่งสินค้าในประเทศ</span>
                             </p>
                         </div>
                     </div>
@@ -83,7 +85,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Shuttle Truck Service</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s2">บริการรถรับ–ส่งระหว่างคลังสินค้า</span>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s2">บริการรถรับ–ส่งระหว่างคลังสินค้า</span>
                             </p>
                         </div>
                     </div>
@@ -100,7 +103,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Import & Export Container</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s3">บริการขนส่งตู้คอนเทนเนอร์นำเข้า–ส่งออก</span>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s3">บริการขนส่งตู้คอนเทนเนอร์นำเข้า–ส่งออก</span>
                             </p>
                         </div>
                     </div>
@@ -117,7 +121,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Container Arrangement</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s4">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</span></p>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s4">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</span></p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +138,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Nationwide Distribution</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s5">บริการกระจายสินค้าทั่วประเทศ</span>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s5">บริการกระจายสินค้าทั่วประเทศ</span>
                             </p>
                         </div>
                     </div>
@@ -150,7 +156,8 @@
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
                             <h1 class="tnb-panel__title">Truck Parking</h1>
-                            <p class="tnb-panel__addr"><span></span><span data-i18n="slide.s6">บริการที่จอดรถบรรทุกและบริหารพื้นที่จอด</span></p>
+                            <p class="tnb-panel__addr"><span></span><span
+                                    data-i18n="slide.s6">บริการที่จอดรถบรรทุกและบริหารพื้นที่จอด</span></p>
                         </div>
                     </div>
                 </div>
@@ -354,18 +361,60 @@
 
 
     <!-- CONTENT / DETAILS SECTION — พันธมิตรที่ไว้วางใจเรา -->
+    <style>
+        .partners-overlay-text {
+            position: absolute;
+            width: 100%;
+            right: 0;
+            top: 40px;
+            left: 0;
+            height: 420px;
+            z-index: 2;
+            pointer-events: none;
+            clip-path: polygon(100% 0, 35% 10%, 35% 90%, 100% 100%);
+            transform: translateY(var(--deco-y, 0));
+            will-change: transform;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 991px) {
+            .partners-overlay-text {
+                display: none !important;
+            }
+        }
+    </style>
     <div class="content-section section-partners" style="padding-top: 40px; padding-bottom: 0px;">
-        <!-- ส่วนหัวข้อ (Heading) -->
+        <!-- ส่วนหัวข้อ (Heading) (Black text for white background) -->
         <div style="margin-bottom: 16px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #1c1c1c;"
                     data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 12px; line-height: 1.8;"
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 12px; line-height: 1.8; color: #1c1c1c;"
                     data-i18n="index.partners_sub">
                     ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
+            </div>
+        </div>
+
+        <!-- Overlay Text (White text for blue background area) -->
+        <div class="partners-overlay-text">
+            <div style="margin-bottom: 16px;">
+                <div style="text-align: left;">
+                    <h1 class="details-title"
+                        style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;"
+                        data-i18n="index.partners_title">
+                        พันธมิตรที่ไว้วางใจเรา
+                    </h1>
+                    <p class="details-desc"
+                        style="margin-top: 5px; margin-bottom: 12px; line-height: 1.8; color: #ffffff;"
+                        data-i18n="index.partners_sub">
+                        ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
+                    </p>
+                </div>
             </div>
         </div>
 
