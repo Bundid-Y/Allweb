@@ -48,39 +48,48 @@
                                                                 <section class="loop-images-quotation vertical"
                                                                         style="background-color: transparent !important; --bg: transparent; height: 100%; min-height: 500px; padding: 20px 0; width: 100%;">
                                                                         <div class="login-track vertical"
-                                                                                style="--time: 40s; --total: 24; --top: -300rem;">
+                                                                                style="--time: 40s; --total: 20; --top: -300rem;">
                                                                                 <div class="login-item" style="--i: 1;">
                                                                                         <img src="../img/customer_logo/Mazda.png"
-                                                                                                alt="Mazda"></div>
+                                                                                                alt="Mazda">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 2;">
                                                                                         <img src="../img/customer_logo/Alliance.png"
-                                                                                                alt="Alliance"></div>
+                                                                                                alt="Alliance">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 3;">
                                                                                         <img src="../img/customer_logo/TTV.png"
-                                                                                                alt="TTV"></div>
+                                                                                                alt="TTV">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 4;">
                                                                                         <img src="../img/customer_logo/toshiba.png"
-                                                                                                alt="toshiba"></div>
+                                                                                                alt="toshiba">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 5;">
                                                                                         <img src="../img/customer_logo/tic.png"
-                                                                                                alt="tic"></div>
+                                                                                                alt="tic">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 6;">
                                                                                         <img src="../img/customer_logo/GR.png"
-                                                                                                alt="GR"></div>
+                                                                                                alt="GR">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 7;">
                                                                                         <img src="../img/customer_logo/CPPC.png"
-                                                                                                alt="CPPC"></div>
+                                                                                                alt="CPPC">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 8;">
                                                                                         <img src="../img/customer_logo/Thr.png"
-                                                                                                alt="Thr"></div>
+                                                                                                alt="Thr">
+                                                                                </div>
                                                                                 <div class="login-item" style="--i: 9;">
                                                                                         <img src="../img/customer_logo/dn.png"
-                                                                                                alt="dn"></div>
+                                                                                                alt="dn">
+                                                                                </div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 10;"><img
                                                                                                 src="../img/customer_logo/lat.png"
                                                                                                 alt="lat"></div>
-                                                                               
+
                                                                                 <!-- Duplicates -->
                                                                                 <div class="login-item"
                                                                                         style="--i: 11;"><img
@@ -143,9 +152,11 @@
 
                         <div class="partner-grid">
                                 <div class="partner-logo"><img src="../img/customer_logo/Mazda.png" alt="Mazda"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Alliance.png" alt="Alliance"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/Alliance.png" alt="Alliance">
+                                </div>
                                 <div class="partner-logo"><img src="../img/customer_logo/TTV.png" alt="TTV"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/toshiba.png" alt="toshiba"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/toshiba.png" alt="toshiba">
+                                </div>
                                 <div class="partner-logo"><img src="../img/customer_logo/tic.png" alt="tic"></div>
                                 <div class="partner-logo"><img src="../img/customer_logo/GR.png" alt="GR"></div>
                                 <div class="partner-logo"><img src="../img/customer_logo/CPPC.png" alt="CPPC"></div>
