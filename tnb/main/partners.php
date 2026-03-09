@@ -53,90 +53,75 @@
                                                                                         <img src="../img/customer_logo/Mazda.png"
                                                                                                 alt="Mazda"></div>
                                                                                 <div class="login-item" style="--i: 2;">
-                                                                                        <img src="../img/customer_logo/Suzuki.png"
-                                                                                                alt="Suzuki"></div>
+                                                                                        <img src="../img/customer_logo/Alliance.png"
+                                                                                                alt="Alliance"></div>
                                                                                 <div class="login-item" style="--i: 3;">
-                                                                                        <img src="../img/customer_logo/Changan.png"
-                                                                                                alt="Changan"></div>
+                                                                                        <img src="../img/customer_logo/TTV.png"
+                                                                                                alt="TTV"></div>
                                                                                 <div class="login-item" style="--i: 4;">
-                                                                                        <img src="../img/customer_logo/Kn.webp"
-                                                                                                alt="Kn"></div>
+                                                                                        <img src="../img/customer_logo/toshiba.png"
+                                                                                                alt="toshiba"></div>
                                                                                 <div class="login-item" style="--i: 5;">
-                                                                                        <img src="../img/customer_logo/Honda.png"
-                                                                                                alt="Honda"></div>
+                                                                                        <img src="../img/customer_logo/tic.png"
+                                                                                                alt="tic"></div>
                                                                                 <div class="login-item" style="--i: 6;">
-                                                                                        <img src="../img/customer_logo/Alpla.png"
-                                                                                                alt="Alpla"></div>
+                                                                                        <img src="../img/customer_logo/GR.png"
+                                                                                                alt="GR"></div>
                                                                                 <div class="login-item" style="--i: 7;">
-                                                                                        <img src="../img/customer_logo/BROSE_Excellence.png"
-                                                                                                alt="Brose"></div>
+                                                                                        <img src="../img/customer_logo/CPPC.png"
+                                                                                                alt="CPPC"></div>
                                                                                 <div class="login-item" style="--i: 8;">
-                                                                                        <img src="../img/customer_logo/nhk.webp"
-                                                                                                alt="NHK"></div>
+                                                                                        <img src="../img/customer_logo/Thr.png"
+                                                                                                alt="Thr"></div>
                                                                                 <div class="login-item" style="--i: 9;">
-                                                                                        <img src="../img/customer_logo/siamgoshi.jpg"
-                                                                                                alt="Siam Goshi"></div>
+                                                                                        <img src="../img/customer_logo/dn.png"
+                                                                                                alt="dn"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 10;"><img
-                                                                                                src="../img/customer_logo/dn2.png"
-                                                                                                alt="DN"></div>
-                                                                                <div class="login-item"
-                                                                                        style="--i: 11;"><img
                                                                                                 src="../img/customer_logo/lat.png"
-                                                                                                alt="LAT"></div>
-                                                                                <div class="login-item"
-                                                                                        style="--i: 12;"><img
-                                                                                                src="../img/customer_logo/mitsuboshi.png"
-                                                                                                alt="Mitsuboshi"></div>
+                                                                                                alt="lat"></div>
+                                                                               
                                                                                 <!-- Duplicates -->
                                                                                 <div class="login-item"
-                                                                                        style="--i: 13;"><img
+                                                                                        style="--i: 11;"><img
                                                                                                 src="../img/customer_logo/Mazda.png"
                                                                                                 alt="Mazda"></div>
                                                                                 <div class="login-item"
+                                                                                        style="--i: 12;"><img
+                                                                                                src="../img/customer_logo/Alliance.png"
+                                                                                                alt="Alliance"></div>
+                                                                                <div class="login-item"
+                                                                                        style="--i: 13;"><img
+                                                                                                src="../img/customer_logo/TTV.png"
+                                                                                                alt="TTV"></div>
+                                                                                <div class="login-item"
                                                                                         style="--i: 14;"><img
-                                                                                                src="../img/customer_logo/Suzuki.png"
-                                                                                                alt="Suzuki"></div>
+                                                                                                src="../img/customer_logo/toshiba.png"
+                                                                                                alt="toshiba"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 15;"><img
-                                                                                                src="../img/customer_logo/Changan.png"
-                                                                                                alt="Changan"></div>
+                                                                                                src="../img/customer_logo/tic.png"
+                                                                                                alt="tic"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 16;"><img
-                                                                                                src="../img/customer_logo/Kn.webp"
-                                                                                                alt="Kn"></div>
+                                                                                                src="../img/customer_logo/GR.png"
+                                                                                                alt="GR"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 17;"><img
-                                                                                                src="../img/customer_logo/Honda.png"
-                                                                                                alt="Honda"></div>
+                                                                                                src="../img/customer_logo/CPPC.png"
+                                                                                                alt="CPPC"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 18;"><img
-                                                                                                src="../img/customer_logo/Alpla.png"
-                                                                                                alt="Alpla"></div>
+                                                                                                src="../img/customer_logo/Thr.png"
+                                                                                                alt="Thr"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 19;"><img
-                                                                                                src="../img/customer_logo/BROSE_Excellence.png"
-                                                                                                alt="Brose"></div>
+                                                                                                src="../img/customer_logo/dn.png"
+                                                                                                alt="dn"></div>
                                                                                 <div class="login-item"
                                                                                         style="--i: 20;"><img
-                                                                                                src="../img/customer_logo/nhk.webp"
-                                                                                                alt="NHK"></div>
-                                                                                <div class="login-item"
-                                                                                        style="--i: 21;"><img
-                                                                                                src="../img/customer_logo/siamgoshi.jpg"
-                                                                                                alt="Siam Goshi"></div>
-                                                                                <div class="login-item"
-                                                                                        style="--i: 22;"><img
-                                                                                                src="../img/customer_logo/dn2.png"
-                                                                                                alt="DN"></div>
-                                                                                <div class="login-item"
-                                                                                        style="--i: 23;"><img
                                                                                                 src="../img/customer_logo/lat.png"
-                                                                                                alt="LAT"></div>
-                                                                                <div class="login-item"
-                                                                                        style="--i: 24;"><img
-                                                                                                src="../img/customer_logo/mitsuboshi.png"
-                                                                                                alt="Mitsuboshi"></div>
+                                                                                                alt="lat"></div>
                                                                         </div>
                                                                 </section>
                                                         </div>
@@ -158,21 +143,15 @@
 
                         <div class="partner-grid">
                                 <div class="partner-logo"><img src="../img/customer_logo/Mazda.png" alt="Mazda"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Suzuki.png" alt="Suzuki"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Changan.png" alt="Changan">
-                                </div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Kn.webp" alt="Kn"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Honda.png" alt="Honda"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Alpla.png" alt="Alpla"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/BROSE_Excellence.png"
-                                                alt="Brose"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/nhk.webp" alt="NHK"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/siamgoshi.jpg"
-                                                alt="Siam Goshi"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/dn2.png" alt="DN"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/lat.png" alt="LAT"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/mitsuboshi.png"
-                                                alt="Mitsuboshi"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/Alliance.png" alt="Alliance"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/TTV.png" alt="TTV"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/toshiba.png" alt="toshiba"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/tic.png" alt="tic"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/GR.png" alt="GR"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/CPPC.png" alt="CPPC"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/Thr.png" alt="Thr"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/dn.png" alt="dn"></div>
+                                <div class="partner-logo"><img src="../img/customer_logo/lat.png" alt="lat"></div>
                         </div>
                 </div>
         </div>
