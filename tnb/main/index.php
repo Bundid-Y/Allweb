@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="tnb-panel__img-col">
-                    <img src="../img/other/index/cardslides/show5.jpeg" alt="Transportation Fleet"
+                    <img src="../img/other/index/cardslides/show5.png" alt="Transportation Fleet"
                         class="tnb-panel__img" />
                 </div>
             </div>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="tnb-panel__img-col">
-                    <img src="../img/other/service/shuttle/shuttletruck.png" alt="Shuttle Truck Service"
+                    <img src="../img/other/index/cardslides/show7.jpeg" alt="Shuttle Truck Service"
                         class="tnb-panel__img" />
                 </div>
             </div>
