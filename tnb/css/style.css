@@ -4736,6 +4736,10 @@ html {
   width: 150px;
   height: 40px;
   background: #ffffff;
+  border: 2px solid var(--primary-color, #0D2D6B);
+  border-right: none; /* Combine seamlessly with cab */
+  border-bottom: none; /* Let the circles act as the bottom */
+  box-sizing: border-box;
   animation: put-put 2s infinite, move-truck 10s infinite;
   background-size: 100% auto;
   border-radius: 4px;
@@ -4762,9 +4766,13 @@ html {
   position: absolute;
   left: -35px;
   bottom: 0;
-  width: 33px;
+  width: 35px;
   height: 25px;
   background: #ffffff;
+  border: 2px solid var(--primary-color, #0D2D6B);
+  border-right: none;
+  border-bottom: none;
+  box-sizing: border-box;
   border-radius: 40% 0 4px 4px;
   -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.1, transparent), to(rgba(255, 255, 255, 0.3)));
 }
@@ -4778,8 +4786,12 @@ html {
   width: 20px;
   height: 15px;
   top: -15px;
-  right: 0;
+  right: -2px; /* Pull right to hide connecting border */
   border-radius: 100% 0 0 0;
+  border: 2px solid var(--primary-color, #0D2D6B);
+  border-right: none;
+  border-bottom: none;
+  box-sizing: border-box;
 }
 .codepen-truck-wrapper .TruckLoader-cab:after {
   border-radius: 50%;
@@ -4801,6 +4813,8 @@ html {
   bottom: -5px;
   border-radius: 50%;
   background: #ffffff;
+  border: 1px solid var(--primary-color, #0D2D6B); /* 1px for smoke so it isn't overpowering */
+  box-sizing: border-box;
 }
 .codepen-truck-wrapper .TruckLoader-smoke {
   animation: smoke-1 2s infinite;
@@ -4925,6 +4939,10 @@ html {
   width: 150px;
   height: 40px;
   background: #ffffff;
+  border: 2px solid var(--primary-color, #0D2D6B);
+  border-right: none; /* Combine seamlessly with cab */
+  border-bottom: none;
+  box-sizing: border-box;
   animation: put-put 2s infinite, move-truck-ltr 10s infinite;
   background-size: 100% auto;
   border-radius: 4px;
@@ -4952,9 +4970,13 @@ html {
   position: absolute;
   left: -35px;
   bottom: 0;
-  width: 33px;
+  width: 35px;
   height: 25px;
   background: #ffffff;
+  border: 2px solid var(--primary-color, #0D2D6B);
+  border-right: none;
+  border-bottom: none;
+  box-sizing: border-box;
   border-radius: 40% 0 4px 4px;
   -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.1, transparent), to(rgba(255, 255, 255, 0.3)));
 }
@@ -4968,8 +4990,12 @@ html {
   width: 20px;
   height: 15px;
   top: -15px;
-  right: 0;
+  right: -2px; /* Pull right to hide connecting border */
   border-radius: 100% 0 0 0;
+  border: 2px solid var(--primary-color, #0D2D6B);
+  border-right: none;
+  border-bottom: none;
+  box-sizing: border-box;
 }
 .codepen-truck-wrapper-partner .TruckLoader-cab:after {
   border-radius: 50%;
@@ -4992,6 +5018,8 @@ html {
   bottom: -5px;
   border-radius: 50%;
   background: #ffffff;
+  border: 1px solid var(--primary-color, #0D2D6B);
+  box-sizing: border-box;
 }
 .codepen-truck-wrapper-partner .TruckLoader-smoke { animation: smoke-1 2s infinite; }
 .codepen-truck-wrapper-partner .TruckLoader-smoke:after { animation: smoke-2 3s infinite; }
