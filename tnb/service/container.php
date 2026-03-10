@@ -29,7 +29,7 @@
           <div
             style="position: absolute; top: -5%; right: -5%; width: 95%; height: 110%; background-color: #0D2D6B; clip-path: polygon(100% 5%, 15% 0, 15% 100%, 100% 95%); z-index: 1;">
           </div>
-          <img src="../img/other/service/development/development.jpeg" alt="Packaging Development"
+          <img src="../img/other/service/container/Container.png" alt="Container Arrangement and Container Yard"
             style="display: block; width: 100%; height: 480px; object-fit: cover; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
         </div>
       </div>
@@ -37,18 +37,16 @@
       <div style="flex: 1; min-width: 300px;">
         <h1 class="details-title" style="font-size: 36px; font-weight: bold; color: #0D2D6B; margin-bottom: 10px;"
           data-i18n="service.container_title">
-          Packaging Development</h1>
+          บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</h1>
         <h2 style="font-size: 24px; color: #325662; margin-top: 0px;" data-i18n="service.container_subtitle">
-          นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h2>
+          จัดการตู้สินค้าอย่างเป็นระบบและมีประสิทธิภาพ</h2>
         <div style="width: 50px; height: 4px; background-color: #0D2D6B; margin: 20px 0;"></div>
         <p class="details-desc" style="font-size: 16px; line-height: 1.6; color: #555;"
           data-i18n="service.container_desc">
-          ให้บริการพัฒนาและออกแบบบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์แบบครบวงจร ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ
-          เหล็ก ไม้ และพลาสติก โดยมุ่งเน้นการออกแบบที่แข็งแรง ปลอดภัย และเหมาะสมกับการขนส่งและการจัดเก็บ
-
-          กระบวนการพัฒนาบรรจุภัณฑ์ของบริษัทดำเนินงานอย่างเป็นระบบ ตั้งแต่การออกแบบแนวคิด การสร้างต้นแบบ
-          การทดสอบใช้งานจริง ไปจนถึงการอนุมัติใช้งาน ภายใต้กรอบระยะเวลาการทำต้นแบบภายใน 7 วัน
-          เพื่อความรวดเร็วและแม่นยำในการตอบสนองความต้องการของลูกค้า
+          ให้บริการจัดการตู้คอนเทนเนอร์อย่างเป็นระบบ ตั้งแต่การรับตู้ การวางตู้ และการจัดเรียงตู้สินค้า
+          มีพื้นที่ลานตู้สินค้าที่ได้มาตรฐาน รองรับทั้งตู้เปล่าและตู้บรรจุสินค้า
+          ช่วยเพิ่มประสิทธิภาพในการบริหารจัดการพื้นที่และลดความแออัดของตู้คอนเทนเนอร์
+          รองรับการดำเนินงานด้านโลจิสติกส์ของลูกค้าได้อย่างต่อเนื่อง
         </p>
       </div>
     </div>
@@ -63,11 +61,11 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.container_sec1_title">
-              งานวิศวกรรมภายใน</h3>
+              Container Receiving</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.container_sec1_desc">
-              เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ
-              โดยทีมงานของเราไม่ได้ทำหน้าที่เพียงแค่การผลิตบรรจุภัณฑ์ทั่วไป
-              แต่เป็นการออกแบบโซลูชันเชิงวิศวกรรมที่ปรับแต่งให้เหมาะสมกับความต้องการเฉพาะของแต่ละโครงการอย่างใกล้ชิด</p>
+              บริการรับตู้คอนเทนเนอร์จากท่าเรือหรือจุดรับตู้ นำเข้าสู่ลานตู้สินค้าอย่างเป็นระเบียบ
+              ตรวจสอบสภาพตู้และบันทึกข้อมูลอย่างครบถ้วน เพื่อให้การบริหารจัดการตู้สินค้า
+              เริ่มต้นได้อย่างถูกต้องและมีประสิทธิภาพ</p>
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
@@ -76,7 +74,7 @@
               <div
                 style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #0D2D6B; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
-              <img src="../img/other/service/development/inhouse.jpeg" alt="In-house Engineering Image"
+              <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
@@ -89,11 +87,11 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.container_sec2_title">
-              การพัฒนาระบบดิจิทัลและนวัตกรรม</h3>
+              Container Yard</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.container_sec2_desc">
-              การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS
-              System) ขึ้นด้วยทีมงานภายในของเราเอง
-              เพื่อให้มั่นใจว่าระบบจะสามารถสอดคล้องกับข้อกำหนดและความต้องการที่หลากหลายของลูกค้าแต่ละรายได้อย่างไร้รอยต่อ
+              จัดเรียงและวางตู้คอนเทนเนอร์ในลานตู้สินค้าอย่างเป็นระเบียบ ช่วยเพิ่มประสิทธิภาพในการใช้พื้นที่
+              ลดความแออัด และรองรับการดำเนินงานด้านโลจิสติกส์ของลูกค้าได้อย่างต่อเนื่อง
+              โดยมีระบบติดตามและบันทึกสถานะตู้สินค้าอย่างชัดเจน
             </p>
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
@@ -103,7 +101,7 @@
               <div
                 style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #0D2D6B; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
               </div>
-              <img src="../img/other/service/development/tms.jpeg" alt="Digital System & Innovation Image"
+              <img src="../img/other/service/container/containeryard.png" alt="Container Yard"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
@@ -115,12 +113,11 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.container_sec3_title">
-              เครื่องมือและเทคโนโลยีขั้นสูง</h3>
+              Container Dispatch</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.container_sec3_desc">
-              การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ
-              SolidWorks 3D เพื่อสร้างสรรค์โครงสร้างบรรจุภัณฑ์ที่มีความแม่นยำและซับซ้อนสูง
-              จากนั้นจึงนำระบบการตัดด้วยดิจิทัล (Digital-Cutting Optimization System)
-              มาใช้ในกระบวนการเตรียมวัสดุเพื่อลดการสูญเสียและเพิ่มความรวดเร็วในการผลิต</p>
+              จัดส่งตู้คอนเทนเนอร์ออกจากลานตู้ไปยังปลายทางที่กำหนด ด้วยการวางแผนการนำออกตู้อย่างเป็นระบบ
+              ลดระยะเวลาในการเคลื่อนย้ายตู้ เพิ่มความเป็นระเบียบในการทำงาน
+              และช่วยลดต้นทุนด้านโลจิสติกส์ให้กับลูกค้า</p>
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
@@ -129,7 +126,7 @@
               <div
                 style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #0D2D6B; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
-              <img src="../img/other/service/development/tool.jpeg" alt="Advanced Tools Image"
+              <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
@@ -150,59 +147,57 @@
   <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
   <div class="dev-cards-wrapper">
     <div class="dev-cards">
-      <!-- Card 1: Cliff Coast -->
+      <!-- Card 1 -->
       <div class="dev-card">
-        <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
-          <div class="dev-card-title">Cliff Coast</div>
-          <p class="dev-card-desc" data-i18n="service.card_inventory">
-            บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
+        <a href="../img/other/service/container/Container.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/container/Container.png" alt="Container Yard" loading="lazy" />
+          <div class="dev-card-title">Container Yard</div>
+          <p class="dev-card-desc" data-i18n="service.container_card1">
+            ลานตู้สินค้าที่ได้มาตรฐาน
           </p>
         </a>
       </div>
 
-      <!-- Card 2: Forest Lights -->
+      <!-- Card 2 -->
       <div class="dev-card">
-        <a href="../img/other/service/development/tool2.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
-            loading="lazy" />
-          <div class="dev-card-title">Forest Lights</div>
-          <p class="dev-card-desc" data-i18n="service.card_dev">
-            นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
+        <a href="../img/other/service/container/containerreceiving.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving" loading="lazy" />
+          <div class="dev-card-title">Receiving</div>
+          <p class="dev-card-desc" data-i18n="service.container_card2">
+            รับตู้คอนเทนเนอร์อย่างเป็นระบบ
           </p>
         </a>
       </div>
 
-      <!-- Card 3: Nature Walk -->
+      <!-- Card 3 -->
       <div class="dev-card">
-        <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
-          <div class="dev-card-title">Nature Walk</div>
-          <p class="dev-card-desc" data-i18n="service.card_personnel">
-            บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน
+        <a href="../img/other/service/container/containeryard.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/container/containeryard.png" alt="Container Yard" loading="lazy" />
+          <div class="dev-card-title">Yard Management</div>
+          <p class="dev-card-desc" data-i18n="service.container_card3">
+            จัดเรียงและบริหารพื้นที่ลานตู้
           </p>
         </a>
       </div>
 
-      <!-- Card 4: Mountain View -->
+      <!-- Card 4 -->
       <div class="dev-card">
-        <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
-          <div class="dev-card-title">Mountain View</div>
-          <p class="dev-card-desc" data-i18n="service.card_sensitive">
-            รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
+        <a href="../img/other/service/container/containerdispatch.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch" loading="lazy" />
+          <div class="dev-card-title">Dispatch</div>
+          <p class="dev-card-desc" data-i18n="service.container_card4">
+            จัดส่งตู้คอนเทนเนอร์สู่ปลายทาง
           </p>
         </a>
       </div>
 
-      <!-- Card 5: Sunset -->
+      <!-- Card 5 -->
       <div class="dev-card">
-        <a href="../img/other/service/transportation/transport.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
-            loading="lazy" />
-          <div class="dev-card-title">Golden Sunset</div>
-          <p class="dev-card-desc" data-i18n="service.card_route">
-            ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
+        <a href="../img/other/service/container/container2.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/container/container2.png" alt="Container Management" loading="lazy" />
+          <div class="dev-card-title">Management</div>
+          <p class="dev-card-desc" data-i18n="service.container_card5">
+            บริหารจัดการตู้คอนเทนเนอร์ครบวงจร
           </p>
         </a>
       </div>

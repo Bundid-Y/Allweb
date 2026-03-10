@@ -28,7 +28,7 @@
           <div
             style="position: absolute; top: -5%; left: -5%; width: 95%; height: 110%; background-color: #0D2D6B; clip-path: polygon(0 5%, 85% 0, 85% 100%, 0 95%); z-index: 1;">
           </div>
-          <img src="../img/other/service/development/development.jpeg" alt="Packaging Development"
+          <img src="../img/other/service/nationwide/domestic.png" alt="Nationwide Distribution"
             style="display: block; width: 100%; height: 480px; object-fit: cover; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
         </div>
       </div>
@@ -36,17 +36,16 @@
       <div style="flex: 1; min-width: 300px;">
         <h1 class="details-title" style="font-size: 36px; font-weight: bold; color: #0D2D6B; margin-bottom: 10px;"
           data-i18n="service.nationwide_title">
-          Packaging Development</h1>
+          บริการกระจายสินค้าทั่วประเทศ</h1>
         <h2 style="font-size: 24px; color: #325662; margin-top: 0px;" data-i18n="service.nationwide_subtitle">
-          นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร</h2>
+          เชื่อมต่อการจัดส่งสินค้าครบทุกขั้นตอนทั่วประเทศ</h2>
         <div style="width: 50px; height: 4px; background-color: #0D2D6B; margin: 20px 0;"></div>
         <p class="details-desc" style="font-size: 16px; line-height: 1.6; color: #555;"
           data-i18n="service.nationwide_desc">
-          ให้บริการพัฒนาและออกแบบบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์แบบครบวงจร ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ
-          เหล็ก ไม้ และพลาสติก โดยมุ่งเน้นการออกแบบที่แข็งแรง ปลอดภัย และเหมาะสมกับการขนส่งและการจัดเก็บ
-
-          กระบวนการพัฒนาบรรจุภัณฑ์ของบริษัทดำเนินงานอย่างเป็นระบบ ตั้งแต่การออกแบบแนวคิด การสร้างต้นแบบ
-          การทดสอบใช้งานจริง ไปจนถึงการอนุมัติใช้งาน ภายใต้กรอบระยะเวลาการทำต้นแบบภายใน 7 วัน
+          ให้บริการจัดส่งสินค้าทั่วประเทศแบบครบวงจร ส่งตรงถึงปลายทางอย่างแม่นยำและตรงเวลา
+          ครอบคลุมพื้นที่ทุกภาคทั่วประเทศไทย เหมาะสำหรับสินค้าอุตสาหกรรมและสินค้าอุปโภคทุกประเภท
+          มีระบบติดตามสถานะการจัดส่งแบบเรียลไทม์ ช่วยให้ลูกค้ามั่นใจในทุกขั้นตอนการส่งมอบ
+          ภายใต้กรอบระยะเวลาการทำต้นแบบภายใน 7 วัน
           เพื่อความรวดเร็วและแม่นยำในการตอบสนองความต้องการของลูกค้า
         </p>
       </div>
@@ -62,11 +61,10 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.nationwide_sec1_title">
-              งานวิศวกรรมภายใน</h3>
+              First Mile Delivery</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.nationwide_sec1_desc">
-              เปี่ยมด้วยประสบการณ์และความเชี่ยวชาญ
-              โดยทีมงานของเราไม่ได้ทำหน้าที่เพียงแค่การผลิตบรรจุภัณฑ์ทั่วไป
-              แต่เป็นการออกแบบโซลูชันเชิงวิศวกรรมที่ปรับแต่งให้เหมาะสมกับความต้องการเฉพาะของแต่ละโครงการอย่างใกล้ชิด</p>
+              บริการรับสินค้าจากต้นทาง เช่น โรงงานหรือคลังสินค้าหลัก เพื่อนำเข้าสู่ศูนย์กระจายสินค้าหรือจุดพักสินค้า
+              ดำเนินการอย่างเป็นระบบ ทำให้การไหลเวียนของสินค้าในห่วงโซ่อุปทานเริ่มต้นได้อย่างราบรื่น</p>
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
@@ -75,7 +73,7 @@
               <div
                 style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #0D2D6B; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
-              <img src="../img/other/service/development/inhouse.jpeg" alt="In-house Engineering Image"
+              <img src="../img/other/service/nationwide/firstmiledelivery.png" alt="First Mile Delivery"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
@@ -88,11 +86,11 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.nationwide_sec2_title">
-              การพัฒนาระบบดิจิทัลและนวัตกรรม</h3>
+              Middle Mile Distribution</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.nationwide_sec2_desc">
-              การพัฒนาระบบซอฟต์แวร์บริหารจัดการการขนส่ง (TMS
-              System) ขึ้นด้วยทีมงานภายในของเราเอง
-              เพื่อให้มั่นใจว่าระบบจะสามารถสอดคล้องกับข้อกำหนดและความต้องการที่หลากหลายของลูกค้าแต่ละรายได้อย่างไร้รอยต่อ
+              การขนส่งสินค้าระหว่างศูนย์กระจายสินค้า, คลังสินค้าท้องถิ่น, หรือจุดพักสินค้าอย่างมีประสิทธิภาพ
+              มีการวางแผนเส้นทางอย่างละเอียด ไม่ให้เกิดความล่าช้าหรือส่งผิดปลายทาง
+              สร้างความมั่นใจให้กับลูกค้าในทุกไมล์ของการขนส่ง
             </p>
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
@@ -102,7 +100,7 @@
               <div
                 style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #0D2D6B; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
               </div>
-              <img src="../img/other/service/development/tms.jpeg" alt="Digital System & Innovation Image"
+              <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="Middle Mile Distribution"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
@@ -114,12 +112,11 @@
         <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
           <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.nationwide_sec3_title">
-              เครื่องมือและเทคโนโลยีขั้นสูง</h3>
+              Last Mile Delivery</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.nationwide_sec3_desc">
-              การใช้ซอฟต์แวร์มาตรฐานโลกอย่าง AutoCAD และ
-              SolidWorks 3D เพื่อสร้างสรรค์โครงสร้างบรรจุภัณฑ์ที่มีความแม่นยำและซับซ้อนสูง
-              จากนั้นจึงนำระบบการตัดด้วยดิจิทัล (Digital-Cutting Optimization System)
-              มาใช้ในกระบวนการเตรียมวัสดุเพื่อลดการสูญเสียและเพิ่มความรวดเร็วในการผลิต</p>
+              ส่งมอบสินค้าถึงลูกค้าหรือปลายทางสุดท้ายอย่างแม่นยำ ครอบคลุมทุกจังหวัดในประเทศไทย
+              ดำเนินการด้วยฟลีตรถบรรทุสวนตัวและระบบติดตามสถานะแบบเรียลไทม์
+              เพื่อลูกค้ามั่นใจในการรับสินค้าทุกครั้ง</p>
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
@@ -128,7 +125,7 @@
               <div
                 style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #0D2D6B; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
-              <img src="../img/other/service/development/tool.jpeg" alt="Advanced Tools Image"
+              <img src="../img/other/service/nationwide/lastmiledelivery.png" alt="Last Mile Delivery"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
             </div>
           </div>
@@ -149,60 +146,44 @@
   <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
   <div class="dev-cards-wrapper">
     <div class="dev-cards">
-      <!-- Card 1: Cliff Coast -->
+      <!-- Card 1 -->
       <div class="dev-card">
-        <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
-          <div class="dev-card-title">Cliff Coast</div>
-          <p class="dev-card-desc" data-i18n="service.card_inventory">
-            บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
-          </p>
+        <a href="../img/other/service/nationwide/domestic.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/nationwide/domestic.png" alt="Nationwide Distribution" loading="lazy" />
+          <div class="dev-card-title">Nationwide</div>
+          <p class="dev-card-desc" data-i18n="service.nationwide_card1">การจัดส่งทั่วประเทศ</p>
         </a>
       </div>
-
-      <!-- Card 2: Forest Lights -->
+      <!-- Card 2 -->
       <div class="dev-card">
-        <a href="../img/other/service/development/tool2.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
-            loading="lazy" />
-          <div class="dev-card-title">Forest Lights</div>
-          <p class="dev-card-desc" data-i18n="service.card_dev">
-            นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
-          </p>
+        <a href="../img/other/service/nationwide/firstmiledelivery.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/nationwide/firstmiledelivery.png" alt="First Mile Delivery" loading="lazy" />
+          <div class="dev-card-title">First Mile</div>
+          <p class="dev-card-desc" data-i18n="service.nationwide_card2">รับสินค้าจากต้นทาง</p>
         </a>
       </div>
-
-      <!-- Card 3: Nature Walk -->
+      <!-- Card 3 -->
       <div class="dev-card">
-        <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
-          <div class="dev-card-title">Nature Walk</div>
-          <p class="dev-card-desc" data-i18n="service.card_personnel">
-            บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน
-          </p>
+        <a href="../img/other/service/nationwide/middlemiledistribution.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="Middle Mile" loading="lazy" />
+          <div class="dev-card-title">Middle Mile</div>
+          <p class="dev-card-desc" data-i18n="service.nationwide_card3">กระจายสินค้าไปยังจุดพัก</p>
         </a>
       </div>
-
-      <!-- Card 4: Mountain View -->
+      <!-- Card 4 -->
       <div class="dev-card">
-        <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
-          <div class="dev-card-title">Mountain View</div>
-          <p class="dev-card-desc" data-i18n="service.card_sensitive">
-            รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
-          </p>
+        <a href="../img/other/service/nationwide/lastmiledelivery.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/nationwide/lastmiledelivery.png" alt="Last Mile Delivery" loading="lazy" />
+          <div class="dev-card-title">Last Mile</div>
+          <p class="dev-card-desc" data-i18n="service.nationwide_card4">ส่งถึงลูกค้าโดยตรง</p>
         </a>
       </div>
-
-      <!-- Card 5: Sunset -->
+      <!-- Card 5 -->
       <div class="dev-card">
-        <a href="../img/other/service/transportation/transport.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
-            loading="lazy" />
-          <div class="dev-card-title">Golden Sunset</div>
-          <p class="dev-card-desc" data-i18n="service.card_route">
-            ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
-          </p>
+        <a href="../img/other/service/nationwide/domestic.png" target="_blank" rel="noopener noreferrer">
+          <img src="../img/other/service/nationwide/domestic.png" alt="All Provinces" loading="lazy" />
+          <div class="dev-card-title">All Provinces</div>
+          <p class="dev-card-desc" data-i18n="service.nationwide_card5">ครอบคลุมทุกจังหวัดทั่วไทย</p>
         </a>
       </div>
     </div>
