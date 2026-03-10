@@ -20,7 +20,7 @@
   <!-- Main Content Hero (Fixed Missing HTML Tags) -->
   <!-- ส่วนหัวของหน้า (Hero Section) แสดงภาพรวมและคำอธิบายเบื้องต้นของการพัฒนาบรรจุภัณฑ์ -->
   <!-- ใช้ Flexbox ในการจัดวางให้ภาพอยู่ซ้ายและข้อความอยู่ขวา -->
-  <div class="content-section layout_padding" style="margin-top: 150px; margin-bottom: 50px;">
+  <div class="content-section layout_padding" style="margin-top: 150px; margin-bottom: 0;">
     <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
       <!-- Left: Image with custom red shape -->
       <div style="flex: 1.2; min-width: 300px; display: flex; justify-content: center;">
@@ -53,7 +53,7 @@
   </div>
 
   <!-- Features Section -->
-  <div class="content-section layout_padding">
+  <div class="content-section layout_padding" style="padding-top: 20px;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
 
       <!-- Section 1 -->
