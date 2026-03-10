@@ -24,7 +24,7 @@
             <!-- Right: Image with custom red shape -->
             <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
                 <div class="expertise-image-wrap">
-                    <img src="../img/other/index/cardslides/cardslides-1.jpeg" alt="Our Expertise">
+                    <img src="../img/other/index/about/index_about.png" alt="Our Expertise">
                 </div>
             </div>
             <!-- Left: Details -->

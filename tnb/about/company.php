@@ -24,7 +24,7 @@
             <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
                 <div class="company-image-wrap">
                     <div class="company-image-inner">
-                        <img src="../img/company_logo/logo.png" alt="Company Profile">
+                        <img src="../img/company_logo/tnb_logo.webp" alt="Company Profile">
                     </div>
                 </div>
             </div>

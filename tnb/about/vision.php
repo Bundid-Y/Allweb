@@ -52,7 +52,7 @@
             <!-- Bottom: Image with custom red shape -->
             <div style="width: 100%; max-width: 600px; margin: 20px auto 40px auto;">
                 <div class="vision-image-wrap">
-                    <img src="../img/other/about/vision.png" alt="Vision and Mission">
+                    <img src="../img/other/about/vision.webp" alt="Vision and Mission">
                 </div>
             </div>
         </div>
