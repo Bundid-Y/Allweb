@@ -18,7 +18,7 @@
 
     <!-- Main Content -->
 
-    <div class="content-section layout_padding" style="margin-top: 100px; flex: 1;">
+    <div class="content-section layout_padding" style="flex: 1;">
         <div class="flex-row"
             style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px; flex-direction: column;">
             <!-- Top: Details -->
