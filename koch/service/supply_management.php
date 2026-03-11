@@ -57,8 +57,8 @@
 
       <!-- Section 1 -->
       <section id="dev-section1" style="margin-bottom: 40px;">
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-          <div style="flex: 1; min-width: 300px;" class="anim-fade-right">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
+          <div style="flex: 1; min-width: 300px;" class="anim-fade-left">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.sup_sec1_title">
               ติดตามสถานะบรรจุภัณฑ์</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.sup_sec1_desc">
@@ -67,10 +67,10 @@
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
-            <div class="image-wrapper anim-fade-left"
+            <div class="image-wrapper anim-fade-right"
               style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
-              <div
-                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
+              <div class="anim-red-block"
+                style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
               </div>
               <img src="../img/other/service/supply/tracking.jpeg" alt="In-house Engineering Image"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
@@ -82,8 +82,8 @@
       <!-- Section 2 -->
       <section id="dev-section2" style="margin-bottom: 40px;">
         <!-- สลับด้านรูปภาพให้อยู่ซ้าย ข้อความอยู่ขวา จะได้ดูมีมิติลูกเล่น -->
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
-          <div style="flex: 1; min-width: 300px;" class="anim-fade-left">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+          <div style="flex: 1; min-width: 300px;" class="anim-fade-right">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.sup_sec2_title">
               บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.sup_sec2_desc">
@@ -92,10 +92,10 @@
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
-            <div class="image-wrapper anim-fade-right"
+            <div class="image-wrapper anim-fade-left"
               style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
               <div class="anim-red-block"
-                style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
+                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
               </div>
               <img src="../img/other/service/supply/inventory.jpeg" alt="Digital System & Innovation Image"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
@@ -106,8 +106,8 @@
 
       <!-- Section 3 -->
       <section id="dev-section3" style="margin-bottom: 0px;">
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
-          <div style="flex: 1; min-width: 300px;" class="anim-fade-right">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; flex-direction: row-reverse;">
+          <div style="flex: 1; min-width: 300px;" class="anim-fade-left">
             <h3 style="font-size: 28px; color: #325662; margin-bottom: 15px;" data-i18n="service.sup_sec3_title">
               วิเคราะห์ข้อมูลและวางแผนการใช้งาน</h3>
             <p style="font-size: 16px; line-height: 1.6; color: #555;" data-i18n="service.sup_sec3_desc">
@@ -117,10 +117,10 @@
           </div>
           <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
             <!-- ช่องเปลี่ยนภาพ (นำลิงก์รูปมาใส่ใน src ด้านล่าง) -->
-            <div class="image-wrapper anim-fade-left"
+            <div class="image-wrapper anim-fade-right"
               style="position: relative; width: 100%; max-width: 450px; padding: 20px; box-sizing: border-box;">
               <div class="anim-red-block"
-                style="position: absolute; top: -5%; right: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%); z-index: 1;">
+                style="position: absolute; top: -5%; left: -5%; width: 85%; height: 110%; background-color: #ED2A2A; clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%); z-index: 1;">
               </div>
               <img src="../img/other/service/supply/data_analytics.jpeg" alt="Advanced Tools Image"
                 style="display: block; width: 100%; position: relative; z-index: 2; box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);">
