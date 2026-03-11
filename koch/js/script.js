@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startAutoSlide() {
         autoSlideInterval = setInterval(() => {
             moveSlide(1);
-        }, 5000);
+        }, 8000);
     }
 
     function stopAutoSlide() {
@@ -151,8 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if(nextBtn) nextBtn.addEventListener('click', () => moveSlide(1));
 
     if(sliderWrapper) {
-        sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
-        sliderWrapper.addEventListener('mouseleave', startAutoSlide);
+        // Pause-on-hover behavior disabled
+        // sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
+        // sliderWrapper.addEventListener('mouseleave', startAutoSlide);
     }
     
     // จัดการเมื่อเปลี่ยนขนาดหน้าจอ (Resize)
