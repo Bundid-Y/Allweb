@@ -388,22 +388,22 @@ body {
 .card__heading::before {
   content: '';
   position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -40px; /* ยืดลงล่างให้คลุมส่วนข้อความถึงปุ่ม */
+  top: 0;        /* ไม่ขยายขึ้นบน — ป้องกันไม่ให้บังข้อความ EN ด้านบน */
+  left: -12px;
+  right: -12px;
+  bottom: -30px;
   background: transparent;
-  box-shadow: 0 0 30px 20px transparent;
-  border-radius: 15px;
+  box-shadow: none;
+  border-radius: 10px;
   z-index: -1;
   transition: all 0.4s ease;
   pointer-events: none;
 }
 
-/* แสดงเงาดำด้านหลังเมื่อ Hover ทำให้ข้อความไม่โดนรูปกลบเด็ดขาด */
+/* แสดงเงาดำด้านหลังเมื่อ Hover — เฉพาะรอบ heading ไทย ไม่แผ่ขึ้นบน */
 .card:hover .card__heading::before {
-  background: rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 40px 30px rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px 12px rgba(0, 0, 0, 0.7); /* spread น้อยลงมาก */
 }
 
 /* ปรับข้อความให้มีขอบดำ (outline) เด้งออกมาเมื่อ Hover */
@@ -415,7 +415,8 @@ body {
 .card:hover .card__category {
   transform: translateY(-5px);
   color: #fff200;
-  text-shadow: 2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 0px 5px 20px rgba(0, 0, 0, 1);
+  /* ลดความหนาของขอบดำลง เพื่อไม่ให้บังตัวอักษรภาษาอังกฤษที่เล็กกว่า */
+  text-shadow: 1px 1px 2px #000, 0px 4px 15px rgba(0, 0, 0, 0.9);
 }
 
 /* -----------------------------------------
