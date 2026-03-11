@@ -18,7 +18,7 @@
 
     <!-- Main Content -->
 
-    <div class="content-section layout_padding" style="margin-top: 100px; flex: 1;">
+    <div class="content-section layout_padding" style="margin-top: 10px; flex: 1;">
         <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
             <!-- Left: Image with custom red shape -->
             <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
@@ -31,15 +31,10 @@
             <!-- Right: Details -->
             <div style="flex: 1; min-width: 300px; padding-bottom: 20px;">
                 <h1 class="details-title" data-i18n="company.title">ข้อมูลบริษัท</h1>
-                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;"
-                    data-i18n="company.subtitle">ทำความรู้จักกับ
-                    KOCH
-                    Packaging</h2>
 
                 <div class="company-text-container" style="margin-top: 20px;">
                     <p class="details-desc">
-                        <strong data-i18n="company.p1_strong">Koch Packaging and Packing Services Co., Ltd.</strong>
-                        <span data-i18n="company.p1">เป็นบริษัทไทยที่ดำเนินธุรกิจด้าน
+                        <span data-i18n="company.p1">ดำเนินธุรกิจด้าน
                             การผลิตและให้บริการโซลูชันด้านบรรจุภัณฑ์ และซัพพลายเชนแบบครบวงจร ตั้งแต่การออกแบบ
                             การจัดหาวัตถุดิบ
                             การผลิต ไปจนถึงการบริหารคลังสินค้าและโลจิสติกส์อย่างมีประสิทธิภาพ</span>
