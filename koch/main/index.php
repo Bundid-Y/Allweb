@@ -179,12 +179,12 @@
     <div class="content-section section-partners" style="padding-top: 80px; padding-bottom: 80px;">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
-            <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+            <div style="text-align: right;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff; text-align: right;"
                     data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;"
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8; color: #ffffff; text-align: right;"
                     data-i18n="index.partners_sub">
                     ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>

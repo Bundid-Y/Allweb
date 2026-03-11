@@ -798,7 +798,12 @@ section.loop-images-quotation.vertical {
 /* --- Responsive: ปรับ clip-path สำหรับจอเล็ก --- */
 @media (max-width: 991px) {
     .content-section.section-partners::after {
-        display: none !important; /* Hide on mobile so black text is readable */
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        clip-path: none !important; /* Make solid red background for white text */
+        display: block !important;
     }
     .content-section.section-products::after {
         height: calc(100% + 50px);
