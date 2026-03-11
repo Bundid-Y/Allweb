@@ -123,20 +123,16 @@
   },
   "partners": {
     "title": "Partners",
-    "desc": "Continuously trusted by partners and customers in the automotive and related industries, including OEMs and Tier 1 suppliers nationwide. We act as more than just a packaging provider; we are partners collaborating to develop Packaging, VMI, Warehouse, and Logistics solutions to maximize our customers' operational efficiency. Our collaboration ranges from designing appropriate packaging for parts to comprehensive management of warehousing and transportation. Every process is designed to align with production needs requiring precision, speed, and on-time delivery. We are ready to grow alongside our partners and build sustainable success together in the long term.",
+    "desc": "Continuously trusted by partners in the <b>automotive industry</b>, including OEMs and Tier 1 suppliers nationwide. We act as more than just a packaging provider; we are a <mark style='background-color: #ffe6e6; color: #cc0000; padding: 2px 6px; border-radius: 4px;'>Strategic Partner</mark> collaborating to develop Packaging, VMI, Warehouse, and Logistics solutions to maximize your operational efficiency. Our expertise ranges from <span class='highlight-feature'>designing protective packaging</span> and <span class='highlight-feature'>systematic warehousing</span> to <span class='highlight-feature'>comprehensive transportation</span>. Every process is tailored for <b>precision, speed, and on-time delivery</b>. <span style='color: #cc0000; font-weight: 600; font-size: 1.15em;'>Ready to grow and build sustainable success together in the long term.</span>",
     "allPartnersTitle": "All Our Partners"
   },
   "company": {
     "title": "Company Information",
     "subtitle": "Get to Know KOCH Packaging",
     "p1_strong": "Koch Packaging and Packing Services Co., Ltd.",
-    "p1": "specializes in manufacturing and providing comprehensive packaging and supply chain solutions — from design, raw material sourcing, and production through to warehouse and logistics management.",
-    "p2_1": "Starting from manufacturing and selling corrugated and solid fiberboard packaging — the core of protecting goods in transit and storage — the company has grown to cover",
-    "p2_strong": "Packaging VMI System, Warehouse Management, and Transportation Services",
-    "p2_2": "along with other logistics services tailored for the automotive and electronics industries.",
-    "p3_1": "Driven by a commitment to continuous improvement, the company applies",
-    "p3_strong": "automation technology and data management",
-    "p3_2": "to deliver accurate, fast, and high-standard services — ready to support business growth both domestically and internationally."
+    "p1": "Specializes in comprehensive packaging and supply chain solutions — from design, material sourcing, and production through to warehouse and logistics management.",
+    "p2": "Starting from manufacturing corrugated and solid fiberboard packaging, the company has grown to cover <b>Packaging VMI System, Warehouse Management, and Transportation Services</b> tailored for the automotive and electronics industries.",
+    "p3": "Driven by a commitment to continuous improvement, we apply <b>automation technology and data management</b> to deliver accurate, fast, and high-standard services — ready to support business growth both domestically and internationally."
   },
   "expertise": {
     "title": "Our Expertise",

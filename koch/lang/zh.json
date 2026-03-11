@@ -123,7 +123,7 @@
   },
   "partners": {
     "title": "合作伙伴",
-    "desc": "我们的服务不断获得了汽车及其相关行业领域客户伙伴的信任。其中包括整车制造商（OEM）和全国一流（Tier 1）的供应商。 我们不仅仅只是扮演一个包装供应的角色。作为协作伙伴，从包装设计，VMI ，仓储，以及物流，协助客户企业运营的最大效率方案。 从提供切合零件设计特性的包装方案到全面整合的完整过程，满足精确并且快速能准时送达目标的运营管理。 我们立志与伙伴共同成长，共享长久且持续成功的经验。",
+    "desc": "我们的服务不断获得了<b>汽车产业</b>和相关领域客户伙伴的信任，其中包括整车制造商（OEM）和全国一流（Tier 1）的供应商。我们不仅仅是提供包装的角色。作为<mark style='background-color: #ffe6e6; color: #cc0000; padding: 2px 6px; border-radius: 4px;'>战略合作伙伴</mark>，我们共同开发包装、VMI、仓储以及物流解决方案，以协助客户把企业运营效率提升至最大化。从<span class='highlight-feature'>切合零件特性的包装方案设计</span>、<span class='highlight-feature'>系统化的仓储管理</span>到<span class='highlight-feature'>全面的运输服务</span>，涵盖整个运营过程，满足<b>精确、快速、能准时送达</b>的目标。<span style='color: #cc0000; font-weight: 600; font-size: 1.15em;'>我们立志与伙伴共同成长，共享长久且持续成功的经验。</span>",
     "allPartnersTitle": "我们所有的合作伙伴"
   },
   "company": {

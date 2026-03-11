@@ -82,6 +82,12 @@
             if (text !== null) _safeSetText(el, text);
         });
 
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            const text = _resolve(key, data) ?? _resolve(key, fallbackData) ?? null;
+            if (text !== null) el.innerHTML = text;
+        });
+
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
             const text = _resolve(key, data) ?? _resolve(key, fallbackData) ?? null;

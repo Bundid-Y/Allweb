@@ -1,4 +1,4 @@
-/* =========================================
+﻿/* =========================================
    Koch Style CSS
    ========================================= */
 
@@ -4729,4 +4729,10 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
         text-align: left;
         text-indent: 0;
     }
+}
+
+/* โ”€โ”€ Partners Page: Highlight Feature Spans โ”€โ”€ */
+.highlight-feature {
+    font-weight: 700;
+    color: #cc0000;
 }
