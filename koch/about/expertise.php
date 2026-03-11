@@ -18,7 +18,7 @@
 
     <!-- Main Content -->
 
-    <div class="content-section layout_padding" style="margin-top: 10px; flex: 1;">
+    <div class="content-section layout_padding" style="margin-top: 0; padding-top: 100px; flex: 1;">
         <div class="expertise-row"
             style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; flex-direction: row-reverse;">
             <!-- Right: Image with custom red shape -->

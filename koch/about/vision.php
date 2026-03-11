@@ -18,48 +18,37 @@
 
     <!-- Main Content -->
 
-    <div class="content-section layout_padding" style="margin-top: 10px; flex: 1;">
+    <div class="content-section layout_padding" style="margin-top: 0; padding-top: 100px; flex: 1;">
         <div class="flex-row"
-            style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px; flex-direction: column;">
-            <!-- Top: Details -->
-            <div style="width: 100%; text-align: center;">
-                <h1 class="details-title" style="text-align: center;" data-i18n="vision.title">วิสัยทัศน์และพันธกิจ</h1>
-
-                <h2 style="font-size: 26px; color: #325662; margin-top: 20px; font-weight: 700;"
+            style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+            
+            <!-- Left: Details -->
+            <div style="flex: 1; min-width: 300px; text-align: left;">
+                <h1 class="details-title" style="text-align: left;" data-i18n="vision.title">วิสัยทัศน์และพันธกิจ</h1>
+                <h2 style="font-size: 26px; color: #325662; margin-top: 20px; font-weight: 700; text-align: left;"
                     data-i18n="vision.subtitle">วิสัยทัศน์ (Vision)
                 </h2>
-
                 <div class="vision-text-container"
-                    style="margin-top: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <p class="details-desc vision-desc">
-                        <strong data-i18n="vision.p1_1">โค้ช แพคเกจจิ้ง แอนด์ แพคกิ้ง เซอร์วิสเซส จำกัด</strong> <span
-                            data-i18n="vision.p1_2">มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน Supply Chain Services
-                            สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่</span> <span
-                            data-i18n="vision.p1_strong">ชาญฉลาด (Smart) รวดเร็ว (Fast) และยั่งยืน (Sustainable)</span>
-                        <span data-i18n="vision.p1_3">เพื่อสนับสนุนการเติบโตของลูกค้าในทุกมิติของซัพพลายเชน</span>
+                    style="margin-top: 30px; text-align: left;">
+                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n="vision.p1">
+                        โค้ช แพคเกจจิ้ง แอนด์ แพคกิ้ง เซอร์วิสเซส จำกัด มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน Supply Chain Services สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่ ชาญฉลาด รวดเร็ว และยั่งยืน เพื่อสนับสนุนการเติบโตของลูกค้าในทุกมิติของซัพพลายเชน
                     </p>
-                    <p class="details-desc vision-desc">
-                        <span data-i18n="vision.p2_1">บริษัทมีเป้าหมายในการเชื่อมโยงงานด้าน</span> <strong
-                            data-i18n="vision.p2_strong">การพัฒนาบรรจุภัณฑ์ ระบบบริหารจัดการบรรจุภัณฑ์ (VMI)
-                            การบริหารคลังสินค้า และการขนส่ง</strong> <span
-                            data-i18n="vision.p2_2">เข้าด้วยกันอย่างเป็นระบบ เพื่อเพิ่มประสิทธิภาพ ลดต้นทุน
-                            และลดความซ้ำซ้อนในกระบวนการดำเนินงานของลูกค้า</span>
+                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n="vision.p2">
+                        บริษัทมีเป้าหมายในการเชื่อมโยงงานด้าน การพัฒนาบรรจุภัณฑ์ ระบบบริหารจัดการบรรจุภัณฑ์ (VMI) การบริหารคลังสินค้า และการขนส่ง เข้าด้วยกันอย่างเป็นระบบ เพื่อเพิ่มประสิทธิภาพ ลดต้นทุน และลดความซ้ำซ้อนในกระบวนการดำเนินงานของลูกค้า
                     </p>
-                    <p class="details-desc vision-desc">
-                        <strong>KOCH</strong> <span data-i18n="vision.p3_1">ให้ความสำคัญกับการพัฒนา ระบบวิศวกรรมภายใน (In-house Engineering)และระบบดิจิทัล</span> 
-                        <span data-i18n="vision.p3_3">เพื่อยกระดับความแม่นยำ ความโปร่งใส
-                            และความสามารถในการควบคุมกระบวนการทำงานแบบเรียลไทม์ พร้อมทั้งมุ่งเน้นการเติบโตอย่างยั่งยืน
-                            ควบคู่ไปกับความรับผิดชอบต่อสิ่งแวดล้อมและสังคม</span>
+                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; width: 100%; display: block;" data-i18n="vision.p3">
+                        KOCH ให้ความสำคัญกับการพัฒนาระบบวิศวกรรมภายในและระบบดิจิทัล เพื่อยกระดับความแม่นยำ ความโปร่งใส และความสามารถในการควบคุมกระบวนการทำงานแบบเรียลไทม์ พร้อมทั้งมุ่งเน้นการเติบโตอย่างยั่งยืน ควบคู่ไปกับความรับผิดชอบต่อสิ่งแวดล้อมและสังคม
                     </p>
                 </div>
             </div>
 
-            <!-- Bottom: Image with custom red shape -->
-            <div style="width: 100%; max-width: 600px; margin: 20px auto 40px auto;">
-                <div class="vision-image-wrap">
-                    <img src="../img/other/about/vision.png" alt="Vision and Mission">
+            <!-- Right: Image with custom red shape -->
+            <div style="flex: 1; min-width: 300px; max-width: 500px; margin: 20px auto 40px auto;">
+                <div class="vision-image-wrap" style="position: relative;">
+                    <img src="../img/other/about/vision.png" alt="Vision and Mission" style="width: 100%; height: auto; display: block; position: relative; z-index: 2;">
                 </div>
             </div>
+            
         </div>
     </div>
 

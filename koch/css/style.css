@@ -3453,7 +3453,7 @@ body.page-vision {
 @media (max-width: 768px) {
     .page-vision .vision-text-container p {
         font-size: 1rem;
-        text-indent: 20px;
+        text-indent: 0;
     }
 
     .page-vision .vision-image-wrap::before {

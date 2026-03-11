@@ -18,7 +18,7 @@
 
     <!-- Main Content -->
 
-    <div class="content-section layout_padding" style="margin-top: 10px; flex: 1;">
+    <div class="content-section layout_padding" style="margin-top: 0; padding-top: 100px; flex: 1;">
         <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
             <!-- Left: Image with custom red shape -->
             <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
