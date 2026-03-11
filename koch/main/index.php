@@ -237,58 +237,57 @@
         <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
         <div class="dev-cards-wrapper" style="padding: 0;">
             <div class="dev-cards">
-                <!-- Card 1: Packaging Development -->
+                <!-- Card 1: RSC Box -->
                 <div class="dev-card">
-                    <a href="../service/development.php" rel="noopener noreferrer">
-                        <img src="../img/other/service/development/development.jpeg" alt="Packaging Development" loading="lazy" />
-                        <div class="dev-card-title">Packaging Development</div>
-                        <p class="dev-card-desc" data-i18n="service.card_dev">
-                            นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
-                        </p>
+                    <a href="../main/product.php" rel="noopener noreferrer">
+                        <img src="../img/products/box/rsc.png" alt="RSC Box" loading="lazy" />
+                        <div class="dev-card-title">RSC Box</div>
+                        <p class="dev-card-desc">RSC Box</p>
                     </a>
                 </div>
 
-                <!-- Card 2: Supply Management -->
+                <!-- Card 2: FTD Box -->
                 <div class="dev-card">
-                    <a href="../service/supply_management.php" rel="noopener noreferrer">
-                        <img src="../img/other/service/supply/inventory.jpeg" alt="Supply Management" loading="lazy" />
-                        <div class="dev-card-title">Supply Management</div>
-                        <p class="dev-card-desc" data-i18n="service.card_inventory">
-                            บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
-                        </p>
+                    <a href="../main/product.php" rel="noopener noreferrer">
+                        <img src="../img/products/box/ftd.png" alt="FTD Box" loading="lazy" />
+                        <div class="dev-card-title">FTD Box</div>
+                        <p class="dev-card-desc">FTD Box</p>
                     </a>
                 </div>
 
-                <!-- Card 3: Warehouse -->
+                <!-- Card 3: OSC Box -->
                 <div class="dev-card">
-                    <a href="../service/warehouse.php" rel="noopener noreferrer">
-                        <img src="../img/other/service/warehouse/personnel.jpeg" alt="Warehouse & Operations" loading="lazy" />
-                        <div class="dev-card-title">Warehouse</div>
-                        <p class="dev-card-desc" data-i18n="service.card_personnel">
-                            บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน
-                        </p>
+                    <a href="../main/product.php" rel="noopener noreferrer">
+                        <img src="../img/products/box/osc.png" alt="OSC Box" loading="lazy" />
+                        <div class="dev-card-title">OSC Box</div>
+                        <p class="dev-card-desc">OSC Box</p>
                     </a>
                 </div>
 
-                <!-- Card 4: Transportation -->
+                <!-- Card 4: Die-Cut Box -->
                 <div class="dev-card">
-                    <a href="../service/transportation.php" rel="noopener noreferrer">
-                        <img src="../img/other/service/transportation/transport.jpeg" alt="Transportation Fleet" loading="lazy" />
-                        <div class="dev-card-title">Transportation</div>
-                        <p class="dev-card-desc" data-i18n="service.card_route">
-                            ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
-                        </p>
+                    <a href="../main/product.php" rel="noopener noreferrer">
+                        <img src="../img/products/box/die-cut.png" alt="Die-Cut Box" loading="lazy" />
+                        <div class="dev-card-title">Die-Cut Box</div>
+                        <p class="dev-card-desc">Die-Cut Box</p>
                     </a>
                 </div>
 
-                <!-- Card 5: Advanced Tools -->
+                <!-- Card 5: Cardboard Pallet -->
                 <div class="dev-card">
-                    <a href="../service/development.php" rel="noopener noreferrer">
-                        <img src="../img/other/service/development/tool2.jpeg" alt="Advanced Tools & Innovation" loading="lazy" />
-                        <div class="dev-card-title">Innovation</div>
-                        <p class="dev-card-desc" data-i18n="service.card_sensitive">
-                            รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
-                        </p>
+                    <a href="../main/product.php" rel="noopener noreferrer">
+                        <img src="../img/products/box/pallet.png" alt="Cardboard Pallet" loading="lazy" />
+                        <div class="dev-card-title">Cardboard Pallet</div>
+                        <p class="dev-card-desc">Cardboard Pallet</p>
+                    </a>
+                </div>
+
+                <!-- Card 6: Fitting Box Service -->
+                <div class="dev-card">
+                    <a href="../main/product.php" rel="noopener noreferrer">
+                        <img src="../img/products/box/fit_ser.png" alt="Fitting Box Service" loading="lazy" />
+                        <div class="dev-card-title">Fitting Box Service</div>
+                        <p class="dev-card-desc">Fitting Box Service</p>
                     </a>
                 </div>
             </div>
