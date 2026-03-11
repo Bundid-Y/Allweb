@@ -126,10 +126,6 @@
                     </div>
                 </div>
 
-                <!-- Load More Button -->
-                <div class="load-more-container">
-                    <button class="load-more-btn" data-i18n="product.loadMore" data-i18n-html="true">L O A D M O R E</button>
-                </div>
             </div>
 
             <!-- CSS and JS for Product Page has been moved to ../css/style.css and ../js/script.js respectively -->

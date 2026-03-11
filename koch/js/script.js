@@ -489,7 +489,6 @@ function updateGrid(isLoadMore = false) {
     const items = document.querySelectorAll('.product-grid-item');
     let delay = 0;
     let visibleCount = 0;
-    let totalMatch = 0;
 
     items.forEach(item => {
         if (!isLoadMore) {
@@ -500,12 +499,11 @@ function updateGrid(isLoadMore = false) {
         const isMatch = (currentCategory === 'all' || item.getAttribute('data-category') === currentCategory);
 
         if (isMatch) {
-            totalMatch++;
             if (visibleCount < currentLimit) {
                 if (!isLoadMore || item.style.display !== 'flex') {
                     item.style.display = 'flex';
-                    item.style.animation = `fadeIn 0.4s ease ${delay}s forwards`;
-                    delay += 0.05; // stagger effect
+                    item.style.animation = `productFadeUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) ${delay}s forwards`;
+                    delay += 0.08; // stagger effect increased slightly
                 }
                 visibleCount++;
             } else {
@@ -517,29 +515,43 @@ function updateGrid(isLoadMore = false) {
             item.style.animation = 'none';
         }
     });
-
-    // Update Load More button visibility
-    const loadMoreContainer = document.querySelector('.load-more-container');
-    if (loadMoreContainer) {
-        if (totalMatch > currentLimit) {
-            loadMoreContainer.style.display = 'block'; // Or 'text-align: center' parent handles it
-        } else {
-            loadMoreContainer.style.display = 'none';
-        }
-    }
 }
 
 // Initialize default view
 document.addEventListener('DOMContentLoaded', () => {
+    // Check if we log in product page first to prevent errors
+    const productGrid = document.querySelector('.product-grid');
+    if (!productGrid) return;
+
     filterCategory('all', null);
 
-    const loadMoreBtn = document.querySelector('.load-more-btn');
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', () => {
-            currentLimit += 8;
-            updateGrid(true);
-        });
-    }
+    let isUpdating = false;
+
+    window.addEventListener('scroll', () => {
+        if (isUpdating) return;
+        
+        const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+        // Adjust the trigger point to be when the user is near the bottom
+        if (scrollTop + clientHeight >= scrollHeight - 350) {
+            
+            const items = document.querySelectorAll('.product-grid-item');
+            let totalMatch = 0;
+            items.forEach(item => {
+                const isMatch = (currentCategory === 'all' || item.getAttribute('data-category') === currentCategory);
+                if (isMatch) totalMatch++;
+            });
+
+            if (currentLimit < totalMatch) {
+                isUpdating = true;
+                currentLimit += 4; // Add 4 items at a time for smooth infinite scrolling
+                updateGrid(true);
+                
+                setTimeout(() => {
+                    isUpdating = false;
+                }, 400); // 400ms buffer timeout to prevent runaway limit increases
+            }
+        }
+    });
 });
 
 
