@@ -14,7 +14,7 @@
   <?php include '../component/menubar.php'; ?>
 
   <!-- Main Content -->
-  <div class="content-section layout_padding" style="margin-top: 100px;">
+  <div class="content-section layout_padding" style="margin-top: 80px; padding-bottom: 20px; padding-top: 40px;">
     <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
       <!-- Left: Image with custom red shape -->
       <div style="flex: 1; min-width: 300px;">
@@ -52,7 +52,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Features Section -->
-  <div class="content-section layout_padding">
+  <div class="content-section layout_padding" style="padding-top: 20px;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
 
       <!-- Section 1 -->
