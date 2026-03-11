@@ -31,7 +31,6 @@
             <!-- Logo -->
             <a href="../main/index.php" class="logo">
                 <img src="../img/company_logo/logo 2.png" alt="KOCH" onerror="this.style.display='none'">
-                <span class="logo-text">KOCH</span>
             </a>
 
             <!-- Navigation Menu -->

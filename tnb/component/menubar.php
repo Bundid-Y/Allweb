@@ -31,7 +31,6 @@
             <!-- Logo -->
             <a href="../main/index.php" class="logo">
                 <img src="../img/company_logo/tnb_logo.webp" alt="TNB" onerror="this.style.display='none'">
-                <span class="logo-text">TNB</span>
             </a>
 
             <!-- Navigation Menu -->
