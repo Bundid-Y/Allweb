@@ -53,12 +53,12 @@
 
 
     <!-- CONTENT / DETAILS SECTION — เกี่ยวกับเรา -->
-    <div class="content-section layout_padding">
+    <div class="content-section layout_padding koch-about-section">
         <!-- ใช้ Flexbox แทน Bootstrap row/col -->
-        <div class="flex-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+        <div class="koch-about-row">
 
             <!-- คอลัมน์ซ้าย: รูปภาพ -->
-            <div style="flex: 1; min-width: 300px;">
+            <div class="koch-about-col-img">
                 <div class="details-box">
                     <div class="details-image">
                         <img src="../img/other/index/about/box_about.png" alt="Detail Image">
@@ -67,31 +67,36 @@
             </div>
 
             <!-- คอลัมน์ขวา: เนื้อหา -->
-            <div style="flex: 1; min-width: 300px;">
-                <h1 class="details-title" data-i18n="index.about_title">เกี่ยวกับเรา</h1>
+            <div class="koch-about-col-text">
+
+                <!-- หัวข้อหลัก -->
+                <h1 class="details-title koch-about-title" data-i18n="index.about_title">เกี่ยวกับเรา</h1>
+                <div class="koch-about-accent"></div>
 
                 <!-- ย่อหน้าแรก -->
-                <p class="details-desc">
+                <p class="koch-about-desc">
                     <span data-i18n="index.about_p1">KOCH คือผู้เชี่ยวชาญด้านบริการ Supply Chain ครบวงจร
-                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย มุ่งเน้นการสร้างระบบที่</span>
-                    <strong data-i18n="index.about_p1_strong">"Smart, Fast, and Sustainable"</strong>
+                        สำหรับอุตสาหกรรมยานยนต์ในประเทศไทย มุ่งเน้นการสร้างระบบที่</span><strong class="koch-about-highlight" data-i18n="index.about_p1_strong">"Smart, Fast, and Sustainable"</strong>
                 </p>
 
                 <!-- ย่อหน้าที่สอง -->
-                <p class="details-desc">
-                    <span data-i18n="index.about_p2">เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ</span> <strong
-                        data-i18n="index.about_p2_strong">"พันธมิตรเชิงกลยุทธ์"</strong>
+                <p class="koch-about-desc">
+                    <span data-i18n="index.about_p2">เราไม่ได้เป็นเพียงผู้ผลิตบรรจุภัณฑ์ แต่คือ</span>
+                    <strong class="koch-about-highlight" data-i18n="index.about_p2_strong">"พันธมิตรเชิงกลยุทธ์"</strong>
                     <span data-i18n="index.about_p2_cont">ที่ช่วยยกระดับการบริหารจัดการโลจิสติกส์ให้มีประสิทธิภาพสูงสุด
                         ด้วยความเชี่ยวชาญเฉพาะด้าน:</span>
                 </p>
 
-                <ul class="details-desc"> <!-- ใช้ class เดียวกับ p เพื่อให้ฟอนต์เท่ากัน -->
+                <!-- รายการความเชี่ยวชาญ -->
+                <ul class="koch-about-list">
                     <li data-i18n="index.about_li1">ระบบ VMI (Vendor Managed Inventory)</li>
                     <li data-i18n="index.about_li2">การออกแบบวิศวกรรมภายในองค์กร (In-house Engineering)</li>
-                    <li data-i18n="index.about_li3">การปรับวิธีกรรมระบบอัตโนมัติที่ล้ำสมัย</li>
+                    <li data-i18n="index.about_li3">การประยุกต์ใช้ระบบอัตโนมัติที่ล้ำสมัย</li>
                 </ul>
 
+                <!-- ปุ่ม CTA -->
                 <div class="details-action-group">
+                    <a href="../about/company.php" class="koch-about-cta" data-i18n="index.about_cta">ดูรายละเอียดเพิ่มเติม</a>
                 </div>
             </div>
 

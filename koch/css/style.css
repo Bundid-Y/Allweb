@@ -1,4 +1,4 @@
-﻿/* =========================================
+/* =========================================
    Koch Style CSS
    ========================================= */
 
@@ -339,8 +339,14 @@ body {
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
   z-index: 2;
+  transition: background 0.4s ease;
+}
+
+.card:hover .card__content {
+  /* ทำให้ gradient ด้านล่างดำสนิทเมื่อ hover */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .card__category{
@@ -350,26 +356,67 @@ body {
   margin-bottom: var(--spacing-m);
   text-transform: uppercase;
   /* เพิ่มเติมจากการแก้ไข */
-  color: #f7c17b; 
-  font-size: 0.75rem;
+  color: #ffc800; 
+  font-size: 0.85rem;
   letter-spacing: 1px;
-  font-weight: bold;
-  margin-bottom: 8px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .card__heading{
   color: var(--text-lighter); /* หรือ #ffffff */
   font-size: 2rem; /* หรือ 1.2rem */
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.2;
   word-spacing: 100vw;
   /* เพิ่มเติมจากการแก้ไข */
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   margin: 0;
-  line-height: 1.3;
-  font-weight: 600;
-} 
+  line-height: 1.4;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* สร้างเงาดำ (Shadow Blob) ให้เด้งมาซ้อนหลังข้อความ */
+.card__heading::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -40px; /* ยืดลงล่างให้คลุมส่วนข้อความถึงปุ่ม */
+  background: transparent;
+  box-shadow: 0 0 30px 20px transparent;
+  border-radius: 15px;
+  z-index: -1;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+/* แสดงเงาดำด้านหลังเมื่อ Hover ทำให้ข้อความไม่โดนรูปกลบเด็ดขาด */
+.card:hover .card__heading::before {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 40px 30px rgba(0, 0, 0, 0.75);
+}
+
+/* ปรับข้อความให้มีขอบดำ (outline) เด้งออกมาเมื่อ Hover */
+.card:hover .card__heading {
+  transform: translateY(-5px);
+  text-shadow: 2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 0px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.card:hover .card__category {
+  transform: translateY(-5px);
+  color: #fff200;
+  text-shadow: 2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 0px 5px 20px rgba(0, 0, 0, 1);
+}
 
 /* -----------------------------------------
    5. Responsive ปรับตามขนาดหน้าจอ
@@ -4696,3 +4743,246 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
 .anim-delay-300 { transition-delay: 300ms; }
 .anim-delay-400 { transition-delay: 400ms; }
 .anim-delay-500 { transition-delay: 500ms; }
+
+/* =========================================
+   KOCH ABOUT SECTION — ข้อความ "เกี่ยวกับเรา" บนหน้า Index
+   Scoped ด้วย .koch-about-* เพื่อไม่กระทบส่วนอื่น
+   ========================================= */
+
+/* --- Layout Row --- */
+.koch-about-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.koch-about-col-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.koch-about-col-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* --- Subtitle Label --- */
+.koch-about-label {
+    display: inline-block;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ED2A2A;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/* --- Title Override --- */
+.koch-about-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1c1c1c;
+    margin-bottom: 0;
+    padding-top: 10px;
+    line-height: 1.25;
+}
+
+/* --- Accent Line Under Title --- */
+.koch-about-accent {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #ED2A2A, #ff6b6b);
+    border-radius: 2px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    transition: width 0.4s ease;
+}
+
+.koch-about-section:hover .koch-about-accent {
+    width: 100px;
+}
+
+/* --- Description Paragraph --- */
+.koch-about-desc {
+    font-size: 15.5px;
+    color: #333;
+    line-height: 1.9;
+    margin: 0;
+    padding-top: 4px;
+    text-align: left;
+}
+
+/* บังคับ inline เพื่อ override reset ของ .content-section * */
+.koch-about-desc span,
+.koch-about-desc strong {
+    display: inline !important;
+}
+
+/* --- Highlighted Keywords --- */
+.koch-about-highlight {
+    display: inline;
+    color: #ED2A2A;
+    font-weight: 700;
+    background: linear-gradient(120deg, rgba(237, 42, 42, 0.08) 0%, rgba(237, 42, 42, 0.15) 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border-bottom: 2px solid #ED2A2A;
+    text-decoration: none;
+}
+
+/* --- Custom Checkmark List --- */
+.koch-about-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+}
+
+.koch-about-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.koch-about-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: #ED2A2A;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* --- CTA Button --- */
+.koch-about-cta {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 32px;
+    background: #ED2A2A;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 14px rgba(237, 42, 42, 0.25);
+}
+
+.koch-about-cta:hover {
+    background: #c72222;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(237, 42, 42, 0.35);
+    color: #fff;
+}
+
+/* --- Responsive: Tablet (max-width: 991px) --- */
+@media (max-width: 991px) {
+    .koch-about-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .koch-about-col-img,
+    .koch-about-col-text {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .koch-about-title {
+        font-size: 34px;
+    }
+
+    .koch-about-desc {
+        font-size: 16px;
+    }
+}
+
+/* --- Responsive: Small Tablet (max-width: 768px) --- */
+@media (max-width: 768px) {
+    .koch-about-title {
+        font-size: 30px;
+    }
+
+    .koch-about-label {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .koch-about-desc {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .koch-about-list li {
+        font-size: 15px;
+    }
+
+    .koch-about-cta {
+        padding: 10px 26px;
+        font-size: 14px;
+    }
+}
+
+/* --- Responsive: Mobile (max-width: 576px) --- */
+@media (max-width: 576px) {
+    .koch-about-row {
+        gap: 20px;
+    }
+
+    .koch-about-col-img,
+    .koch-about-col-text {
+        min-width: 100%;
+    }
+
+    .koch-about-title {
+        font-size: 26px;
+    }
+
+    .koch-about-label {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .koch-about-desc {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .koch-about-highlight {
+        white-space: normal;
+    }
+
+    .koch-about-list li {
+        font-size: 14px;
+        padding-left: 28px;
+        margin-bottom: 10px;
+    }
+
+    .koch-about-list li::before {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+    }
+
+    .koch-about-cta {
+        display: block;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}

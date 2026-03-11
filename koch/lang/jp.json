@@ -34,6 +34,7 @@
         "rights": "All Rights Reserved"
     },
     "index": {
+        "about_label": "ABOUT US",
         "about_title": "会社概要",
         "about_p1": "KOCHは、タイの自動車産業向けサプライチェーン総合サービスの専門企業です。",
         "about_p1_strong": "「スマート・迅速・持続可能」",
@@ -43,6 +44,7 @@
         "about_li1": "VMIシステム（ベンダー管理在庫）",
         "about_li2": "社内エンジニアリング設計",
         "about_li3": "最先端のプロセス自動化",
+        "about_cta": "詳細を見る",
         "services_title": "サービス内容",
         "services_sub": "あらゆるビジネスニーズに応える、包装・ロジスティクスの総合管理サービス",
         "svc1_heading": "ワンストップ包装設計・開発イノベーション",

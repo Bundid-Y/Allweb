@@ -34,6 +34,7 @@
         "rights": "All Rights Reserved"
     },
     "index": {
+        "about_label": "ABOUT US",
         "about_title": "About Us",
         "about_p1": "KOCH is a full-service Supply Chain specialist for Thailand's automotive industry, dedicated to building systems that are",
         "about_p1_strong": "\"Smart, Fast, and Sustainable\"",
@@ -43,6 +44,7 @@
         "about_li1": "VMI System (Vendor Managed Inventory)",
         "about_li2": "In-house Engineering Design",
         "about_li3": "State-of-the-art Process Automation",
+        "about_cta": "Learn More",
         "services_title": "Our Services",
         "services_sub": "Comprehensive packaging and logistics management services that meet every business need with modern systems",
         "svc1_heading": "End-to-End Packaging Design & Innovation",

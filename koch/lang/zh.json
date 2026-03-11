@@ -34,6 +34,7 @@
         "rights": "版权所有"
     },
     "index": {
+        "about_label": "ABOUT US",
         "about_title": "关于我们",
         "about_p1": "KOCH是泰国汽车行业全方位供应链服务专家，致力于打造",
         "about_p1_strong": "「智能、快速、可持续」",
@@ -43,6 +44,7 @@
         "about_li1": "VMI系统（供应商管理库存）",
         "about_li2": "内部工程设计",
         "about_li3": "先进的流程自动化",
+        "about_cta": "了解更多",
         "services_title": "我们的服务",
         "services_sub": "全方位包装与物流管理服务，以现代化系统满足每一项业务需求",
         "svc1_heading": "全方位包装设计与创新",
