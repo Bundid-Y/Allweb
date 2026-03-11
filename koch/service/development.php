@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 
 <head>
@@ -138,76 +138,6 @@
         </div>
       </section>
 
-    </div>
-  </div>
-
-
-  <!-- CARDS COMPONENT         
-         Semantic HTML structure with accessibility features:
-         - External links open in new tab (target="_blank")
-         - Security: rel="noopener noreferrer" prevents vulnerabilities
-         - Performance: loading="lazy" defers off-screen images
-         - SEO: Descriptive alt text for all images
-    -->
-  <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-  <div class="dev-cards-wrapper">
-    <div class="dev-cards">
-      <!-- Card 1: Cliff Coast -->
-      <div class="dev-card">
-        <a href="../img/other/service/supply/inventory.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/supply/inventory.jpeg" alt="Mountain landscape with river" loading="lazy" />
-          <div class="dev-card-title">Cliff Coast</div>
-          <p class="dev-card-desc" data-i18n="service.card_inventory">
-            บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 2: Forest Lights -->
-      <div class="dev-card">
-        <a href="../img/other/service/development/tool2.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/development/tool2.jpeg" alt="A vivid display of the aurora borealis."
-            loading="lazy" />
-          <div class="dev-card-title">Forest Lights</div>
-          <p class="dev-card-desc" data-i18n="service.card_dev">
-            นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 3: Nature Walk -->
-      <div class="dev-card">
-        <a href="../img/other/service/warehouse/personnel.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/warehouse/personnel.jpeg" alt="Person walking in nature" loading="lazy" />
-          <div class="dev-card-title">Nature Walk</div>
-          <p class="dev-card-desc" data-i18n="service.card_personnel">
-            บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 4: Mountain View -->
-      <div class="dev-card">
-        <a href="../img/other/service/warehouse/box.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/warehouse/box.jpeg" alt="City skyline at night" loading="lazy" />
-          <div class="dev-card-title">Mountain View</div>
-          <p class="dev-card-desc" data-i18n="service.card_sensitive">
-            รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 5: Sunset -->
-      <div class="dev-card">
-        <a href="../img/other/service/transportation/transport.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/transportation/transport.jpeg" alt="Beautiful sunset over horizon"
-            loading="lazy" />
-          <div class="dev-card-title">Golden Sunset</div>
-          <p class="dev-card-desc" data-i18n="service.card_route">
-            ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
-          </p>
-        </a>
-      </div>
     </div>
   </div>
 

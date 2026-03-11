@@ -763,6 +763,18 @@ section.loop-images-quotation.vertical {
     will-change: transform;
 }
 
+/* --- Responsive: จอเล็กแสดง solid background เต็ม --- */
+@media (max-width: 991px) {
+    .content-section.section-partners::after {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        clip-path: none !important;
+        display: block !important;
+    }
+}
+
 /* ============================
    8.2 RECOMMENDED PRODUCTS — สี่เหลี่ยมพื้นหลังเฉียง
    คล้ายกับ About Us แต่เอียงองศาต่าง ~65%
@@ -788,34 +800,23 @@ section.loop-images-quotation.vertical {
     display: flex;
     height: 600px;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     /* จากซ้าย ~65%, เอียงชันกว่า About Us */
     clip-path: polygon(0 0, 65% 5%, 65% 85%, 0% 100%);
     transform: translateY(var(--deco-y));
     will-change: transform;
 }
 
-/* --- Responsive: ปรับ clip-path สำหรับจอเล็ก --- */
+/* --- Responsive: จอเล็กแสดง solid background เต็ม --- */
 @media (max-width: 991px) {
-    .content-section.section-partners::after {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        clip-path: none !important; /* Make solid red background for white text */
-        display: block !important;
-    }
     .content-section.section-products::after {
         height: calc(100% + 50px);
         width: 100%;
         left: 0;
-        clip-path: none !important; /* Make solid red background for white text */
+        clip-path: none !important;
     }
 }
 
-/* ============================
-    8.3 SLIDER SECTION — สี่เหลี่ยมพื้นหลังเฉียง
-    ============================ */
 /* ============================
     8.3 SLIDER SECTION — สี่เหลี่ยมพื้นหลังเฉียง (Enhanced)
     ============================ */
@@ -1712,265 +1713,7 @@ section.loop-images-quotation.vertical {
 }
 
 /* =========================================
-   11. Index Content Section - สินค้าแนะนำ (จากหน้า index.php)
-   ========================================= */
-a {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-
-        a:visited,
-        a:active,
-        a:focus {
-            border: none;
-        }
-
-        img {
-            border: none;
-        }
-
-        span {
-            display: inline-block;
-        }
-
-        .Img_Dflt {
-            width: 100%;
-        }
-
-        .Img_WH100 {
-            width: 100%;
-            height: 100%;
-        }
-
-        .Img_H100 {
-            height: 100%;
-        }
-
-        .noDisplay,
-        ._Off {
-            display: none;
-        }
-
-        .SVG_Dflt {
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-        }
-
-        html {
-            font-size: 100%;
-        }
-
-
-        .Block_Expanding_Cards {
-
-            position: relative;
-            margin: 40px auto;
-            width: 100%;
-            height: 40vh;
-            max-height: 400px;
-            min-height: 350px;
-            text-align: center;
-        }
-
-        .card_holder_sB {
-
-            position: relative;
-            margin: 0em auto;
-            width: 90%;
-            height: 100%;
-        }
-
-        .US_City_sB {
-
-            display: inline-block;
-            position: relative;
-            margin: 0em 0.5em;
-            width: 8%;
-            height: 100%;
-            vertical-align: middle;
-            border-radius: 1.5em;
-            overflow: hidden;
-            transition: width 0.25s ease;
-        }
-
-        .US_City_sB._active {
-
-            width: 40%;
-        }
-
-        .US_City_sB:hover {
-
-            cursor: pointer;
-        }
-
-        .card_h1 {
-            color: #ffffff;
-            position: absolute;
-            bottom: 5%;
-            left: 25%;
-            font-size: 2em;
-            margin: 0em;
-            padding: 0em;
-            font-weight: normal;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-        }
-
-        .card_h1._active {
-
-            position: relative;
-            bottom: 0%;
-            left: 0%;
-            font-size: 4em;
-            writing-mode: horizontal-tb;
-            transform: rotate(0deg);
-            margin: 2em auto 0em auto;
-            text-shadow: 1px 1px 0.0625em black;
-        }
-
-        .card_content {
-
-            position: relative;
-            margin: 5em auto 0em auto;
-            width: 80%;
-            display: none;
-        }
-
-        .card_content._on {
-            display: block;
-            text-shadow: 1px 1px 0px black;
-        }
-
-        .card_dscrptn {
-            color: #ffffff;
-            font-size: 2em;
-            margin: 0em;
-            padding: 0em;
-        }
-
-        .card_photo_cred {
-
-            color: rgb(0, 234, 0);
-        }
-
-        .card_shade {
-
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(0, 0, 0);
-            opacity: 0.5;
-        }
-
-        .card_shade._off {
-            display: none;
-        }
-
-        .card_shade:hover {
-            opacity: 0;
-        }
-
-        .card_BG {
-
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0%;
-            left: 0%;
-            z-index: -1;
-            transition: left 1.5s ease;
-        }
-
-        .card_BG._active {
-
-            left: -35%;
-        }
-
-        /* MOBILE & TABLET (Vertical Stack) */
-        @media (max-width : 991px) {
-            /* Removed global body font-size override */
-
-            .Block_Expanding_Cards {
-                height: auto;
-                max-height: none;
-                min-height: auto;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 20px;
-            }
-
-            .card_holder_sB {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .US_City_sB {
-                display: block;
-                width: 100% !important;
-                height: 70px !important;
-                margin: 0 !important;
-                border-radius: 1em;
-            }
-
-            .US_City_sB._active {
-                height: 300px !important;
-            }
-
-            .card_h1 {
-                writing-mode: horizontal-tb;
-                transform: none;
-                bottom: auto;
-                top: 50%;
-                left: 20px;
-                transform: translateY(-50%);
-                font-size: 1.5em;
-                position: absolute;
-            }
-
-            .card_h1._active {
-                margin: 0;
-                top: 20px;
-                left: 20px;
-                transform: none;
-                font-size: 2em;
-            }
-
-            .card_content {
-                margin: 5em auto 0em 20px;
-                width: 90%;
-            }
-        }
-
-        @media (min-width : 1001px) and (max-width : 1200px) {
-
-
-            /* Removed global body font-size override */
-
-        }
-
-        @media (min-width : 1201px) and (max-width : 1400px) {
-
-
-            /* Removed global body font-size override */
-
-        }
-
-        @media (min-width : 1401px) {
-
-
-            /* Removed global body font-size override */
-
-        }
-
-/* =========================================
-   Login Page Specific Styles & Script
+   12. Login Page Specific Styles
    ========================================= */
 
     body:has(.login-page-wrapper) {

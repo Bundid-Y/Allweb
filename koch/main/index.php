@@ -228,90 +228,69 @@
             </div>
         </div>
 
-        <div class="Block_Expanding_Cards">
-            <div class="card_holder_sB">
-                <span class="US_City_sB _active" data-card-index="0">
-                    <h1 class="card_h1 _active">RSC Box</h1>
-                    <div class="card_shade _off"></div>
-                    <div class="card_content _on">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred" href="../img/products/box/rsc.png" target="_blank"></a>
+        <!-- CARDS COMPONENT — Expandable Image Strip (แทนที่ Block_Expanding_Cards)
+             Semantic HTML with accessibility features:
+             - Security: rel="noopener noreferrer" prevents vulnerabilities
+             - Performance: loading="lazy" defers off-screen images
+             - SEO: Descriptive alt text for all images
+        -->
+        <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
+        <div class="dev-cards-wrapper" style="padding: 0;">
+            <div class="dev-cards">
+                <!-- Card 1: Packaging Development -->
+                <div class="dev-card">
+                    <a href="../service/development.php" rel="noopener noreferrer">
+                        <img src="../img/other/service/development/development.jpeg" alt="Packaging Development" loading="lazy" />
+                        <div class="dev-card-title">Packaging Development</div>
+                        <p class="dev-card-desc" data-i18n="service.card_dev">
+                            นวัตกรรมการออกแบบบรรจุภัณฑ์ครบวงจร
                         </p>
-                    </div>
-                    <div class="card_BG _active">
-                        <img class="Img_H100" src="../img/products/box/rsc.png" alt="RSC Box" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="1">
-                    <h1 class="card_h1">FTD Box</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
+                    </a>
+                </div>
+
+                <!-- Card 2: Supply Management -->
+                <div class="dev-card">
+                    <a href="../service/supply_management.php" rel="noopener noreferrer">
+                        <img src="../img/other/service/supply/inventory.jpeg" alt="Supply Management" loading="lazy" />
+                        <div class="dev-card-title">Supply Management</div>
+                        <p class="dev-card-desc" data-i18n="service.card_inventory">
+                            บริหารจัดการสินค้าคงคลังบรรจุภัณฑ์
                         </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/ftd.png" alt="FTD Box" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="2">
-                    <h1 class="card_h1">OSC Box</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/cHRDevKFDBw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
+                    </a>
+                </div>
+
+                <!-- Card 3: Warehouse -->
+                <div class="dev-card">
+                    <a href="../service/warehouse.php" rel="noopener noreferrer">
+                        <img src="../img/other/service/warehouse/personnel.jpeg" alt="Warehouse & Operations" loading="lazy" />
+                        <div class="dev-card-title">Warehouse</div>
+                        <p class="dev-card-desc" data-i18n="service.card_personnel">
+                            บุคลากรที่มีความเชี่ยวชาญเฉพาะด้าน
                         </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/osc.png" alt="OSC Box" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="3">
-                    <h1 class="card_h1">Die-Cut Box</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/tUoA7sCrRto?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
+                    </a>
+                </div>
+
+                <!-- Card 4: Transportation -->
+                <div class="dev-card">
+                    <a href="../service/transportation.php" rel="noopener noreferrer">
+                        <img src="../img/other/service/transportation/transport.jpeg" alt="Transportation Fleet" loading="lazy" />
+                        <div class="dev-card-title">Transportation</div>
+                        <p class="dev-card-desc" data-i18n="service.card_route">
+                            ครอบคลุมทุกเส้นทางอุตสาหกรรมในประเทศ
                         </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/die-cut.png" alt="Die-Cut Box" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="4">
-                    <h1 class="card_h1">Cardboard Pallet</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/KDS5lCrj_ew?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
+                    </a>
+                </div>
+
+                <!-- Card 5: Advanced Tools -->
+                <div class="dev-card">
+                    <a href="../service/development.php" rel="noopener noreferrer">
+                        <img src="../img/other/service/development/tool2.jpeg" alt="Advanced Tools & Innovation" loading="lazy" />
+                        <div class="dev-card-title">Innovation</div>
+                        <p class="dev-card-desc" data-i18n="service.card_sensitive">
+                            รองรับการขนส่งชิ้นส่วนยานยนต์ที่มีความละเอียดอ่อน
                         </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/pallet.png" alt="Cardboard Pallet" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="5">
-                    <h1 class="card_h1">Fitting Box Service</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/gZXx8lKAb7Y?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/products/box/fit_ser.png" alt="Fitting Box Service" />
-                    </div>
-                </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
