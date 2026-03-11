@@ -152,35 +152,7 @@
                         </div>
                 </div>
 
-                <!-- New Section: Thanks Partners -->
-                <div class="container" style="margin-top: 80px; margin-bottom: 80px;">
-                        <div class="row">
-                                <div class="col-12 text-center">
-                                        <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 40px; color: #1c1c1c;"
-                                                data-i18n="partners.allPartnersTitle">
-                                                พันธมิตรทั้งหมดของเรา</h2>
-                                </div>
-                        </div>
 
-                        <div class="partner-grid">
-                                <div class="partner-logo"><img src="../img/customer_logo/Mazda.png" alt="Mazda"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Suzuki.png" alt="Suzuki"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Changan.png" alt="Changan">
-                                </div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Kn.webp" alt="Kn"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Honda.png" alt="Honda"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/Alpla.png" alt="Alpla"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/BROSE_Excellence.png"
-                                                alt="Brose"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/nhk.webp" alt="NHK"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/siamgoshi.jpg"
-                                                alt="Siam Goshi"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/dn2.png" alt="DN"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/lat.png" alt="LAT"></div>
-                                <div class="partner-logo"><img src="../img/customer_logo/mitsuboshi.png"
-                                                alt="Mitsuboshi"></div>
-                        </div>
-                </div>
         </div>
 
         <?php include '../component/footer.php'; ?>
