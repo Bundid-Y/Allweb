@@ -3130,7 +3130,7 @@ body.page-company {
     line-height: 1.8;
     color: #444;
     margin-bottom: 20px;
-    text-indent: 40px;
+    text-indent: 0;
 }
 
 .page-company .company-text-container strong {
@@ -3191,7 +3191,7 @@ body.page-company {
 @media (max-width: 768px) {
     .page-company .company-text-container p {
         font-size: 1rem;
-        text-indent: 20px;
+        text-indent: 0;
     }
 
     .page-company .company-image-wrap::before {
@@ -4728,10 +4728,61 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
         font-size: 11px;
     }
 
+
     .koch-about-cta {
         display: block;
         text-align: center;
         padding: 12px 20px;
         font-size: 14px;
+    }
+}
+
+/* =========================================
+   Company Page (about/company.php)
+   Scoped with .page-company
+   ========================================= */
+
+.page-company .details-desc {
+    text-align: left;
+    text-indent: 0;
+    line-height: 1.9;
+    margin-bottom: 4px;
+    padding-top: 0;
+}
+
+.page-company .details-title {
+    text-align: left;
+    text-indent: 0;
+}
+
+.page-company .details-desc strong {
+    font-weight: 700;
+}
+
+.page-company .company-service-terms {
+    font-weight: 600;
+}
+
+.page-company .details-desc [data-i18n="company.p3_strong"]:empty {
+    display: none;
+}
+
+.page-company .company-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-company .company-image-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .page-company .details-desc {
+        font-size: 15px;
+        line-height: 1.85;
+        text-align: left;
+        text-indent: 0;
     }
 }
