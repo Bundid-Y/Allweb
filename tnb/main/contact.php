@@ -81,7 +81,7 @@
                                     data-i18n="contact.phone_label">
                                     ติดต่อฝ่ายขาย</h4>
                                 <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.5;">
-                                    090-954-2354</p>
+                                    081-5758823<br>062-6392499</p>
                             </div>
                         </div>
 
