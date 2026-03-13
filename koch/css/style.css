@@ -4495,10 +4495,6 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
     display: inline;
     color: #ED2A2A;
     font-weight: 700;
-    background: linear-gradient(120deg, rgba(237, 42, 42, 0.08) 0%, rgba(237, 42, 42, 0.15) 100%);
-    padding: 2px 6px;
-    border-radius: 4px;
-    border-bottom: 2px solid #ED2A2A;
     text-decoration: none;
 }
 
