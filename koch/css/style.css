@@ -4714,3 +4714,11 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
     color: #cc0000;
 }
 
+/* =========================================
+   RESPONSIVE: Hide footer on mobile & iPad (<=991px)
+   ========================================= */
+@media (max-width: 991px) {
+    footer.footer-custom { display: none !important; }
+}
+
+
