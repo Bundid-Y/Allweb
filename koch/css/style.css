@@ -384,26 +384,20 @@ body {
   z-index: 2;
 }
 
-/* สร้างเงาดำ (Shadow Blob) ให้เด้งมาซ้อนหลังข้อความ */
-.card__heading::before {
-  content: '';
-  position: absolute;
-  top: 0;        /* ไม่ขยายขึ้นบน — ป้องกันไม่ให้บังข้อความ EN ด้านบน */
-  left: -12px;
-  right: -12px;
-  bottom: -30px;
-  background: transparent;
-  box-shadow: none;
-  border-radius: 10px;
-  z-index: -1;
-  transition: all 0.4s ease;
-  pointer-events: none;
+/* กล่องข้อความที่จะแสดงพื้นหลังเมื่อ hover */
+.card__text-box {
+  padding: 16px 20px;
+  margin: -16px -20px 0 -20px;
+  border-radius: 6px; 
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+  position: relative;
+  z-index: 2;
 }
 
-/* แสดงเงาดำด้านหลังเมื่อ Hover — เฉพาะรอบ heading ไทย ไม่แผ่ขึ้นบน */
-.card:hover .card__heading::before {
-  background: rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 20px 12px rgba(0, 0, 0, 0.7); /* spread น้อยลงมาก */
+.card:hover .card__text-box {
+  background-color: rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
 }
 
 /* ปรับข้อความให้มีขอบดำ (outline) เด้งออกมาเมื่อ Hover */
